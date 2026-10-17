@@ -1,0 +1,44 @@
+[
+  {
+    "id": "monthly-income",
+    "title": "Products with monthly income",
+    "blurb": "Structures that pay out on a regular schedule instead of at maturity — useful if you need cash flow rather than growth.",
+    "icon": "calendar",
+    "accent": "green"
+  },
+  {
+    "id": "government-backed",
+    "title": "Government-backed schemes",
+    "blurb": "Issued or run by a government body. Different rules from bank deposits, and generally a longer lock-in.",
+    "icon": "shield",
+    "accent": "blue"
+  },
+  {
+    "id": "understand-before-you-invest",
+    "title": "Understand before you invest",
+    "blurb": "Products where the fine print does most of the work: market-linked, conditional, or priced by an exchange.",
+    "icon": "compass",
+    "accent": "violet"
+  },
+  {
+    "id": "start-small",
+    "title": "Ways to start with small amounts",
+    "blurb": "Options with a low entry point, so you can learn the mechanics without committing much.",
+    "icon": "seedling",
+    "accent": "amber"
+  },
+  {
+    "id": "short-term",
+    "title": "Parking money for under a year",
+    "blurb": "For money you will need soon. Prioritises access and stability over return.",
+    "icon": "clock",
+    "accent": "blue"
+  },
+  {
+    "id": "tax-saving",
+    "title": "Tax-saving structures",
+    "blurb": "Products built around a tax deduction, usually with a lock-in attached. Confirm current rules before relying on any of it.",
+    "icon": "receipt",
+    "accent": "green"
+  }
+]

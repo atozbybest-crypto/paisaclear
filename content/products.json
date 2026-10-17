@@ -1,0 +1,2025 @@
+[
+  {
+    "slug": "public-provident-fund",
+    "name": "Public Provident Fund (PPF)",
+    "provider": "Government of India — small savings scheme",
+    "providerShort": "PPF",
+    "providerType": "Government",
+    "category": "government-schemes",
+    "returnType": "guaranteed",
+    "rateKey": "ppf",
+    "demo": false,
+    "oneLiner": "A 15-year account where the government pays a notified rate, revised every quarter, and the maturity amount is tax-free.",
+    "minInvestment": 500,
+    "minInvestmentNote": "per financial year; maximum ₹1.5 lakh a year",
+    "tenure": "15 years",
+    "tenureMonths": 180,
+    "payout": "Compounded annually, paid at maturity",
+    "payoutFrequency": "maturity",
+    "liquidity": "One partial withdrawal a year is allowed from the seventh year. Otherwise the money stays in until maturity.",
+    "lockIn": "15 years",
+    "eligibility": "Resident individuals, one account per person. A parent or guardian can open one for a minor.",
+    "tax": "Contributions qualify for a deduction under Section 80C within the overall cap. Interest and the maturity amount are exempt, provided the account is run within the scheme rules.",
+    "protection": "A sovereign liability of the Government of India.",
+    "riskLevel": "low",
+    "risks": [
+      "The rate is reset every quarter, so contributions made later may earn less than today's rate.",
+      "The money is tied up for 15 years, with only a limited partial withdrawal from year seven.",
+      "The ₹1.5 lakh annual cap limits how much can be saved this way."
+    ],
+    "commonUses": [
+      "A long-term corpus for retirement or a child's education",
+      "The tax-free core of a savings plan, alongside market-linked investments"
+    ],
+    "check": [
+      "The rate that applies to each year's contribution, since it can change quarterly",
+      "What happens if you miss the ₹500 minimum deposit in a year"
+    ],
+    "collections": [
+      "tax-saving",
+      "government-backed",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "National Savings Institute — small savings schemes",
+        "url": "https://www.nsiindia.gov.in"
+      },
+      {
+        "label": "India Post — saving schemes",
+        "url": "https://www.indiapost.gov.in/banking-services/savings"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Rate confirmed against the Oct–Dec 2026 notification as reported on 1 Oct 2026."
+    },
+    "source": {
+      "label": "India Post — saving schemes",
+      "url": "https://www.indiapost.gov.in/banking-services/savings",
+      "note": "The official page listing every post office savings scheme, with the current rates and rules."
+    }
+  },
+  {
+    "slug": "national-savings-certificate",
+    "name": "National Savings Certificate (NSC)",
+    "provider": "Government of India — small savings scheme",
+    "providerShort": "NSC",
+    "providerType": "Government",
+    "category": "government-schemes",
+    "returnType": "guaranteed",
+    "rateKey": "nsc",
+    "demo": false,
+    "oneLiner": "A five-year certificate that compounds interest annually and pays the whole amount at maturity.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "and in multiples of ₹100; no upper limit",
+    "tenure": "5 years",
+    "tenureMonths": 60,
+    "payout": "At maturity",
+    "payoutFrequency": "maturity",
+    "liquidity": "No premature encashment in normal circumstances. The certificate can be pledged as security for a loan.",
+    "lockIn": "5 years",
+    "eligibility": "Resident individuals, either alone or jointly. A guardian can invest for a minor.",
+    "tax": "Qualifies for a deduction under Section 80C. Interest accrues each year and is taxable in that year even though it is paid at maturity — the accrued interest itself is treated as reinvested.",
+    "protection": "A sovereign liability of the Government of India.",
+    "riskLevel": "low",
+    "risks": [
+      "Interest is taxed as it accrues, so you pay tax on money you have not received yet.",
+      "The five-year lock-in is rigid; exit is not normally possible.",
+      "The rate is fixed for the certificate, so later issues may offer more."
+    ],
+    "commonUses": [
+      "A five-year, tax-deductible commitment with a known end date",
+      "Collateral for a loan without selling the investment"
+    ],
+    "check": [
+      "How the accrued interest is reported in your tax return",
+      "Whether the certificate is in single or joint names, and who it pays out to"
+    ],
+    "collections": [
+      "tax-saving",
+      "government-backed"
+    ],
+    "sources": [
+      {
+        "label": "National Savings Institute — small savings schemes",
+        "url": "https://www.nsiindia.gov.in"
+      },
+      {
+        "label": "India Post — saving schemes",
+        "url": "https://www.indiapost.gov.in/banking-services/savings"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Rate confirmed against the Oct–Dec 2026 notification as reported on 1 Oct 2026."
+    },
+    "source": {
+      "label": "India Post — saving schemes",
+      "url": "https://www.indiapost.gov.in/banking-services/savings",
+      "note": "The official page listing every post office savings scheme, with the current rates and rules."
+    }
+  },
+  {
+    "slug": "sukanya-samriddhi-yojana",
+    "name": "Sukanya Samriddhi Yojana (SSY)",
+    "provider": "Government of India — small savings scheme",
+    "providerShort": "SSY",
+    "providerType": "Government",
+    "category": "government-schemes",
+    "returnType": "guaranteed",
+    "rateKey": "ssy",
+    "demo": false,
+    "oneLiner": "A long-term account opened for a girl child, funded for 15 years and maturing 21 years after opening.",
+    "minInvestment": 250,
+    "minInvestmentNote": "per financial year; maximum ₹1.5 lakh a year",
+    "tenure": "21 years from opening",
+    "tenureMonths": 252,
+    "payout": "At maturity",
+    "payoutFrequency": "maturity",
+    "liquidity": "Deposits run for 15 years. From age 18, up to half the balance can be withdrawn for education. Otherwise the account matures at 21 years, or on marriage after 18.",
+    "lockIn": "21 years",
+    "eligibility": "A parent or guardian may open one account for a girl child below 10. Normally limited to two accounts per family, with exceptions.",
+    "tax": "Contributions qualify for a deduction under Section 80C. Interest and the maturity amount are exempt, subject to the account being run within the rules.",
+    "protection": "A sovereign liability of the Government of India.",
+    "riskLevel": "low",
+    "risks": [
+      "The account runs for 21 years, so the money is effectively unavailable for most of childhood.",
+      "Only one account per girl, and normally two per family, which caps the amount that can be saved.",
+      "Partial withdrawal is limited to education and comes with documentation requirements."
+    ],
+    "commonUses": [
+      "Building a corpus for higher education",
+      "A long-term, tax-free commitment with a low entry point"
+    ],
+    "check": [
+      "The documentation needed to open and later withdraw for education",
+      "What happens if a deposit is missed in a year"
+    ],
+    "collections": [
+      "government-backed",
+      "tax-saving",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "National Savings Institute — small savings schemes",
+        "url": "https://www.nsiindia.gov.in"
+      },
+      {
+        "label": "India Post — saving schemes",
+        "url": "https://www.indiapost.gov.in/banking-services/savings"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Rate confirmed against the Oct–Dec 2026 notification as reported on 1 Oct 2026."
+    },
+    "source": {
+      "label": "India Post — saving schemes",
+      "url": "https://www.indiapost.gov.in/banking-services/savings",
+      "note": "The official page listing every post office savings scheme, with the current rates and rules."
+    }
+  },
+  {
+    "slug": "senior-citizens-savings-scheme",
+    "name": "Senior Citizens' Savings Scheme (SCSS)",
+    "provider": "Government of India — small savings scheme",
+    "providerShort": "SCSS",
+    "providerType": "Government",
+    "category": "government-schemes",
+    "returnType": "guaranteed",
+    "rateKey": "scss",
+    "demo": false,
+    "oneLiner": "A five-year deposit for people aged 60 and above that pays interest every quarter.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "and in multiples of ₹1,000; maximum ₹30 lakh",
+    "tenure": "5 years, extendable by 3",
+    "tenureMonths": 60,
+    "payout": "Quarterly",
+    "payoutFrequency": "quarterly",
+    "liquidity": "The principal is locked for five years. Premature closure is permitted after one year with a deduction from the interest.",
+    "lockIn": "5 years",
+    "eligibility": "Individuals aged 60 or above. Also open to those retiring at 55 or above under a voluntary retirement scheme, and to retired defence personnel from age 50, within the scheme's time limits.",
+    "tax": "Qualifies for a deduction under Section 80C. The quarterly interest is taxable as income and tax may be deducted at source.",
+    "protection": "A sovereign liability of the Government of India.",
+    "riskLevel": "low",
+    "risks": [
+      "The quarterly interest is fully taxable, so the post-tax return is lower than the headline rate.",
+      "The five-year lock-in can be a problem if health costs arise.",
+      "There is a cap on how much can be deposited, so it cannot absorb a large corpus."
+    ],
+    "commonUses": [
+      "Turning part of a retirement corpus into quarterly income",
+      "A low-volatility holding for money that must not fall in value"
+    ],
+    "check": [
+      "The deduction applied if you close early, at each year",
+      "Whether the interest is enough to live on after tax, not just before"
+    ],
+    "collections": [
+      "monthly-income",
+      "government-backed",
+      "tax-saving"
+    ],
+    "sources": [
+      {
+        "label": "National Savings Institute — small savings schemes",
+        "url": "https://www.nsiindia.gov.in"
+      },
+      {
+        "label": "India Post — saving schemes",
+        "url": "https://www.indiapost.gov.in/banking-services/savings"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Rate confirmed against the Oct–Dec 2026 notification as reported on 1 Oct 2026."
+    },
+    "source": {
+      "label": "India Post — saving schemes",
+      "url": "https://www.indiapost.gov.in/banking-services/savings",
+      "note": "The official page listing every post office savings scheme, with the current rates and rules."
+    }
+  },
+  {
+    "slug": "kisan-vikas-patra",
+    "name": "Kisan Vikas Patra (KVP)",
+    "provider": "Government of India — small savings scheme",
+    "providerShort": "KVP",
+    "providerType": "Government",
+    "category": "government-schemes",
+    "returnType": "guaranteed",
+    "rateKey": "kvp",
+    "demo": false,
+    "oneLiner": "A certificate that doubles your money over 115 months at the notified rate, with no tax deduction attached.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "and in multiples of ₹100; no upper limit",
+    "tenure": "115 months",
+    "tenureMonths": 115,
+    "payout": "At maturity",
+    "payoutFrequency": "maturity",
+    "liquidity": "Encashable after a minimum period, subject to the scheme's rules. The certificate can be transferred or pledged.",
+    "lockIn": "115 months",
+    "eligibility": "Resident individuals, singly or jointly, and some trusts and institutions. A guardian can invest for a minor.",
+    "tax": "No deduction is available for the investment. The interest is taxable as income, and tax may be deducted at source above the threshold.",
+    "protection": "A sovereign liability of the Government of India.",
+    "riskLevel": "low",
+    "risks": [
+      "There is no tax benefit, unlike NSC or PPF, so the post-tax return is weaker.",
+      "Almost ten years is a long time to have money locked away.",
+      "The rate is fixed at purchase; if rates rise, you are left on the older one."
+    ],
+    "commonUses": [
+      "A simple, no-frills commitment with a known maturity value",
+      "Money that can be pledged rather than sold"
+    ],
+    "check": [
+      "The exact maturity value for the amount you deposit",
+      "The rules and deduction for encashing before maturity"
+    ],
+    "collections": [
+      "government-backed"
+    ],
+    "sources": [
+      {
+        "label": "National Savings Institute — small savings schemes",
+        "url": "https://www.nsiindia.gov.in"
+      },
+      {
+        "label": "India Post — saving schemes",
+        "url": "https://www.indiapost.gov.in/banking-services/savings"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Rate confirmed against the Oct–Dec 2026 notification as reported on 1 Oct 2026."
+    },
+    "source": {
+      "label": "India Post — saving schemes",
+      "url": "https://www.indiapost.gov.in/banking-services/savings",
+      "note": "The official page listing every post office savings scheme, with the current rates and rules."
+    }
+  },
+  {
+    "slug": "post-office-monthly-income-scheme",
+    "name": "Post Office Monthly Income Scheme (MIS)",
+    "provider": "Government of India — small savings scheme",
+    "providerShort": "MIS",
+    "providerType": "Government",
+    "category": "government-schemes",
+    "returnType": "guaranteed",
+    "rateKey": "mis",
+    "demo": false,
+    "oneLiner": "A five-year deposit that pays a fixed amount into your account every month and returns the principal at the end.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "maximum ₹9 lakh in a single account, ₹15 lakh jointly",
+    "tenure": "5 years",
+    "tenureMonths": 60,
+    "payout": "Monthly",
+    "payoutFrequency": "monthly",
+    "liquidity": "The principal is locked for five years. Closing early is allowed after one year with a deduction from the deposit.",
+    "lockIn": "5 years",
+    "eligibility": "Resident individuals, singly or jointly. Limits apply to how much one person can hold.",
+    "tax": "The monthly payout is taxable as interest income in the year it is received, and tax may be deducted at source.",
+    "protection": "A sovereign liability of the Government of India.",
+    "riskLevel": "low",
+    "risks": [
+      "The monthly amount is fixed in rupees, so inflation steadily reduces what it buys.",
+      "The principal does not grow — you get back only what you put in.",
+      "The deposit cap limits how much income can be generated this way."
+    ],
+    "commonUses": [
+      "Turning a lump sum into a predictable monthly amount",
+      "Supplementing household income after retirement"
+    ],
+    "check": [
+      "The exact monthly payout for the amount you deposit",
+      "The deduction if you close the account in year two or three"
+    ],
+    "collections": [
+      "monthly-income",
+      "government-backed"
+    ],
+    "sources": [
+      {
+        "label": "National Savings Institute — small savings schemes",
+        "url": "https://www.nsiindia.gov.in"
+      },
+      {
+        "label": "India Post — saving schemes",
+        "url": "https://www.indiapost.gov.in/banking-services/savings"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Rate confirmed against the Oct–Dec 2026 notification as reported on 1 Oct 2026."
+    },
+    "source": {
+      "label": "India Post — saving schemes",
+      "url": "https://www.indiapost.gov.in/banking-services/savings",
+      "note": "The official page listing every post office savings scheme, with the current rates and rules."
+    }
+  },
+  {
+    "slug": "post-office-time-deposit-5-year",
+    "name": "Post Office Time Deposit (5 years)",
+    "provider": "Government of India — small savings scheme",
+    "providerShort": "PO TD",
+    "providerType": "Government",
+    "category": "government-schemes",
+    "returnType": "guaranteed",
+    "rateKey": "po-td-5y",
+    "demo": false,
+    "oneLiner": "A five-year deposit, like a bank fixed deposit but with the post office, paying a notified rate and qualifying for a tax deduction.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "and in multiples of ₹100; no upper limit",
+    "tenure": "5 years",
+    "tenureMonths": 60,
+    "payout": "Interest credited annually",
+    "payoutFrequency": "annual",
+    "liquidity": "Premature closure is allowed after six months, at a reduced rate. Closing within the first six months earns no interest.",
+    "lockIn": "5 years",
+    "eligibility": "Resident individuals, singly or jointly, and some institutions. A guardian can open one for a minor.",
+    "tax": "The five-year deposit qualifies for a deduction under Section 80C. Interest is taxable as income and may attract tax deducted at source.",
+    "protection": "A sovereign liability of the Government of India.",
+    "riskLevel": "low",
+    "risks": [
+      "Closing early reduces the rate you actually earned, sometimes sharply.",
+      "Interest is taxable, so the post-tax return is below the headline rate.",
+      "The rate is fixed for the term; a later deposit may earn more or less."
+    ],
+    "commonUses": [
+      "A tax-deductible alternative to a bank fixed deposit",
+      "A known sum at a known date, with no market risk"
+    ],
+    "check": [
+      "Whether interest is reinvested or paid into your account, and how that is taxed",
+      "The rate that applies if you close the deposit early"
+    ],
+    "collections": [
+      "government-backed",
+      "tax-saving",
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "National Savings Institute — small savings schemes",
+        "url": "https://www.nsiindia.gov.in"
+      },
+      {
+        "label": "India Post — saving schemes",
+        "url": "https://www.indiapost.gov.in/banking-services/savings"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Rate confirmed against the Oct–Dec 2026 notification as reported on 1 Oct 2026."
+    },
+    "source": {
+      "label": "India Post — saving schemes",
+      "url": "https://www.indiapost.gov.in/banking-services/savings",
+      "note": "The official page listing every post office savings scheme, with the current rates and rules."
+    }
+  },
+  {
+    "slug": "treasury-bill-91-day",
+    "name": "91-Day Treasury Bill",
+    "provider": "Government of India — via RBI Retail Direct",
+    "providerShort": "T-bill 91D",
+    "providerType": "Government",
+    "category": "bonds",
+    "returnType": "guaranteed",
+    "rateKey": "tbill-91",
+    "demo": false,
+    "oneLiner": "A short government borrowing bought at a discount and repaid at face value after 91 days, with no periodic interest.",
+    "minInvestment": 10000,
+    "minInvestmentNote": "minimum bid size in the retail direct scheme",
+    "tenure": "91 days",
+    "tenureMonths": 3,
+    "payout": "At maturity — the discount is the return",
+    "payoutFrequency": "maturity",
+    "liquidity": "Held to maturity by most individual investors. Selling early means accepting the market price.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat account and an RBI Retail Direct account.",
+    "tax": "The difference between the purchase price and the maturity value is taxed as interest income.",
+    "protection": "Sovereign — the Government of India is the borrower.",
+    "riskLevel": "low",
+    "risks": [
+      "The yield is fixed at auction, so you cannot benefit if rates rise during the 91 days.",
+      "A minimum bid size of ₹10,000 is large for small savers.",
+      "Selling before maturity depends on the market price, which can be lower."
+    ],
+    "commonUses": [
+      "Parking a large sum for about three months with minimal credit risk",
+      "A short, dated place for money with a known use"
+    ],
+    "check": [
+      "The cut-off yield at the auction you actually bid in",
+      "The exact maturity date and settlement process"
+    ],
+    "collections": [
+      "government-backed",
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "RBI Retail Direct",
+        "url": "https://rbiretaildirect.org.in"
+      },
+      {
+        "label": "RBI — current rates and T-bill cut-offs",
+        "url": "https://www.rbi.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Yield pulled from the RBI homepage on 17 Oct 2026; cut-off as on 15 Oct 2026."
+    },
+    "source": {
+      "label": "RBI Retail Direct — government securities",
+      "url": "https://rbiretaildirect.org.in",
+      "note": "RBI Retail Direct is where retail investors hold these securities. Look for \"T-bill 91D\" in the list of government securities, then check its current price and yield."
+    }
+  },
+  {
+    "slug": "treasury-bill-364-day",
+    "name": "364-Day Treasury Bill",
+    "provider": "Government of India — via RBI Retail Direct",
+    "providerShort": "T-bill 364D",
+    "providerType": "Government",
+    "category": "bonds",
+    "returnType": "guaranteed",
+    "rateKey": "tbill-364",
+    "demo": false,
+    "oneLiner": "A one-year government borrowing bought at a discount and repaid at face value, with no payments in between.",
+    "minInvestment": 10000,
+    "minInvestmentNote": "minimum bid size in the retail direct scheme",
+    "tenure": "364 days",
+    "tenureMonths": 12,
+    "payout": "At maturity — the discount is the return",
+    "payoutFrequency": "maturity",
+    "liquidity": "Usually held to maturity. Early sale is possible but at the market price.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat account and an RBI Retail Direct account.",
+    "tax": "The discount is taxed as interest income in the year of maturity.",
+    "protection": "Sovereign — the Government of India is the borrower.",
+    "riskLevel": "low",
+    "risks": [
+      "The yield is locked at auction, unlike a savings account.",
+      "Money is unavailable for a year unless sold at market price.",
+      "The minimum bid size is ₹10,000."
+    ],
+    "commonUses": [
+      "Money needed in about a year, held with minimal credit risk",
+      "A step up from a fixed deposit for larger sums"
+    ],
+    "check": [
+      "The cut-off yield at the auction",
+      "What the secondary market price implies if you need to exit early"
+    ],
+    "collections": [
+      "government-backed",
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "RBI Retail Direct",
+        "url": "https://rbiretaildirect.org.in"
+      },
+      {
+        "label": "RBI — current rates and T-bill cut-offs",
+        "url": "https://www.rbi.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Yield pulled from the RBI homepage on 17 Oct 2026; cut-off as on 15 Oct 2026."
+    },
+    "source": {
+      "label": "RBI Retail Direct — government securities",
+      "url": "https://rbiretaildirect.org.in",
+      "note": "RBI Retail Direct is where retail investors hold these securities. Look for \"T-bill 364D\" in the list of government securities, then check its current price and yield."
+    }
+  },
+  {
+    "slug": "government-security-6-20-2029",
+    "name": "6.20% Government Security 2029",
+    "provider": "Government of India — via RBI Retail Direct",
+    "providerShort": "6.20% GS 2029",
+    "providerType": "Government",
+    "category": "bonds",
+    "returnType": "guaranteed",
+    "rateKey": "gs-2029",
+    "demo": false,
+    "oneLiner": "A dated government bond paying a fixed 6.20% coupon twice a year and repaying the face value in 2029.",
+    "minInvestment": 10000,
+    "minInvestmentNote": "minimum amount in the retail direct scheme",
+    "tenure": "Matures in 2029",
+    "tenureMonths": 36,
+    "payout": "Half-yearly interest",
+    "payoutFrequency": "semi-annual",
+    "liquidity": "Tradable, but the price moves with interest rates. Selling before maturity may return more or less than you paid.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat account and an RBI Retail Direct account.",
+    "tax": "Interest is taxable as income from other sources. Gains or losses on an early sale are capital gains, taxed by holding period.",
+    "protection": "Sovereign — the Government of India is the borrower.",
+    "riskLevel": "moderate",
+    "risks": [
+      "The market price falls when yields rise, so selling early can lose money even though the coupon is fixed.",
+      "The 6.20% coupon is below the current market yield, which is why the bond trades at a discount.",
+      "Availability depends on what is on offer at the time."
+    ],
+    "commonUses": [
+      "A known half-yearly income with sovereign credit risk",
+      "Locking a yield if you intend to hold to maturity"
+    ],
+    "check": [
+      "The price you pay and the yield that implies, not just the coupon",
+      "Whether you can hold to maturity, which is when the fixed return applies"
+    ],
+    "collections": [
+      "government-backed",
+      "monthly-income"
+    ],
+    "sources": [
+      {
+        "label": "RBI Retail Direct",
+        "url": "https://rbiretaildirect.org.in"
+      },
+      {
+        "label": "RBI — government securities yields",
+        "url": "https://www.rbi.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Coupon and maturity from the RBI security list; yield as on 15 Oct 2026."
+    },
+    "source": {
+      "label": "RBI Retail Direct — government securities",
+      "url": "https://rbiretaildirect.org.in",
+      "note": "RBI Retail Direct is where retail investors hold these securities. Look for \"6.20% GS 2029\" in the list of government securities, then check its current price and yield."
+    }
+  },
+  {
+    "slug": "government-security-6-94-2036",
+    "name": "6.94% Government Security 2036",
+    "provider": "Government of India — via RBI Retail Direct",
+    "providerShort": "6.94% GS 2036",
+    "providerType": "Government",
+    "category": "bonds",
+    "returnType": "guaranteed",
+    "rateKey": "gs-2036",
+    "demo": false,
+    "oneLiner": "A ten-year government bond paying 6.94% twice a year, with the face value repaid in 2036.",
+    "minInvestment": 10000,
+    "minInvestmentNote": "minimum amount in the retail direct scheme",
+    "tenure": "Matures in 2036",
+    "tenureMonths": 120,
+    "payout": "Half-yearly interest",
+    "payoutFrequency": "semi-annual",
+    "liquidity": "Tradable. The price is sensitive to rate changes, more so than a short bond.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat account and an RBI Retail Direct account.",
+    "tax": "Interest is taxable as income from other sources. Early sale creates a capital gain or loss.",
+    "protection": "Sovereign — the Government of India is the borrower.",
+    "riskLevel": "moderate",
+    "risks": [
+      "A ten-year term means a large price swing if you sell before maturity.",
+      "The fixed coupon loses purchasing power if inflation runs above it.",
+      "Reinvestment risk: the coupons you receive may earn less when reinvested."
+    ],
+    "commonUses": [
+      "Long-dated, sovereign income with a known coupon",
+      "Matching a future expense to a maturity date"
+    ],
+    "check": [
+      "The yield to maturity rather than the coupon",
+      "How much the price would move for a one percentage point change in yields"
+    ],
+    "collections": [
+      "government-backed",
+      "monthly-income"
+    ],
+    "sources": [
+      {
+        "label": "RBI Retail Direct",
+        "url": "https://rbiretaildirect.org.in"
+      },
+      {
+        "label": "RBI — government securities yields",
+        "url": "https://www.rbi.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Coupon and maturity from the RBI security list; yield as on 15 Oct 2026."
+    },
+    "source": {
+      "label": "RBI Retail Direct — government securities",
+      "url": "https://rbiretaildirect.org.in",
+      "note": "RBI Retail Direct is where retail investors hold these securities. Look for \"6.94% GS 2036\" in the list of government securities, then check its current price and yield."
+    }
+  },
+  {
+    "slug": "government-security-7-63-2056",
+    "name": "7.63% Government Security 2056",
+    "provider": "Government of India — via RBI Retail Direct",
+    "providerShort": "7.63% GS 2056",
+    "providerType": "Government",
+    "category": "bonds",
+    "returnType": "guaranteed",
+    "rateKey": "gs-2056",
+    "demo": false,
+    "oneLiner": "The longest-dated bond on this list: 7.63% paid twice a year until 2056, with the most price movement of the four.",
+    "minInvestment": 10000,
+    "minInvestmentNote": "minimum amount in the retail direct scheme",
+    "tenure": "Matures in 2056",
+    "tenureMonths": 360,
+    "payout": "Half-yearly interest",
+    "payoutFrequency": "semi-annual",
+    "liquidity": "Traded, but the price swings widely. This is not a place for money you may need.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat account and an RBI Retail Direct account.",
+    "tax": "Interest is taxable as income from other sources. Selling before maturity creates a capital gain or loss.",
+    "protection": "Sovereign — the Government of India is the borrower.",
+    "riskLevel": "moderate",
+    "risks": [
+      "Thirty years of interest-rate risk: the price can fall a long way if yields rise.",
+      "Your money is committed for most of a working life unless you sell at market price.",
+      "Inflation can erode a fixed 7.63% coupon over three decades."
+    ],
+    "commonUses": [
+      "Pension-style income for a very long horizon",
+      "A liability-matching tool for institutions rather than individuals"
+    ],
+    "check": [
+      "Whether you can genuinely hold for 30 years",
+      "What the price would do if yields moved by one percentage point"
+    ],
+    "collections": [
+      "government-backed",
+      "monthly-income"
+    ],
+    "sources": [
+      {
+        "label": "RBI Retail Direct",
+        "url": "https://rbiretaildirect.org.in"
+      },
+      {
+        "label": "RBI — government securities yields",
+        "url": "https://www.rbi.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Coupon and maturity from the RBI security list; yield as on 15 Oct 2026."
+    },
+    "source": {
+      "label": "RBI Retail Direct — government securities",
+      "url": "https://rbiretaildirect.org.in",
+      "note": "RBI Retail Direct is where retail investors hold these securities. Look for \"7.63% GS 2056\" in the list of government securities, then check its current price and yield."
+    }
+  },
+  {
+    "slug": "treasury-bill-182-day",
+    "name": "182-Day Treasury Bill",
+    "provider": "Government of India — via RBI Retail Direct",
+    "providerShort": "T-bill 182D",
+    "providerType": "Government",
+    "category": "bonds",
+    "returnType": "guaranteed",
+    "rateKey": "tbill-182",
+    "demo": false,
+    "oneLiner": "A six-month government borrowing bought at a discount and repaid at face value.",
+    "minInvestment": 10000,
+    "minInvestmentNote": "minimum bid size in the retail direct scheme",
+    "tenure": "182 days",
+    "tenureMonths": 6,
+    "payout": "At maturity — the discount is the return",
+    "payoutFrequency": "maturity",
+    "liquidity": "Usually held to maturity.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat account and an RBI Retail Direct account.",
+    "tax": "The discount is taxed as interest income in the year of maturity.",
+    "protection": "Sovereign — the Government of India is the borrower.",
+    "riskLevel": "low",
+    "risks": [
+      "Fixed yield for six months, with no benefit if rates rise.",
+      "Minimum bid size of ₹10,000.",
+      "Early exit depends on the secondary market."
+    ],
+    "commonUses": [
+      "A six-month holding place for a known expense"
+    ],
+    "check": [
+      "The cut-off yield at the auction"
+    ],
+    "collections": [
+      "government-backed",
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "RBI Retail Direct",
+        "url": "https://rbiretaildirect.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Yield pulled from the RBI homepage on 17 Oct 2026; cut-off as on 15 Oct 2026."
+    },
+    "source": {
+      "label": "RBI Retail Direct — government securities",
+      "url": "https://rbiretaildirect.org.in",
+      "note": "RBI Retail Direct is where retail investors hold these securities. Look for \"T-bill 182D\" in the list of government securities, then check its current price and yield."
+    }
+  },
+  {
+    "slug": "government-security-6-36-2031",
+    "name": "6.36% Government Security 2031",
+    "provider": "Government of India — via RBI Retail Direct",
+    "providerShort": "6.36% GS 2031",
+    "providerType": "Government",
+    "category": "bonds",
+    "returnType": "guaranteed",
+    "rateKey": "gs-2031",
+    "demo": false,
+    "oneLiner": "A five-year government bond paying 6.36% twice a year, with the face value repaid in 2031.",
+    "minInvestment": 10000,
+    "minInvestmentNote": "minimum amount in the retail direct scheme",
+    "tenure": "Matures in 2031",
+    "tenureMonths": 60,
+    "payout": "Half-yearly interest",
+    "payoutFrequency": "semi-annual",
+    "liquidity": "Tradable. The price moves with yields, less sharply than for a long-dated bond.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat account and an RBI Retail Direct account.",
+    "tax": "Interest is taxable as income from other sources. An early sale creates a capital gain or loss.",
+    "protection": "Sovereign — the Government of India is the borrower.",
+    "riskLevel": "moderate",
+    "risks": [
+      "Selling before maturity means accepting whatever the market price is that day.",
+      "The 6.36% coupon can fall behind inflation over five years.",
+      "Reinvestment risk on the half-yearly coupons."
+    ],
+    "commonUses": [
+      "A medium-term, sovereign income holding",
+      "Matching a payout need five years out"
+    ],
+    "check": [
+      "The yield to maturity, which is not the coupon",
+      "Whether the bond is currently available on Retail Direct"
+    ],
+    "collections": [
+      "government-backed",
+      "monthly-income"
+    ],
+    "sources": [
+      {
+        "label": "RBI Retail Direct",
+        "url": "https://rbiretaildirect.org.in"
+      },
+      {
+        "label": "RBI — government securities yields",
+        "url": "https://www.rbi.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Coupon and maturity from the RBI security list; yield as on 15 Oct 2026."
+    },
+    "source": {
+      "label": "RBI Retail Direct — government securities",
+      "url": "https://rbiretaildirect.org.in",
+      "note": "RBI Retail Direct is where retail investors hold these securities. Look for \"6.36% GS 2031\" in the list of government securities, then check its current price and yield."
+    }
+  },
+  {
+    "slug": "government-security-7-06-2041",
+    "name": "7.06% Government Security 2041",
+    "provider": "Government of India — via RBI Retail Direct",
+    "providerShort": "7.06% GS 2041",
+    "providerType": "Government",
+    "category": "bonds",
+    "returnType": "guaranteed",
+    "rateKey": "gs-2041",
+    "demo": false,
+    "oneLiner": "A fifteen-year government bond paying 7.06% twice a year, with the face value repaid in 2041.",
+    "minInvestment": 10000,
+    "minInvestmentNote": "minimum amount in the retail direct scheme",
+    "tenure": "Matures in 2041",
+    "tenureMonths": 180,
+    "payout": "Half-yearly interest",
+    "payoutFrequency": "semi-annual",
+    "liquidity": "Tradable, but the price is sensitive to rate changes over a long term.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat account and an RBI Retail Direct account.",
+    "tax": "Interest is taxable as income from other sources. Selling early creates a capital gain or loss.",
+    "protection": "Sovereign — the Government of India is the borrower.",
+    "riskLevel": "moderate",
+    "risks": [
+      "Fifteen years of interest-rate risk if you need to sell early.",
+      "A fixed coupon loses purchasing power if inflation runs higher for longer.",
+      "Coupons received along the way may earn less when reinvested."
+    ],
+    "commonUses": [
+      "A long, predictable income stream",
+      "Matching a distant expense to a maturity date"
+    ],
+    "check": [
+      "The yield to maturity and the price you are paying",
+      "What a one percentage point yield move would do to the price"
+    ],
+    "collections": [
+      "government-backed",
+      "monthly-income"
+    ],
+    "sources": [
+      {
+        "label": "RBI Retail Direct",
+        "url": "https://rbiretaildirect.org.in"
+      },
+      {
+        "label": "RBI — government securities yields",
+        "url": "https://www.rbi.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Coupon and maturity from the RBI security list; yield as on 15 Oct 2026."
+    },
+    "source": {
+      "label": "RBI Retail Direct — government securities",
+      "url": "https://rbiretaildirect.org.in",
+      "note": "RBI Retail Direct is where retail investors hold these securities. Look for \"7.06% GS 2041\" in the list of government securities, then check its current price and yield."
+    }
+  },
+  {
+    "slug": "post-office-time-deposit-3-year",
+    "name": "Post Office Time Deposit (3 years)",
+    "provider": "Government of India — small savings scheme",
+    "providerShort": "PO TD 3y",
+    "providerType": "Government",
+    "category": "government-schemes",
+    "returnType": "guaranteed",
+    "rateKey": "po-td-3y",
+    "demo": false,
+    "oneLiner": "A three-year deposit with the post office at a notified rate, with a lower lock-in than the five-year version.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "and in multiples of ₹100; no upper limit",
+    "tenure": "3 years",
+    "tenureMonths": 36,
+    "payout": "Interest credited annually",
+    "payoutFrequency": "annual",
+    "liquidity": "Premature closure is allowed after six months at a reduced rate. Closing within six months earns no interest.",
+    "lockIn": "3 years",
+    "eligibility": "Resident individuals, singly or jointly, and some institutions. A guardian can open one for a minor.",
+    "tax": "The five-year deposit qualifies under Section 80C; this three-year version does not. Interest is taxable and may attract tax deducted at source.",
+    "protection": "A sovereign liability of the Government of India.",
+    "riskLevel": "low",
+    "risks": [
+      "No Section 80C deduction at three years, unlike the five-year deposit.",
+      "Early exit reduces the rate you actually earned.",
+      "Interest is taxable, so the post-tax return is below the headline rate."
+    ],
+    "commonUses": [
+      "A short fixed term with a notified rate",
+      "Money needed in three years rather than five"
+    ],
+    "check": [
+      "Whether interest is reinvested or paid into your account",
+      "The rate applied if you close the deposit early"
+    ],
+    "collections": [
+      "government-backed",
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "National Savings Institute — small savings schemes",
+        "url": "https://www.nsiindia.gov.in"
+      },
+      {
+        "label": "India Post — saving schemes",
+        "url": "https://www.indiapost.gov.in/banking-services/savings"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Rate confirmed against the Oct–Dec 2026 notification as reported on 1 Oct 2026."
+    },
+    "source": {
+      "label": "India Post — saving schemes",
+      "url": "https://www.indiapost.gov.in/banking-services/savings",
+      "note": "The official page listing every post office savings scheme, with the current rates and rules."
+    }
+  },
+  {
+    "slug": "post-office-savings-account",
+    "name": "Post Office Savings Account",
+    "provider": "Government of India — Post Office Savings Bank",
+    "providerShort": "PO Savings",
+    "providerType": "Government",
+    "category": "government-schemes",
+    "returnType": "conditional",
+    "rateKey": "po-savings",
+    "demo": false,
+    "oneLiner": "An ordinary savings account at the post office — everyday access, with a rate that is notified each quarter rather than fixed.",
+    "minInvestment": 500,
+    "minInvestmentNote": "minimum balance depends on the facilities you take; confirm at the counter",
+    "tenure": "No fixed term",
+    "tenureMonths": null,
+    "payout": "Interest credited annually",
+    "payoutFrequency": "annual",
+    "liquidity": "Withdraw any time, by counter, ATM or transfer.",
+    "lockIn": null,
+    "eligibility": "Resident individuals, including minors through a guardian. KYC documents required.",
+    "tax": "Interest is taxable as income from other sources. There is no deduction for the balance, unlike small-savings certificates.",
+    "protection": "A sovereign liability of the Government of India, held through the Post Office Savings Bank.",
+    "riskLevel": "low",
+    "risks": [
+      "The rate is notified quarterly and can fall — unlike a fixed deposit.",
+      "Returns are low relative to inflation over long periods.",
+      "Minimum-balance rules can attract charges if the balance drops."
+    ],
+    "commonUses": [
+      "An emergency fund with branch and ATM access",
+      "A simple account for someone without a bank branch nearby"
+    ],
+    "check": [
+      "The minimum balance for the facilities you want",
+      "Whether the account supports the transfers you need"
+    ],
+    "collections": [
+      "government-backed",
+      "short-term",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "National Savings Institute — small savings schemes",
+        "url": "https://www.nsiindia.gov.in"
+      },
+      {
+        "label": "India Post — saving schemes",
+        "url": "https://www.indiapost.gov.in/banking-services/savings"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Rate confirmed against the Oct–Dec 2026 notification as reported on 1 Oct 2026."
+    },
+    "source": {
+      "label": "India Post — saving schemes",
+      "url": "https://www.indiapost.gov.in/banking-services/savings",
+      "note": "The official page listing every post office savings scheme, with the current rates and rules."
+    }
+  },
+  {
+    "slug": "sbi-fixed-deposit",
+    "name": "SBI Fixed Deposit",
+    "provider": "State Bank of India",
+    "providerShort": "SBI",
+    "providerType": "Bank",
+    "category": "bank-deposits",
+    "returnType": "guaranteed",
+    "rateRef": {
+      "label": "Rate varies by tenure and amount",
+      "url": "https://sbi.co.in/web/interest-rates/interest-rates/deposit-rates",
+      "note": "Open SBI's published rate card and match the tenure you want. The bank revises these rates without notice, so the number on the card is the only one that counts."
+    },
+    "demo": false,
+    "oneLiner": "India's largest bank: a fixed term deposit where the rate is agreed on the day you book it and paid at maturity.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "typical minimum; varies by tenure and channel",
+    "tenure": "7 days to 10 years",
+    "tenureMonths": 36,
+    "payout": "At maturity, or periodic on selected tenures",
+    "payoutFrequency": "maturity",
+    "liquidity": "Premature withdrawal is allowed with a penalty on the applicable rate.",
+    "lockIn": null,
+    "eligibility": "Resident individuals, singly or jointly. Minors through a guardian. Senior citizens usually get an additional rate.",
+    "tax": "Interest is taxable as income from other sources, and tax may be deducted at source above the threshold. Form 15G or 15H can be filed if you qualify.",
+    "protection": "Insured by the DICGC up to the statutory limit per depositor per bank.",
+    "riskLevel": "low",
+    "risks": [
+      "The rate is locked for the term, so you lose out if rates rise.",
+      "Breaking the deposit early reduces the rate you actually earned.",
+      "Interest is taxed as it accrues, which lowers the effective return."
+    ],
+    "commonUses": [
+      "Money needed at a known date",
+      "The stable part of a savings plan"
+    ],
+    "check": [
+      "The rate for your exact tenure and amount on the bank's card",
+      "The penalty for premature withdrawal at that tenure"
+    ],
+    "collections": [
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "SBI — deposit rates",
+        "url": "https://sbi.co.in/web/interest-rates/interest-rates/deposit-rates"
+      },
+      {
+        "label": "DICGC — deposit insurance",
+        "url": "https://www.dicgc.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Structure verified. Rate deliberately delegated to the bank's own card, which changes weekly."
+    },
+    "source": {
+      "label": "State Bank of India — fixed deposit rates",
+      "url": "https://sbi.co.in/web/interest-rates/interest-rates/deposit-rates",
+      "note": "The bank's own rate card. This is where you confirm the rate for your tenure and deposit amount."
+    }
+  },
+  {
+    "slug": "hdfc-bank-fixed-deposit",
+    "name": "HDFC Bank Fixed Deposit",
+    "provider": "HDFC Bank",
+    "providerShort": "HDFC",
+    "providerType": "Bank",
+    "category": "bank-deposits",
+    "returnType": "guaranteed",
+    "rateRef": {
+      "label": "Rate varies by tenure and amount",
+      "url": "https://www.hdfcbank.com/personal/save/deposits/fixed-deposit",
+      "note": "HDFC publishes a rate card by tenure and deposit size. Check it for the exact amount and term you have in mind."
+    },
+    "demo": false,
+    "oneLiner": "A private bank fixed deposit with a rate that depends on tenure, deposit size and whether you book online.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "typical minimum; varies by tenure and channel",
+    "tenure": "7 days to 10 years",
+    "tenureMonths": 36,
+    "payout": "At maturity, or monthly/quarterly on selected tenures",
+    "payoutFrequency": "maturity",
+    "liquidity": "Premature withdrawal allowed with a penalty. Some tenures require notice.",
+    "lockIn": null,
+    "eligibility": "Resident individuals, singly or jointly. Senior citizens usually receive an additional rate.",
+    "tax": "Interest is taxable as income from other sources. Tax may be deducted at source above the threshold.",
+    "protection": "Insured by the DICGC up to the statutory limit per depositor per bank.",
+    "riskLevel": "low",
+    "risks": [
+      "Rates differ by deposit slab, so the headline rate may not be yours.",
+      "Early closure can return less than you expected.",
+      "The post-tax return may lag inflation."
+    ],
+    "commonUses": [
+      "Parking money for a defined period",
+      "A predictable maturity amount"
+    ],
+    "check": [
+      "The rate for your exact slab and tenure",
+      "Whether the online rate is higher than the branch rate"
+    ],
+    "collections": [
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "HDFC Bank — fixed deposit",
+        "url": "https://www.hdfcbank.com/personal/save/deposits/fixed-deposit"
+      },
+      {
+        "label": "DICGC — deposit insurance",
+        "url": "https://www.dicgc.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Structure verified. Rate delegated to the bank's card."
+    },
+    "source": {
+      "label": "HDFC Bank — fixed deposit rates",
+      "url": "https://www.hdfcbank.com/personal/save/deposits/fixed-deposit",
+      "note": "The bank's own rate card. This is where you confirm the rate for your tenure and deposit amount."
+    }
+  },
+  {
+    "slug": "icici-bank-fixed-deposit",
+    "name": "ICICI Bank Fixed Deposit",
+    "provider": "ICICI Bank",
+    "providerShort": "ICICI",
+    "providerType": "Bank",
+    "category": "bank-deposits",
+    "returnType": "guaranteed",
+    "rateRef": {
+      "label": "Rate varies by tenure and amount",
+      "url": "https://www.icicibank.com/personal-banking/deposits/fixed-deposit/fd-interest-rates",
+      "note": "ICICI's own page states rates differ by tenure and category and are subject to change. Read the current chart rather than a quoted figure."
+    },
+    "demo": false,
+    "oneLiner": "A private bank fixed deposit with separate rate charts for general and senior citizens and for different deposit sizes.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "typical minimum; varies by tenure and channel",
+    "tenure": "7 days to 10 years",
+    "tenureMonths": 36,
+    "payout": "At maturity, or periodic on selected tenures",
+    "payoutFrequency": "maturity",
+    "liquidity": "Premature withdrawal is permitted with a penalty on the rate.",
+    "lockIn": null,
+    "eligibility": "Resident individuals, singly or jointly. Senior citizens usually get an additional rate.",
+    "tax": "Interest is taxable as income from other sources. Tax may be deducted at source above the threshold.",
+    "protection": "Insured by the DICGC up to the statutory limit per depositor per bank.",
+    "riskLevel": "low",
+    "risks": [
+      "The rate chart has several slabs; the advertised rate may not apply to you.",
+      "Early exit reduces the effective rate.",
+      "Interest is taxed as it accrues."
+    ],
+    "commonUses": [
+      "A defined-term deposit with a known maturity",
+      "Holding a cash buffer at a fixed rate"
+    ],
+    "check": [
+      "Which slab your deposit size falls into",
+      "The penalty for closing before maturity"
+    ],
+    "collections": [
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "ICICI Bank — FD interest rates",
+        "url": "https://www.icicibank.com/personal-banking/deposits/fixed-deposit/fd-interest-rates"
+      },
+      {
+        "label": "DICGC — deposit insurance",
+        "url": "https://www.dicgc.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Structure verified. Rate delegated to the bank's chart."
+    },
+    "source": {
+      "label": "ICICI Bank — fixed deposit rates",
+      "url": "https://www.icicibank.com/personal-banking/deposits/fixed-deposit/fd-interest-rates",
+      "note": "The bank's own rate card. This is where you confirm the rate for your tenure and deposit amount."
+    }
+  },
+  {
+    "slug": "axis-bank-fixed-deposit",
+    "name": "Axis Bank Fixed Deposit",
+    "provider": "Axis Bank",
+    "providerShort": "Axis",
+    "providerType": "Bank",
+    "category": "bank-deposits",
+    "returnType": "guaranteed",
+    "rateRef": {
+      "label": "Rate varies by tenure and amount",
+      "url": "https://www.axisbank.com/interest-rate-on-fd",
+      "note": "Axis publishes a tenure-wise rate card. Check the row for your tenure and deposit amount."
+    },
+    "demo": false,
+    "oneLiner": "A private bank fixed deposit with tenure-based rates and a higher rate for senior citizens.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "typical minimum; varies by tenure and channel",
+    "tenure": "7 days to 10 years",
+    "tenureMonths": 36,
+    "payout": "At maturity",
+    "payoutFrequency": "maturity",
+    "liquidity": "Premature withdrawal with a penalty; some tenures require notice.",
+    "lockIn": null,
+    "eligibility": "Resident individuals, singly or jointly.",
+    "tax": "Interest is taxable as income from other sources, with tax deducted at source above the threshold.",
+    "protection": "Insured by the DICGC up to the statutory limit per depositor per bank.",
+    "riskLevel": "low",
+    "risks": [
+      "Rates change without notice, including mid-quarter.",
+      "Early withdrawal costs part of the interest.",
+      "The fixed rate can fall behind inflation."
+    ],
+    "commonUses": [
+      "A known sum at a known date",
+      "Short-term parking of surplus cash"
+    ],
+    "check": [
+      "The rate for your tenure on the current card",
+      "The withdrawal penalty and notice period"
+    ],
+    "collections": [
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "Axis Bank — FD rates",
+        "url": "https://www.axisbank.com/interest-rate-on-fd"
+      },
+      {
+        "label": "DICGC — deposit insurance",
+        "url": "https://www.dicgc.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Structure verified. Rate delegated to the bank's card."
+    },
+    "source": {
+      "label": "Axis Bank — fixed deposit rates",
+      "url": "https://www.axisbank.com/interest-rate-on-fd",
+      "note": "The bank's own rate card. This is where you confirm the rate for your tenure and deposit amount."
+    }
+  },
+  {
+    "slug": "kotak-fixed-deposit",
+    "name": "Kotak Mahindra Fixed Deposit",
+    "provider": "Kotak Mahindra Bank",
+    "providerShort": "Kotak",
+    "providerType": "Bank",
+    "category": "bank-deposits",
+    "returnType": "guaranteed",
+    "rateRef": {
+      "label": "Rate varies by tenure and amount",
+      "url": "https://www.kotak.com/en/personal-banking/deposits/fixed-deposit.html",
+      "note": "Kotak lists rates by tenure with a separate senior-citizen column. Confirm the row that matches your deposit."
+    },
+    "demo": false,
+    "oneLiner": "A private bank fixed deposit, including an option for periodic interest payout on selected tenures.",
+    "minInvestment": 1000,
+    "minInvestmentNote": "typical minimum; varies by tenure and channel",
+    "tenure": "7 days to 10 years",
+    "tenureMonths": 36,
+    "payout": "At maturity, or periodic on selected tenures",
+    "payoutFrequency": "maturity",
+    "liquidity": "Premature withdrawal allowed with a penalty on the applicable rate.",
+    "lockIn": null,
+    "eligibility": "Resident individuals, singly or jointly. Senior citizens usually get an additional rate.",
+    "tax": "Interest is taxable as income from other sources, with tax deducted at source above the threshold.",
+    "protection": "Insured by the DICGC up to the statutory limit per depositor per bank.",
+    "riskLevel": "low",
+    "risks": [
+      "The advertised rate may apply only to a specific tenure.",
+      "Early exit reduces the return.",
+      "Interest is taxed as it accrues."
+    ],
+    "commonUses": [
+      "A fixed-term deposit with a known maturity",
+      "Regular interest income on the payout variant"
+    ],
+    "check": [
+      "Whether the rate you saw applies to your tenure",
+      "The payout option and how it is taxed"
+    ],
+    "collections": [
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "Kotak — fixed deposits",
+        "url": "https://www.kotak.com/en/personal-banking/deposits/fixed-deposit.html"
+      },
+      {
+        "label": "DICGC — deposit insurance",
+        "url": "https://www.dicgc.org.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "Structure verified. Rate delegated to the bank's card."
+    },
+    "source": {
+      "label": "Kotak Mahindra Bank — fixed deposit rates",
+      "url": "https://www.kotak.com/en/personal-banking/deposits/fixed-deposit.html",
+      "note": "The bank's own rate card. This is where you confirm the rate for your tenure and deposit amount."
+    }
+  },
+  {
+    "slug": "hdfc-nifty-50-index-fund",
+    "name": "HDFC Nifty 50 Index Fund — Direct Plan",
+    "provider": "HDFC Mutual Fund",
+    "providerShort": "HDFC MF",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-119063",
+    "demo": false,
+    "oneLiner": "A passive fund that buys the fifty largest listed companies in index proportion, with no manager picking stocks.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm the scheme's current minimum",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Equity capital gains are taxed by holding period, with a separate rate for long-term gains above the notified limit.",
+    "protection": "No capital protection. The NAV moves with the index.",
+    "riskLevel": "high",
+    "risks": [
+      "Falls with the market, and can stay down for years.",
+      "The index can be concentrated in a few sectors at any time.",
+      "Tracking difference means returns drift from the index."
+    ],
+    "commonUses": [
+      "A low-cost core holding for long-term goals",
+      "Investors who do not want manager judgement"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The tracking difference against the Nifty 50"
+    ],
+    "collections": [
+      "understand-before-you-invest",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "NAV from AMFI data as on 16 Oct 2026; scheme terms to be confirmed on the scheme page."
+    },
+    "source": {
+      "label": "HDFC Mutual Fund — scheme page",
+      "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-nifty-50-index-fund/direct",
+      "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
+    }
+  },
+  {
+    "slug": "canara-robeco-large-cap-fund",
+    "name": "Canara Robeco Large Cap Fund — Direct Plan",
+    "provider": "Canara Robeco Mutual Fund",
+    "providerShort": "Canara Robeco",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-118269",
+    "demo": false,
+    "oneLiner": "An actively managed fund holding large, established companies, where the manager chooses the stocks.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm the scheme's current minimum",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Equity capital gains are taxed by holding period, with a separate rate for long-term gains above the notified limit.",
+    "protection": "No capital protection. The NAV moves with the holdings.",
+    "riskLevel": "high",
+    "risks": [
+      "Manager decisions can lag or diverge from the index.",
+      "Equity falls are normal and can be deep.",
+      "Higher expense ratio than a passive fund."
+    ],
+    "commonUses": [
+      "Long-term growth with professional stock selection",
+      "A core equity holding alongside an index fund"
+    ],
+    "check": [
+      "The expense ratio and exit load",
+      "The fund's largest holdings and sector weights"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "NAV from AMFI data as on 16 Oct 2026."
+    },
+    "source": {
+      "label": "AMFI — scheme search",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "The fund house does not publish a stable page for this scheme. Search \"Canara Robeco Large Cap Fund\" on AMFI for its official NAV history and scheme documents."
+    }
+  },
+  {
+    "slug": "nippon-india-liquid-fund",
+    "name": "Nippon India Liquid Fund — Direct Plan",
+    "provider": "Nippon India Mutual Fund",
+    "providerShort": "Nippon India",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-118701",
+    "demo": false,
+    "oneLiner": "A debt fund holding very short-term instruments, used to park money for days or weeks.",
+    "minInvestment": 100,
+    "minInvestmentNote": "typical minimum; confirm the scheme's current minimum",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Usually redeemable within one working day, subject to settlement rules.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed according to the holding period and the fund's debt classification.",
+    "protection": "No capital protection, but far less volatile than an equity fund.",
+    "riskLevel": "low",
+    "risks": [
+      "In stressed markets a liquid fund can deliver a negative day.",
+      "Returns are modest and may not beat inflation.",
+      "Exit loads or redemption limits can apply in unusual conditions."
+    ],
+    "commonUses": [
+      "Parking money between decisions",
+      "A slightly higher-return alternative to a savings account"
+    ],
+    "check": [
+      "The exit load period",
+      "The average maturity of the holdings"
+    ],
+    "collections": [
+      "short-term",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "NAV from AMFI data as on 16 Oct 2026."
+    },
+    "source": {
+      "label": "Nippon India Mutual Fund — scheme page",
+      "url": "https://mf.nipponindiaim.com/FundsAndPerformance/Pages/NipponIndia-Liquid-Fund.aspx",
+      "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
+    }
+  },
+  {
+    "slug": "nippon-india-elss-tax-saver",
+    "name": "Nippon India ELSS Tax Saver Fund — Direct Plan",
+    "provider": "Nippon India Mutual Fund",
+    "providerShort": "Nippon India",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-118803",
+    "demo": false,
+    "oneLiner": "An equity-linked savings scheme with a three-year lock-in that may qualify for a tax deduction.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm the scheme's current minimum",
+    "tenure": "3-year lock-in per contribution",
+    "tenureMonths": 36,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Each investment is locked for three years from its own date, then redeemable.",
+    "lockIn": "3 years per contribution",
+    "eligibility": "Resident individuals and Hindu undivided families, subject to KYC.",
+    "tax": "May qualify for a deduction under Section 80C within the overall cap. Gains are taxed under equity rules.",
+    "protection": "No capital protection. The deduction does not reduce market risk.",
+    "riskLevel": "high",
+    "risks": [
+      "Equity risk with a lock-in that prevents a reaction.",
+      "The deduction may be worth nothing under the new tax regime.",
+      "Each SIP instalment has its own three-year clock."
+    ],
+    "commonUses": [
+      "Combining a deduction with long-term equity exposure",
+      "Disciplined saving where the lock-in enforces patience"
+    ],
+    "check": [
+      "Whether the deduction helps under your chosen regime",
+      "How the lock-in applies to each instalment"
+    ],
+    "collections": [
+      "tax-saving",
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "Income Tax Department",
+        "url": "https://www.incometax.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "NAV from AMFI data as on 16 Oct 2026."
+    },
+    "source": {
+      "label": "Nippon India Mutual Fund — scheme page",
+      "url": "https://mf.nipponindiaim.com/campaigns/NipponIndiaTaxSaverFund/product-details.html",
+      "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
+    }
+  },
+  {
+    "slug": "hdfc-balanced-advantage-fund",
+    "name": "HDFC Balanced Advantage Fund — Direct Plan",
+    "provider": "HDFC Mutual Fund",
+    "providerShort": "HDFC MF",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-118968",
+    "demo": false,
+    "oneLiner": "A hybrid fund that shifts between equity and debt as valuations change, aiming for a smoother ride than pure equity.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm the scheme's current minimum",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Taxation depends on the holding period and how much of the fund is in equity, which can change with the portfolio.",
+    "protection": "No capital protection. The NAV moves with the mix it holds.",
+    "riskLevel": "moderate",
+    "risks": [
+      "The equity-debt mix is the manager's call, so your risk is not fixed.",
+      "Hybrid funds still fall in a sharp downturn.",
+      "Past smoothness is not a forecast."
+    ],
+    "commonUses": [
+      "A single fund for long-term goals with lower swings",
+      "Investors who want someone else to manage the mix"
+    ],
+    "check": [
+      "The current equity allocation range",
+      "The expense ratio and exit load"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "NAV from AMFI data as on 16 Oct 2026."
+    },
+    "source": {
+      "label": "HDFC Mutual Fund — scheme page",
+      "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-balanced-advantage-fund/direct",
+      "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
+    }
+  },
+  {
+    "slug": "quantum-nifty-50-etf",
+    "name": "Quantum Nifty 50 ETF",
+    "provider": "Quantum Mutual Fund",
+    "providerShort": "Quantum",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-108479",
+    "demo": false,
+    "oneLiner": "An exchange-traded fund that holds the fifty largest listed companies in index proportions.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit, at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Equity capital gains rules apply by holding period; brokerage and other trading costs are additional.",
+    "protection": "No capital protection. The price moves with the index and with demand for the fund.",
+    "riskLevel": "high",
+    "risks": [
+      "Falls with the market and can stay down for years.",
+      "Thin trading can push the price away from the underlying value.",
+      "Brokerage and the bid-ask spread add to the expense ratio."
+    ],
+    "commonUses": [
+      "A low-cost way to hold the broad Indian market",
+      "A building block inside a long-term portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume"
+    ],
+    "collections": [
+      "understand-before-you-invest",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "NAV from AMFI data as on 16 Oct 2026. Exchange price may differ."
+    },
+    "source": {
+      "label": "AMFI — scheme search",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "The fund house does not publish a stable page for this scheme. Search \"Quantum Nifty 50 ETF\" on AMFI for its official NAV history and scheme documents."
+    }
+  },
+  {
+    "slug": "icici-prudential-sensex-etf",
+    "name": "ICICI Prudential BSE Sensex ETF",
+    "provider": "ICICI Prudential Mutual Fund",
+    "providerShort": "ICICI Pru",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-101705",
+    "demo": false,
+    "oneLiner": "An ETF tracking the thirty-company Sensex, bought and sold on the exchange like a share.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit, at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours; the price depends on demand at that moment.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Equity capital gains rules apply by holding period.",
+    "protection": "No capital protection.",
+    "riskLevel": "high",
+    "risks": [
+      "Concentrated in thirty large companies, with heavy sector weights.",
+      "Price can trade at a premium or discount to NAV.",
+      "Market falls are reflected in full."
+    ],
+    "commonUses": [
+      "Large-cap exposure in a single trade",
+      "A core holding with low maintenance"
+    ],
+    "check": [
+      "The tracking difference against the Sensex",
+      "The spread and traded volume"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "NAV from AMFI data as on 16 Oct 2026."
+    },
+    "source": {
+      "label": "ICICI Prudential — scheme factsheet",
+      "url": "https://digitalfactsheet.icicipruamc.com/passive/icici-prudential-bse-sensex-etf.php",
+      "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
+    }
+  },
+  {
+    "slug": "kotak-gold-etf",
+    "name": "Kotak Gold ETF",
+    "provider": "Kotak Mahindra Mutual Fund",
+    "providerShort": "Kotak MF",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-106193",
+    "demo": false,
+    "oneLiner": "An ETF that tracks the domestic price of gold, held as a substitute for physical metal.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit, at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours; large-lot redemption is also possible.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gold ETF gains are taxed by holding period under capital-gains rules that depend on current law.",
+    "protection": "No capital protection. The value moves with gold prices and the rupee.",
+    "riskLevel": "moderate",
+    "risks": [
+      "Gold can stay flat or fall for very long periods.",
+      "The rupee and dollar prices can move in opposite directions.",
+      "Expenses and tracking error reduce the return versus holding metal."
+    ],
+    "commonUses": [
+      "Adding a diversifier that does not move with equities",
+      "Holding gold without storage or making charges"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "The spread and traded volume"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "NAV from AMFI data as on 16 Oct 2026."
+    },
+    "source": {
+      "label": "Kotak Mutual Fund — scheme page",
+      "url": "https://www.kotakmf.com/mutual-funds/passive-funds/kotak-gold-etf",
+      "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
+    }
+  },
+  {
+    "slug": "kotak-nifty-psu-bank-etf",
+    "name": "Kotak Nifty PSU Bank ETF",
+    "provider": "Kotak Mahindra Mutual Fund",
+    "providerShort": "Kotak MF",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-106929",
+    "demo": false,
+    "oneLiner": "An ETF tracking public-sector banks, a narrow sector bet with sharper swings than a broad index.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit, at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours, with volumes usually lower than broad-index ETFs.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Equity capital gains rules apply by holding period.",
+    "protection": "No capital protection.",
+    "riskLevel": "high",
+    "risks": [
+      "A single sector: policy and credit news moves the whole fund.",
+      "Lower trading volumes widen the spread.",
+      "Sector indices can lag the broad market for years."
+    ],
+    "commonUses": [
+      "A deliberate sector allocation",
+      "A satellite holding, not a core one"
+    ],
+    "check": [
+      "The index constituents and their weights",
+      "The traded volume before you place an order"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "NAV from AMFI data as on 16 Oct 2026."
+    },
+    "source": {
+      "label": "Kotak Mutual Fund — scheme page",
+      "url": "https://www.kotakmf.com/mutual-funds/passive-funds/kotak-nifty-psu-bank-etf",
+      "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
+    }
+  },
+  {
+    "slug": "quantum-gold-etf",
+    "name": "Quantum Gold ETF",
+    "provider": "Quantum Mutual Fund",
+    "providerShort": "Quantum",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-107693",
+    "demo": false,
+    "oneLiner": "A gold-tracking ETF from a fund house that also publishes an explicit expense ratio, useful for comparing the cost of holding metal.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit, at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours; volumes are modest.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gold ETF gains are taxed by holding period under current capital-gains rules.",
+    "protection": "No capital protection.",
+    "riskLevel": "moderate",
+    "risks": [
+      "Gold prices can be flat for a decade.",
+      "Modest volumes mean a wider spread.",
+      "Currency movement affects the rupee value."
+    ],
+    "commonUses": [
+      "A small allocation to gold without storage costs",
+      "Hedging against equity drawdowns"
+    ],
+    "check": [
+      "The expense ratio published on the fund's page",
+      "The premium or discount to NAV"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-17",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 17 Oct 2026",
+      "approvedAt": "2026-10-17",
+      "notes": "NAV from AMFI data as on 16 Oct 2026."
+    },
+    "source": {
+      "label": "AMFI — scheme search",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "The fund house does not publish a stable page for this scheme. Search \"Quantum Gold ETF\" on AMFI for its official NAV history and scheme documents."
+    }
+  }
+]

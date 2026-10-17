@@ -1,0 +1,41 @@
+[
+  {
+    "id": "guaranteed",
+    "label": "Guaranteed",
+    "short": "Fixed by contract",
+    "definition": "The amount you get back is stated in the product's terms when you open it. It does not move with markets or with how the provider performs.",
+    "detail": "Fixed deposits, savings certificates and government small-savings schemes usually sit here. The guarantee is only as strong as the institution behind it: a bank deposit is insured up to a limit, while a government scheme rests on the issuer. Guaranteed does not mean inflation-proof — the money you get back can buy less than it does today.",
+    "askYourself": [
+      "Is the rate fixed for the whole tenure, or revised during it?",
+      "Who is actually promising to pay, and what happens if they don't?",
+      "What does closing early cost?"
+    ],
+    "tone": "green"
+  },
+  {
+    "id": "conditional",
+    "label": "Conditional",
+    "short": "Depends on terms being met",
+    "definition": "There is a payout structure, but the amount depends on conditions — a reference rate, a minimum holding period, a bonus that applies only if you stay to the end, or a market level at a specific date.",
+    "detail": "Floating-rate deposits, some annuities and structured products behave this way. The capital may be protected while the return is not, or the headline rate may apply only in the final year. Read the conditions rather than the number: the number is usually the best case.",
+    "askYourself": [
+      "Which conditions have to be true for me to get the stated return?",
+      "What do I get if those conditions are not met?",
+      "Who decides whether they were met, and can I check it?"
+    ],
+    "tone": "amber"
+  },
+  {
+    "id": "market-linked",
+    "label": "Market-linked",
+    "short": "No promised return",
+    "definition": "The value of your investment moves with the market. There is no promised return and no capital guarantee — the amount you get back depends on the price when you sell.",
+    "detail": "Mutual funds, ETFs and equity shares work this way. Long holding periods have historically reduced the chance of a loss, but they do not remove it, and past performance of an index or a fund is not a forecast. Costs matter more here, because they are charged whether or not the market rises.",
+    "askYourself": [
+      "What exactly does this hold, and what would make it fall?",
+      "Can I leave this money invested if it drops 30%?",
+      "What am I paying in expenses and exit loads?"
+    ],
+    "tone": "violet"
+  }
+]

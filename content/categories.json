@@ -1,0 +1,82 @@
+[
+  {
+    "id": "government-schemes",
+    "slug": "government-schemes",
+    "name": "Government & Post Office Schemes",
+    "short": "Government schemes",
+    "tagline": "Small savings run by the state.",
+    "blurb": "Savings certificates, deposits and pensions offered through post offices and government bodies. Tenures are usually fixed, the rate is notified by the government and revised every quarter, and early exit is often restricted.",
+    "icon": "shield",
+    "accent": "green",
+    "status": "live",
+    "whatToCheck": [
+      "The rate for this quarter, and that it is reset at the start of each quarter",
+      "The lock-in, and what happens if you close early",
+      "Who can open it — age, relationship or income limits"
+    ]
+  },
+  {
+    "id": "bank-deposits",
+    "slug": "bank-deposits",
+    "name": "Bank Savings & Fixed Deposits",
+    "short": "Bank deposits",
+    "tagline": "The everyday, well-understood option.",
+    "blurb": "Savings accounts and fixed deposits at scheduled banks. Deposits are insured up to a limit by the DICGC, and the interest you earn is contractual — but it can be lower than inflation, and early withdrawal usually costs you.",
+    "icon": "bank",
+    "accent": "blue",
+    "status": "live",
+    "whatToCheck": [
+      "Whether the rate is fixed or floats with a reference rate",
+      "Premature withdrawal penalties and notice periods",
+      "Whether the bank is insured and how much cover applies"
+    ]
+  },
+  {
+    "id": "mutual-funds",
+    "slug": "mutual-funds",
+    "name": "Mutual Funds",
+    "short": "Mutual funds",
+    "tagline": "Pooled money, managed to a stated mandate.",
+    "blurb": "Professionally managed pools of stocks, bonds or both. There is no promised return: the value of your units moves with the underlying holdings, and the fund's mandate — not a guarantee — decides what it can hold.",
+    "icon": "layers",
+    "accent": "violet",
+    "status": "live",
+    "whatToCheck": [
+      "What the scheme actually holds, and how concentrated it is",
+      "The expense ratio and exit load",
+      "Whether a lock-in applies, and the fund's benchmark"
+    ]
+  },
+  {
+    "id": "bonds",
+    "slug": "bonds",
+    "name": "Government Bonds & Fixed-Income",
+    "short": "Bonds & fixed income",
+    "tagline": "Lending money for a stated interest.",
+    "blurb": "You lend to a government or a company, which pays interest and returns the principal on a set date. Government issues carry the least credit risk; corporate bonds pay more because the borrower may fail. Prices move if you sell before maturity.",
+    "icon": "certificate",
+    "accent": "amber",
+    "status": "live",
+    "whatToCheck": [
+      "Who the borrower is, and what happens if they default",
+      "Whether you plan to hold to maturity or sell early",
+      "The yield, which is not the same as the coupon"
+    ]
+  },
+  {
+    "id": "etfs",
+    "slug": "etfs",
+    "name": "ETFs & Market-Linked Products",
+    "short": "ETFs & market-linked",
+    "tagline": "Bought on an exchange, priced by the market.",
+    "blurb": "Exchange-traded funds and similar products track an index, a commodity or a basket. They trade like shares during market hours, so the price you get depends on the market at that moment — not on a value fixed at the end of the day.",
+    "icon": "chart",
+    "accent": "rose",
+    "status": "live",
+    "whatToCheck": [
+      "What the product tracks, and how closely it has done so",
+      "The expense ratio and the bid-ask spread",
+      "Whether the price can differ from the value of what it holds"
+    ]
+  }
+]

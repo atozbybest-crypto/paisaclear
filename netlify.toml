@@ -1,0 +1,21 @@
+[build]
+  # The site is prebuilt and committed, so there is nothing to compile.
+  publish = "site"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+
+# Sensible defaults for a static information site.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache the CSS/JS hard; they are versioned by content, not by URL.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

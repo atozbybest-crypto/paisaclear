@@ -1,0 +1,1 @@
+"""Page bodies for PaisaClear."""

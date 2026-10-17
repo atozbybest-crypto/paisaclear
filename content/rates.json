@@ -1,0 +1,271 @@
+{
+  "generatedAt": "2026-10-17T10:20:00Z",
+  "note": "Machine-refreshable rates. `rbi` values are pulled by refresh_rbi.py; the small-savings values are entered by hand each quarter because the National Savings Institute site is not machine-readable from here.",
+  "feeds": {
+    "rbi": {
+      "label": "Reserve Bank of India",
+      "url": "https://www.rbi.org.in/",
+      "fetchedAt": "2026-10-17T10:20:00Z",
+      "refreshable": true
+    },
+    "small-savings": {
+      "label": "Small savings notification (Oct–Dec 2026)",
+      "url": "https://www.nsiindia.gov.in/",
+      "fetchedAt": "2026-10-01T00:00:00Z",
+      "refreshable": false,
+      "note": "Entered by hand from the quarterly notification. NSI does not serve a machine-readable table to this environment."
+    }
+  },
+  "values": {
+    "ppf": {
+      "value": "7.10%",
+      "label": "Interest rate",
+      "asOf": "2026-10-01",
+      "cadence": "Notified quarterly; current for Oct–Dec 2026",
+      "sourceUrl": "https://www.nsiindia.gov.in/",
+      "sourceLabel": "National Savings Institute",
+      "confirmedVia": "Outlook Money, 1 October 2026",
+      "confirmedViaUrl": "https://www.outlookmoney.com/retirement/pension/small-savings-rates-unchanged-ppf-at-710-per-cent-nsc-at-770-per-cent"
+    },
+    "nsc": {
+      "value": "7.70%",
+      "label": "Interest rate",
+      "asOf": "2026-10-01",
+      "cadence": "Notified quarterly; current for Oct–Dec 2026",
+      "sourceUrl": "https://www.nsiindia.gov.in/",
+      "sourceLabel": "National Savings Institute",
+      "confirmedVia": "Outlook Money, 1 October 2026",
+      "confirmedViaUrl": "https://www.outlookmoney.com/retirement/pension/small-savings-rates-unchanged-ppf-at-710-per-cent-nsc-at-770-per-cent"
+    },
+    "ssy": {
+      "value": "8.20%",
+      "label": "Interest rate",
+      "asOf": "2026-10-01",
+      "cadence": "Notified quarterly; current for Oct–Dec 2026",
+      "sourceUrl": "https://www.nsiindia.gov.in/",
+      "sourceLabel": "National Savings Institute",
+      "confirmedVia": "Outlook Money, 1 October 2026",
+      "confirmedViaUrl": "https://www.outlookmoney.com/retirement/pension/small-savings-rates-unchanged-ppf-at-710-per-cent-nsc-at-770-per-cent"
+    },
+    "scss": {
+      "value": "8.20%",
+      "label": "Interest rate",
+      "asOf": "2026-10-01",
+      "cadence": "Notified quarterly; current for Oct–Dec 2026",
+      "sourceUrl": "https://www.nsiindia.gov.in/",
+      "sourceLabel": "National Savings Institute",
+      "confirmedVia": "Outlook Money, 1 October 2026",
+      "confirmedViaUrl": "https://www.outlookmoney.com/retirement/pension/small-savings-rates-unchanged-ppf-at-710-per-cent-nsc-at-770-per-cent"
+    },
+    "kvp": {
+      "value": "7.50%",
+      "label": "Interest rate",
+      "asOf": "2026-10-01",
+      "cadence": "Notified quarterly; current for Oct–Dec 2026",
+      "sourceUrl": "https://www.nsiindia.gov.in/",
+      "sourceLabel": "National Savings Institute",
+      "confirmedVia": "Outlook Money, 1 October 2026",
+      "confirmedViaUrl": "https://www.outlookmoney.com/retirement/pension/small-savings-rates-unchanged-ppf-at-710-per-cent-nsc-at-770-per-cent"
+    },
+    "mis": {
+      "value": "7.40%",
+      "label": "Interest rate",
+      "asOf": "2026-10-01",
+      "cadence": "Notified quarterly; current for Oct–Dec 2026",
+      "sourceUrl": "https://www.nsiindia.gov.in/",
+      "sourceLabel": "National Savings Institute",
+      "confirmedVia": "Outlook Money, 1 October 2026",
+      "confirmedViaUrl": "https://www.outlookmoney.com/retirement/pension/small-savings-rates-unchanged-ppf-at-710-per-cent-nsc-at-770-per-cent"
+    },
+    "po-td-5y": {
+      "value": "7.50%",
+      "label": "Interest rate",
+      "asOf": "2026-10-01",
+      "cadence": "Notified quarterly; current for Oct–Dec 2026",
+      "sourceUrl": "https://www.nsiindia.gov.in/",
+      "sourceLabel": "National Savings Institute",
+      "confirmedVia": "Outlook Money, 1 October 2026",
+      "confirmedViaUrl": "https://www.outlookmoney.com/retirement/pension/small-savings-rates-unchanged-ppf-at-710-per-cent-nsc-at-770-per-cent"
+    },
+    "po-savings": {
+      "value": "4.00%",
+      "label": "Interest rate",
+      "asOf": "2026-10-01",
+      "cadence": "Notified quarterly; current for Oct–Dec 2026",
+      "sourceUrl": "https://www.nsiindia.gov.in/",
+      "sourceLabel": "National Savings Institute",
+      "confirmedVia": "Outlook Money, 1 October 2026",
+      "confirmedViaUrl": "https://www.outlookmoney.com/retirement/pension/small-savings-rates-unchanged-ppf-at-710-per-cent-nsc-at-770-per-cent"
+    },
+    "po-td-3y": {
+      "value": "7.10%",
+      "label": "Interest rate",
+      "asOf": "2026-10-01",
+      "cadence": "Notified quarterly; current for Oct–Dec 2026",
+      "sourceUrl": "https://www.nsiindia.gov.in/",
+      "sourceLabel": "National Savings Institute",
+      "confirmedVia": "Outlook Money, 1 October 2026",
+      "confirmedViaUrl": "https://www.outlookmoney.com/retirement/pension/small-savings-rates-unchanged-ppf-at-710-per-cent-nsc-at-770-per-cent"
+    },
+    "nav-119063": {
+      "value": "₹226.56",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118269": {
+      "value": "₹69.66",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118701": {
+      "value": "₹6,993.14",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118803": {
+      "value": "₹140.63",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118968": {
+      "value": "₹553.29",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-108479": {
+      "value": "₹255.10",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-101705": {
+      "value": "₹860.40",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-106193": {
+      "value": "₹121.15",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-106929": {
+      "value": "₹81.01",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-107693": {
+      "value": "₹120.26",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "tbill-91": {
+      "value": "5.7281%",
+      "label": "Cut-off yield",
+      "asOf": "2026-10-15",
+      "cadence": "Set at each auction; moves weekly",
+      "sourceUrl": "https://www.rbi.org.in/",
+      "sourceLabel": "Reserve Bank of India — current rates",
+      "confirmedVia": "RBI homepage, read 17 October 2026",
+      "confirmedViaUrl": "https://www.rbi.org.in/"
+    },
+    "tbill-182": {
+      "value": "6.2896%",
+      "label": "Cut-off yield",
+      "asOf": "2026-10-15",
+      "cadence": "Set at each auction; moves weekly",
+      "sourceUrl": "https://www.rbi.org.in/",
+      "sourceLabel": "Reserve Bank of India — current rates",
+      "confirmedVia": "RBI homepage, read 17 October 2026",
+      "confirmedViaUrl": "https://www.rbi.org.in/"
+    },
+    "tbill-364": {
+      "value": "6.4891%",
+      "label": "Cut-off yield",
+      "asOf": "2026-10-15",
+      "cadence": "Set at each auction; moves weekly",
+      "sourceUrl": "https://www.rbi.org.in/",
+      "sourceLabel": "Reserve Bank of India — current rates",
+      "confirmedVia": "RBI homepage, read 17 October 2026",
+      "confirmedViaUrl": "https://www.rbi.org.in/"
+    },
+    "gs-2029": {
+      "value": "6.8845%",
+      "label": "Market yield",
+      "asOf": "2026-10-15",
+      "cadence": "Moves continuously with the market",
+      "sourceUrl": "https://www.rbi.org.in/",
+      "sourceLabel": "Reserve Bank of India — current rates",
+      "confirmedVia": "RBI homepage, read 17 October 2026",
+      "confirmedViaUrl": "https://www.rbi.org.in/"
+    },
+    "gs-2031": {
+      "value": "7.1699%",
+      "label": "Market yield",
+      "asOf": "2026-10-15",
+      "cadence": "Moves continuously with the market",
+      "sourceUrl": "https://www.rbi.org.in/",
+      "sourceLabel": "Reserve Bank of India — current rates",
+      "confirmedVia": "RBI homepage, read 17 October 2026",
+      "confirmedViaUrl": "https://www.rbi.org.in/"
+    },
+    "gs-2036": {
+      "value": "7.3865%",
+      "label": "Market yield",
+      "asOf": "2026-10-15",
+      "cadence": "Moves continuously with the market",
+      "sourceUrl": "https://www.rbi.org.in/",
+      "sourceLabel": "Reserve Bank of India — current rates",
+      "confirmedVia": "RBI homepage, read 17 October 2026",
+      "confirmedViaUrl": "https://www.rbi.org.in/"
+    },
+    "gs-2041": {
+      "value": "7.5379%",
+      "label": "Market yield",
+      "asOf": "2026-10-15",
+      "cadence": "Moves continuously with the market",
+      "sourceUrl": "https://www.rbi.org.in/",
+      "sourceLabel": "Reserve Bank of India — current rates",
+      "confirmedVia": "RBI homepage, read 17 October 2026",
+      "confirmedViaUrl": "https://www.rbi.org.in/"
+    },
+    "gs-2056": {
+      "value": "7.7811%",
+      "label": "Market yield",
+      "asOf": "2026-10-15",
+      "cadence": "Moves continuously with the market",
+      "sourceUrl": "https://www.rbi.org.in/",
+      "sourceLabel": "Reserve Bank of India — current rates",
+      "confirmedVia": "RBI homepage, read 17 October 2026",
+      "confirmedViaUrl": "https://www.rbi.org.in/"
+    }
+  }
+}
