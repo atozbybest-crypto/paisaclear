@@ -1,0 +1,76 @@
+name: Refresh rates and redeploy
+
+# Runs on GitHub's servers, not your machine. No laptop needs to be on.
+# Netlify redeploys automatically when this pushes a commit.
+
+on:
+  schedule:
+    # 07:00 IST daily. Adjust if you want a different local time.
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Fetch and report without committing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull RBI rates
+        id: refresh
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python refresh_rbi.py
+
+      - name: Rebuild the site
+        if: success()
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          python build.py
+          python bundle.py
+
+      - name: Check no published rate has gone stale
+        if: success()
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python tools/check_freshness.py
+
+      - name: Commit and push
+        if: success() && inputs.dry_run != true
+        run: |
+          git config user.name "paisaclear-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add content/rates.json site PaisaClear.html
+          if git diff --cached --quiet; then
+            echo "No rate changes today."
+          else
+            git commit -m "chore(rates): refresh $(date -u +'%Y-%m-%d')"
+            git push
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Rate refresh" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Run at: \`$(date -u +'%Y-%m-%d %H:%M UTC')\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          python -c "import json,pathlib; r=json.loads(pathlib.Path('content/rates.json').read_text(encoding='utf-8')); print('\n'.join('- ' + k + ': ' + v['value'] + ' (as of ' + v['asOf'] + ')' for k, v in sorted(r['values'].items())))" >> "$GITHUB_STEP_SUMMARY" || true
