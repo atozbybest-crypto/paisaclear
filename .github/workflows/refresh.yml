@@ -1,56 +1,76 @@
-name: Quarterly rate review
+name: Refresh rates and redeploy
 
-# A durable reminder that survives reboots, closed laptops and new sessions:
-# it opens a GitHub issue on the first day of each quarter and assigns it to you.
-# Close the issue once rates.json is updated.
+# Runs on GitHub's servers, not your machine. No laptop needs to be on.
+# Cloudflare Pages / Netlify redeploy automatically when this pushes a commit.
 
 on:
   schedule:
-    # 09:30 IST on 1 January, 1 April, 1 July, 1 October
-    - cron: "0 4 1 1,4,7,10 *"
+    # 07:00 IST daily. Adjust if you want a different local time.
+    - cron: "30 1 * * *"
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Fetch and report without committing"
+        type: boolean
+        default: false
 
 permissions:
-  issues: write
-  contents: read
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
 
 jobs:
-  open-issue:
+  refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Open the quarterly review issue
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          ASSIGNEE: ${{ github.repository_owner }}
-        run: |
-          quarter="Q$(( ($(date -u +%-m) - 1) / 3 + 1 ))"
-          title="Quarterly: review small-savings rates ($quarter $(date -u +%Y))"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-          if gh issue list --search "$title in:title" --state all --json title --jq '.[].title' | grep -Fxq "$title"; then
-            echo "Issue already exists for this quarter; nothing to do."
-            exit 0
+      - name: Pull RBI rates
+        id: refresh
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python refresh_rbi.py
+
+      - name: Rebuild the site
+        if: success()
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          python build.py
+          python bundle.py
+
+      - name: Check no published rate has gone stale
+        if: success()
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python tools/check_freshness.py
+
+      - name: Commit and push
+        if: success() && inputs.dry_run != true
+        run: |
+          git config user.name "paisaclear-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add content/rates.json site PaisaClear.html
+          if git diff --cached --quiet; then
+            echo "No rate changes today."
+          else
+            git commit -m "chore(rates): refresh $(date -u +'%Y-%m-%d')"
+            git push
           fi
 
-          body=$(cat <<'EOF'
-          The quarterly small-savings notification is due. These rates are entered by hand
-          because the National Savings Institute page is not machine-readable.
-
-          **Schemes:** PPF, NSC, SSY, SCSS, KVP, MIS, 5-year Post Office TD
-
-          - [ ] Read the latest notification (NSI / India Post, or reporting of it)
-          - [ ] Update `content/rates.json` — `value`, `asOf`, `confirmedVia`
-          - [ ] `python refresh_rbi.py --dry-run`
-          - [ ] `python build.py && python bundle.py`
-          - [ ] `python tools/check_freshness.py` passes
-          - [ ] Push, confirm the deploy
-
-          The daily refresh workflow will start failing its freshness check once a
-          value passes its 100-day window, until this is done.
-          EOF
-          )
-
-          gh issue create --title "$title" --body "$body" --assignee "$ASSIGNEE" || \
-          gh issue create --title "$title" --body "$body"
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Rate refresh" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Run at: \`$(date -u +'%Y-%m-%d %H:%M UTC')\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          python -c "import json,pathlib; r=json.loads(pathlib.Path('content/rates.json').read_text(encoding='utf-8')); print('\n'.join('- ' + k + ': ' + v['value'] + ' (as of ' + v['asOf'] + ')' for k, v in sorted(r['values'].items())))" >> "$GITHUB_STEP_SUMMARY" || true
