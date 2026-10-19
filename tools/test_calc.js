@@ -12,7 +12,7 @@ function node(id, props = {}) {
   nodes[id] = Object.assign(
     { id, value: "", checked: false, hidden: false, innerHTML: "", textContent: "", handlers: {},
       addEventListener(type, fn) { this.handlers[type] = fn; },
-      setAttribute() {}, querySelector() { return null; } },
+      setAttribute() {}, querySelector() { return null; }, querySelectorAll() { return []; } },
     props
   );
   return nodes[id];

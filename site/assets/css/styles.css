@@ -1632,3 +1632,112 @@ button, input, select { font: inherit; color: inherit; }
 
 .calc-fineprint { margin: 12px 0 0; font-size: .74rem; color: var(--ink-3); line-height: 1.5; }
 .calc-notes h2 { font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 14px; }
+
+/* calculator: chart layout */
+.calc-toolbar { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.calc-toolbar-label { font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; }
+.seg-toggle {
+  display: inline-flex;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  padding: 2px;
+  background: var(--surface);
+}
+.seg-toggle button {
+  border: 0;
+  background: transparent;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: .78rem;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.seg-toggle button.is-on { background: var(--ink); color: var(--paper); }
+
+.calc-visual {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+@media (max-width: 420px) { .calc-visual { grid-template-columns: 1fr; } }
+
+.donut {
+  width: 150px; height: 150px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+.donut-hole {
+  width: 92px; height: 92px;
+  border-radius: 50%;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+.donut-hole span { font-size: .82rem; font-weight: 700; letter-spacing: -.01em; }
+.donut-hole small { font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+
+.calc-lines { list-style: none; display: grid; gap: 7px; margin: 0; padding: 0; }
+.calc-line { display: flex; align-items: center; gap: 8px; font-size: .82rem; }
+.calc-dot { width: 9px; height: 9px; border-radius: 2px; flex: none; }
+.calc-dot.is-blank { background: transparent; }
+.calc-line-label { color: var(--ink-2); }
+.calc-line-value { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--ink); font-weight: 550; }
+.calc-line-value small { font-weight: 400; color: var(--ink-3); font-size: .72rem; }
+
+.calc-totals {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 6px 16px;
+  margin-bottom: 14px;
+}
+.calc-total-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: .84rem;
+  color: var(--ink-2);
+}
+.calc-total-row:last-child { border-bottom: 0; }
+.calc-total-row strong { font-variant-numeric: tabular-nums; color: var(--ink); }
+.calc-total-row.is-sub strong { color: var(--ink-2); }
+.calc-total-row.is-grand {
+  margin-top: 2px;
+  padding-top: 12px;
+  border-top: 2px solid var(--ink);
+  font-weight: 600;
+  font-size: .95rem;
+  color: var(--ink);
+}
+.calc-total-row.is-grand strong { font-size: 1.15rem; color: var(--green); }
+
+.calc-details { margin-top: 16px; border-top: 1px solid var(--line); padding-top: 12px; }
+.calc-details summary {
+  cursor: pointer;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--green);
+  list-style: none;
+}
+.calc-details summary::-webkit-details-marker { display: none; }
+.calc-details summary::before { content: "+ "; }
+.calc-details[open] summary::before { content: "− "; }
+.calc-details .calc-breakdown { margin-top: 10px; padding: 4px 0; border: 0; background: transparent; }
+
+.calc-slab-table { width: 100%; border-collapse: collapse; font-size: .84rem; margin-top: 10px; }
+.calc-slab-table th {
+  text-align: left; font-size: .64rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3); padding: 0 12px 8px 0; border-bottom: 1px solid var(--line-strong);
+}
+.calc-slab-table td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); color: var(--ink-2); }
+.calc-slab-table td:last-child { font-variant-numeric: tabular-nums; }

@@ -101,6 +101,22 @@ def salary_calculator(rules: dict) -> str:
 <section class="section section-tint">
   <div class="shell shell-narrow">
     <div class="calc-notes">
+      <h2>The rates behind the numbers</h2>
+      <p class="muted">New regime, FY {esc(rules['financialYear'])}. Old regime slabs are 2.5 / 5 / 10 lakh at 5% / 20% / 30%.</p>
+      <table class="calc-slab-table">
+        <thead><tr><th scope="col">Income slice</th><th scope="col">Rate</th></tr></thead>
+        <tbody>
+          <tr><td>Up to ₹4,00,000</td><td>Nil</td></tr>
+          <tr><td>₹4,00,001 – ₹8,00,000</td><td>5%</td></tr>
+          <tr><td>₹8,00,001 – ₹12,00,000</td><td>10%</td></tr>
+          <tr><td>₹12,00,001 – ₹16,00,000</td><td>15%</td></tr>
+          <tr><td>₹16,00,001 – ₹20,00,000</td><td>20%</td></tr>
+          <tr><td>₹20,00,001 – ₹24,00,000</td><td>25%</td></tr>
+          <tr><td>Above ₹24,00,000</td><td>30%</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">Standard deduction ₹75,000 · Section 87A rebate up to ₹60,000, which makes taxable income up to ₹12,00,000 tax-free · 4% cess · surcharge above ₹50 lakh.</p>
+
       <h2>What this does and doesn't do</h2>
       <ul class="check-list">
         <li>{icon("check", "icon icon-sm")}<span>Compares the two regimes on the same salary, so the difference is like for like.</span></li>

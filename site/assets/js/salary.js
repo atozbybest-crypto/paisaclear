@@ -1,5 +1,5 @@
 /* Salary / take-home calculator.
-   All tax constants come from content/tax-rules.json, embedded in the page. */
+   Tax constants come from content/tax-rules.json, embedded in the page. */
 
 (function () {
   "use strict";
@@ -17,6 +17,15 @@
 
   var out = document.getElementById("calc-output");
   var empty = document.getElementById("calc-empty");
+  var mode = "year"; // "year" | "month"
+
+  var COLOURS = {
+    basic: "var(--green)",
+    hra: "var(--amber)",
+    other: "var(--violet)",
+    employerPf: "var(--blue)",
+    deductions: "var(--rose)",
+  };
 
   function num(id) {
     var el = document.getElementById("calc-" + id);
@@ -46,6 +55,10 @@
     if (Math.abs(value) >= 10000000) return "₹" + (value / 10000000).toFixed(2) + " Cr";
     if (Math.abs(value) >= 100000) return "₹" + (value / 100000).toFixed(2) + " L";
     return money(value);
+  }
+
+  function shown(value) {
+    return mode === "month" ? value / 12 : value;
   }
 
   function taxFor(regime, taxable) {
@@ -86,6 +99,7 @@
     var gross = Math.max(0, ctc - employerPf);
     var employeePf = basic * RULES.epfRate;
     var pt = num("pt");
+    var otherAllowances = Math.max(0, gross - basic - hra);
     var metro = checked("metro");
 
     var hraExempt = 0;
@@ -121,21 +135,33 @@
     });
 
     return {
-      ctc: ctc,
-      basic: basic,
-      hra: hra,
-      employerPf: employerPf,
-      gross: gross,
-      employeePf: employeePf,
-      pt: pt,
-      hraExempt: hraExempt,
-      regimes: regimes
+      ctc: ctc, basic: basic, hra: hra, otherAllowances: otherAllowances,
+      employerPf: employerPf, gross: gross, employeePf: employeePf, pt: pt,
+      deductions: employeePf + pt, hraExempt: hraExempt, regimes: regimes
     };
   }
 
-  function row(label, value, note) {
-    return '<div class="calc-row"><span>' + label + "</span><span>" + value +
-      (note ? ' <small class="calc-row-note">' + note + "</small>" : "") + "</span></div>";
+  function donut(segments, total) {
+    var stops = [];
+    var cursor = 0;
+    segments.forEach(function (segment) {
+      var share = total > 0 ? (segment.value / total) * 100 : 0;
+      if (share <= 0) return;
+      var end = Math.min(100, cursor + share);
+      stops.push(segment.colour + " " + cursor.toFixed(2) + "% " + end.toFixed(2) + "%");
+      cursor = end;
+    });
+    if (!stops.length) stops = ["var(--line) 0% 100%"];
+    return '<div class="donut" style="background: conic-gradient(' + stops.join(", ") + ')">' +
+      '<div class="donut-hole"><span>' + moneyShort(total) + "</span><small>CTC</small></div></div>";
+  }
+
+  function line(label, value, colour, note) {
+    return '<li class="calc-line">' +
+      (colour ? '<span class="calc-dot" style="background:' + colour + '"></span>' : '<span class="calc-dot is-blank"></span>') +
+      '<span class="calc-line-label">' + label + "</span>" +
+      '<span class="calc-line-value">' + money(shown(value)) +
+      (note ? ' <small>' + note + "</small>" : "") + "</span></li>";
   }
 
   function render(result) {
@@ -152,25 +178,52 @@
     var better = newer.homeTake >= older.homeTake ? "new" : "old";
     var best = result.regimes[better];
     var difference = Math.abs(newer.homeTake - older.homeTake);
-    var monthly = best.homeTake / 12;
+
+    var segments = [
+      { label: "Basic salary", value: result.basic, colour: COLOURS.basic },
+      { label: "HRA", value: result.hra, colour: COLOURS.hra },
+      { label: "Other allowances", value: result.otherAllowances, colour: COLOURS.other },
+      { label: "Employer PF", value: result.employerPf, colour: COLOURS.employerPf },
+    ];
 
     out.innerHTML =
-      '<div class="calc-headline">' +
-        '<p class="calc-headline-label">Monthly take-home · ' + best.label + "</p>" +
-        '<p class="calc-headline-value">' + money(monthly) + "</p>" +
-        '<p class="calc-headline-note">' + money(best.homeTake) + " a year, after tax, PF and professional tax</p>" +
+      '<div class="calc-toolbar">' +
+        '<span class="calc-toolbar-label">Show</span>' +
+        '<div class="seg-toggle" role="group" aria-label="Yearly or monthly">' +
+          '<button type="button" data-mode="year" class="' + (mode === "year" ? "is-on" : "") + '">Yearly</button>' +
+          '<button type="button" data-mode="month" class="' + (mode === "month" ? "is-on" : "") + '">Monthly</button>' +
+        "</div>" +
+      "</div>" +
+
+      '<div class="calc-visual">' +
+        donut(segments, result.ctc) +
+        '<ul class="calc-lines">' +
+          line("Basic salary", result.basic, COLOURS.basic) +
+          line("HRA", result.hra, COLOURS.hra) +
+          line("Other allowances", result.otherAllowances, COLOURS.other) +
+          (result.employerPf > 0 ? line("Employer PF", result.employerPf, COLOURS.employerPf, "in CTC") : "") +
+        "</ul>" +
+      "</div>" +
+
+      '<div class="calc-totals">' +
+        '<div class="calc-total-row"><span>Gross salary</span><strong>' + money(shown(result.gross)) + "</strong></div>" +
+        '<div class="calc-total-row"><span>Your PF and professional tax</span><strong>− ' + money(shown(result.deductions)) + "</strong></div>" +
+        '<div class="calc-total-row is-sub"><span>Net salary</span><strong>' + money(shown(result.gross - result.deductions)) + "</strong></div>" +
+        '<div class="calc-total-row"><span>Income tax · ' + best.label + " " + (mode === "month" ? "/ month" : "/ year") + "</span><strong>− " +
+          money(shown(best.tax.total)) + "</strong></div>" +
+        '<div class="calc-total-row is-grand"><span>Take-home</span><strong>' + money(shown(best.homeTake)) + "</strong></div>" +
       "</div>" +
 
       '<div class="calc-compare">' +
         '<div class="calc-compare-card' + (better === "new" ? " is-best" : "") + '">' +
           "<span>" + newer.label + "</span>" +
-          '<strong>' + money(newer.homeTake) + "</strong>" +
-          '<small>tax ' + moneyShort(newer.tax.total) + "</small>" +
+          "<strong>" + money(shown(newer.homeTake)) + "</strong>" +
+          "<small>tax " + money(shown(newer.tax.total)) + "</small>" +
         "</div>" +
         '<div class="calc-compare-card' + (better === "old" ? " is-best" : "") + '">' +
           "<span>" + older.label + "</span>" +
-          '<strong>' + money(older.homeTake) + "</strong>" +
-          '<small>tax ' + moneyShort(older.tax.total) + "</small>" +
+          "<strong>" + money(shown(older.homeTake)) + "</strong>" +
+          "<small>tax " + money(shown(older.tax.total)) + "</small>" +
         "</div>" +
       "</div>" +
 
@@ -180,24 +233,32 @@
           : best.label + " leaves you " + money(difference) + " better off a year.") +
       "</p>" +
 
-      '<div class="calc-breakdown">' +
-        '<h3>How it adds up</h3>' +
-        row("Annual CTC", money(result.ctc)) +
-        row("Employer PF", money(result.employerPf), "not paid to you") +
-        row("Gross salary", money(result.gross)) +
-        row("Basic", money(result.basic)) +
-        row("Your PF contribution", money(result.employeePf), "goes to your PF account") +
-        row("Professional tax", money(result.pt)) +
-        (result.hraExempt > 0 ? row("HRA exempt (old regime)", money(result.hraExempt)) : "") +
-        row("Taxable income · new", money(newer.taxable)) +
-        row("Tax · new", money(newer.tax.total), "incl. " + money(newer.tax.cess) + " cess") +
-        row("Taxable income · old", money(older.taxable)) +
-        row("Tax · old", money(older.tax.total), "incl. " + money(older.tax.cess) + " cess") +
-      "</div>" +
+      '<details class="calc-details">' +
+        "<summary>Full breakdown</summary>" +
+        '<div class="calc-breakdown">' +
+          '<div class="calc-row"><span>Annual CTC</span><span>' + money(result.ctc) + "</span></div>" +
+          '<div class="calc-row"><span>Employer PF</span><span>' + money(result.employerPf) + " <small class=\"calc-row-note\">not paid to you</small></span></div>" +
+          '<div class="calc-row"><span>Gross salary</span><span>' + money(result.gross) + "</span></div>" +
+          '<div class="calc-row"><span>Your PF contribution</span><span>' + money(result.employeePf) + "</span></div>" +
+          '<div class="calc-row"><span>Professional tax</span><span>' + money(result.pt) + "</span></div>" +
+          (result.hraExempt > 0 ? '<div class="calc-row"><span>HRA exempt (old regime)</span><span>' + money(result.hraExempt) + "</span></div>" : "") +
+          '<div class="calc-row"><span>Taxable income · new</span><span>' + money(newer.taxable) + "</span></div>" +
+          '<div class="calc-row"><span>Tax · new</span><span>' + money(newer.tax.total) + '</span></div>' +
+          '<div class="calc-row"><span>Taxable income · old</span><span>' + money(older.taxable) + "</span></div>" +
+          '<div class="calc-row"><span>Tax · old</span><span>' + money(older.tax.total) + "</span></div>" +
+        "</div>" +
+      "</details>" +
 
       '<p class="calc-fineprint">Estimate for FY ' + RULES.financialYear +
       ". Ignores marginal relief, gratuity, LTA, employer NPS and non-salary income. Rules as of " +
       RULES.asOf + ".</p>";
+
+    Array.prototype.forEach.call(out.querySelectorAll("[data-mode]"), function (button) {
+      button.addEventListener("click", function () {
+        mode = button.getAttribute("data-mode");
+        render(compute());
+      });
+    });
   }
 
   function run(event) {
