@@ -1662,8 +1662,7 @@ button, input, select { font: inherit; color: inherit; }
     }
     if (p.rateRef) {
       return '<p class="pcard-rate pcard-rate-ref"><span class="rate-note">' + esc(p.rateRef.label) + "</span>" +
-        '<a class="rate-link" href="' + esc(p.rateRef.url) + '" target="_blank" rel="noopener noreferrer">' +
-        "Check at source " + icon("arrow", "icon icon-sm") + "</a></p>";
+        '<span class="rate-link">Source on the detail page \u2192</span></p>';
     }
     return "";
   }

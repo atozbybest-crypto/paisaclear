@@ -72,14 +72,17 @@ def rate_line(rate: dict | None) -> str:
 
 
 def rate_ref_line(ref: dict | None) -> str:
-    """For products whose figure genuinely varies by provider or tenure."""
+    """For products whose figure genuinely varies by provider or tenure.
+
+    Deliberately not a link: this sits inside the card's own <a>, and nesting
+    anchors is invalid HTML. The product page carries the real source link.
+    """
     if not ref:
         return ""
     return (
         '<p class="pcard-rate pcard-rate-ref">'
         f'<span class="rate-note">{esc(ref["label"])}</span>'
-        f'<a class="rate-link" href="{esc(ref["url"])}" target="_blank" rel="noopener noreferrer">'
-        f'Check at source {icon("arrow", "icon icon-sm")}</a>'
+        '<span class="rate-link">Source on the detail page →</span>'
         "</p>"
     )
 
@@ -331,6 +334,7 @@ def page(
     <nav class="footer-col" aria-label="Categories">
       <h2>Categories</h2>
       <ul>
+        <li><a href="{base}categories/lic-life-insurance.html">LIC &amp; life insurance</a></li>
         <li><a href="{base}categories/government-schemes.html">Government &amp; Post Office</a></li>
         <li><a href="{base}categories/bank-deposits.html">Bank savings &amp; FDs</a></li>
         <li><a href="{base}categories/mutual-funds.html">Mutual funds</a></li>
