@@ -1,0 +1,73 @@
+{
+  "financialYear": "2026-27",
+  "assessmentYear": "2027-28",
+  "asOf": "2026-10-19",
+  "sourceUrl": "https://www.incometax.gov.in",
+  "sourceLabel": "Income Tax Department",
+  "note": "Slabs and limits as amended up to Budget 2026, which left the slab structure unchanged. Verify against the Income Tax Department before relying on a figure.",
+  "cess": 0.04,
+  "epfRate": 0.12,
+  "defaultProfessionalTax": 2400,
+  "defaults": {
+    "ctc": 1200000,
+    "basicPct": 40,
+    "hraPct": 50,
+    "metro": true,
+    "rent": 0,
+    "sec80c": 0,
+    "sec80d": 0,
+    "homeLoanInterest": 0,
+    "professionalTax": 2400,
+    "employerPfInCtc": true
+  },
+  "limits": {
+    "sec80c": 150000,
+    "sec80d": 25000,
+    "homeLoanInterest": 200000,
+    "hraMetro": 0.5,
+    "hraNonMetro": 0.4,
+    "hraBasicShare": 0.1
+  },
+  "regimes": {
+    "new": {
+      "label": "New regime",
+      "short": "Default. Lower slabs, almost no deductions.",
+      "standardDeduction": 75000,
+      "professionalTaxAllowed": true,
+      "slabs": [
+        { "upTo": 400000, "rate": 0 },
+        { "upTo": 800000, "rate": 0.05 },
+        { "upTo": 1200000, "rate": 0.1 },
+        { "upTo": 1600000, "rate": 0.15 },
+        { "upTo": 2000000, "rate": 0.2 },
+        { "upTo": 2400000, "rate": 0.25 },
+        { "upTo": null, "rate": 0.3 }
+      ],
+      "rebate": { "taxableLimit": 1200000, "maxRebate": 60000 },
+      "surcharge": [
+        { "above": 20000000, "rate": 0.25 },
+        { "above": 10000000, "rate": 0.15 },
+        { "above": 5000000, "rate": 0.1 }
+      ]
+    },
+    "old": {
+      "label": "Old regime",
+      "short": "Higher slabs, but HRA, 80C, 80D and home-loan interest apply.",
+      "standardDeduction": 50000,
+      "professionalTaxAllowed": true,
+      "slabs": [
+        { "upTo": 250000, "rate": 0 },
+        { "upTo": 500000, "rate": 0.05 },
+        { "upTo": 1000000, "rate": 0.2 },
+        { "upTo": null, "rate": 0.3 }
+      ],
+      "rebate": { "taxableLimit": 500000, "maxRebate": 12500 },
+      "surcharge": [
+        { "above": 50000000, "rate": 0.37 },
+        { "above": 20000000, "rate": 0.25 },
+        { "above": 10000000, "rate": 0.15 },
+        { "above": 5000000, "rate": 0.1 }
+      ]
+    }
+  }
+}

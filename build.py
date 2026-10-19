@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import pages  # noqa: E402
+from builder import calculator, pages  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
 CONTENT = ROOT / "content"
@@ -245,6 +245,16 @@ def main() -> int:
         description="What we publish, how a product record is researched and approved, and what we deliberately do not do.",
         body=pages.method(ctx),
         active="method",
+    ))
+
+    tax_rules = load_json(CONTENT / "tax-rules.json")
+    emit("calculators/salary.html", page(
+        title="Salary & take-home calculator — PaisaClear",
+        description="Work out your take-home pay from CTC under both the new and old tax regimes, with HRA, 80C, 80D and home-loan interest.",
+        body=calculator.salary_calculator(tax_rules),
+        base="../",
+        active="calculator",
+        scripts=["assets/js/salary.js"],
     ))
 
     emit("404.html", page(
