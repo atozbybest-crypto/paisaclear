@@ -1,0 +1,10 @@
+.shots/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Generated HTML is committed on purpose: `site/` is the deployment unit and
+# should be uploadable as-is. Rebuild with `python build.py`.
+.spa-test/
+paisaclear-site.zip

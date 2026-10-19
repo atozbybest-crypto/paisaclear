@@ -1,5 +1,22 @@
 [
   {
+    "id": "lic-life-insurance",
+    "slug": "lic-life-insurance",
+    "name": "LIC & Life Insurance Policies",
+    "short": "LIC & life insurance",
+    "tagline": "Cover and savings in one contract.",
+    "blurb": "Life insurance policies from LIC and its GIFT City branch. A policy mixes two things that are priced separately elsewhere: a death benefit, and a savings or pension component. The premium depends on your age, the term and the sum assured, so it is never a single number.",
+    "icon": "umbrella",
+    "accent": "violet",
+    "status": "live",
+    "whatToCheck": [
+      "What the policy pays if you die, and when",
+      "What you get back if you survive the term — and what you get if you stop paying",
+      "The surrender value after each year, and how long the money is actually locked",
+      "Whether a term plan plus a separate investment would do the same job for less"
+    ]
+  },
+  {
     "id": "government-schemes",
     "slug": "government-schemes",
     "name": "Government & Post Office Schemes",

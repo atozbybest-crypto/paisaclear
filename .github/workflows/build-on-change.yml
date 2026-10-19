@@ -1,0 +1,57 @@
+name: Rebuild site on content change
+
+# Upload content/products.json (or any template/asset), commit, and this rebuilds
+# site/ and PaisaClear.html. No laptop build step needed.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - "builder/**"
+      - "spa/**"
+      - "site/assets/**"
+      - "build.py"
+      - "bundle.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.actor != 'paisaclear-bot'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild pages and the single file
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          python build.py
+          python bundle.py
+
+      - name: Commit the regenerated site
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          git config user.name "paisaclear-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add site PaisaClear.html
+          if git diff --cached --quiet; then
+            echo "Nothing changed in the generated output."
+          else
+            git commit -m "chore(build): regenerate site [skip ci]"
+            git push
+          fi

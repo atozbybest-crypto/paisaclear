@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T06:37:05Z",
+  "generatedAt": "2026-10-19T14:20:49Z",
   "note": "Machine-refreshable rates. `rbi` values are pulled by refresh_rbi.py; the small-savings values are entered by hand each quarter because the National Savings Institute site is not machine-readable from here.",
   "feeds": {
     "rbi": {
@@ -266,6 +266,1006 @@
       "sourceLabel": "Reserve Bank of India — current rates",
       "confirmedVia": "RBI homepage, read 17 October 2026",
       "confirmedViaUrl": "https://www.rbi.org.in/"
+    },
+    "nav-103490": {
+      "value": "₹122.27",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-103734": {
+      "value": "₹37.93",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-18",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-111549": {
+      "value": "₹122.17",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-116811": {
+      "value": "₹19.92",
+      "label": "NAV, direct plan",
+      "asOf": "2022-12-07",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118272": {
+      "value": "₹411.46",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118273": {
+      "value": "₹120.98",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118278": {
+      "value": "₹285.93",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118285": {
+      "value": "₹194.61",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118291": {
+      "value": "₹46.86",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118299": {
+      "value": "₹82.76",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118305": {
+      "value": "₹3,423.59",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-18",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118317": {
+      "value": "₹4,381.21",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118341": {
+      "value": "₹19.21",
+      "label": "NAV, direct plan",
+      "asOf": "2022-12-07",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118345": {
+      "value": "₹2,475.00",
+      "label": "NAV, direct plan",
+      "asOf": "2023-07-27",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118347": {
+      "value": "₹39.40",
+      "label": "NAV, direct plan",
+      "asOf": "2023-07-27",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118348": {
+      "value": "₹36.16",
+      "label": "NAV, direct plan",
+      "asOf": "2023-07-27",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118364": {
+      "value": "₹3,449.16",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-18",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118371": {
+      "value": "₹42.69",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118387": {
+      "value": "₹48.36",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118419": {
+      "value": "₹161.14",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118427": {
+      "value": "₹1,634.73",
+      "label": "NAV, direct plan",
+      "asOf": "2018-12-19",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118464": {
+      "value": "₹40.90",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118473": {
+      "value": "₹175.78",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118479": {
+      "value": "₹88.18",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118481": {
+      "value": "₹166.01",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118482": {
+      "value": "₹51.87",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118485": {
+      "value": "₹51.70",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118494": {
+      "value": "₹749.42",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118510": {
+      "value": "₹199.58",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118525": {
+      "value": "₹196.51",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118531": {
+      "value": "₹1,088.52",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118533": {
+      "value": "₹3,019.50",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118537": {
+      "value": "₹534.75",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118540": {
+      "value": "₹1,540.32",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118546": {
+      "value": "₹297.16",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118560": {
+      "value": "₹34.24",
+      "label": "NAV, direct plan",
+      "asOf": "2022-08-07",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118569": {
+      "value": "₹116.38",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118577": {
+      "value": "₹4,296.10",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-18",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118581": {
+      "value": "₹198.18",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118589": {
+      "value": "₹683.50",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118610": {
+      "value": "₹2,831.64",
+      "label": "NAV, direct plan",
+      "asOf": "2018-05-20",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118615": {
+      "value": "₹60.10",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118617": {
+      "value": "₹94.44",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118620": {
+      "value": "₹133.77",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118624": {
+      "value": "₹74.28",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118632": {
+      "value": "₹97.26",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118636": {
+      "value": "₹1,529.87",
+      "label": "NAV, direct plan",
+      "asOf": "2016-11-25",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118643": {
+      "value": "₹31.04",
+      "label": "NAV, direct plan",
+      "asOf": "2018-04-27",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118668": {
+      "value": "₹4,736.44",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118678": {
+      "value": "₹1,544.54",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118709": {
+      "value": "₹4,305.13",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118724": {
+      "value": "₹207.97",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118736": {
+      "value": "₹205.93",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118741": {
+      "value": "₹42.77",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118759": {
+      "value": "₹604.31",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118778": {
+      "value": "₹202.27",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118784": {
+      "value": "₹234.26",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118791": {
+      "value": "₹40.68",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118794": {
+      "value": "₹117.65",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118814": {
+      "value": "₹67.11",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118825": {
+      "value": "₹122.87",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118834": {
+      "value": "₹170.06",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118840": {
+      "value": "₹2,663.97",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118866": {
+      "value": "₹198.14",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118868": {
+      "value": "₹58.23",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118870": {
+      "value": "₹179.97",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118872": {
+      "value": "₹134.92",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118881": {
+      "value": "₹47.05",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118935": {
+      "value": "₹867.46",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118987": {
+      "value": "₹35.02",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-118989": {
+      "value": "₹221.06",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119018": {
+      "value": "₹1,172.67",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119019": {
+      "value": "₹387.67",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119060": {
+      "value": "₹1,444.09",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119065": {
+      "value": "₹715.52",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119097": {
+      "value": "₹38.24",
+      "label": "NAV, direct plan",
+      "asOf": "2022-09-23",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119104": {
+      "value": "₹1,480.33",
+      "label": "NAV, direct plan",
+      "asOf": "2019-12-13",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119133": {
+      "value": "₹50.04",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119178": {
+      "value": "₹501.09",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119202": {
+      "value": "₹544.39",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119212": {
+      "value": "₹249.68",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119298": {
+      "value": "₹35.33",
+      "label": "NAV, direct plan",
+      "asOf": "2022-11-24",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119337": {
+      "value": "₹19.93",
+      "label": "NAV, direct plan",
+      "asOf": "2022-03-13",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119461": {
+      "value": "₹33.65",
+      "label": "NAV, direct plan",
+      "asOf": "2020-09-04",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119479": {
+      "value": "₹33.50",
+      "label": "NAV, direct plan",
+      "asOf": "2019-05-29",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119482": {
+      "value": "₹27.87",
+      "label": "NAV, direct plan",
+      "asOf": "2021-12-30",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119533": {
+      "value": "₹121.16",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119550": {
+      "value": "₹403.31",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119556": {
+      "value": "₹111.24",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119581": {
+      "value": "₹1,548.74",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119588": {
+      "value": "₹39.61",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119589": {
+      "value": "₹321.38",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119625": {
+      "value": "₹46.45",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119775": {
+      "value": "₹159.25",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119795": {
+      "value": "₹21.09",
+      "label": "NAV, direct plan",
+      "asOf": "2022-11-24",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119807": {
+      "value": "₹229.30",
+      "label": "NAV, direct plan",
+      "asOf": "2022-11-24",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119869": {
+      "value": "₹20.60",
+      "label": "NAV, direct plan",
+      "asOf": "2016-11-24",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-120062": {
+      "value": "₹35.66",
+      "label": "NAV, direct plan",
+      "asOf": "2022-11-25",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-120069": {
+      "value": "₹90.74",
+      "label": "NAV, direct plan",
+      "asOf": "2022-11-25",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-120256": {
+      "value": "₹36.39",
+      "label": "NAV, direct plan",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-109010": {
+      "value": "₹82.07",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-111954": {
+      "value": "₹123.75",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-112351": {
+      "value": "₹257.25",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-113049": {
+      "value": "₹123.99",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-113069": {
+      "value": "₹242.65",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-113076": {
+      "value": "₹124.32",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-113434": {
+      "value": "₹120.90",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-114456": {
+      "value": "₹63.85",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-114984": {
+      "value": "₹270.87",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-115127": {
+      "value": "₹127.70",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-115512": {
+      "value": "₹27.17",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-115912": {
+      "value": "₹891.36",
+      "label": "NAV per unit",
+      "asOf": "2015-07-24",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-115934": {
+      "value": "₹43.13",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-116077": {
+      "value": "₹40.71",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-117141": {
+      "value": "₹2,529.56",
+      "label": "NAV per unit",
+      "asOf": "2015-03-31",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-119132": {
+      "value": "₹45.33",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-120531": {
+      "value": "₹42.44",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-121146": {
+      "value": "₹256.23",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-121366": {
+      "value": "₹262.71",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-123004": {
+      "value": "₹26.95",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-128331": {
+      "value": "₹123.29",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-131331": {
+      "value": "₹860.26",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-133122": {
+      "value": "₹58.03",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-133307": {
+      "value": "₹28.79",
+      "label": "NAV per unit",
+      "asOf": "2026-10-16",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
+    },
+    "nav-134536": {
+      "value": "₹19,255.95",
+      "label": "NAV per unit",
+      "asOf": "2021-10-06",
+      "cadence": "Published daily by AMFI",
+      "sourceUrl": "https://www.amfiindia.com/mutual-fund",
+      "sourceLabel": "AMFI — mutual fund NAV data"
     }
   }
 }

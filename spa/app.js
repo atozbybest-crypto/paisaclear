@@ -19,6 +19,7 @@
     arrow: '<path d="M4.5 12h14M13 6.5l5.5 5.5-5.5 5.5"/>',
     check: '<path d="m5 12.5 4.4 4.4L19 6.8"/>',
     alert: '<path d="M12 4.2 21 19.8H3L12 4.2Z"/><path d="M12 10v4.2M12 17h.01"/>',
+    umbrella: '<path d="M3.6 12a8.4 8.4 0 0 1 16.8 0Z"/><path d="M12 12v6.2a2.2 2.2 0 0 0 4.4 0"/><path d="M12 3.6V5"/>',
     info: '<circle cx="12" cy="12" r="8.4"/><path d="M12 11v5.2M12 8h.01"/>',
     scale: '<path d="M12 4v16M7 20h10"/><path d="M4 8h16"/><path d="m7.5 8-2.8 5.4h5.6L7.5 8ZM16.5 8l-2.8 5.4h5.6L16.5 8Z"/>'
   };
@@ -27,7 +28,7 @@
   var RISK_TONE = { low: "blue", moderate: "amber", high: "rose" };
   var ACCENT = {
     "government-schemes": "green", "bank-deposits": "blue",
-    "mutual-funds": "violet", bonds: "amber", etfs: "rose"
+    "mutual-funds": "violet", bonds: "amber", etfs: "rose", "lic-life-insurance": "violet"
   };
 
   function esc(value) {

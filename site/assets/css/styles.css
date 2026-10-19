@@ -347,8 +347,14 @@ button, input, select { font: inherit; color: inherit; }
    wrap, leaving an orphan card on its own line. 190px fits all five. */
 .cat-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-columns: 1fr;
   gap: 12px;
+}
+@media (min-width: 560px) {
+  .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 900px) {
+  .cat-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 .cat-card {
@@ -1410,3 +1416,63 @@ button, input, select { font: inherit; color: inherit; }
   word-break: break-all;
 }
 .source-strip-note { margin: 6px 0 0; font-size: .8rem; color: var(--ink-3); max-width: 70ch; }
+
+/* mutual fund returns on cards and product pages */
+.pcard-returns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin: 0 0 10px;
+  padding: 6px 9px;
+  background: var(--tint);
+  border-radius: 6px;
+  font-variant-numeric: tabular-nums;
+}
+.pcard-returns .ret { font-size: .76rem; font-weight: 600; color: var(--ink); }
+.pcard-returns .ret-k {
+  font-size: .58rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-right: 4px;
+  font-weight: 700;
+}
+.pcard-returns .ret-neg { color: var(--rose); }
+.pcard-returns .ret-note {
+  margin-left: auto;
+  font-size: .62rem;
+  color: var(--ink-3);
+  font-weight: 400;
+}
+
+.returns-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.ret-cell {
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ret-cell .ret-k {
+  font-size: .64rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 700;
+}
+.ret-cell .ret-v {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: var(--green);
+  font-variant-numeric: tabular-nums;
+}
+.ret-cell .ret-v.ret-neg { color: var(--rose); }

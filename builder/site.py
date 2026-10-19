@@ -18,6 +18,7 @@ CATEGORY_ACCENT = {
     "mutual-funds": "violet",
     "bonds": "amber",
     "etfs": "rose",
+    "lic-life-insurance": "violet",
 }
 
 ICONS: dict[str, str] = {
@@ -37,6 +38,7 @@ ICONS: dict[str, str] = {
     "link": '<path d="M10.5 13.5a4 4 0 0 0 5.7 0l2.6-2.6a4 4 0 0 0-5.7-5.7L11.6 6.7"/><path d="M13.5 10.5a4 4 0 0 0-5.7 0L5.2 13a4 4 0 0 0 5.7 5.7l1.4-1.4"/>',
     "scale": '<path d="M12 4v16M7 20h10"/><path d="M4 8h16"/><path d="m7.5 8-2.8 5.4h5.6L7.5 8ZM16.5 8l-2.8 5.4h5.6L16.5 8Z"/>',
     "info": '<circle cx="12" cy="12" r="8.4"/><path d="M12 11v5.2M12 8h.01"/>',
+    "umbrella": '<path d="M3.6 12a8.4 8.4 0 0 1 16.8 0Z"/><path d="M12 12v6.2a2.2 2.2 0 0 0 4.4 0"/><path d="M12 3.6V5"/>',
 }
 
 
@@ -129,10 +131,60 @@ def return_chip(product: dict, return_types: dict) -> str:
     return chip(rt["label"], tone_for(product["returnType"]), "chip chip-return")
 
 
+RISK_BAND_LABEL = {
+    "low": "Low",
+    "low-to-moderate": "Low to moderate",
+    "moderate": "Moderate",
+    "moderately-high": "Moderately high",
+    "high": "High",
+    "very-high": "Very high",
+}
+
+RISK_BAND_TONE = {
+    "low": "blue",
+    "low-to-moderate": "blue",
+    "moderate": "amber",
+    "moderately-high": "amber",
+    "high": "rose",
+    "very-high": "rose",
+}
+
+
 def risk_chip(product: dict) -> str:
+    band = product.get("riskBand")
+    if band:
+        return chip(
+            RISK_BAND_LABEL.get(band, band) + " risk",
+            RISK_BAND_TONE.get(band, "amber"),
+            "chip chip-risk",
+        )
     level = product.get("riskLevel", "moderate")
     tone = {"low": "blue", "moderate": "amber", "high": "rose"}.get(level, "amber")
     return chip(level.capitalize() + " risk", tone, "chip chip-risk")
+
+
+def fmt_pct(value) -> str:
+    if value is None:
+        return "—"
+    return f"{value:+.2f}%"
+
+
+def returns_line(product: dict) -> str:
+    """Compact 1Y / 3Y / 5Y row for a product card."""
+    returns = product.get("returns")
+    if not returns:
+        return ""
+    cells = []
+    for key, label in (("oneYear", "1Y"), ("threeYear", "3Y"), ("fiveYear", "5Y")):
+        value = returns.get(key)
+        cls = "ret-neg" if isinstance(value, (int, float)) and value < 0 else ""
+        cells.append(
+            f'<span class="ret {cls}"><span class="ret-k">{label}</span>{fmt_pct(value)}</span>'
+        )
+    return (
+        '<p class="pcard-returns">' + "".join(cells)
+        + '<span class="ret-note">computed from NAV</span></p>'
+    )
 
 
 def product_card(product: dict, base: str, return_types: dict, categories: dict) -> str:
@@ -147,6 +199,7 @@ def product_card(product: dict, base: str, return_types: dict, categories: dict)
   data-category="{esc(product['category'])}"
   data-return="{esc(product['returnType'])}"
   data-risk="{esc(product.get('riskLevel', ''))}"
+  data-riskband="{esc(product.get('riskRank', ''))}"
   data-min="{esc(product.get('minInvestment') if isinstance(product.get('minInvestment'), int) else 0)}"
   data-name="{esc(product['name'].lower())}"
   data-text="{esc((product['name'] + ' ' + product['provider'] + ' ' + product.get('oneLiner', '')).lower())}">
@@ -160,8 +213,9 @@ def product_card(product: dict, base: str, return_types: dict, categories: dict)
     <p class="pcard-provider">{esc(product['provider'])}</p>
     <p class="pcard-line">{esc(product.get('oneLiner', ''))}</p>
     {figure}
+    {returns_line(product)}
     <dl class="pcard-facts">
-      <div><dt>Minimum</dt><dd>{money(product.get('minInvestment')) if isinstance(product.get('minInvestment'), int) else esc(product.get('minInvestment'))}</dd></div>
+      <div><dt>Minimum</dt><dd>{money(product.get('minInvestment')) if isinstance(product.get('minInvestment'), int) else ('Varies' if product.get('minInvestment') is None else esc(product.get('minInvestment')))}</dd></div>
       <div><dt>Tenure</dt><dd>{esc(product.get('tenure') or '—')}</dd></div>
       <div><dt>Payout</dt><dd>{esc(product.get('payout') or '—')}</dd></div>
     </dl>

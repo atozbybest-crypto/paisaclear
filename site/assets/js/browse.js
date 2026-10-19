@@ -33,7 +33,13 @@
       if (visible) shown += 1;
     });
 
-    if (state.sort === "name") {
+    if (state.sort === "risk-asc") {
+      cards.sort(function (a, b) {
+        var ra = Number(a.dataset.riskband || 99);
+        var rb = Number(b.dataset.riskband || 99);
+        return ra - rb;
+      });
+    } else if (state.sort === "name") {
       cards.sort(function (a, b) { return a.dataset.name.localeCompare(b.dataset.name); });
     } else if (state.sort === "min-asc") {
       cards.sort(function (a, b) { return Number(a.dataset.min) - Number(b.dataset.min); });

@@ -56,6 +56,8 @@ def validate(
     for index, product in enumerate(products):
         slug = product.get("slug") or f"#{index}"
         for field in REQUIRED_FIELDS:
+            if field == "minInvestment":
+                continue  # validated separately: a null is allowed with a note
             if field not in product or product[field] in (None, "", []):
                 errors.append(f"{slug}: missing required field '{field}'")
 
@@ -85,8 +87,13 @@ def validate(
             if collection not in collections:
                 errors.append(f"{slug}: unknown collection '{collection}'")
 
-        if not isinstance(product.get("minInvestment"), (int, float)):
-            errors.append(f"{slug}: minInvestment must be a number")
+        if product.get("minInvestment") is None:
+            # Insurance premiums depend on age, term and sum assured; a null is
+            # acceptable only when the record explains why.
+            if not product.get("minInvestmentNote"):
+                errors.append(f"{slug}: minInvestment is null without a note explaining it")
+        elif not isinstance(product.get("minInvestment"), (int, float)):
+            errors.append(f"{slug}: minInvestment must be a number or null")
 
         for source in product.get("sources", []):
             if not str(source.get("url", "")).startswith("http"):

@@ -6,10 +6,12 @@ from typing import Any
 
 from .site import (
     CATEGORY_ACCENT,
+    RISK_BAND_LABEL,
     breadcrumb,
     category_card,
     chip,
     esc,
+    fmt_pct,
     icon,
     min_investment_label,
     money,
@@ -260,6 +262,7 @@ def browse(ctx: dict) -> str:
         <span class="select-label">Sort</span>
         <select id="sort">
           <option value="default">Featured order</option>
+          <option value="risk-asc">Risk: low to high</option>
           <option value="min-asc">Minimum investment: low to high</option>
           <option value="name">Name A–Z</option>
         </select>
@@ -420,6 +423,31 @@ def category_page(ctx: dict, category: dict) -> str:
 
 # ------------------------------------------------------------------ product
 
+def returns_block(product: dict) -> str:
+    returns = product.get("returns")
+    if not returns:
+        return ""
+    cells = []
+    for key, label in (("oneYear", "1 year"), ("threeYear", "3 years"), ("fiveYear", "5 years")):
+        value = returns.get(key)
+        cls = "ret-v ret-neg" if isinstance(value, (int, float)) and value < 0 else "ret-v"
+        cells.append(
+            f'<div class="ret-cell"><span class="ret-k">{label}</span>'
+            f'<span class="{cls}">{fmt_pct(value)}</span></div>'
+        )
+    return f"""<section class="prose-block">
+          <h2>Returns, from its own NAV</h2>
+          <div class="returns-grid">{"".join(cells)}</div>
+          <p class="muted">
+            Annualised (CAGR) figures computed by PaisaClear from AMFI NAV data as on
+            {esc(pretty_date(returns.get("asOf")))}. They are not a fund-house or SEBI figure, they ignore
+            exit loads and tax, and past performance does not indicate future returns.
+          </p>
+        </section>
+
+        """
+
+
 def product_page(ctx: dict, product: dict) -> str:
     cats_by_id = ctx["categories_by_id"]
     rt_by_id = ctx["return_types_by_id"]
@@ -498,10 +526,14 @@ def product_page(ctx: dict, product: dict) -> str:
           <ul class="uses">{uses}</ul>
         </section>
 
+        {returns_block(product)}
+
         <section class="prose-block">
           <h2>Key facts</h2>
           <div class="fact-table">
             {fact_row("Provider", esc(product["provider"]))}
+            {fact_row("UIN", esc(product["uin"])) if product.get("uin") else ""}
+            {fact_row("Risk band", esc(RISK_BAND_LABEL.get(product.get("riskBand", ""), "")) + f' <span class="fact-note">PaisaClear classification by scheme category, not the SEBI riskometer</span>') if product.get("riskBand") else ""}
             {fact_row("Source", f'<a href="{esc(product["source"]["url"])}" target="_blank" rel="noopener noreferrer">{esc(product["source"]["label"])} ↗</a> <span class="fact-note">{esc(product["source"]["url"])}</span>') if product.get("source") else ""}
             {fact_row("Rate", f'{esc(product["rate"]["value"])} <span class="fact-note">{esc(product["rate"]["label"])}, as of {esc(pretty_date(product["rate"]["asOf"]))}</span>') if product.get("rate") else (fact_row("Rate", f'<a href="{esc(product["rateRef"]["url"])}" target="_blank" rel="noopener noreferrer">{esc(product["rateRef"]["label"])} ↗</a>') if product.get("rateRef") else "")}
             {fact_row("Category", f'<a href="../categories/{category["slug"]}.html">{esc(category["name"])}</a>')}
