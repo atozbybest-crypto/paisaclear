@@ -14,8 +14,9 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
-# Cache the CSS/JS hard; they are versioned by content, not by URL.
+# Assets keep their filenames across deploys, so a long cache silently serves
+# stale CSS/JS after a release. Revalidate instead: cheap for a site this size.
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=0, must-revalidate"
