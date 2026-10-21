@@ -1,9 +1,9 @@
 {
   "siteUrl": "https://paisaclear.co.in",
   "analytics": {
-    "provider": "none",
-    "token": "",
-    "_comment": "provider: none | cloudflare | goatcounter | plausible | ga4. Paste the token/site ID from the provider, set provider, rebuild."
+    "provider": "googleads",
+    "token": "AW-18529393816",
+    "_comment": "googleads/ga4 inject into <head>; cloudflare/goatcounter/plausible inject before </body>"
   },
   "verification": {
     "google": "",

@@ -289,7 +289,7 @@ def main() -> int:
             '<script defer data-domain="paisaclear.co.in" '
             'src="https://plausible.io/js/script.js"></script>'
         )
-    elif token and provider == "ga4":
+    elif token and provider in ("ga4", "googleads"):
         analytics_snippet = (
             '<script async src="https://www.googletagmanager.com/gtag/js?id=' + token + '"></script>'
             "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
@@ -301,6 +301,9 @@ def main() -> int:
         '<meta name="google-site-verification" content="' + google_token + '">'
         if google_token else ""
     )
+
+    head_snippet = analytics_snippet if provider in ("ga4", "googleads") else ""
+    body_snippet = "" if head_snippet else analytics_snippet
 
     def emit(rel: str, markup: str) -> None:
         url = "https://paisaclear.co.in/" + rel.replace("index.html", "").replace(".html", "")
@@ -322,7 +325,9 @@ def main() -> int:
         markup = markup.replace("<!--CANONICAL-->", canonical)
         if "<!--SIDEBAR-->" in markup:
             markup = markup.replace("<!--SIDEBAR-->", sidebar_for(rel))
-        markup = markup.replace("<!--ANALYTICS-->", analytics_snippet)
+        markup = markup.replace("<!--ANALYTICS-->", body_snippet)
+        if head_snippet:
+            markup = markup.replace("</head>", head_snippet + "\n</head>", 1)
         if verify_tag:
             markup = markup.replace("</head>", verify_tag + "\n</head>", 1)
         write(SITE / rel, markup)

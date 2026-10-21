@@ -26,7 +26,7 @@ def privacy(ctx: dict) -> str:
       <h2>The short version</h2>
       <ul class="check-list">
         <li><span>No account, no sign-in, no newsletter signup.</span></li>
-        <li><span>No cookies are set by this site.</span></li>
+        <li><span>We set no cookies ourselves. The Google advertising tag may set its own — see below.</span></li>
         <li><span>No advertising or cross-site tracking scripts.</span></li>
         <li><span>What you type into the planners stays in your browser.</span></li>
         <li><span>If you send feedback, we get your message and — only if you type it — your email.</span></li>
@@ -54,8 +54,7 @@ def privacy(ctx: dict) -> str:
       </p>
       <p>
         It sets no cookies and does not track you across other websites. The figures are aggregated: we see that
-        a page had visitors, not who they were. There is no third-party analytics script on any page — if you
-        view the source, you will not find Google Analytics, Meta Pixel or similar.
+        a page had visitors, not who they were.
       </p>
 
       <h3>The planners and calculators</h3>
@@ -69,6 +68,22 @@ def privacy(ctx: dict) -> str:
         Clearing your browser data deletes it, and we cannot recover it because we never had it.
       </p>
 
+      <h3>Advertising measurement (Google)</h3>
+      <p>
+        We advertise on Google and social platforms, and we use the <strong>Google tag</strong>
+        (<code>gtag.js</code>, ID AW-18529393816) to measure whether those ads work. When a page loads, the tag
+        sends Google your IP address, the page you are on, the referring site and identifiers stored in
+        cookies, and Google may link that to your Google account if you are signed in.
+      </p>
+      <p>
+        We see aggregate results — clicks, impressions, cost — not your identity. Google's handling of that
+        data is governed by
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>.
+        You can limit ad personalisation in
+        <a href="https://myadcenter.google.com" target="_blank" rel="noopener noreferrer">Google My Ad Center</a>,
+        or block the tag with any content blocker.
+      </p>
+
       <h3>Search and hosting</h3>
       <p>
         The site is served by Netlify, which necessarily processes the request when you load a page. Search
@@ -78,7 +93,8 @@ def privacy(ctx: dict) -> str:
 
       <h2>Cookies</h2>
       <p>
-        This site sets no cookies of its own, which is why you will not see a cookie banner. If that changes,
+        We set no cookies of our own. The Google tag described above may set cookies used to measure
+        advertising; those are Google's, not ours, and are covered by their policy. If we add anything else,
         this page changes first.
       </p>
 
@@ -97,7 +113,7 @@ def privacy(ctx: dict) -> str:
       <h2>What this site does not do</h2>
       <ul class="check-list">
         <li><span>No selling or renting of personal data.</span></li>
-        <li><span>No behavioural profiling or advertising audiences.</span></li>
+        <li><span>No advertising profiles built by us. The Google tag measures ad performance; we never see who you are.</span></li>
         <li><span>No tracking pixels embedded by third parties.</span></li>
         <li><span>No payments, so no card or bank details are ever collected.</span></li>
         <li><span>No accounts, so there are no passwords for us to hold.</span></li>
