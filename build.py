@@ -302,6 +302,17 @@ def main() -> int:
             '<link rel="canonical" href="' + url + '">\n'
             '<meta property="og:url" content="' + url + '">'
         )
+        og_image = "https://paisaclear.co.in/assets/img/og-default.png"
+        if rel.startswith("categories/"):
+            og_image = "https://paisaclear.co.in/assets/img/og-cat-" + rel.split("/", 1)[1][:-5] + ".png"
+        elif rel.startswith("products/"):
+            slug = rel.split("/", 1)[1][:-5]
+            prod = next((p for p in products if p["slug"] == slug), None)
+            if prod:
+                cat = next((c for c in ctx["categories"] if c["id"] == prod["category"]), None)
+                if cat:
+                    og_image = "https://paisaclear.co.in/assets/img/og-cat-" + cat["slug"] + ".png"
+        markup = markup.replace("https://paisaclear.co.in/assets/img/og-default.png", og_image)
         markup = markup.replace("<!--CANONICAL-->", canonical)
         if "<!--SIDEBAR-->" in markup:
             markup = markup.replace("<!--SIDEBAR-->", sidebar_for(rel))

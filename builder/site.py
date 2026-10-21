@@ -301,7 +301,8 @@ def page(
 <meta name="theme-color" content="#0f5132">
 <!--CANONICAL-->
 <link rel="icon" href="{base}assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="{base}assets/img/og-default.png">
+<link rel="icon" href="{base}assets/img/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="{base}assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="{base}assets/css/styles.css">
 <script src="{base}assets/js/site.js" defer></script>
 </head>
