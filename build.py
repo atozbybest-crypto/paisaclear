@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import calculator, loan, pages, plan, planner, privacy, start  # noqa: E402
+from builder import calculator, guides, loan, pages, plan, planner, privacy, start  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
 CONTENT = ROOT / "content"
@@ -246,6 +246,12 @@ def main() -> int:
             + group("Browse", link("browse.html", "All products", str(len(products))) + link("compare.html", "Compare"),
                     ("browse.html", "compare.html", "products/"))
             + group("Categories", cat_links, ("categories/", "products/"))
+            + group("Guides",
+                    link("guides/ppf-vs-fd-vs-nsc.html", "PPF vs FD vs NSC")
+                    + link("guides/sip-vs-lump-sum.html", "SIP vs lump sum")
+                    + link("guides/old-vs-new-tax-regime.html", "Old vs new tax regime")
+                    + link("guides/small-savings-compared.html", "Small savings compared"),
+                    ("guides/",))
             + group("Calculators",
                     link("calculators/salary.html", "Salary and take-home")
                     + link("calculators/savings.html", "Savings and SIP")
@@ -417,6 +423,23 @@ def main() -> int:
     ))
 
     tax_rules = load_json(CONTENT / "tax-rules.json")
+    guide_rates = load_json(CONTENT / "rates.json")["values"]
+    for rel, title, desc, body in (
+        ("guides/ppf-vs-fd-vs-nsc.html", "PPF vs FD vs NSC — which suits what",
+         "Compare a PPF, a bank fixed deposit and an NSC on rate, term, tax and access, with the after-tax arithmetic.",
+         guides.ppf_vs_fd_vs_nsc(ctx, guide_rates)),
+        ("guides/sip-vs-lump-sum.html", "SIP vs lump sum — the real difference",
+         "What changes when you invest monthly instead of all at once: timing risk, cash flow, and when each makes sense.",
+         guides.sip_vs_lump_sum(ctx, guide_rates)),
+        ("guides/old-vs-new-tax-regime.html", "Old vs new tax regime, compared",
+         "The two slab tables side by side, a worked example at 15 lakh, and what the old regime still allows.",
+         guides.old_vs_new_regime(ctx, guide_rates, tax_rules)),
+        ("guides/small-savings-compared.html", "Small savings schemes compared",
+         "PPF, SSY, SCSS, NSC, KVP, MIS and post office deposits in one table: rate, term, limits, tax and access.",
+         guides.small_savings_compared(ctx, guide_rates)),
+    ):
+        emit(rel, page(title=title + " — PaisaClear", description=desc, body=body,
+                       base="../", active="browse"))
     emit("calculators/salary.html", page(
         title="Salary & take-home calculator — PaisaClear",
         description="Work out your take-home pay from CTC under both the new and old tax regimes, with HRA, 80C, 80D and home-loan interest.",

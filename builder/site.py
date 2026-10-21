@@ -376,6 +376,7 @@ def page(
         <li><a href="{base}calculators/spending.html">Spending planner</a></li>
         <li><a href="{base}calculators/planning.html">Emergency & retirement</a></li>
         <li><a href="{base}calculators/loan.html">Loan EMI</a></li>
+        <li><a href="{base}guides/ppf-vs-fd-vs-nsc.html">Guides</a></li>
         <li><a href="{base}privacy.html">Privacy</a></li>
         <li><a href="{base}feedback.html">Feedback</a></li>
         <li><a href="{base}how-we-work.html">How we work</a></li>
