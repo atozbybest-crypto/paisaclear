@@ -223,29 +223,43 @@ def main() -> int:
             badge = f'<span class="side-count">{count}</span>' if count else ""
             return f'<a class="side-link" href="{base}{href}"{active}><span>{label}</span>{badge}</a>'
 
+        def group(title: str, body: str, member_prefixes: tuple) -> str:
+            open_attr = " open" if any(current.startswith(pref) for pref in member_prefixes) else ""
+            return (
+                f'<details class="side-group"{open_attr}>'
+                f'<summary class="side-summary"><span>{title}</span>'
+                '<svg class="side-chev" viewBox="0 0 12 12" aria-hidden="true">'
+                '<path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" '
+                'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+                '</summary><div class="side-items">' + body + "</div></details>"
+            )
+
         cat_links = "".join(
             link(f"categories/{c['slug']}.html", c["name"], str(ctx["counts_by_category"].get(c["id"], 0)))
             for c in ctx["categories"]
         )
+
+        groups = (
+            '<div class="side-home">'
+            + link("start.html", "Dashboard")
+            + "</div>"
+            + group("Browse", link("browse.html", "All products", str(len(products))) + link("compare.html", "Compare"),
+                    ("browse.html", "compare.html", "products/"))
+            + group("Categories", cat_links, ("categories/", "products/"))
+            + group("Calculators",
+                    link("calculators/salary.html", "Salary and take-home")
+                    + link("calculators/savings.html", "Savings and SIP")
+                    + link("calculators/spending.html", "Spending planner")
+                    + link("calculators/planning.html", "Emergency and retirement")
+                    + link("calculators/loan.html", "Loan EMI"),
+                    ("calculators/",))
+            + group("About", link("how-we-work.html", "How we work") + link("privacy.html", "Privacy")
+                    + link("feedback.html", "Feedback"),
+                    ("how-we-work.html", "privacy.html", "feedback.html"))
+        )
         return (
             '<aside class="sidebar" id="sidebar" aria-label="Sections">'
-            '<nav class="side-nav">'
-            '<p class="side-title">Browse</p>'
-            + link("start.html", "Start here")
-            + link("browse.html", "All products", str(len(products)))
-            + link("compare.html", "Compare")
-            + '<p class="side-title">Categories</p>' + cat_links
-            + '<p class="side-title">Calculators</p>'
-            + link("calculators/salary.html", "Salary and take-home")
-            + link("calculators/savings.html", "Savings and SIP")
-            + link("calculators/spending.html", "Spending planner")
-            + link("calculators/planning.html", "Emergency and retirement")
-            + link("calculators/loan.html", "Loan EMI")
-            + '<p class="side-title">About</p>'
-            + link("how-we-work.html", "How we work")
-            + link("privacy.html", "Privacy")
-            + link("feedback.html", "Feedback")
-            + "</nav></aside>"
+            '<nav class="side-nav">' + groups + "</nav></aside>"
         )
 
     site_cfg = load_json(CONTENT / "site.json") if (CONTENT / "site.json").exists() else {}
@@ -257,7 +271,7 @@ def main() -> int:
     if token and provider == "cloudflare":
         analytics_snippet = (
             '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
-            'data-cf-beacon=\'{"token":"' + token + '"}\'></script>'
+            "data-cf-beacon='{\"token\":\"" + token + "\"}'></script>"
         )
     elif token and provider == "goatcounter":
         analytics_snippet = (
@@ -272,8 +286,8 @@ def main() -> int:
     elif token and provider == "ga4":
         analytics_snippet = (
             '<script async src="https://www.googletagmanager.com/gtag/js?id=' + token + '"></script>'
-            '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
-            'gtag("js",new Date());gtag("config","' + token + '");</script>'
+            "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+            "gtag('js',new Date());gtag('config','" + token + "');</script>"
         )
 
     google_token = ((site_cfg.get("verification") or {}).get("google") or "").strip()

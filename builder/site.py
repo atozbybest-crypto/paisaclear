@@ -327,7 +327,6 @@ def page(
     <nav class="primary-nav" aria-label="Primary">
       {nav_link("browse.html", "All products", "browse")}
       {nav_link("compare.html", "Compare", "compare")}
-      {nav_link("calculators/salary.html", "Calculator", "calculator")}
       {nav_link("how-we-work.html", "How we work", "method")}
     </nav>
 
