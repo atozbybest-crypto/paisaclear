@@ -48,7 +48,9 @@ jobs:
         run: |
           git config user.name "paisaclear-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add site PaisaClear.html
+          # PaisaClear.html is a local download artifact; committing it from CI
+          # made it conflict with every local rebuild, so it is left alone here.
+          git add site
           if git diff --cached --quiet; then
             echo "Nothing changed in the generated output."
           else
