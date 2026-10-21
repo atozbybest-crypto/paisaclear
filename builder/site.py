@@ -376,6 +376,7 @@ def page(
         <li><a href="{base}calculators/spending.html">Spending planner</a></li>
         <li><a href="{base}calculators/planning.html">Emergency & retirement</a></li>
         <li><a href="{base}calculators/loan.html">Loan EMI</a></li>
+        <li><a href="{base}privacy.html">Privacy</a></li>
         <li><a href="{base}feedback.html">Feedback</a></li>
         <li><a href="{base}how-we-work.html">How we work</a></li>
         <li><a href="{base}how-we-work.html#approval">Editorial approval</a></li>
@@ -391,5 +392,5 @@ def page(
     <p class="footer-meta">Rates dated and sourced · Product records reviewed by hand</p>
   </div>
 </footer>
-{extra_scripts}</body>
+{extra_scripts}<!--ANALYTICS--></body>
 </html>"""

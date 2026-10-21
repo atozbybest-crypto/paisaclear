@@ -1,0 +1,12 @@
+{
+  "siteUrl": "https://paisaclear.co.in",
+  "analytics": {
+    "provider": "none",
+    "token": "",
+    "_comment": "provider: none | cloudflare | goatcounter | plausible | ga4. Paste the token/site ID from the provider, set provider, rebuild."
+  },
+  "verification": {
+    "google": "",
+    "_comment": "Paste the content= value from Google Search Console's HTML tag method"
+  }
+}

@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import calculator, loan, pages, plan, planner, start  # noqa: E402
+from builder import calculator, loan, pages, plan, planner, privacy, start  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
 CONTENT = ROOT / "content"
@@ -243,9 +243,44 @@ def main() -> int:
             + link("calculators/loan.html", "Loan EMI")
             + '<p class="side-title">About</p>'
             + link("how-we-work.html", "How we work")
+            + link("privacy.html", "Privacy")
             + link("feedback.html", "Feedback")
             + "</nav></aside>"
         )
+
+    site_cfg = load_json(CONTENT / "site.json") if (CONTENT / "site.json").exists() else {}
+    analytics_cfg = site_cfg.get("analytics") or {}
+    provider = (analytics_cfg.get("provider") or "none").strip().lower()
+    token = (analytics_cfg.get("token") or "").strip()
+
+    analytics_snippet = ""
+    if token and provider == "cloudflare":
+        analytics_snippet = (
+            '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
+            'data-cf-beacon=\'{"token":"' + token + '"}\'></script>'
+        )
+    elif token and provider == "goatcounter":
+        analytics_snippet = (
+            '<script data-goatcounter="https://' + token + '.goatcounter.com/count" '
+            'async src="https://gc.zgo.at/count.js"></script>'
+        )
+    elif token and provider == "plausible":
+        analytics_snippet = (
+            '<script defer data-domain="paisaclear.co.in" '
+            'src="https://plausible.io/js/script.js"></script>'
+        )
+    elif token and provider == "ga4":
+        analytics_snippet = (
+            '<script async src="https://www.googletagmanager.com/gtag/js?id=' + token + '"></script>'
+            '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
+            'gtag("js",new Date());gtag("config","' + token + '");</script>'
+        )
+
+    google_token = ((site_cfg.get("verification") or {}).get("google") or "").strip()
+    verify_tag = (
+        '<meta name="google-site-verification" content="' + google_token + '">'
+        if google_token else ""
+    )
 
     def emit(rel: str, markup: str) -> None:
         url = "https://paisaclear.co.in/" + rel.replace("index.html", "").replace(".html", "")
@@ -256,6 +291,9 @@ def main() -> int:
         markup = markup.replace("<!--CANONICAL-->", canonical)
         if "<!--SIDEBAR-->" in markup:
             markup = markup.replace("<!--SIDEBAR-->", sidebar_for(rel))
+        markup = markup.replace("<!--ANALYTICS-->", analytics_snippet)
+        if verify_tag:
+            markup = markup.replace("</head>", verify_tag + "\n</head>", 1)
         write(SITE / rel, markup)
         written.append(rel)
 
@@ -332,6 +370,13 @@ def main() -> int:
         base="../",
         active="calculator",
         scripts=["assets/js/money.js"],
+    ))
+
+    emit("privacy.html", page(
+        title="Privacy — PaisaClear",
+        description="What this site collects: feedback you send, server-side visit statistics without cookies, and planners that stay in your browser.",
+        body=privacy.privacy(ctx),
+        active="",
     ))
 
     emit("feedback.html", page(
