@@ -349,6 +349,7 @@ def page(
         <li><a href="{base}browse.html">All products</a></li>
         <li><a href="{base}compare.html">Compare products</a></li>
         <li><a href="{base}calculators/salary.html">Salary calculator</a></li>
+        <li><a href="{base}feedback.html">Feedback</a></li>
         <li><a href="{base}how-we-work.html">How we work</a></li>
         <li><a href="{base}how-we-work.html#approval">Editorial approval</a></li>
       </ul>

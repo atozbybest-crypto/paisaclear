@@ -838,3 +838,107 @@ def not_found(ctx: dict) -> str:
   </div>
 </section>
 """
+
+# ----------------------------------------------------------------- feedback
+
+def feedback(ctx: dict) -> str:
+    return """
+<section class="page-head">
+  <div class="shell">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol>
+      <li><a href="index.html">Home</a></li><li aria-current="page">Feedback</li>
+    </ol></nav>
+    <h1>Tell us what's wrong</h1>
+    <p class="page-lede">
+      Wrong rate, a product we've missed, a page that doesn't work — this is the fastest way to get it fixed.
+      Corrections are checked against the source before anything changes.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell fb-layout">
+    <form class="fb-form" name="feedback" method="POST" data-netlify="true"
+          netlify-honeypot="bot-field" action="feedback-thanks.html">
+      <input type="hidden" name="form-name" value="feedback">
+      <p class="fb-honeypot" aria-hidden="true">
+        <label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+      </p>
+
+      <div class="fb-grid">
+        <label class="field" for="fb-name">
+          <span class="field-label">Your name <span class="field-optional">(optional)</span></span>
+          <span class="field-input"><input id="fb-name" name="name" type="text" autocomplete="name"></span>
+        </label>
+
+        <label class="field" for="fb-email">
+          <span class="field-label">Email <span class="field-optional">(optional, only if you want a reply)</span></span>
+          <span class="field-input"><input id="fb-email" name="email" type="email" autocomplete="email"></span>
+        </label>
+      </div>
+
+      <label class="field" for="fb-topic">
+        <span class="field-label">What is this about?</span>
+        <span class="field-input">
+          <select id="fb-topic" name="topic">
+            <option>Something is wrong or out of date</option>
+            <option>A product is missing</option>
+            <option>A page or link is broken</option>
+            <option>A suggestion for the site</option>
+            <option>Something else</option>
+          </select>
+        </span>
+      </label>
+
+      <label class="field" for="fb-page">
+        <span class="field-label">Which page? <span class="field-optional">(optional)</span></span>
+        <span class="field-input"><input id="fb-page" name="page" type="text" placeholder="e.g. Public Provident Fund"></span>
+      </label>
+
+      <label class="field" for="fb-message">
+        <span class="field-label">Your message</span>
+        <span class="field-input field-input-area">
+          <textarea id="fb-message" name="message" rows="6" required
+                    placeholder="Tell us what you saw and, if you can, link to the source that shows the right figure."></textarea>
+        </span>
+      </label>
+
+      <div class="fb-actions">
+        <button class="btn btn-primary" type="submit">Send feedback</button>
+      </div>
+
+      <p class="fb-note">
+        We use your message only to check and correct the site. If you leave an email we reply to it;
+        we don't keep it for anything else.
+      </p>
+    </form>
+
+    <aside class="fb-aside">
+      <h2>Before you write</h2>
+      <ul class="check-list">
+        <li>""" + icon("check", "icon icon-sm") + """<span>Rates move. Check the source page linked on the product before reporting a figure.</span></li>
+        <li>""" + icon("check", "icon icon-sm") + """<span>For a missing product, the provider's own page is the most useful thing to send.</span></li>
+        <li>""" + icon("check", "icon icon-sm") + """<span>We can't answer personal questions about what you should buy — that's not what this site does.</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+"""
+
+
+def feedback_thanks(ctx: dict) -> str:
+    return """
+<section class="page-head">
+  <div class="shell">
+    <h1>Thank you — that's in.</h1>
+    <p class="page-lede">
+      Your message has been sent. If you left an email address, you'll get a reply once it has been checked.
+    </p>
+    <p style="margin-top:24px">
+      <a class="btn btn-primary" href="index.html">Back to the homepage</a>
+      <a class="btn btn-ghost" href="browse.html">Browse all products</a>
+    </p>
+  </div>
+</section>
+"""
+

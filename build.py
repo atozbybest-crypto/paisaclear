@@ -247,6 +247,18 @@ def main() -> int:
         active="method",
     ))
 
+    emit("feedback.html", page(
+        title="Feedback — PaisaClear",
+        description="Report a wrong figure, a missing product or a broken page. Corrections are checked against the source before anything changes.",
+        body=pages.feedback(ctx),
+    ))
+
+    emit("feedback-thanks.html", page(
+        title="Thank you — PaisaClear",
+        description="Your feedback has been sent.",
+        body=pages.feedback_thanks(ctx),
+    ))
+
     tax_rules = load_json(CONTENT / "tax-rules.json")
     emit("calculators/salary.html", page(
         title="Salary & take-home calculator — PaisaClear",
