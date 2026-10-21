@@ -1725,7 +1725,7 @@
     "returnType": "guaranteed",
     "rateRef": {
       "label": "Rate varies by tenure and amount",
-      "url": "https://www.suryodaybank.com",
+      "url": "https://suryoday.bank.in",
       "note": "Opens the bank's website. Go to Deposits → Fixed Deposit → interest rates for the current rate card."
     },
     "demo": false,
@@ -1761,7 +1761,7 @@
     "sources": [
       {
         "label": "Suryoday Small Finance Bank — deposits",
-        "url": "https://www.suryodaybank.com"
+        "url": "https://suryoday.bank.in"
       },
       {
         "label": "DICGC — deposit insurance",
@@ -1770,7 +1770,7 @@
     ],
     "source": {
       "label": "Suryoday Small Finance Bank — fixed deposits",
-      "url": "https://www.suryodaybank.com",
+      "url": "https://suryoday.bank.in",
       "note": "Opens the bank's website. Go to Deposits → Fixed Deposit → interest rates for the current rate card."
     },
     "lastVerified": "2026-10-19",
@@ -4632,7 +4632,7 @@
     "returnType": "market-linked",
     "rateRef": {
       "label": "Terms set by notification",
-      "url": "https://www.npscra.nsdl.co.in",
+      "url": "https://www.npstrust.org.in",
       "note": "The official NPS portal, with contribution rules, fund choices and exit conditions."
     },
     "demo": false,
@@ -4668,12 +4668,12 @@
     "sources": [
       {
         "label": "NPS — official portal",
-        "url": "https://www.npscra.nsdl.co.in"
+        "url": "https://www.npstrust.org.in"
       }
     ],
     "source": {
       "label": "NPS — official portal",
-      "url": "https://www.npscra.nsdl.co.in",
+      "url": "https://www.npstrust.org.in",
       "note": "The official NPS portal, with contribution rules, fund choices and exit conditions."
     },
     "lastVerified": "2026-10-19",
@@ -11673,78 +11673,6 @@
       "label": "AMFI — scheme and NAV data",
       "url": "https://www.amfiindia.com/mutual-fund",
       "note": "Search \"Sundaram Mid Cap Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
-    },
-    "lastVerified": "2026-10-19",
-    "review": {
-      "status": "approved",
-      "reviewer": "Automated NAV import, 19 Oct 2026",
-      "approvedAt": "2026-10-19",
-      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
-  },
-  {
-    "slug": "sundaram-small-cap-fund-119588",
-    "name": "Sundaram Small Cap Fund",
-    "provider": "Sundaram Mutual Fund",
-    "providerShort": "Sundaram",
-    "providerType": "Asset manager",
-    "category": "mutual-funds",
-    "returnType": "market-linked",
-    "rateKey": "nav-119588",
-    "fundCategory": "Small Cap",
-    "riskBand": "very-high",
-    "riskRank": 6,
-    "returns": {
-      "oneYear": 3.38,
-      "threeYear": 4.48,
-      "fiveYear": 6.61,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
-    },
-    "demo": false,
-    "oneLiner": "Small Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
-    "minInvestment": 500,
-    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
-    "tenure": "No lock-in",
-    "tenureMonths": null,
-    "payout": "Growth — no payout",
-    "payoutFrequency": "growth",
-    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
-    "lockIn": null,
-    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
-    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
-    "protection": "No capital protection. The NAV moves with the underlying holdings.",
-    "riskLevel": "high",
-    "risks": [
-      "The most volatile equity category; steep drawdowns are normal.",
-      "Funds can close to new money when they get too large.",
-      "Exit at scale can move prices against you."
-    ],
-    "commonUses": [
-      "Long-term goals seven years or more away",
-      "The growth portion of a savings plan"
-    ],
-    "check": [
-      "The expense ratio and exit load on the scheme page",
-      "The benchmark the fund is measured against"
-    ],
-    "collections": [
-      "understand-before-you-invest"
-    ],
-    "sources": [
-      {
-        "label": "AMFI — scheme information",
-        "url": "https://www.amfiindia.com"
-      },
-      {
-        "label": "SEBI — mutual funds",
-        "url": "https://www.sebi.gov.in"
-      }
-    ],
-    "source": {
-      "label": "AMFI — scheme and NAV data",
-      "url": "https://www.amfiindia.com/mutual-fund",
-      "note": "Search \"Sundaram Small Cap Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
     },
     "lastVerified": "2026-10-19",
     "review": {
