@@ -39,6 +39,12 @@ jobs:
           PYTHONIOENCODING: utf-8
         run: python refresh_rbi.py
 
+      - name: Refresh fund and ETF NAVs
+        if: success()
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python tools/refresh_nav.py
+
       - name: Rebuild the site
         if: success()
         env:

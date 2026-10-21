@@ -45,6 +45,8 @@ def http_json(url: str):
 
 def cagr(history, years):
     latest_date, latest_nav = history[-1]
+    if latest_date.date() < datetime(2026, 7, 21).date():
+        return None  # fund stopped publishing: merged, renamed or closed
     target = latest_date - timedelta(days=int(365.25 * years))
     older = [row for row in history if row[0] <= target]
     if not older:
@@ -81,7 +83,7 @@ def build(scheme: dict, detail: dict):
         except (KeyError, ValueError):
             continue
     history.sort()
-    if len(history) < 400:
+    if len(history) < 240:
         return None
 
     latest_date, latest_nav = history[-1]
@@ -199,7 +201,7 @@ def main() -> int:
 
     built, seen = [], set()
     with ThreadPoolExecutor(max_workers=8) as pool:
-        for scheme, detail in pool.map(fetch, candidates[: args.count * 4]):
+        for scheme, detail in pool.map(fetch, candidates[: args.count * 25]):
             if detail is None or len(built) >= args.count:
                 continue
             result = build(scheme, detail)

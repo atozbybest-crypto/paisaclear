@@ -52,6 +52,11 @@ CATEGORIES = [
     ("Mid Cap", "very-high", "high", 8, [r"mid cap"]),
     ("Small Cap", "very-high", "high", 8, [r"small cap"]),
     ("Sectoral / Thematic", "very-high", "high", 6, [r"banking", r"technology", r"pharma", r"consumption"]),
+    ("Multi Cap", "high", "high", 8, [r"multi cap"]),
+    ("Focused", "high", "high", 8, [r"focused fund"]),
+    ("Contra", "high", "high", 5, [r"contra fund"]),
+    ("Dividend Yield", "high", "high", 5, [r"dividend yield"]),
+    ("Flexi Cap", "high", "high", 8, [r"flexi cap"]),
 ]
 
 RISK_LEVEL = {"low": "low", "low-to-moderate": "low", "moderate": "moderate",
@@ -152,6 +157,31 @@ RISKS = {
         "Sector indices can lag the broad market for years.",
         "Concentration is the point, and also the risk.",
     ],
+    "Multi Cap": [
+        "Holding large, mid and small caps together does not remove equity risk.",
+        "Small-cap positions can be hard to sell in a downturn.",
+        "The spread across market caps varies by fund and can drift.",
+    ],
+    "Focused": [
+        "A concentrated portfolio means one bad call hurts more.",
+        "Usually a small number of holdings, so company-specific risk is high.",
+        "Can diverge sharply from the index for long periods.",
+    ],
+    "Contra": [
+        "Buying out-of-favour stocks can take years to pay off.",
+        "Style risk: contra can lag growth-focused funds for long stretches.",
+        "Holdings can sit in sectors the market is avoiding.",
+    ],
+    "Dividend Yield": [
+        "High dividend yield does not mean the share price will hold up.",
+        "Dividend payouts can be cut by companies.",
+        "Often concentrated in a few mature sectors.",
+    ],
+    "Flexi Cap": [
+        "The manager can swing between market caps, so risk changes over time.",
+        "Equity falls of 20-40% are normal.",
+        "Concentration in its top holdings can drive returns either way.",
+    ],
 }
 
 USES = {
@@ -185,6 +215,8 @@ def slugify(text: str, code: int) -> str:
 
 def cagr(history: list[tuple[datetime, float]], years: float) -> float | None:
     latest_date, latest_nav = history[-1]
+    if latest_date.date() < datetime(2026, 7, 21).date():
+        return None  # fund stopped publishing: merged, renamed or closed
     target = latest_date - timedelta(days=int(365.25 * years))
     older = [row for row in history if row[0] <= target]
     if not older:
@@ -332,7 +364,7 @@ def main() -> int:
 
     print(f"Fetching scheme list… (target {args.count} funds)")
     listing = http_json("https://api.mfapi.in/mf")
-    picked = pick_schemes(listing, args.count * 2)
+    picked = pick_schemes(listing, args.count * 12)
     print(f"  candidates after category filtering: {len(picked)}")
 
     products = json.loads(PRODUCTS.read_text(encoding="utf-8"))
