@@ -128,10 +128,112 @@ def salary_calculator(rules: dict) -> str:
       <p class="muted">
         Source for the rules: <a href="{esc(rules['sourceUrl'])}" target="_blank" rel="noopener noreferrer">{esc(rules['sourceLabel'])} ↗</a>
       </p>
+      <p class="muted"><a href="savings.html">Savings, SIP and deposit calculator →</a> · <a href="spending.html">Spending planner →</a></p>
     </div>
   </div>
 </section>
 
 <script type="application/json" id="tax-rules">{json.dumps(rules, ensure_ascii=False).replace("</", "<\\/")}</script>
 <script src="../assets/js/salary.js" defer></script>
+"""
+
+def money_calculator() -> str:
+    return """
+<section class="page-head">
+  <div class="shell">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Home</a></li><li aria-current="page">Savings calculator</li>
+    </ol></nav>
+    <h1>What will it grow to?</h1>
+    <p class="page-lede">
+      Monthly investing, a one-time amount, or a deposit at a fixed rate. Every result is arithmetic on the
+      numbers you type — not a prediction of what any fund will do.
+    </p>
+    <p class="page-meta">Illustrative only · no fund returns are forecast here</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell calc-layout">
+    <form class="calc-form" id="money-form" novalidate>
+      <div class="seg-toggle seg-wide" role="group" aria-label="What are you calculating">
+        <button type="button" data-money-tab="sip" class="is-on">Monthly investing</button>
+        <button type="button" data-money-tab="lump">One-time</button>
+        <button type="button" data-money-tab="deposit">Deposit</button>
+      </div>
+
+      <fieldset class="calc-group">
+        <legend>Your numbers</legend>
+        <div class="calc-grid">
+          <label class="field" data-only="sip">
+            <span class="field-label">Monthly amount</span>
+            <span class="field-input"><input id="m-monthly" type="number" value="5000" min="0"><span class="field-suffix">₹</span></span>
+          </label>
+          <label class="field" data-only="sip">
+            <span class="field-label">Annual step-up</span>
+            <span class="field-input"><input id="m-stepup" type="number" value="0" min="0" max="50"><span class="field-suffix">% a year</span></span>
+          </label>
+
+          <label class="field" data-only="lump">
+            <span class="field-label">One-time amount</span>
+            <span class="field-input"><input id="m-amount" type="number" value="100000" min="0"><span class="field-suffix">₹</span></span>
+          </label>
+
+          <label class="field" data-only="deposit">
+            <span class="field-label">Deposit amount</span>
+            <span class="field-input"><input id="m-principal" type="number" value="100000" min="0"><span class="field-suffix">₹</span></span>
+          </label>
+          <label class="field" data-only="deposit">
+            <span class="field-label">Or monthly addition</span>
+            <span class="field-input"><input id="m-addmonthly" type="number" value="0" min="0"><span class="field-suffix">₹</span></span>
+          </label>
+          <label class="field" data-only="deposit">
+            <span class="field-label">Compounding</span>
+            <span class="field-input">
+              <select id="m-compounding">
+                <option value="quarterly">Quarterly (most FDs)</option>
+                <option value="monthly">Monthly</option>
+                <option value="half-yearly">Half-yearly</option>
+                <option value="annual">Annual (PPF, NSC)</option>
+                <option value="simple">Simple interest</option>
+              </select>
+            </span>
+          </label>
+
+          <label class="field" data-only="shared">
+            <span class="field-label">For how long</span>
+            <span class="field-input"><input id="m-years" type="number" value="10" min="1" max="40"><span class="field-suffix">years</span></span>
+          </label>
+          <label class="field" data-only="shared">
+            <span class="field-label">Expected return / rate</span>
+            <span class="field-input"><input id="m-rate" type="number" value="8" min="0" max="30" step="0.1"><span class="field-suffix">% a year</span></span>
+          </label>
+          <label class="field" data-only="shared">
+            <span class="field-label">Inflation</span>
+            <span class="field-input"><input id="m-inflation" type="number" value="5" min="0" max="20" step="0.1"><span class="field-suffix">% a year</span></span>
+          </label>
+        </div>
+      </fieldset>
+    </form>
+
+    <aside class="calc-results">
+      <div id="money-output"></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="shell shell-narrow">
+    <div class="calc-notes">
+      <h2>Read this before trusting the number</h2>
+      <ul class="check-list">
+        <li>""" + icon("check", "icon icon-sm") + """<span>The arithmetic is exact: compounded at the rate you typed, for the term you typed.</span></li>
+        <li>""" + icon("alert", "icon icon-sm") + """<span>No fund earns the same rate every year. A 12% average can include a 30% fall.</span></li>
+        <li>""" + icon("alert", "icon icon-sm") + """<span>Tax, exit loads and expense ratios are not deducted. A 6% deposit and a 12% fund are not comparable until they are.</span></li>
+        <li>""" + icon("alert", "icon icon-sm") + """<span>Deposit rates change. Check the bank's rate card for the tenure you actually want.</span></li>
+      </ul>
+      <p class="muted"><a href="salary.html">Salary and take-home calculator →</a></p>
+    </div>
+  </div>
+</section>
 """

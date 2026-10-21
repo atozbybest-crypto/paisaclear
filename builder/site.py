@@ -186,7 +186,7 @@ def returns_line(product: dict) -> str:
         )
     return (
         '<p class="pcard-returns">' + "".join(cells)
-        + '<span class="ret-note">computed from NAV</span></p>'
+        + '<span class="ret-note">CAGR from NAV</span></p>'
     )
 
 
@@ -204,6 +204,9 @@ def product_card(product: dict, base: str, return_types: dict, categories: dict)
   data-risk="{esc(product.get('riskLevel', ''))}"
   data-riskband="{esc(product.get('riskRank', ''))}"
   data-min="{esc(product.get('minInvestment') if isinstance(product.get('minInvestment'), int) else 0)}"
+  data-payout="{esc((product.get('payoutFrequency') or '').lower())}"
+  data-lockin="{'yes' if product.get('lockIn') else 'no'}"
+  data-tax="{'yes' if 'tax-saving' in product.get('collections', []) else 'no'}"
   data-name="{esc(product['name'].lower())}"
   data-text="{esc((product['name'] + ' ' + product['provider'] + ' ' + product.get('oneLiner', '')).lower())}">
   <a class="pcard-link" href="{base}products/{esc(product['slug'])}.html">
@@ -349,6 +352,10 @@ def page(
         <li><a href="{base}browse.html">All products</a></li>
         <li><a href="{base}compare.html">Compare products</a></li>
         <li><a href="{base}calculators/salary.html">Salary calculator</a></li>
+        <li><a href="{base}calculators/savings.html">Savings calculator</a></li>
+        <li><a href="{base}calculators/spending.html">Spending planner</a></li>
+        <li><a href="{base}calculators/planning.html">Emergency & retirement</a></li>
+        <li><a href="{base}calculators/loan.html">Loan EMI</a></li>
         <li><a href="{base}feedback.html">Feedback</a></li>
         <li><a href="{base}how-we-work.html">How we work</a></li>
         <li><a href="{base}how-we-work.html#approval">Editorial approval</a></li>
@@ -361,7 +368,7 @@ def page(
       take payments, or give personalised recommendations. Rates and rules change: every figure here carries the
       date it applied and a link to where it came from. Confirm with the official provider or regulator before acting.
     </p>
-    <p class="footer-meta">Rates dated and sourced · Product records reviewed by hand · Data model v2</p>
+    <p class="footer-meta">Rates dated and sourced · Product records reviewed by hand</p>
   </div>
 </footer>
 {extra_scripts}</body>

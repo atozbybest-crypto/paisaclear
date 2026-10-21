@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import calculator, pages  # noqa: E402
+from builder import calculator, loan, pages, plan, planner  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
 CONTENT = ROOT / "content"
@@ -247,6 +247,42 @@ def main() -> int:
         active="method",
     ))
 
+    emit("calculators/loan.html", page(
+        title="Loan EMI calculator — PaisaClear",
+        description="Work out the EMI on a loan, the total interest, and the year-by-year repayment schedule, including the effect of an extra monthly payment.",
+        body=loan.loan_page(),
+        base="../",
+        active="calculator",
+        scripts=["assets/js/loan.js"],
+    ))
+
+    emit("calculators/planning.html", page(
+        title="Emergency fund and retirement planners — PaisaClear",
+        description="Work out an emergency fund target and a retirement corpus from your own figures, and see which products your amounts can reach.",
+        body=plan.plan_page(products),
+        base="../",
+        active="calculator",
+        scripts=["assets/js/plan.js"],
+    ))
+
+    emit("calculators/spending.html", page(
+        title="Spending planner — PaisaClear",
+        description="Log what you spend, see which categories take the most, and find products your balance can already start. Stored in your browser only.",
+        body=planner.planner_page(products),
+        base="../",
+        active="calculator",
+        scripts=["assets/js/planner.js"],
+    ))
+
+    emit("calculators/savings.html", page(
+        title="Savings, SIP and deposit calculator — PaisaClear",
+        description="Work out what a monthly SIP, a one-time investment or a fixed deposit could grow to, including the value in today's money.",
+        body=calculator.money_calculator(),
+        base="../",
+        active="calculator",
+        scripts=["assets/js/money.js"],
+    ))
+
     emit("feedback.html", page(
         title="Feedback — PaisaClear",
         description="Report a wrong figure, a missing product or a broken page. Corrections are checked against the source before anything changes.",
@@ -294,6 +330,28 @@ def main() -> int:
             base="../",
             active="browse",
         ))
+
+    # Sitemap: every page we just wrote, minus the utility ones.
+    base_url = "https://paisaclear.co.in"
+    skip = {"404.html", "feedback-thanks.html"}
+    urls = []
+    for rel in sorted(written):
+        if not rel.endswith(".html") or rel in skip:
+            continue
+        loc = base_url + "/" + rel.replace("index.html", "").replace(".html", "")
+        loc = loc.rstrip("/") if loc != base_url + "/" else loc
+        urls.append(
+            "  <url><loc>" + loc + "</loc>"
+            + ("<lastmod>" + TODAY + "</lastmod>" if "TODAY" in globals() else "")
+            + "</url>"
+        )
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(urls) + "\n</urlset>\n"
+    )
+    (SITE / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    written.append("sitemap.xml")
 
     # Report
     print("PaisaClear build")

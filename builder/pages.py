@@ -124,11 +124,14 @@ def home(ctx: dict) -> str:
     cat_cards = "".join(category_card(c, counts.get(c["id"], 0), "") for c in cats)
 
     collection_blocks = []
+    shown_slugs = set()
     for cid in FEATURED_COLLECTIONS:
         collection = ctx["collections_by_id"][cid]
-        members = [p for p in products if cid in p.get("collections", [])]
+        members = [p for p in products
+                   if cid in p.get("collections", []) and p["slug"] not in shown_slugs]
         if not members:
             continue
+        shown_slugs.update(p["slug"] for p in members[:4])
         cards = "".join(
             product_card(p, "", return_types, cats_by_id) for p in members[:4]
         )
@@ -235,7 +238,7 @@ def browse(ctx: dict) -> str:
     {breadcrumb([("Home", "index.html"), ("All products", "")])}
     <h1>All products</h1>
     <p class="page-lede">
-      {len(products)} products across all five categories. Each record names its provider and terms, and every
+      {len(products)} products across every category. Each record names its provider and terms, and every
       figure is either dated and sourced or replaced with a link to the provider's own page where it genuinely
       varies — a bank's deposit rate being the clearest case.
     </p>
@@ -255,6 +258,34 @@ def browse(ctx: dict) -> str:
         <select id="filter-category">
           <option value="all">All categories</option>
           {cat_options}
+        </select>
+      </label>
+
+      <label class="select-wrap">
+        <span class="select-label">Payout</span>
+        <select id="filter-payout">
+          <option value="all">Any payout</option>
+          <option value="monthly">Monthly</option>
+          <option value="quarterly">Quarterly</option>
+          <option value="half-yearly">Half-yearly</option>
+          <option value="maturity">At maturity</option>
+        </select>
+      </label>
+
+      <label class="select-wrap">
+        <span class="select-label">Lock-in</span>
+        <select id="filter-lockin">
+          <option value="all">Any lock-in</option>
+          <option value="no">No lock-in</option>
+          <option value="yes">Has a lock-in</option>
+        </select>
+      </label>
+
+      <label class="select-wrap">
+        <span class="select-label">Tax</span>
+        <select id="filter-tax">
+          <option value="all">Any</option>
+          <option value="yes">Tax benefit</option>
         </select>
       </label>
 
@@ -454,10 +485,19 @@ def product_page(ctx: dict, product: dict) -> str:
     category = cats_by_id[product["category"]]
     rt = rt_by_id[product["returnType"]]
 
-    related = [
-        p for p in ctx["products"]
-        if p["category"] == product["category"] and p["slug"] != product["slug"]
-    ][:3]
+    data_as_of = (
+        (product.get("rate") or {}).get("asOf")
+        or (product.get("returns") or {}).get("asOf")
+        or product["lastVerified"]
+    )
+
+    # Curated alternatives: same category first, then the goal-based map.
+    related = [p for p in ctx["products"] if p["slug"] in CURATED_ALTERNATIVES.get(product["slug"], [])]
+    if not related:
+        related = [
+            p for p in ctx["products"]
+            if p["category"] == product["category"] and p["slug"] != product["slug"]
+        ][:3]
     related_cards = "".join(product_card(p, "../", rt_by_id, cats_by_id) for p in related)
 
     sources = "".join(
@@ -584,7 +624,7 @@ def product_page(ctx: dict, product: dict) -> str:
         <div class="aside-card">
           <h2>Verification</h2>
           <p class="aside-note">
-            Last checked <strong>{esc(product["lastVerified"])}</strong>.
+            Data as of <strong>{esc(data_as_of)}</strong> · reviewed <strong>{esc(product["lastVerified"])}</strong>.
             Approved for publication by {esc(review.get("reviewer") or "an editor")}.
           </p>
           <p class="aside-note">
@@ -608,6 +648,16 @@ def _related_section(cards: str) -> str:
     <div class="pcard-grid">{cards}</div>
   </div>
 </section>"""
+
+
+CURATED_ALTERNATIVES = {
+    # safe, long-term, tax-free-ish
+    "public-provident-fund": ["national-savings-certificate", "sukanya-samriddhi-yojana", "nsc-5-year"],
+    # market-linked small
+    "national-pension-system": ["public-provident-fund", "elss"],
+    # gold
+    "sovereign-gold-bond": ["gold-etf", "silver-etf"],
+}
 
 
 # ------------------------------------------------------------------ compare
@@ -638,8 +688,8 @@ def compare(ctx: dict, catalog_json: str) -> str:
     <h1>Compare up to three products</h1>
     <p class="page-lede">
       Side by side on the things that are comparable: what you are promised, how long your money is held,
-      how you get it back, and where the risks sit. Prices and rates are deliberately not shown — the demo
-      data does not invent them.
+      how you get it back, and where the risks sit. Where a product has a single dated rate we show it,
+      with the date; where it varies by tenure or provider, the comparison links to the source instead.
     </p>
   </div>
 </section>
@@ -719,7 +769,7 @@ def method(ctx: dict) -> str:
     <div class="prose">
       <h2>Where the numbers come from</h2>
       <p>
-        All five categories carry product records. Government schemes and government securities show a rate with
+        Every category carries product records. Government schemes and government securities show a rate with
         the date it applied and a link to where it came from — small-savings rates are notified each quarter,
         while bond yields are pulled from the RBI by a refresh job.
       </p>

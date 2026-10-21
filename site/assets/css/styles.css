@@ -1797,3 +1797,152 @@ button, input, select { font: inherit; color: inherit; }
   font-weight: 700;
   margin-bottom: 12px;
 }
+
+/* calculator: shared bits for the savings page */
+.seg-wide { width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 14px; }
+.seg-wide button { padding: 9px 8px; font-size: .8rem; }
+.calc-empty-text { color: var(--ink-3); font-size: .88rem; }
+.field[hidden] { display: none; }
+@media (max-width: 640px) {
+  .seg-wide { grid-template-columns: 1fr; }
+}
+
+/* ------------------------------------------------ spending planner */
+.planner-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+@media (min-width: 980px) {
+  .planner-layout { grid-template-columns: minmax(0, 1fr) 360px; gap: 40px; }
+  .planner-layout .calc-results { position: sticky; top: calc(var(--head-h) + 20px); }
+}
+.planner-main { display: grid; gap: 0; }
+.planner-empty { color: var(--ink-3); font-size: .84rem; margin: 0; }
+
+.expense-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.expense-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) auto auto 24px;
+  gap: 10px;
+  align-items: center;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: .82rem;
+}
+.expense-item:last-child { border-bottom: 0; }
+.expense-cat { font-weight: 600; color: var(--ink); }
+.expense-note, .expense-date { color: var(--ink-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.expense-amount { font-variant-numeric: tabular-nums; font-weight: 600; }
+.expense-del {
+  border: 0; background: transparent; color: var(--ink-3);
+  font-size: 1rem; line-height: 1; cursor: pointer; padding: 0 2px;
+}
+.expense-del:hover { color: var(--red, #b42318); }
+
+.planner-summary { margin-bottom: 18px; }
+.planner-breakdown, .planner-suggest {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+.planner-breakdown h3, .planner-suggest h3 {
+  margin: 0 0 12px;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.bar-row { margin-bottom: 10px; }
+.bar-head { display: flex; justify-content: space-between; gap: 10px; font-size: .78rem; color: var(--ink-2); margin-bottom: 4px; }
+.bar-head strong { color: var(--ink); font-variant-numeric: tabular-nums; font-weight: 600; }
+.bar-track { height: 7px; border-radius: 999px; background: var(--tint); overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 999px; background: var(--green); }
+
+.planner-suggest-note { margin: 0 0 10px; font-size: .78rem; color: var(--ink-3); line-height: 1.5; }
+.suggest-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.suggest-item { display: grid; gap: 2px; font-size: .82rem; }
+.suggest-item a { color: var(--green); font-weight: 600; }
+.suggest-item span { color: var(--ink-3); font-size: .76rem; }
+
+/* planners */
+.bar-track-lg { height: 10px; margin: 4px 0 6px; }
+
+/* ------------------------------------------------ refined calculator tabs */
+.seg-toggle {
+  display: inline-flex;
+  gap: 2px;
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--tint);
+  border: 1px solid var(--line);
+}
+.seg-toggle button {
+  border: 0;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background .18s ease, color .18s ease, box-shadow .18s ease;
+  white-space: nowrap;
+}
+.seg-toggle button:hover { color: var(--ink); }
+.seg-toggle button.is-on {
+  background: var(--surface);
+  color: var(--green);
+  box-shadow: 0 1px 3px rgba(16, 40, 32, .14);
+}
+.seg-toggle button:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.seg-wide { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+.seg-wide button { width: 100%; text-align: center; }
+
+/* loan page */
+.calc-note-block {
+  border: 1px dashed var(--line-2);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 14px 16px;
+  font-size: .82rem;
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+.calc-note-block p { margin: 0; }
+
+.amort-wrap { overflow-x: auto; margin-top: 10px; }
+.amort {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .8rem;
+  font-variant-numeric: tabular-nums;
+}
+.amort th {
+  text-align: right;
+  font-size: .62rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--line-strong);
+  white-space: nowrap;
+}
+.amort th:first-child, .amort td:first-child { text-align: left; }
+.amort td {
+  padding: 7px 8px;
+  border-bottom: 1px solid var(--line);
+  text-align: right;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+.amort tbody tr:last-child td { border-bottom: 0; }
+
+@media (max-width: 560px) {
+  .seg-toggle { width: 100%; }
+  .seg-toggle button { flex: 1; padding: 8px 10px; font-size: .76rem; }
+}
