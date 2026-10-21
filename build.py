@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import calculator, loan, pages, plan, planner  # noqa: E402
+from builder import calculator, loan, pages, plan, planner, start  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
 CONTENT = ROOT / "content"
@@ -214,15 +214,66 @@ def main() -> int:
 
     written: list[str] = []
 
+    def sidebar_for(rel: str) -> str:
+        base = "../" if "/" in rel else ""
+        current = rel
+
+        def link(href: str, label: str, count: str = "") -> str:
+            active = ' aria-current="page"' if current == href else ""
+            badge = f'<span class="side-count">{count}</span>' if count else ""
+            return f'<a class="side-link" href="{base}{href}"{active}><span>{label}</span>{badge}</a>'
+
+        cat_links = "".join(
+            link(f"categories/{c['slug']}.html", c["name"], str(ctx["counts_by_category"].get(c["id"], 0)))
+            for c in ctx["categories"]
+        )
+        return (
+            '<aside class="sidebar" id="sidebar" aria-label="Sections">'
+            '<nav class="side-nav">'
+            '<p class="side-title">Browse</p>'
+            + link("start.html", "Start here")
+            + link("browse.html", "All products", str(len(products)))
+            + link("compare.html", "Compare")
+            + '<p class="side-title">Categories</p>' + cat_links
+            + '<p class="side-title">Calculators</p>'
+            + link("calculators/salary.html", "Salary and take-home")
+            + link("calculators/savings.html", "Savings and SIP")
+            + link("calculators/spending.html", "Spending planner")
+            + link("calculators/planning.html", "Emergency and retirement")
+            + link("calculators/loan.html", "Loan EMI")
+            + '<p class="side-title">About</p>'
+            + link("how-we-work.html", "How we work")
+            + link("feedback.html", "Feedback")
+            + "</nav></aside>"
+        )
+
     def emit(rel: str, markup: str) -> None:
+        url = "https://paisaclear.co.in/" + rel.replace("index.html", "").replace(".html", "")
+        canonical = (
+            '<link rel="canonical" href="' + url + '">\n'
+            '<meta property="og:url" content="' + url + '">'
+        )
+        markup = markup.replace("<!--CANONICAL-->", canonical)
+        if "<!--SIDEBAR-->" in markup:
+            markup = markup.replace("<!--SIDEBAR-->", sidebar_for(rel))
         write(SITE / rel, markup)
         written.append(rel)
 
+    jsonld = """<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"PaisaClear","url":"https://paisaclear.co.in/","inLanguage":"en-IN","potentialAction":{"@type":"SearchAction","target":"https://paisaclear.co.in/browse?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"PaisaClear","url":"https://paisaclear.co.in/","logo":"https://paisaclear.co.in/assets/img/og-default.png"}</script>
+</head>"""
     emit("index.html", page(
         title="PaisaClear — understand Indian financial products before you invest",
-        description="Plain-language guides to government schemes, bank deposits, mutual funds, bonds and ETFs. Compare what you are promised, how long your money is locked in, and what can go wrong.",
+        description="Plain-language guides to Indian financial products: schemes, deposits, funds, bonds and insurance. Every figure dated and sourced.",
         body=pages.home(ctx),
         active="home",
+    ).replace("</head>", jsonld))
+
+    emit("start.html", page(
+        title="Start here — PaisaClear",
+        description="New to Indian financial products? Three ways in: look a product up, run a calculator, or read how the figures are sourced.",
+        body=start.start_here(ctx),
+        active="start",
     ))
 
     emit("browse.html", page(
@@ -316,7 +367,8 @@ def main() -> int:
     for category in ctx["categories"]:
         emit(f"categories/{category['slug']}.html", page(
             title=f"{category['name']} — PaisaClear",
-            description=category["blurb"],
+            description=(category["blurb"][:152].rsplit(" ", 1)[0] + "…"
+                         if len(category["blurb"]) > 158 else category["blurb"]),
             body=pages.category_page(ctx, category),
             base="../",
             active="browse",
@@ -351,6 +403,10 @@ def main() -> int:
         + "\n".join(urls) + "\n</urlset>\n"
     )
     (SITE / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    (SITE / "robots.txt").write_text(
+        "User-agent: *\nAllow: /\n\nSitemap: " + base_url + "/sitemap.xml\n",
+        encoding="utf-8",
+    )
     written.append("sitemap.xml")
 
     # Report

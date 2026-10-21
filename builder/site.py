@@ -289,7 +289,19 @@ def page(
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="PaisaClear">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://paisaclear.co.in/assets/img/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(title)}">
+<meta name="twitter:description" content="{esc(description)}">
+<meta name="twitter:image" content="https://paisaclear.co.in/assets/img/og-default.png">
+<meta name="theme-color" content="#0f5132">
+<!--CANONICAL-->
 <link rel="icon" href="{base}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{base}assets/img/og-default.png">
 <link rel="stylesheet" href="{base}assets/css/styles.css">
 <script src="{base}assets/js/site.js" defer></script>
 </head>
@@ -307,6 +319,11 @@ def page(
       <span class="brand-name">Paisa<span>Clear</span></span>
     </a>
 
+    <button class="nav-toggle" type="button" aria-controls="sidebar" aria-expanded="false">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="sr-only">Sections</span>
+    </button>
+
     <nav class="primary-nav" aria-label="Primary">
       {nav_link("browse.html", "All products", "browse")}
       {nav_link("compare.html", "Compare", "compare")}
@@ -322,9 +339,12 @@ def page(
   </div>
 </header>
 
+<div class="layout">
+<!--SIDEBAR-->
 <main id="main">
 {body}
 </main>
+</div>
 
 <footer class="site-footer">
   <div class="shell footer-grid">
