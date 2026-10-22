@@ -300,7 +300,8 @@ def page(
 <meta name="twitter:image" content="https://paisaclear.co.in/assets/img/og-default.png">
 <meta name="theme-color" content="#0f5132">
 <!--CANONICAL-->
-<link rel="icon" href="{base}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{base}assets/img/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="icon" href="{base}assets/img/favicon-96.png" sizes="96x96" type="image/png">
 <link rel="icon" href="{base}assets/img/favicon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="{base}assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="{base}assets/css/styles.css">
