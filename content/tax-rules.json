@@ -35,19 +35,52 @@
       "standardDeduction": 75000,
       "professionalTaxAllowed": true,
       "slabs": [
-        { "upTo": 400000, "rate": 0 },
-        { "upTo": 800000, "rate": 0.05 },
-        { "upTo": 1200000, "rate": 0.1 },
-        { "upTo": 1600000, "rate": 0.15 },
-        { "upTo": 2000000, "rate": 0.2 },
-        { "upTo": 2400000, "rate": 0.25 },
-        { "upTo": null, "rate": 0.3 }
+        {
+          "upTo": 400000,
+          "rate": 0
+        },
+        {
+          "upTo": 800000,
+          "rate": 0.05
+        },
+        {
+          "upTo": 1200000,
+          "rate": 0.1
+        },
+        {
+          "upTo": 1600000,
+          "rate": 0.15
+        },
+        {
+          "upTo": 2000000,
+          "rate": 0.2
+        },
+        {
+          "upTo": 2400000,
+          "rate": 0.25
+        },
+        {
+          "upTo": null,
+          "rate": 0.3
+        }
       ],
-      "rebate": { "taxableLimit": 1200000, "maxRebate": 60000 },
+      "rebate": {
+        "taxableLimit": 1200000,
+        "maxRebate": 60000
+      },
       "surcharge": [
-        { "above": 20000000, "rate": 0.25 },
-        { "above": 10000000, "rate": 0.15 },
-        { "above": 5000000, "rate": 0.1 }
+        {
+          "above": 20000000,
+          "rate": 0.25
+        },
+        {
+          "above": 10000000,
+          "rate": 0.15
+        },
+        {
+          "above": 5000000,
+          "rate": 0.1
+        }
       ]
     },
     "old": {
@@ -56,18 +89,99 @@
       "standardDeduction": 50000,
       "professionalTaxAllowed": true,
       "slabs": [
-        { "upTo": 250000, "rate": 0 },
-        { "upTo": 500000, "rate": 0.05 },
-        { "upTo": 1000000, "rate": 0.2 },
-        { "upTo": null, "rate": 0.3 }
+        {
+          "upTo": 250000,
+          "rate": 0
+        },
+        {
+          "upTo": 500000,
+          "rate": 0.05
+        },
+        {
+          "upTo": 1000000,
+          "rate": 0.2
+        },
+        {
+          "upTo": null,
+          "rate": 0.3
+        }
       ],
-      "rebate": { "taxableLimit": 500000, "maxRebate": 12500 },
+      "rebate": {
+        "taxableLimit": 500000,
+        "maxRebate": 12500
+      },
       "surcharge": [
-        { "above": 50000000, "rate": 0.37 },
-        { "above": 20000000, "rate": 0.25 },
-        { "above": 10000000, "rate": 0.15 },
-        { "above": 5000000, "rate": 0.1 }
+        {
+          "above": 50000000,
+          "rate": 0.37
+        },
+        {
+          "above": 20000000,
+          "rate": 0.25
+        },
+        {
+          "above": 10000000,
+          "rate": 0.15
+        },
+        {
+          "above": 5000000,
+          "rate": 0.1
+        }
       ]
     }
+  },
+  "entities": {
+    "individual": {
+      "label": "Individual",
+      "kind": "person"
+    },
+    "huf": {
+      "label": "HUF",
+      "kind": "person"
+    },
+    "firm": {
+      "label": "Firm / LLP",
+      "kind": "flat",
+      "rate": 0.3,
+      "surcharge": [
+        {
+          "above": 10000000,
+          "rate": 0.12
+        }
+      ]
+    },
+    "company": {
+      "label": "Domestic company",
+      "kind": "company",
+      "rate_small": 0.25,
+      "rate": 0.3,
+      "turnover_limit": 40000000,
+      "surcharge": [
+        {
+          "above": 100000000,
+          "rate": 0.12
+        },
+        {
+          "above": 10000000,
+          "rate": 0.07
+        }
+      ]
+    },
+    "local": {
+      "label": "Local authority",
+      "kind": "flat",
+      "rate": 0.3,
+      "surcharge": [
+        {
+          "above": 10000000,
+          "rate": 0.1
+        }
+      ]
+    }
+  },
+  "ageExemptionOld": {
+    "below60": 250000,
+    "senior": 300000,
+    "superSenior": 500000
   }
 }

@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import calculator, guides, loan, pages, plan, planner, privacy, start  # noqa: E402
+from builder import calculator, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
 CONTENT = ROOT / "content"
@@ -257,7 +257,8 @@ def main() -> int:
                     + link("calculators/savings.html", "Savings and SIP")
                     + link("calculators/spending.html", "Spending planner")
                     + link("calculators/planning.html", "Emergency and retirement")
-                    + link("calculators/loan.html", "Loan EMI"),
+                    + link("calculators/loan.html", "Loan EMI")
+                    + link("calculators/income-tax.html", "Income tax"),
                     ("calculators/",))
             + group("About", link("how-we-work.html", "How we work") + link("privacy.html", "Privacy")
                     + link("feedback.html", "Feedback"),
@@ -370,6 +371,15 @@ def main() -> int:
         description="What we publish, how a product record is researched and approved, and what we deliberately do not do.",
         body=pages.method(ctx),
         active="method",
+    ))
+
+    emit("calculators/income-tax.html", page(
+        title="Income tax calculator — PaisaClear",
+        description="Calculate income tax for 2026-27 for individuals, HUF, firms, companies and local authorities, with rebate, surcharge and cess.",
+        body=income_tax.income_tax(load_json(CONTENT / "tax-rules.json")),
+        base="../",
+        active="calculator",
+        scripts=["assets/js/income-tax.js"],
     ))
 
     emit("calculators/loan.html", page(
