@@ -5,8 +5,12 @@ name: Refresh rates and redeploy
 
 on:
   schedule:
-    # 07:00 IST daily. Adjust if you want a different local time.
-    - cron: "30 1 * * *"
+    # NAVs are declared between 21:00 and 23:00 IST on trading days, so we run
+    # after that, twice, to catch late publishers — then once in the morning as
+    # a catch-up in case a scheme published after the last attempt.
+    - cron: "50 17 * * *"   # 23:20 IST — first pass, after most NAVs are out
+    - cron: "20 18 * * *"   # 23:50 IST — second pass for late publishers
+    - cron: "30 1 * * *"    # 07:00 IST — catch-up before the day begins
   workflow_dispatch:
     inputs:
       dry_run:
