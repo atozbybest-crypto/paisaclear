@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-23T20:40:21Z",
+  "generatedAt": "2026-10-23T21:31:37Z",
   "note": "Machine-refreshable rates. `rbi` values are pulled by refresh_rbi.py; the small-savings values are entered by hand each quarter because the National Savings Institute site is not machine-readable from here.",
   "feeds": {
     "rbi": {
       "label": "Reserve Bank of India",
       "url": "https://www.rbi.org.in/",
-      "fetchedAt": "2026-10-23T20:40:21Z",
+      "fetchedAt": "2026-10-23T21:31:37Z",
       "refreshable": true
     },
     "small-savings": {
