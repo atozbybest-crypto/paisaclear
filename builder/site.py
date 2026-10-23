@@ -207,6 +207,7 @@ def product_card(product: dict, base: str, return_types: dict, categories: dict)
   data-payout="{esc((product.get('payoutFrequency') or '').lower())}"
   data-lockin="{'yes' if product.get('lockIn') else 'no'}"
   data-tax="{'yes' if 'tax-saving' in product.get('collections', []) else 'no'}"
+  data-bucket="{esc(product.get('bucket', ''))}"
   data-name="{esc(product['name'].lower())}"
   data-text="{esc((product['name'] + ' ' + product['provider'] + ' ' + product.get('oneLiner', '')).lower())}">
   <a class="pcard-link" href="{base}products/{esc(product['slug'])}.html">

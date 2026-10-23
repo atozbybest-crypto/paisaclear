@@ -2223,3 +2223,41 @@ button, input, select { font: inherit; color: inherit; }
 .guide-src { font-size: .8rem; color: var(--ink-3); line-height: 1.6; margin: 22px 0 0; }
 .guide-cta { display: flex; gap: 10px; flex-wrap: wrap; margin: 22px 0 0; }
 .guide-body { max-width: 72ch; }
+
+/* fund type buckets */
+.bucket-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 0 0;
+}
+.bucket-strip-label {
+  font-size: .66rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink-3);
+  margin-right: 4px;
+}
+.bucket-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color .15s ease, background .15s ease, color .15s ease;
+}
+.bucket-chip:hover { border-color: var(--green); color: var(--green); background: var(--green-soft, #E7F0E9); }
+.bucket-chip em {
+  font-style: normal;
+  font-size: .72rem;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}

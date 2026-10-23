@@ -262,6 +262,18 @@ def browse(ctx: dict) -> str:
       </label>
 
       <label class="select-wrap">
+        <span class="select-label">Fund type</span>
+        <select id="filter-bucket">
+          <option value="all">Any fund type</option>
+          <option value="tax-saving">Tax saving (ELSS)</option>
+          <option value="low-risk">Low risk (debt)</option>
+          <option value="conservative">Conservative</option>
+          <option value="moderate">Moderate</option>
+          <option value="aggressive">Aggressive</option>
+        </select>
+      </label>
+
+      <label class="select-wrap">
         <span class="select-label">Payout</span>
         <select id="filter-payout">
           <option value="all">Any payout</option>
@@ -324,6 +336,26 @@ def browse(ctx: dict) -> str:
 
 
 # ----------------------------------------------------------------- category
+
+def _bucket_strip(category: dict, members: list) -> str:
+    buckets: dict[str, int] = {}
+    for item in members:
+        key = item.get("bucket")
+        if key:
+            buckets[key] = buckets.get(key, 0) + 1
+    if not buckets:
+        return ""
+    order = ["tax-saving", "low-risk", "conservative", "moderate", "aggressive"]
+    labels = {"tax-saving": "Tax saving", "low-risk": "Low risk (debt)",
+              "conservative": "Conservative", "moderate": "Moderate", "aggressive": "Aggressive"}
+    chips = "".join(
+        f'<a class="bucket-chip" href="../browse.html?category={category["id"]}&bucket={key}">'
+        f'<span>{labels[key]}</span><em>{buckets[key]}</em></a>'
+        for key in order if key in buckets
+    )
+    return ('<div class="shell"><div class="bucket-strip">'
+            '<span class="bucket-strip-label">Fund type</span>' + chips + "</div></div>")
+
 
 def category_page(ctx: dict, category: dict) -> str:
     cats_by_id = ctx["categories_by_id"]
@@ -427,6 +459,8 @@ def category_page(ctx: dict, category: dict) -> str:
     <p class="page-meta">{len(members)} products · {esc(mix)}</p>
   </div>
 </section>
+
+{_bucket_strip(category, members)}
 
 <section class="section">
   <div class="shell">

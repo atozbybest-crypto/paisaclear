@@ -3209,7 +3209,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "aditya-birla-sun-life-nifty-50-etf-115512",
@@ -3281,7 +3283,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "axis-gold-etf-113434",
@@ -3353,7 +3357,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "hdfc-bse-sensex-etf-growth-option-135854",
@@ -3425,7 +3431,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "hdfc-gold-etf-growth-option-113049",
@@ -3497,7 +3505,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "hdfc-gold-etf-fund-of-fund-direct-plan-growth-option-119132",
@@ -3569,7 +3579,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "hdfc-gold-etf-fund-of-fund-regular-plan-growth-option-115934",
@@ -3641,7 +3653,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "hdfc-nifty-50-etf-growth-option-135853",
@@ -3713,7 +3727,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "icici-prudential-bse-midcap-select-etf-139519",
@@ -3785,7 +3801,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "icici-prudential-sensex-etf",
@@ -3847,7 +3865,9 @@
       "label": "ICICI Prudential — scheme factsheet",
       "url": "https://digitalfactsheet.icicipruamc.com/passive/icici-prudential-bse-sensex-etf.php",
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "icici-prudential-gold-etf-113076",
@@ -3919,7 +3939,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "icici-prudential-nifty-100-etf-123004",
@@ -3991,7 +4013,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "icici-prudential-nifty-50-etf-121366",
@@ -4063,7 +4087,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "icici-prudential-nifty50-value-20-etf-139455",
@@ -4135,7 +4161,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "invesco-india-gold-etf-fund-of-fund-direct-plan-growth-120531",
@@ -4207,7 +4235,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "invesco-india-gold-etf-fund-of-fund-regular-plan-growth-116077",
@@ -4279,7 +4309,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "kotak-bse-sensex-etf-109010",
@@ -4351,7 +4383,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "kotak-gold-etf",
@@ -4413,7 +4447,9 @@
       "label": "Kotak Mutual Fund — scheme page",
       "url": "https://www.kotakmf.com/mutual-funds/passive-funds/kotak-gold-etf",
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "kotak-nifty-50-etf-112351",
@@ -4485,7 +4521,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "kotak-nifty-50-value-20-etf-135744",
@@ -4557,7 +4595,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "kotak-nifty-bank-etf-133122",
@@ -4629,7 +4669,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "kotak-nifty-psu-bank-etf",
@@ -4691,7 +4733,9 @@
       "label": "Kotak Mutual Fund — scheme page",
       "url": "https://www.kotakmf.com/mutual-funds/passive-funds/kotak-nifty-psu-bank-etf",
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "lic-mf-bse-sensex-etf-135672",
@@ -4763,7 +4807,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "lic-mf-nifty-100-etf-136473",
@@ -4835,7 +4881,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "lic-mf-nifty-50-etf-135607",
@@ -4907,7 +4955,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "lic-mf-nifty-8-13-yr-g-sec-etf-133307",
@@ -4979,7 +5029,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "motilal-oswal-nasdaq-100-etf-114984",
@@ -5051,7 +5103,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "motilal-oswal-nifty-50-etf-113069",
@@ -5123,7 +5177,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "motilal-oswal-nifty-midcap-100-etf-114456",
@@ -5195,7 +5251,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-etf-bse-sensex-direct-plan-131331",
@@ -5267,7 +5325,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-etf-nifty-100-direct-plan-121146",
@@ -5339,7 +5399,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-etf-nifty-50-value-20-direct-plan-134782",
@@ -5411,7 +5473,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-etf-nifty-8-13-yr-g-sec-long-term-gilt-dire-139496",
@@ -5483,7 +5547,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
   },
   {
     "slug": "nippon-india-etf-nifty-india-consumption-direct-plan-128331",
@@ -5555,7 +5621,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "quantum-gold-etf",
@@ -5617,7 +5685,9 @@
       "label": "AMFI — scheme search",
       "url": "https://www.amfiindia.com/mutual-fund",
       "note": "The fund house does not publish a stable page for this scheme. Search \"Quantum Gold ETF\" on AMFI for its official NAV history and scheme documents."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "quantum-nifty-50-etf",
@@ -5680,7 +5750,9 @@
       "label": "AMFI — scheme search",
       "url": "https://www.amfiindia.com/mutual-fund",
       "note": "The fund house does not publish a stable page for this scheme. Search \"Quantum Nifty 50 ETF\" on AMFI for its official NAV history and scheme documents."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "sbi-gold-etf-regular-plan-growth-111954",
@@ -5752,7 +5824,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "uti-bse-sensex-etf-direct-plan-135321",
@@ -5824,7 +5898,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "uti-nifty-50-etf-direct-plan-135320",
@@ -5896,7 +5972,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "atal-pension-yojana",
@@ -7920,7 +7998,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "aditya-birla-sun-life-corporate-bond-fund-119533",
@@ -7992,7 +8072,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "aditya-birla-sun-life-focused-fund-119564",
@@ -8065,7 +8147,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "aditya-birla-sun-life-small-cap-fund-119556",
@@ -8137,7 +8221,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "axis-banking-and-psu-debt-fund-120438",
@@ -8209,7 +8295,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "bandhan-elss-tax-saver-fund-118473",
@@ -8283,7 +8371,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "tax-saving",
+    "bucketLabel": "Tax saving"
   },
   {
     "slug": "bandhan-flexi-cap-fund-118424",
@@ -8356,7 +8446,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "bandhan-large-cap-fund-118479",
@@ -8429,7 +8521,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "bandhan-liquid-fund-118364",
@@ -8502,7 +8596,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
   },
   {
     "slug": "bandhan-nifty-50-index-fund-118482",
@@ -8575,7 +8671,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "bandhan-ultra-short-to-short-term-fund-118371",
@@ -8647,7 +8745,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
   },
   {
     "slug": "bank-of-india-balanced-advantage-fund-127850",
@@ -8719,7 +8819,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "bandhan-10-year-constant-maturity-gilt-fund-118387",
@@ -8791,7 +8893,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "bandhan-aggressive-hybrid-passive-fof-118485",
@@ -8863,7 +8967,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "bandhan-focused-fund-118421",
@@ -8936,7 +9042,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "bandhan-gilt-fund-118464",
@@ -9008,7 +9116,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "bandhan-large-mid-cap-fund-118419",
@@ -9081,7 +9191,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "bandhan-value-fund-118481",
@@ -9154,7 +9266,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "baroda-bnp-paribas-multi-cap-fund-119354",
@@ -9227,7 +9341,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "canara-robeco-aggressive-hybrid-fund-118272",
@@ -9299,7 +9415,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "canara-robeco-consumption-fund-118273",
@@ -9371,7 +9489,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "canara-robeco-elss-tax-saver-fund-118285",
@@ -9445,7 +9565,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "tax-saving",
+    "bucketLabel": "Tax saving"
   },
   {
     "slug": "canara-robeco-flexi-cap-fund-118275",
@@ -9518,7 +9640,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "canara-robeco-gilt-fund-118299",
@@ -9590,7 +9714,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "canara-robeco-large-cap-fund",
@@ -9652,7 +9778,9 @@
       "label": "AMFI — scheme search",
       "url": "https://www.amfiindia.com/mutual-fund",
       "note": "The fund house does not publish a stable page for this scheme. Search \"Canara Robeco Large Cap Fund\" on AMFI for its official NAV history and scheme documents."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "canara-robeco-large-and-mid-cap-fund-118278",
@@ -9725,7 +9853,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "canara-robeco-liquid-fund-118305",
@@ -9798,7 +9928,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
   },
   {
     "slug": "canara-robeco-ultra-short-term-fund-118317",
@@ -9870,7 +10002,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
   },
   {
     "slug": "canara-robeco-ultra-short-to-short-term-fund-118291",
@@ -9942,7 +10076,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
   },
   {
     "slug": "dsp-aggressive-hybrid-fund-119019",
@@ -10014,7 +10150,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "dsp-flexi-cap-fund-119076",
@@ -10087,7 +10225,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "dsp-focused-fund-119096",
@@ -10160,7 +10300,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "dsp-small-cap-fund-119212",
@@ -10232,7 +10374,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "edelweiss-aggressive-hybrid-fund-118624",
@@ -10304,7 +10448,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "edelweiss-balanced-advantage-fund-118615",
@@ -10376,7 +10522,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "edelweiss-crisil-ibx-50-50-gilt-plus-sdl-short-duration-in-151365",
@@ -10448,7 +10596,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "edelweiss-elss-tax-saver-fund-118620",
@@ -10522,7 +10672,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "tax-saving",
+    "bucketLabel": "Tax saving"
   },
   {
     "slug": "edelweiss-large-cap-fund-118617",
@@ -10595,7 +10747,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "franklin-india-aggressive-hybrid-fund-118546",
@@ -10667,7 +10821,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "franklin-india-corporate-bond-fund-118569",
@@ -10739,7 +10895,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "franklin-india-elss-tax-saver-fund-118540",
@@ -10813,7 +10971,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "tax-saving",
+    "bucketLabel": "Tax saving"
   },
   {
     "slug": "franklin-india-flexi-cap-fund-118535",
@@ -10886,7 +11046,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "franklin-india-large-mid-cap-fund-118510",
@@ -10959,7 +11121,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "franklin-india-large-cap-fund-118531",
@@ -11032,7 +11196,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "franklin-india-liquid-fund-118577",
@@ -11105,7 +11271,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
   },
   {
     "slug": "franklin-india-mid-cap-fund-118533",
@@ -11177,7 +11345,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "franklin-india-nse-nifty-50-index-fund-118581",
@@ -11250,7 +11420,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "franklin-india-small-cap-fund-118525",
@@ -11322,7 +11494,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "franklin-india-technology-fund-118537",
@@ -11394,7 +11568,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "groww-large-cap-fund-119133",
@@ -11467,7 +11643,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "hdfc-bse-sensex-index-fund-119065",
@@ -11540,7 +11718,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "hdfc-balanced-advantage-fund",
@@ -11602,7 +11782,9 @@
       "label": "HDFC Mutual Fund — scheme page",
       "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-balanced-advantage-fund/direct",
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "hdfc-corporate-bond-fund-118987",
@@ -11674,7 +11856,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "hdfc-elss-tax-saver-fund-119060",
@@ -11748,7 +11932,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "tax-saving",
+    "bucketLabel": "Tax saving"
   },
   {
     "slug": "hdfc-flexi-cap-fund-118955",
@@ -11821,7 +12007,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "hdfc-focused-fund-118950",
@@ -11894,7 +12082,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "hdfc-large-cap-fund-119018",
@@ -11967,7 +12157,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "hdfc-mid-cap-fund-118989",
@@ -12039,7 +12231,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "hdfc-nifty-50-index-fund",
@@ -12102,7 +12296,9 @@
       "label": "HDFC Mutual Fund — scheme page",
       "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-nifty-50-index-fund/direct",
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "hdfc-value-fund-118935",
@@ -12175,7 +12371,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "hsbc-flexi-cap-fund-120046",
@@ -12248,7 +12446,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "icici-prudential-balanced-advantage-fund-120377",
@@ -12320,7 +12520,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "icici-prudential-banking-and-psu-debt-fund-120256",
@@ -12392,7 +12594,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "invesco-india-balanced-advantage-fund-120333",
@@ -12464,7 +12668,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "invesco-india-contra-fund-120348",
@@ -12537,7 +12743,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "invesco-india-multi-cap-fund-120413",
@@ -12610,7 +12818,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "kotak-contra-fund-119769",
@@ -12683,7 +12893,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "kotak-mid-cap-fund-119775",
@@ -12755,7 +12967,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "lic-mf-banking-psu-debt-fund-120338",
@@ -12827,7 +13041,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "mirae-asset-large-midcap-fund-118834",
@@ -12900,7 +13116,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "mirae-asset-large-cap-fund-118825",
@@ -12973,7 +13191,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "mirae-asset-ultra-short-to-short-term-fund-118840",
@@ -13045,7 +13265,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
   },
   {
     "slug": "nippon-india-aggressive-hybrid-fund-existing-number-of-seg-118794",
@@ -13117,7 +13339,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "nippon-india-balanced-advantage-fund-118736",
@@ -13189,7 +13413,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "nippon-india-banking-financial-services-fund-118589",
@@ -13261,7 +13487,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-consumption-fund-118724",
@@ -13333,7 +13561,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-corporate-bond-fund-118814",
@@ -13405,7 +13635,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "nippon-india-elss-tax-saver",
@@ -13468,7 +13700,9 @@
       "label": "Nippon India Mutual Fund — scheme page",
       "url": "https://mf.nipponindiaim.com/campaigns/NipponIndiaTaxSaverFund/product-details.html",
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
-    }
+    },
+    "bucket": "tax-saving",
+    "bucketLabel": "Tax saving"
   },
   {
     "slug": "nippon-india-focused-fund-118692",
@@ -13541,7 +13775,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-growth-mid-cap-fund-118668",
@@ -13613,7 +13849,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-index-fund-bse-sensex-plan-118791",
@@ -13686,7 +13924,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-index-fund-nifty-50-plan-118741",
@@ -13759,7 +13999,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-large-cap-fund-118632",
@@ -13832,7 +14074,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-liquid-fund",
@@ -13895,7 +14139,9 @@
       "label": "Nippon India Mutual Fund — scheme page",
       "url": "https://mf.nipponindiaim.com/FundsAndPerformance/Pages/NipponIndia-Liquid-Fund.aspx",
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
-    }
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
   },
   {
     "slug": "nippon-india-multi-cap-fund-118650",
@@ -13968,7 +14214,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-pharma-fund-118759",
@@ -14040,7 +14288,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-small-cap-fund-118778",
@@ -14112,7 +14362,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-ultra-short-to-short-term-fund-118709",
@@ -14184,7 +14436,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
   },
   {
     "slug": "nippon-india-value-fund-118784",
@@ -14257,7 +14511,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "nippon-india-vision-large-mid-cap-fund-118678",
@@ -14330,7 +14586,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "quantum-elss-tax-saver-fund-111549",
@@ -14404,7 +14662,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "tax-saving",
+    "bucketLabel": "Tax saving"
   },
   {
     "slug": "quantum-liquid-fund-103734",
@@ -14477,7 +14737,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
   },
   {
     "slug": "quantum-value-fund-103490",
@@ -14550,7 +14812,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "sbi-contra-fund-119835",
@@ -14623,7 +14887,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "sbi-focused-fund-119727",
@@ -14696,7 +14962,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "sundaram-banking-and-psu-debt-fund-formerly-known-as-sunda-119625",
@@ -14768,7 +15036,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "sundaram-mid-cap-fund-119581",
@@ -14840,7 +15110,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "sundaram-short-term-fund-formerly-known-as-sundaram-short-149587",
@@ -14912,7 +15184,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
   },
   {
     "slug": "sundaram-small-cap-fund-119589",
@@ -14984,7 +15258,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "tata-large-mid-cap-fund-119202",
@@ -15057,7 +15333,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "tata-mid-cap-fund-119178",
@@ -15129,7 +15407,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "taurus-banking-financial-services-fund-118868",
@@ -15201,7 +15481,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "taurus-elss-tax-saver-fund-118866",
@@ -15275,7 +15557,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "tax-saving",
+    "bucketLabel": "Tax saving"
   },
   {
     "slug": "taurus-flexi-cap-fund-118883",
@@ -15348,7 +15632,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "taurus-large-cap-fund-118870",
@@ -15421,7 +15707,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "taurus-mid-cap-fund-118872",
@@ -15493,7 +15781,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "taurus-nifty-50-index-fund-118881",
@@ -15566,7 +15856,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "templeton-india-value-fund-118494",
@@ -15639,7 +15931,9 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   },
   {
     "slug": "union-flexi-cap-fund-119292",
@@ -15712,6 +16006,2016 @@
       "reviewer": "Automated NAV import, 19 Oct 2026",
       "approvedAt": "2026-10-19",
       "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
-    }
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "sundaram-small-cap-fund-119588",
+    "name": "Sundaram Small Cap Fund",
+    "provider": "Sundaram Mutual Fund",
+    "providerShort": "Sundaram",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-119588",
+    "fundCategory": "Small Cap",
+    "riskBand": "very-high",
+    "riskRank": 6,
+    "returns": {
+      "oneYear": -1.28,
+      "threeYear": 4.32,
+      "fiveYear": 6.39,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Small Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "high",
+    "risks": [
+      "The most volatile equity category; steep drawdowns are normal.",
+      "Funds can close to new money when they get too large.",
+      "Exit at scale can move prices against you."
+    ],
+    "commonUses": [
+      "Long-term goals seven years or more away",
+      "The growth portion of a savings plan"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Sundaram Small Cap Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "axis-focused-fund-120468",
+    "name": "Axis Focused Fund",
+    "provider": "Axis Mutual Fund",
+    "providerShort": "Axis",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-120468",
+    "fundCategory": "Focused",
+    "riskBand": "high",
+    "riskRank": 5,
+    "returns": {
+      "oneYear": -7.85,
+      "threeYear": 8.75,
+      "fiveYear": 2.42,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Focused fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "high",
+    "risks": [
+      "A concentrated portfolio means one bad call hurts more.",
+      "Usually a small number of holdings, so company-specific risk is high.",
+      "Can diverge sharply from the index for long periods."
+    ],
+    "commonUses": [
+      "Long-term goals seven years or more away",
+      "The growth portion of a savings plan"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Axis Focused Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "jm-focused-fund-120488",
+    "name": "JM Focused Fund",
+    "provider": "JM Financial Mutual Fund",
+    "providerShort": "JM Financial",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-120488",
+    "fundCategory": "Focused",
+    "riskBand": "high",
+    "riskRank": 5,
+    "returns": {
+      "oneYear": -8.85,
+      "threeYear": 10.53,
+      "fiveYear": 10.1,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Focused fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "high",
+    "risks": [
+      "A concentrated portfolio means one bad call hurts more.",
+      "Usually a small number of holdings, so company-specific risk is high.",
+      "Can diverge sharply from the index for long periods."
+    ],
+    "commonUses": [
+      "Long-term goals seven years or more away",
+      "The growth portion of a savings plan"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"JM Focused Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "icici-prudential-multi-cap-fund-120599",
+    "name": "ICICI Prudential Multi Cap Fund",
+    "provider": "ICICI Prudential Mutual Fund",
+    "providerShort": "ICICI Prudential",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-120599",
+    "fundCategory": "Multi Cap",
+    "riskBand": "high",
+    "riskRank": 5,
+    "returns": {
+      "oneYear": -2.68,
+      "threeYear": 13.1,
+      "fiveYear": 12.18,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Multi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "high",
+    "risks": [
+      "Holding large, mid and small caps together does not remove equity risk.",
+      "Small-cap positions can be hard to sell in a downturn.",
+      "The spread across market caps varies by fund and can drift."
+    ],
+    "commonUses": [
+      "Long-term goals seven years or more away",
+      "The growth portion of a savings plan"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"ICICI Prudential Multi Cap Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "quant-multi-cap-fund-120823",
+    "name": "Quant Multi Cap Fund",
+    "provider": "quant Mutual Fund",
+    "providerShort": "quant",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-120823",
+    "fundCategory": "Multi Cap",
+    "riskBand": "high",
+    "riskRank": 5,
+    "returns": {
+      "oneYear": -0.34,
+      "threeYear": 9.41,
+      "fiveYear": 9.55,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Multi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "high",
+    "risks": [
+      "Holding large, mid and small caps together does not remove equity risk.",
+      "Small-cap positions can be hard to sell in a downturn.",
+      "The spread across market caps varies by fund and can drift."
+    ],
+    "commonUses": [
+      "Long-term goals seven years or more away",
+      "The growth portion of a savings plan"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Quant Multi Cap Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "aditya-birla-sun-life-bse-sensex-etf-139581",
+    "name": "Aditya Birla Sun Life BSE Sensex ETF",
+    "provider": "Aditya Birla Sun Life Mutual Fund",
+    "providerShort": "Aditya Birla Sun Life",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-139581",
+    "fundCategory": "ETF",
+    "riskBand": "high",
+    "riskRank": 4,
+    "returns": {
+      "oneYear": -12.21,
+      "threeYear": 5.44,
+      "fiveYear": -33.76,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity, debt or commodity rules depending on what the fund holds.",
+    "protection": "No capital protection. The price moves with the underlying and can diverge from NAV.",
+    "riskLevel": "high",
+    "risks": [
+      "The traded price can sit above or below the value of the holdings.",
+      "Thin trading widens the spread you pay to get in or out.",
+      "Tracking difference makes the return drift from the index or asset it follows."
+    ],
+    "commonUses": [
+      "A single trade for exposure to an index, commodity or sector",
+      "A low-cost building block in a portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume and the bid-ask spread"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Aditya Birla Sun Life BSE Sensex ETF\" on AMFI for its official NAV history; check the exchange page for the traded price."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "bandhan-nifty-50-etf-regular-plan-growth-139839",
+    "name": "BANDHAN Nifty 50 ETF - Regular Plan - Growth",
+    "provider": "Bandhan Mutual Fund",
+    "providerShort": "Bandhan",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-139839",
+    "fundCategory": "ETF",
+    "riskBand": "high",
+    "riskRank": 4,
+    "returns": {
+      "oneYear": -11.27,
+      "threeYear": 6.71,
+      "fiveYear": 5.76,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity, debt or commodity rules depending on what the fund holds.",
+    "protection": "No capital protection. The price moves with the underlying and can diverge from NAV.",
+    "riskLevel": "high",
+    "risks": [
+      "The traded price can sit above or below the value of the holdings.",
+      "Thin trading widens the spread you pay to get in or out.",
+      "Tracking difference makes the return drift from the index or asset it follows."
+    ],
+    "commonUses": [
+      "A single trade for exposure to an index, commodity or sector",
+      "A low-cost building block in a portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume and the bid-ask spread"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"BANDHAN Nifty 50 ETF - Regular Plan - Growth\" on AMFI for its official NAV history; check the exchange page for the traded price."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "bandhan-bse-sensex-etf-regular-plan-growth-139840",
+    "name": "BANDHAN BSE Sensex ETF - Regular Plan - Growth",
+    "provider": "Bandhan Mutual Fund",
+    "providerShort": "Bandhan",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-139840",
+    "fundCategory": "ETF",
+    "riskBand": "high",
+    "riskRank": 4,
+    "returns": {
+      "oneYear": -12.5,
+      "threeYear": 5.1,
+      "fiveYear": 4.65,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity, debt or commodity rules depending on what the fund holds.",
+    "protection": "No capital protection. The price moves with the underlying and can diverge from NAV.",
+    "riskLevel": "high",
+    "risks": [
+      "The traded price can sit above or below the value of the holdings.",
+      "Thin trading widens the spread you pay to get in or out.",
+      "Tracking difference makes the return drift from the index or asset it follows."
+    ],
+    "commonUses": [
+      "A single trade for exposure to an index, commodity or sector",
+      "A low-cost building block in a portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume and the bid-ask spread"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"BANDHAN BSE Sensex ETF - Regular Plan - Growth\" on AMFI for its official NAV history; check the exchange page for the traded price."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "nippon-india-etf-nifty-50-bees-direct-plan-140084",
+    "name": "Nippon India ETF Nifty 50 BeES - Direct Plan",
+    "provider": "Nippon India Mutual Fund",
+    "providerShort": "Nippon India",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-140084",
+    "fundCategory": "ETF",
+    "riskBand": "high",
+    "riskRank": 4,
+    "returns": {
+      "oneYear": -11.23,
+      "threeYear": 6.77,
+      "fiveYear": 5.8,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity, debt or commodity rules depending on what the fund holds.",
+    "protection": "No capital protection. The price moves with the underlying and can diverge from NAV.",
+    "riskLevel": "high",
+    "risks": [
+      "The traded price can sit above or below the value of the holdings.",
+      "Thin trading widens the spread you pay to get in or out.",
+      "Tracking difference makes the return drift from the index or asset it follows."
+    ],
+    "commonUses": [
+      "A single trade for exposure to an index, commodity or sector",
+      "A low-cost building block in a portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume and the bid-ask spread"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Nippon India ETF Nifty 50 BeES - Direct Plan\" on AMFI for its official NAV history; check the exchange page for the traded price."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "nippon-india-etf-nifty-next-50-junior-bees-direct-plan-140085",
+    "name": "Nippon India ETF Nifty Next 50 Junior BeES - Direct Plan",
+    "provider": "Nippon India Mutual Fund",
+    "providerShort": "Nippon India",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-140085",
+    "fundCategory": "ETF",
+    "riskBand": "very-high",
+    "riskRank": 5,
+    "returns": {
+      "oneYear": -2.21,
+      "threeYear": 16.32,
+      "fiveYear": 10.46,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity, debt or commodity rules depending on what the fund holds.",
+    "protection": "No capital protection. The price moves with the underlying and can diverge from NAV.",
+    "riskLevel": "high",
+    "risks": [
+      "The traded price can sit above or below the value of the holdings.",
+      "Thin trading widens the spread you pay to get in or out.",
+      "Tracking difference makes the return drift from the index or asset it follows."
+    ],
+    "commonUses": [
+      "A single trade for exposure to an index, commodity or sector",
+      "A low-cost building block in a portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume and the bid-ask spread"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Nippon India ETF Nifty Next 50 Junior BeES - Direct Plan\" on AMFI for its official NAV history; check the exchange page for the traded price."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "nippon-india-etf-nifty-1d-rate-liquid-bees-direct-plan-140086",
+    "name": "Nippon India ETF Nifty 1D Rate Liquid BeES - Direct Plan",
+    "provider": "Nippon India Mutual Fund",
+    "providerShort": "Nippon India",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-140086",
+    "fundCategory": "ETF",
+    "riskBand": "low",
+    "riskRank": 1,
+    "returns": {
+      "oneYear": 0.0,
+      "threeYear": 0.0,
+      "fiveYear": 0.0,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity, debt or commodity rules depending on what the fund holds.",
+    "protection": "No capital protection. The price moves with the underlying and can diverge from NAV.",
+    "riskLevel": "low",
+    "risks": [
+      "The traded price can sit above or below the value of the holdings.",
+      "Thin trading widens the spread you pay to get in or out.",
+      "Tracking difference makes the return drift from the index or asset it follows."
+    ],
+    "commonUses": [
+      "A single trade for exposure to an index, commodity or sector",
+      "A low-cost building block in a portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume and the bid-ask spread"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Nippon India ETF Nifty 1D Rate Liquid BeES - Direct Plan\" on AMFI for its official NAV history; check the exchange page for the traded price."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
+  },
+  {
+    "slug": "nippon-india-etf-nifty-bank-bees-direct-plan-140087",
+    "name": "Nippon India ETF Nifty Bank BeES - Direct Plan",
+    "provider": "Nippon India Mutual Fund",
+    "providerShort": "Nippon India",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-140087",
+    "fundCategory": "ETF",
+    "riskBand": "very-high",
+    "riskRank": 5,
+    "returns": {
+      "oneYear": -4.96,
+      "threeYear": 8.98,
+      "fiveYear": 7.0,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity, debt or commodity rules depending on what the fund holds.",
+    "protection": "No capital protection. The price moves with the underlying and can diverge from NAV.",
+    "riskLevel": "high",
+    "risks": [
+      "The traded price can sit above or below the value of the holdings.",
+      "Thin trading widens the spread you pay to get in or out.",
+      "Tracking difference makes the return drift from the index or asset it follows."
+    ],
+    "commonUses": [
+      "A single trade for exposure to an index, commodity or sector",
+      "A low-cost building block in a portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume and the bid-ask spread"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Nippon India ETF Nifty Bank BeES - Direct Plan\" on AMFI for its official NAV history; check the exchange page for the traded price."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "nippon-india-etf-gold-bees-direct-plan-140088",
+    "name": "Nippon India ETF Gold BeES - Direct Plan",
+    "provider": "Nippon India Mutual Fund",
+    "providerShort": "Nippon India",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-140088",
+    "fundCategory": "ETF",
+    "riskBand": "moderate",
+    "riskRank": 3,
+    "returns": {
+      "oneYear": 11.44,
+      "threeYear": 31.66,
+      "fiveYear": 23.21,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity, debt or commodity rules depending on what the fund holds.",
+    "protection": "No capital protection. The price moves with the underlying and can diverge from NAV.",
+    "riskLevel": "moderate",
+    "risks": [
+      "The traded price can sit above or below the value of the holdings.",
+      "Thin trading widens the spread you pay to get in or out.",
+      "Tracking difference makes the return drift from the index or asset it follows."
+    ],
+    "commonUses": [
+      "A single trade for exposure to an index, commodity or sector",
+      "A low-cost building block in a portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume and the bid-ask spread"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Nippon India ETF Gold BeES - Direct Plan\" on AMFI for its official NAV history; check the exchange page for the traded price."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
+  },
+  {
+    "slug": "nippon-india-etf-nifty-psu-bank-bees-direct-plan-140089",
+    "name": "Nippon India ETF Nifty PSU Bank BeES - Direct Plan",
+    "provider": "Nippon India Mutual Fund",
+    "providerShort": "Nippon India",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-140089",
+    "fundCategory": "ETF",
+    "riskBand": "low-to-moderate",
+    "riskRank": 2,
+    "returns": {
+      "oneYear": 5.28,
+      "threeYear": 20.36,
+      "fiveYear": 24.53,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity, debt or commodity rules depending on what the fund holds.",
+    "protection": "No capital protection. The price moves with the underlying and can diverge from NAV.",
+    "riskLevel": "low",
+    "risks": [
+      "The traded price can sit above or below the value of the holdings.",
+      "Thin trading widens the spread you pay to get in or out.",
+      "Tracking difference makes the return drift from the index or asset it follows."
+    ],
+    "commonUses": [
+      "A single trade for exposure to an index, commodity or sector",
+      "A low-cost building block in a portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume and the bid-ask spread"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Nippon India ETF Nifty PSU Bank BeES - Direct Plan\" on AMFI for its official NAV history; check the exchange page for the traded price."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "nippon-india-etf-nifty-50-shariah-bees-direct-plan-140094",
+    "name": "Nippon India ETF Nifty 50 Shariah BeES - Direct Plan",
+    "provider": "Nippon India Mutual Fund",
+    "providerShort": "Nippon India",
+    "providerType": "Asset manager",
+    "category": "etfs",
+    "returnType": "market-linked",
+    "rateKey": "nav-140094",
+    "fundCategory": "ETF",
+    "riskBand": "high",
+    "riskRank": 4,
+    "returns": {
+      "oneYear": -12.33,
+      "threeYear": 0.52,
+      "fiveYear": 0.02,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
+    "minInvestment": 100,
+    "minInvestmentNote": "one unit at the traded price; brokerage applies",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Traded during market hours. Liquidity depends on how many units change hands.",
+    "lockIn": null,
+    "eligibility": "Resident individuals with a demat and trading account, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity, debt or commodity rules depending on what the fund holds.",
+    "protection": "No capital protection. The price moves with the underlying and can diverge from NAV.",
+    "riskLevel": "high",
+    "risks": [
+      "The traded price can sit above or below the value of the holdings.",
+      "Thin trading widens the spread you pay to get in or out.",
+      "Tracking difference makes the return drift from the index or asset it follows."
+    ],
+    "commonUses": [
+      "A single trade for exposure to an index, commodity or sector",
+      "A low-cost building block in a portfolio"
+    ],
+    "check": [
+      "The expense ratio and tracking difference",
+      "Average daily traded volume and the bid-ask spread"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — NAV data",
+        "url": "https://www.amfiindia.com/spages/NAVAll.txt"
+      },
+      {
+        "label": "SEBI — ETFs",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Nippon India ETF Nifty 50 Shariah BeES - Direct Plan\" on AMFI for its official NAV history; check the exchange page for the traded price."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "NAV from AMFI data; returns computed by PaisaClear; risk band assigned from what the ETF tracks."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "franklin-india-gilt-fund-118498",
+    "name": "Franklin India Gilt Fund",
+    "provider": "Franklin Templeton Mutual Fund",
+    "providerShort": "Franklin Templeton",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-118498",
+    "fundCategory": "Gilt",
+    "riskBand": "moderate",
+    "riskRank": 3,
+    "returns": {
+      "oneYear": 3.7,
+      "threeYear": 6.18,
+      "fiveYear": 5.24,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Gilt fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "moderate",
+    "risks": [
+      "No credit risk, but full interest-rate risk: prices fall when yields rise.",
+      "Long-duration gilts swing more than short ones.",
+      "Returns can be negative in a rising-rate year."
+    ],
+    "commonUses": [
+      "Parking money for weeks or months",
+      "A steadier alternative to equity"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Franklin India Gilt Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
+  },
+  {
+    "slug": "nippon-india-gilt-fund-118672",
+    "name": "Nippon India Gilt Fund",
+    "provider": "Nippon India Mutual Fund",
+    "providerShort": "Nippon India",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-118672",
+    "fundCategory": "Gilt",
+    "riskBand": "moderate",
+    "riskRank": 3,
+    "returns": {
+      "oneYear": 1.5,
+      "threeYear": 6.24,
+      "fiveYear": 5.43,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Gilt fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "moderate",
+    "risks": [
+      "No credit risk, but full interest-rate risk: prices fall when yields rise.",
+      "Long-duration gilts swing more than short ones.",
+      "Returns can be negative in a rising-rate year."
+    ],
+    "commonUses": [
+      "Parking money for weeks or months",
+      "A steadier alternative to equity"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Nippon India Gilt Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "conservative",
+    "bucketLabel": "Conservative"
+  },
+  {
+    "slug": "mirae-asset-liquid-fund-118859",
+    "name": "Mirae Asset Liquid Fund",
+    "provider": "Mirae Asset Mutual Fund",
+    "providerShort": "Mirae Asset",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-118859",
+    "fundCategory": "Liquid",
+    "riskBand": "low",
+    "riskRank": 1,
+    "returns": {
+      "oneYear": 6.36,
+      "threeYear": 6.89,
+      "fiveYear": 6.4,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "low",
+    "risks": [
+      "In stressed markets a liquid fund can deliver a negative day.",
+      "Returns are modest and may not beat inflation.",
+      "Exit loads or redemption limits can apply in unusual conditions."
+    ],
+    "commonUses": [
+      "Parking money for weeks or months",
+      "A steadier alternative to equity"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "short-term",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Mirae Asset Liquid Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
+  },
+  {
+    "slug": "hdfc-ultra-short-to-short-term-fund-118942",
+    "name": "HDFC Ultra Short to Short Term Fund",
+    "provider": "HDFC Mutual Fund",
+    "providerShort": "HDFC",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-118942",
+    "fundCategory": "Ultra Short Duration",
+    "riskBand": "low-to-moderate",
+    "riskRank": 2,
+    "returns": {
+      "oneYear": 5.71,
+      "threeYear": 7.26,
+      "fiveYear": 6.69,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Ultra Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "low",
+    "risks": [
+      "Interest-rate changes move the NAV, though less than for longer debt.",
+      "Credit events in the holdings can hit the NAV.",
+      "Returns are modest after expenses."
+    ],
+    "commonUses": [
+      "Parking money for weeks or months",
+      "A steadier alternative to equity"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"HDFC Ultra Short to Short Term Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
+  },
+  {
+    "slug": "tata-aggressive-hybrid-fund-119053",
+    "name": "Tata Aggressive Hybrid Fund",
+    "provider": "Tata Mutual Fund",
+    "providerShort": "Tata",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-119053",
+    "fundCategory": "Aggressive Hybrid",
+    "riskBand": "moderately-high",
+    "riskRank": 4,
+    "returns": {
+      "oneYear": -6.6,
+      "threeYear": 7.48,
+      "fiveYear": 7.01,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Aggressive Hybrid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "moderate",
+    "risks": [
+      "Equity risk dominates; this is not a low-volatility product.",
+      "The debt portion does not offset a severe equity fall.",
+      "Tax treatment depends on the equity share, which can change."
+    ],
+    "commonUses": [
+      "Long-term goals with lower swings than pure equity",
+      "A single fund that manages the mix"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Tata Aggressive Hybrid Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
+  },
+  {
+    "slug": "hdfc-aggressive-hybrid-fund-119062",
+    "name": "HDFC Aggressive Hybrid Fund",
+    "provider": "HDFC Mutual Fund",
+    "providerShort": "HDFC",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-119062",
+    "fundCategory": "Aggressive Hybrid",
+    "riskBand": "moderately-high",
+    "riskRank": 4,
+    "returns": {
+      "oneYear": -9.04,
+      "threeYear": 6.03,
+      "fiveYear": 6.85,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Aggressive Hybrid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "moderate",
+    "risks": [
+      "Equity risk dominates; this is not a low-volatility product.",
+      "The debt portion does not offset a severe equity fall.",
+      "Tax treatment depends on the equity share, which can change."
+    ],
+    "commonUses": [
+      "Long-term goals with lower swings than pure equity",
+      "A single fund that manages the mix"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"HDFC Aggressive Hybrid Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "moderate",
+    "bucketLabel": "Moderate"
+  },
+  {
+    "slug": "hdfc-liquid-fund-119091",
+    "name": "HDFC Liquid Fund",
+    "provider": "HDFC Mutual Fund",
+    "providerShort": "HDFC",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-119091",
+    "fundCategory": "Liquid",
+    "riskBand": "low",
+    "riskRank": 1,
+    "returns": {
+      "oneYear": 6.43,
+      "threeYear": 6.88,
+      "fiveYear": 6.37,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "low",
+    "risks": [
+      "In stressed markets a liquid fund can deliver a negative day.",
+      "Returns are modest and may not beat inflation.",
+      "Exit loads or redemption limits can apply in unusual conditions."
+    ],
+    "commonUses": [
+      "Parking money for weeks or months",
+      "A steadier alternative to equity"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "short-term",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"HDFC Liquid Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
+  },
+  {
+    "slug": "dsp-liquid-fund-119125",
+    "name": "DSP Liquid Fund",
+    "provider": "DSP Mutual Fund",
+    "providerShort": "DSP",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-119125",
+    "fundCategory": "Liquid",
+    "riskBand": "low",
+    "riskRank": 1,
+    "returns": {
+      "oneYear": 6.48,
+      "threeYear": 6.94,
+      "fiveYear": 6.41,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "low",
+    "risks": [
+      "In stressed markets a liquid fund can deliver a negative day.",
+      "Returns are modest and may not beat inflation.",
+      "Exit loads or redemption limits can apply in unusual conditions."
+    ],
+    "commonUses": [
+      "Parking money for weeks or months",
+      "A steadier alternative to equity"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "short-term",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"DSP Liquid Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
+  },
+  {
+    "slug": "groww-liquid-fund-119135",
+    "name": "Groww Liquid Fund",
+    "provider": "Groww Mutual Fund",
+    "providerShort": "Groww",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-119135",
+    "fundCategory": "Liquid",
+    "riskBand": "low",
+    "riskRank": 1,
+    "returns": {
+      "oneYear": 6.48,
+      "threeYear": 6.94,
+      "fiveYear": 6.32,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "low",
+    "risks": [
+      "In stressed markets a liquid fund can deliver a negative day.",
+      "Returns are modest and may not beat inflation.",
+      "Exit loads or redemption limits can apply in unusual conditions."
+    ],
+    "commonUses": [
+      "Parking money for weeks or months",
+      "A steadier alternative to equity"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "short-term",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Groww Liquid Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
+  },
+  {
+    "slug": "tata-large-cap-fund-119160",
+    "name": "Tata Large Cap Fund",
+    "provider": "Tata Mutual Fund",
+    "providerShort": "Tata",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-119160",
+    "fundCategory": "Large Cap",
+    "riskBand": "high",
+    "riskRank": 5,
+    "returns": {
+      "oneYear": -7.64,
+      "threeYear": 9.87,
+      "fiveYear": 7.82,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Large Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "high",
+    "risks": [
+      "Equity falls of 20-40% are normal, not exceptional.",
+      "Manager decisions can lag the index.",
+      "A higher expense ratio than a passive fund."
+    ],
+    "commonUses": [
+      "Long-term goals seven years or more away",
+      "The growth portion of a savings plan"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Tata Large Cap Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
+  },
+  {
+    "slug": "dsp-ultra-short-term-fund-119205",
+    "name": "DSP Ultra Short Term Fund",
+    "provider": "DSP Mutual Fund",
+    "providerShort": "DSP",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-119205",
+    "fundCategory": "Ultra Short Duration",
+    "riskBand": "low-to-moderate",
+    "riskRank": 2,
+    "returns": {
+      "oneYear": 6.41,
+      "threeYear": 7.26,
+      "fiveYear": 6.67,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Ultra Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "low",
+    "risks": [
+      "Interest-rate changes move the NAV, though less than for longer debt.",
+      "Credit events in the holdings can hit the NAV.",
+      "Returns are modest after expenses."
+    ],
+    "commonUses": [
+      "Parking money for weeks or months",
+      "A steadier alternative to equity"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "short-term"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"DSP Ultra Short Term Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "low-risk",
+    "bucketLabel": "Low risk (debt)"
+  },
+  {
+    "slug": "tata-value-fund-119231",
+    "name": "Tata Value Fund",
+    "provider": "Tata Mutual Fund",
+    "providerShort": "Tata",
+    "providerType": "Asset manager",
+    "category": "mutual-funds",
+    "returnType": "market-linked",
+    "rateKey": "nav-119231",
+    "fundCategory": "Value",
+    "riskBand": "high",
+    "riskRank": 5,
+    "returns": {
+      "oneYear": -6.28,
+      "threeYear": 11.81,
+      "fiveYear": 11.31,
+      "asOf": "2026-10-22",
+      "basis": "CAGR computed from AMFI NAV"
+    },
+    "demo": false,
+    "oneLiner": "Value fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
+    "minInvestment": 500,
+    "minInvestmentNote": "typical SIP minimum; confirm on the scheme page",
+    "tenure": "No lock-in",
+    "tenureMonths": null,
+    "payout": "Growth — no payout",
+    "payoutFrequency": "growth",
+    "liquidity": "Redeemable on any business day. Exit load may apply within the first year.",
+    "lockIn": null,
+    "eligibility": "Resident individuals and permitted non-resident categories, subject to KYC.",
+    "tax": "Gains are taxed by holding period under equity or debt rules depending on the scheme's classification. Confirm the current treatment.",
+    "protection": "No capital protection. The NAV moves with the underlying holdings.",
+    "riskLevel": "high",
+    "risks": [
+      "Cheap stocks can stay cheap for years.",
+      "Style risk: value can lag growth for long stretches.",
+      "Holdings can be concentrated in cyclical sectors."
+    ],
+    "commonUses": [
+      "Long-term goals seven years or more away",
+      "The growth portion of a savings plan"
+    ],
+    "check": [
+      "The expense ratio and exit load on the scheme page",
+      "The benchmark the fund is measured against"
+    ],
+    "collections": [
+      "understand-before-you-invest",
+      "start-small"
+    ],
+    "sources": [
+      {
+        "label": "AMFI — scheme information",
+        "url": "https://www.amfiindia.com"
+      },
+      {
+        "label": "SEBI — mutual funds",
+        "url": "https://www.sebi.gov.in"
+      }
+    ],
+    "source": {
+      "label": "AMFI — scheme and NAV data",
+      "url": "https://www.amfiindia.com/mutual-fund",
+      "note": "Search \"Tata Value Fund\" on AMFI for this scheme's official NAV history, expense ratio and scheme documents."
+    },
+    "lastVerified": "2026-10-19",
+    "review": {
+      "status": "approved",
+      "reviewer": "Automated NAV import, 19 Oct 2026",
+      "approvedAt": "2026-10-19",
+      "notes": "Scheme name, category and NAV from AMFI data. Returns computed by PaisaClear; not a fund-house or SEBI figure."
+    },
+    "bucket": "aggressive",
+    "bucketLabel": "Aggressive"
   }
 ]

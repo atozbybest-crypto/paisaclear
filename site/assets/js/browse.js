@@ -12,6 +12,7 @@
   var input = document.getElementById("q");
   var categorySelect = document.getElementById("filter-category");
   var sortSelect = document.getElementById("sort");
+  var bucketSelect = document.getElementById("filter-bucket");
   var payoutSelect = document.getElementById("filter-payout");
   var lockinSelect = document.getElementById("filter-lockin");
   var taxSelect = document.getElementById("filter-tax");
@@ -21,7 +22,7 @@
   var reset = document.getElementById("reset-filters");
   var resetEmpty = document.getElementById("reset-empty");
 
-  var state = { q: "", category: "all", returnType: "all", payout: "all", lockin: "all", tax: "all", sort: "default" };
+  var state = { q: "", category: "all", returnType: "all", bucket: "all", payout: "all", lockin: "all", tax: "all", sort: "default" };
 
   function apply() {
     var query = state.q.trim().toLowerCase();
@@ -31,10 +32,11 @@
       var matchText = !query || card.dataset.text.indexOf(query) !== -1;
       var matchCategory = state.category === "all" || card.dataset.category === state.category;
       var matchReturn = state.returnType === "all" || card.dataset.return === state.returnType;
+      var matchBucket = state.bucket === "all" || card.dataset.bucket === state.bucket;
       var matchPayout = state.payout === "all" || card.dataset.payout === state.payout;
       var matchLockin = state.lockin === "all" || card.dataset.lockin === state.lockin;
       var matchTax = state.tax === "all" || card.dataset.tax === state.tax;
-      var visible = matchText && matchCategory && matchReturn && matchPayout && matchLockin && matchTax;
+      var visible = matchText && matchCategory && matchReturn && matchBucket && matchPayout && matchLockin && matchTax;
       card.hidden = !visible;
       if (visible) shown += 1;
     });
@@ -56,7 +58,7 @@
     empty.hidden = shown !== 0;
     results.hidden = shown === 0;
 
-    var dirty = state.q !== "" || state.category !== "all" || state.returnType !== "all" ||
+    var dirty = state.q !== "" || state.category !== "all" || state.returnType !== "all" || state.bucket !== "all" ||
       state.payout !== "all" || state.lockin !== "all" || state.tax !== "all" || state.sort !== "default";
     reset.hidden = !dirty;
   }
@@ -76,6 +78,7 @@
     if (state.q) params.set("q", state.q);
     if (state.category !== "all") params.set("category", state.category);
     if (state.returnType !== "all") params.set("return", state.returnType);
+    if (state.bucket !== "all") params.set("bucket", state.bucket);
     if (state.payout !== "all") params.set("payout", state.payout);
     if (state.lockin !== "all") params.set("lockin", state.lockin);
     if (state.tax !== "all") params.set("tax", state.tax);
@@ -87,12 +90,14 @@
     state.q = "";
     state.category = "all";
     state.sort = "default";
+    state.bucket = "all";
     state.payout = "all";
     state.lockin = "all";
     state.tax = "all";
     input.value = "";
     categorySelect.value = "all";
     sortSelect.value = "default";
+    if (bucketSelect) bucketSelect.value = "all";
     payoutSelect.value = "all";
     lockinSelect.value = "all";
     taxSelect.value = "all";
@@ -120,7 +125,7 @@
     apply();
   });
 
-  [["payout", payoutSelect], ["lockin", lockinSelect], ["tax", taxSelect]].forEach(function (pair) {
+  [["bucket", bucketSelect], ["payout", payoutSelect], ["lockin", lockinSelect], ["tax", taxSelect]].forEach(function (pair) {
     var key = pair[0], element = pair[1];
     if (!element) return;
     element.addEventListener("change", function () {
@@ -155,7 +160,7 @@
   if (params.get("return")) {
     setReturn(params.get("return"));
   }
-  [["payout", payoutSelect], ["lockin", lockinSelect], ["tax", taxSelect]].forEach(function (pair) {
+  [["bucket", bucketSelect], ["payout", payoutSelect], ["lockin", lockinSelect], ["tax", taxSelect]].forEach(function (pair) {
     var key = pair[0], element = pair[1];
     var value = params.get(key);
     if (element && value) {
