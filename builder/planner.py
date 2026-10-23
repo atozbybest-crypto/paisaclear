@@ -58,11 +58,11 @@ def planner_page(products: list) -> str:
         <div class="calc-grid">
           <label class="field">
             <span class="field-label">Money you have now</span>
-            <span class="field-input"><input id="pl-start" type="number" min="0" value="50000"><span class="field-suffix">₹</span></span>
+            <span class="field-input"><input id="pl-start" type="number" min="0" placeholder="Amount"><span class="field-suffix">₹</span></span>
           </label>
           <label class="field">
             <span class="field-label">Expected monthly income</span>
-            <span class="field-input"><input id="pl-income" type="number" min="0" value="0"><span class="field-suffix">₹ optional</span></span>
+            <span class="field-input"><input id="pl-income" type="number" min="0" placeholder="Optional"><span class="field-suffix">₹ optional</span></span>
           </label>
         </div>
       </fieldset>

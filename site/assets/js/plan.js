@@ -153,6 +153,14 @@
   }
 
   function render() {
+    if (mode === "emergency" && (val("e-expenses") <= 0 || val("e-months") <= 0)) {
+      out.innerHTML = '<p class="calc-empty-text">Enter your monthly expenses and how many months of cover you want.</p>';
+      return;
+    }
+    if (mode === "retire" && (val("r-age") <= 0 || val("r-retire") <= 0 || val("r-expenses") <= 0)) {
+      out.innerHTML = '<p class="calc-empty-text">Enter your age, the age you want to stop, and your monthly expenses.</p>';
+      return;
+    }
     out.innerHTML = mode === "emergency" ? renderEmergency() : renderRetire();
   }
 

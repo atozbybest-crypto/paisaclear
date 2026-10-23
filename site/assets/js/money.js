@@ -80,9 +80,15 @@
       (note ? ' <small class="calc-row-note">' + note + "</small>" : "") + "</strong></div>";
   }
 
+  function rate0() { return num("rate"); }
+
   function render() {
-    var years = num("years", 10);
-    var rate = num("rate", 8);
+    var years = num("years");
+    if (years <= 0 || rate0() <= 0) {
+      out.innerHTML = '<p class="calc-empty-text">Enter an amount, a term and a rate to see the result.</p>';
+      return;
+    }
+    var rate = num("rate");
     var inflation = num("inflation", 5);
     var result;
     var heading;

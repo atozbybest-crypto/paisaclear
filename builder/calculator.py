@@ -10,10 +10,11 @@ from .site import esc, icon, page
 def _field(name: str, label: str, value: str, *, suffix: str = "", hint: str = "", kind: str = "number") -> str:
     hint_html = f'<span class="field-hint">{esc(hint)}</span>' if hint else ""
     suffix_html = f'<span class="field-suffix">{esc(suffix)}</span>' if suffix else ""
+    value_attr = f' value="{esc(value)}"' if value else ""
     return f"""<label class="field" for="calc-{name}">
   <span class="field-label">{esc(label)}</span>
   <span class="field-input">
-    <input id="calc-{name}" name="{name}" type="{kind}" value="{esc(value)}" inputmode="decimal" autocomplete="off">
+    <input id="calc-{name}" name="{name}" type="{kind}"{value_attr} placeholder="0" inputmode="decimal" autocomplete="off">
     {suffix_html}
   </span>
   {hint_html}
@@ -23,16 +24,16 @@ def _field(name: str, label: str, value: str, *, suffix: str = "", hint: str = "
 def salary_calculator(rules: dict) -> str:
     d = rules["defaults"]
     fields_left = "".join([
-        _field("ctc", "Annual CTC", f"{d['ctc']}", suffix="₹", hint="Cost to company — everything the employer spends on you"),
-        _field("basic", "Basic salary", f"{d['basicPct']}", suffix="% of CTC", hint="Usually 35–50% of CTC"),
-        _field("hra", "HRA", f"{d['hraPct']}", suffix="% of basic"),
-        _field("rent", "Monthly rent paid", f"{d['rent']}", suffix="₹", hint="Used for the HRA exemption under the old regime"),
+        _field("ctc", "Annual CTC", "", suffix="₹", hint="Cost to company — everything the employer spends on you"),
+        _field("basic", "Basic salary", "", suffix="% of CTC", hint="Usually 35–50% of CTC"),
+        _field("hra", "HRA", "", suffix="% of basic"),
+        _field("rent", "Monthly rent paid", "", suffix="₹", hint="Used for the HRA exemption under the old regime"),
     ])
     fields_right = "".join([
-        _field("sec80c", "80C investments", f"{d['sec80c']}", suffix="₹", hint="PPF, ELSS, life insurance, tuition. Employee PF is added automatically. Cap ₹1.5 lakh"),
-        _field("sec80d", "80D health premium", f"{d['sec80d']}", suffix="₹", hint="Self and family. Cap ₹25,000 here"),
-        _field("home", "Home loan interest", f"{d['homeLoanInterest']}", suffix="₹", hint="Section 24(b). Cap ₹2 lakh"),
-        _field("pt", "Professional tax", f"{d['professionalTax']}", suffix="₹/yr", hint="State levy; ₹2,400 is common"),
+        _field("sec80c", "80C investments", "", suffix="₹", hint="PPF, ELSS, life insurance, tuition. Employee PF is added automatically. Cap ₹1.5 lakh"),
+        _field("sec80d", "80D health premium", "", suffix="₹", hint="Self and family. Cap ₹25,000 here"),
+        _field("home", "Home loan interest", "", suffix="₹", hint="Section 24(b). Cap ₹2 lakh"),
+        _field("pt", "Professional tax", "", suffix="₹/yr", hint="State levy; ₹2,400 is common"),
     ])
 
     return f"""
@@ -167,25 +168,25 @@ def money_calculator() -> str:
         <div class="calc-grid">
           <label class="field" data-only="sip">
             <span class="field-label">Monthly amount</span>
-            <span class="field-input"><input id="m-monthly" type="number" value="5000" min="0"><span class="field-suffix">₹</span></span>
+            <span class="field-input"><input id="m-monthly" type="number" placeholder="Monthly amount" min="0"><span class="field-suffix">₹</span></span>
           </label>
           <label class="field" data-only="sip">
             <span class="field-label">Annual step-up</span>
-            <span class="field-input"><input id="m-stepup" type="number" value="0" min="0" max="50"><span class="field-suffix">% a year</span></span>
+            <span class="field-input"><input id="m-stepup" type="number" placeholder="0" min="0" max="50"><span class="field-suffix">% a year</span></span>
           </label>
 
           <label class="field" data-only="lump">
             <span class="field-label">One-time amount</span>
-            <span class="field-input"><input id="m-amount" type="number" value="100000" min="0"><span class="field-suffix">₹</span></span>
+            <span class="field-input"><input id="m-amount" type="number" placeholder="One-time amount" min="0"><span class="field-suffix">₹</span></span>
           </label>
 
           <label class="field" data-only="deposit">
             <span class="field-label">Deposit amount</span>
-            <span class="field-input"><input id="m-principal" type="number" value="100000" min="0"><span class="field-suffix">₹</span></span>
+            <span class="field-input"><input id="m-principal" type="number" placeholder="Deposit amount" min="0"><span class="field-suffix">₹</span></span>
           </label>
           <label class="field" data-only="deposit">
             <span class="field-label">Or monthly addition</span>
-            <span class="field-input"><input id="m-addmonthly" type="number" value="0" min="0"><span class="field-suffix">₹</span></span>
+            <span class="field-input"><input id="m-addmonthly" type="number" placeholder="0" min="0"><span class="field-suffix">₹</span></span>
           </label>
           <label class="field" data-only="deposit">
             <span class="field-label">Compounding</span>
@@ -202,15 +203,15 @@ def money_calculator() -> str:
 
           <label class="field" data-only="shared">
             <span class="field-label">For how long</span>
-            <span class="field-input"><input id="m-years" type="number" value="10" min="1" max="40"><span class="field-suffix">years</span></span>
+            <span class="field-input"><input id="m-years" type="number" placeholder="Years" min="1" max="40"><span class="field-suffix">years</span></span>
           </label>
           <label class="field" data-only="shared">
             <span class="field-label">Expected return / rate</span>
-            <span class="field-input"><input id="m-rate" type="number" value="8" min="0" max="30" step="0.1"><span class="field-suffix">% a year</span></span>
+            <span class="field-input"><input id="m-rate" type="number" placeholder="%" min="0" max="30" step="0.1"><span class="field-suffix">% a year</span></span>
           </label>
           <label class="field" data-only="shared">
             <span class="field-label">Inflation</span>
-            <span class="field-input"><input id="m-inflation" type="number" value="5" min="0" max="20" step="0.1"><span class="field-suffix">% a year</span></span>
+            <span class="field-input"><input id="m-inflation" type="number" placeholder="% inflation" min="0" max="20" step="0.1"><span class="field-suffix">% a year</span></span>
           </label>
         </div>
       </fieldset>
