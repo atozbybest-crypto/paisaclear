@@ -1,73 +1,593 @@
 [
-  {"id":"what-is-paisaclear","cat":"Using the site","q":"What is PaisaClear?","a":"A free reference for Indian financial products, written for people buying their first one. It holds 253 products across six categories, plus calculators and comparison guides.","links":[{"label":"Start here","url":"start.html"}]},
-  {"id":"is-it-free","cat":"Using the site","q":"Is it free? Do I need an account?","a":"Free, and there is no account. No payments, no newsletter signup, no login.","links":[]},
-  {"id":"do-you-give-advice","cat":"Using the site","q":"Do you give financial advice?","a":"No. The site explains how products work and what the terms mean. It never tells you what to buy, because that depends on your income, debts and goals, which we do not know.","links":[{"label":"How we work","url":"how-we-work.html"}]},
-  {"id":"where-do-figures-come-from","cat":"Using the site","q":"Where do your figures come from?","a":"Each one carries the date it applied and a link to the official source: the National Savings Institute, the RBI, AMFI or the provider's own page.","links":[]},
-  {"id":"why-no-rate","cat":"Using the site","q":"Why do some products show a link instead of a rate?","a":"When a rate genuinely varies by bank, tenure or plan, publishing a single number would be misleading. Those pages link to the provider's rate card instead.","links":[]},
-  {"id":"how-often-updated","cat":"Using the site","q":"How often is the data updated?","a":"Fund NAVs refresh after they are published each evening, and RBI bond yields refresh daily. Small-savings rates change quarterly and are updated when the government notifies them.","links":[{"label":"Browse funds","url":"categories/mutual-funds.html"}]},
-  {"id":"report-error","cat":"Using the site","q":"Can I report a wrong figure?","a":"Yes, through the feedback form. Every report is checked against the source before anything changes.","links":[{"label":"Feedback","url":"feedback.html"}]},
-  {"id":"do-calculators-store","cat":"Using the site","q":"Do the calculators store my data?","a":"They run in your browser and send nothing to us. The spending planner saves your entries in this browser only, and clearing your browser data removes them.","links":[{"label":"Privacy","url":"privacy.html"}]},
-
-  {"id":"three-return-types","cat":"Basics","q":"What are the three return types?","a":"Guaranteed means the figure is fixed by contract. Conditional means it pays only if conditions are met. Market-linked means there is no promised return and the value moves with a market.","links":[{"label":"The three types explained","url":"how-we-work.html#returns"}]},
-  {"id":"is-mf-guaranteed","cat":"Basics","q":"Is a mutual fund return guaranteed?","a":"No. No mutual fund or ETF in India guarantees a return. Any figure you see for one is either historical or an illustration.","links":[{"label":"Mutual funds","url":"categories/mutual-funds.html"}]},
-  {"id":"what-is-nav","cat":"Basics","q":"What is NAV?","a":"Net Asset Value: the value of one unit of a fund, calculated after the market closes from the closing prices of what it holds.","links":[]},
-  {"id":"nav-computed","cat":"Basics","q":"Why do the returns say \"computed from NAV\"?","a":"Because we calculate them ourselves from the fund's own NAV history rather than quoting a factsheet. They are not a fund-house or SEBI figure, and they ignore exit loads and tax.","links":[]},
-  {"id":"what-is-cagr","cat":"Basics","q":"What is CAGR?","a":"Compound annual growth rate: the steady yearly rate that would take the starting value to the ending value over that period. It smooths out the bumpy years.","links":[]},
-  {"id":"what-is-inflation","cat":"Basics","q":"Why do you show a value in today's money?","a":"₹10 lakh in 15 years buys less than ₹10 lakh today. Showing the inflation-adjusted figure stops a long-term number from looking better than it is.","links":[{"label":"Savings calculator","url":"calculators/savings.html"}]},
-
-  {"id":"ppf-rate","cat":"Small savings","q":"How much does PPF pay?","a":"7.10% a year, notified for the quarter beginning 1 October 2026. The rate is revised every quarter.","links":[{"label":"PPF details","url":"products/public-provident-fund.html"}]},
-  {"id":"ppf-term","cat":"Small savings","q":"How long is PPF locked in?","a":"Fifteen years. It can be extended in five-year blocks after that. There is no early exit for the full amount.","links":[]},
-  {"id":"ppf-withdraw","cat":"Small savings","q":"Can I withdraw from PPF early?","a":"Partial withdrawal is allowed from the sixth year, within limits, for specified purposes such as education or medical treatment. A loan against the balance is also possible from the third year.","links":[]},
-  {"id":"ppf-limit","cat":"Small savings","q":"What is the PPF investment limit?","a":"₹500 minimum and ₹1.5 lakh maximum in a financial year. Contributions above the limit do not earn interest.","links":[]},
-  {"id":"ppf-vs-fd","cat":"Small savings","q":"PPF or FD — which pays more after tax?","a":"At a 30% slab, an FD needs about 10.1% to match a tax-free 7.10% PPF. No bank FD pays that, so PPF wins unless you need the money before 15 years.","links":[{"label":"PPF vs FD vs NSC","url":"guides/ppf-vs-fd-vs-nsc.html"}]},
-  {"id":"nsc","cat":"Small savings","q":"What is the NSC rate and term?","a":"7.70% for five years, with 80C on the amount invested. The interest is taxable at your slab.","links":[{"label":"NSC details","url":"products/national-savings-certificate.html"}]},
-  {"id":"ssy","cat":"Small savings","q":"What is Sukanya Samriddhi and who can open it?","a":"8.20%, the highest small-savings rate. A parent or guardian opens it for a daughter under ten, and the account matures 21 years from opening.","links":[{"label":"SSY details","url":"products/sukanya-samriddhi-yojana.html"}]},
-  {"id":"scss","cat":"Small savings","q":"Who can open a Senior Citizens' Savings Scheme?","a":"Anyone aged 60 or above, or 55 and above for certain retirees. It pays 8.20% quarterly over five years.","links":[{"label":"SCSS details","url":"products/senior-citizens-savings-scheme.html"}]},
-  {"id":"kvp","cat":"Small savings","q":"What is Kisan Vikas Patra?","a":"A government certificate at 7.50% where the money doubles in about 115 months. No market risk, no early exit.","links":[{"label":"KVP details","url":"products/kisan-vikas-patra.html"}]},
-  {"id":"mis","cat":"Small savings","q":"How does the Post Office Monthly Income Scheme work?","a":"You deposit a lump sum and receive the interest every month at 7.40%, for five years. The capital comes back at maturity.","links":[{"label":"MIS details","url":"products/post-office-monthly-income-scheme.html"}]},
-  {"id":"small-savings-fixed","cat":"Small savings","q":"Are small-savings rates fixed for the whole term?","a":"No. They are notified quarterly. Your balance earns the rate in force at the time, so a PPF opened at 7.10% can see that rate change.","links":[{"label":"All schemes compared","url":"guides/small-savings-compared.html"}]},
-  {"id":"who-backs","cat":"Small savings","q":"Who backs small-savings schemes?","a":"The Government of India. They are not bank deposits, and the DICGC insurance limit does not apply to them.","links":[]},
-
-  {"id":"fd-safe","cat":"Bank deposits","q":"Are bank fixed deposits safe?","a":"The bank is contractually obliged to pay the rate, and deposits are insured up to ₹5 lakh per depositor per bank. Above that, you rely on the bank itself.","links":[{"label":"Bank deposits","url":"categories/bank-deposits.html"}]},
-  {"id":"dicgc","cat":"Bank deposits","q":"What does DICGC cover?","a":"Up to ₹5 lakh per depositor per bank, covering principal and interest, across all your accounts with that bank.","links":[]},
-  {"id":"why-no-fd-rate","cat":"Bank deposits","q":"Why don't you show FD rates?","a":"Because they differ by bank, tenure and deposit slab, and change without notice. Each bank's record links to its own rate card instead.","links":[]},
-  {"id":"savings-rate","cat":"Bank deposits","q":"What does a savings account pay?","a":"Around 2.5–3% at most banks, and it varies by balance slab. It suits money you need to reach quickly, not money you are growing.","links":[{"label":"Savings accounts","url":"categories/bank-deposits.html"}]},
-  {"id":"what-is-rd","cat":"Bank deposits","q":"What is a recurring deposit?","a":"You deposit a fixed amount every month and it earns the bank's term rate for the chosen period. The lump sum arrives at maturity.","links":[]},
-  {"id":"fd-vs-rd","cat":"Bank deposits","q":"FD or RD — which should I choose?","a":"An FD if you already have the lump sum. An RD if the money arrives monthly and you want the discipline of a fixed commitment.","links":[]},
-  {"id":"break-fd","cat":"Bank deposits","q":"What happens if I break an FD early?","a":"You usually get a lower rate than the one contracted, by a penalty of around 0.5–1%. Some banks also charge a fee.","links":[]},
-  {"id":"fd-tax","cat":"Bank deposits","q":"Is FD interest taxable?","a":"Yes, at your slab, every year as it accrues. TDS applies above the threshold, and Form 15G or 15H can be filed if you qualify.","links":[]},
-
-  {"id":"what-is-mf","cat":"Funds","q":"What is a mutual fund?","a":"Money pooled from many investors and managed to a stated mandate. You own units, and the value of those units moves with the underlying holdings.","links":[{"label":"Mutual funds","url":"categories/mutual-funds.html"}]},
-  {"id":"direct-vs-regular","cat":"Funds","q":"Direct or regular plan?","a":"Direct plans carry no distributor commission, so their expense ratio is lower and the NAV is higher. Every fund listed here is the direct plan.","links":[]},
-  {"id":"expense-ratio","cat":"Funds","q":"What is an expense ratio?","a":"The annual fee the fund deducts from its assets, shown as a percentage. It is taken before the NAV is published, so you never see a bill for it.","links":[]},
-  {"id":"liquid-fund","cat":"Funds","q":"What is a liquid fund?","a":"A debt fund holding very short-term instruments. It is low risk but not risk-free, and it suits money parked for weeks or months.","links":[]},
-  {"id":"elss","cat":"Funds","q":"What is an ELSS and what is its lock-in?","a":"An equity fund with a three-year lock-in on each contribution, and the only fund that qualifies for 80C.","links":[{"label":"ELSS funds","url":"categories/mutual-funds.html"}]},
-  {"id":"index-fund","cat":"Funds","q":"What is an index fund?","a":"A fund that tracks an index rather than picking stocks. It costs less and never beats the index, by design.","links":[]},
-  {"id":"etf-vs-index","cat":"Funds","q":"ETF or index fund?","a":"Both track an index. An ETF trades on the exchange during the day and needs a demat account; an index fund is bought from the AMC at the day's NAV.","links":[{"label":"ETFs","url":"categories/etfs.html"}]},
-  {"id":"gold-etf","cat":"Funds","q":"What is a gold ETF?","a":"A fund that holds gold and tracks its price. It does not pay a coupon and can fall if gold falls.","links":[]},
-  {"id":"exit-load","cat":"Funds","q":"What is an exit load?","a":"A fee charged if you redeem within a set period, often one year. It is deducted from your redemption, not billed separately.","links":[]},
-  {"id":"one-year-return","cat":"Funds","q":"Should I pick a fund by its one-year return?","a":"No. One year is noise; a fund can top the table for a year and trail for the next five. Look at three and five-year figures, and at what the fund holds.","links":[]},
-  {"id":"fund-buckets","cat":"Funds","q":"What are the fund types on this site?","a":"Tax saving, Low risk (debt), Conservative, Moderate and Aggressive. They are grouped by the fund's category, and they are not a SEBI riskometer.","links":[{"label":"Fund types","url":"categories/mutual-funds.html"}]},
-  {"id":"what-is-sip","cat":"Funds","q":"What is a SIP?","a":"A standing instruction to invest a fixed amount every month. It spreads your entry price instead of committing everything on one day.","links":[{"label":"SIP vs lump sum","url":"guides/sip-vs-lump-sum.html"}]},
-
-  {"id":"gsec","cat":"Bonds","q":"What is a government security?","a":"A bond issued by the Government of India. It pays a fixed coupon twice a year and repays the face value on maturity. The market price moves as yields change.","links":[{"label":"Government bonds","url":"categories/bonds.html"}]},
-  {"id":"tbill","cat":"Bonds","q":"What is a Treasury Bill?","a":"A short-term government borrowing, issued at a discount and repaid at face value. It pays no interest along the way; the discount is your return.","links":[]},
-  {"id":"sdl","cat":"Bonds","q":"What is an SDL?","a":"A State Development Loan: a bond issued by a state government. It carries a slightly higher yield than central government debt for that reason.","links":[]},
-  {"id":"sgb","cat":"Bonds","q":"Is a Sovereign Gold Bond risk-free?","a":"No. The 2.5% coupon is fixed, but the redemption value follows the gold price, so the capital is not protected.","links":[{"label":"SGB details","url":"products/sovereign-gold-bond.html"}]},
-  {"id":"buy-bonds","cat":"Bonds","q":"How do I buy government bonds?","a":"Through RBI Retail Direct for G-Secs, T-bills and SDLs, or on the exchange through a broker. Minimum is usually ₹10,000.","links":[]},
-
-  {"id":"term-plan","cat":"Insurance","q":"What is a term insurance plan?","a":"Pure life cover: it pays your family if you die during the term and nothing if you survive it. It is the cheapest way to protect dependants.","links":[{"label":"LIC New Jeevan Amar","url":"products/lic-jeevan-amar.html"}]},
-  {"id":"endowment","cat":"Insurance","q":"What is an endowment policy?","a":"Cover plus a savings component that pays a lump sum at maturity. The return is usually modest, and early surrender returns less than you paid.","links":[]},
-  {"id":"annuity","cat":"Insurance","q":"What is an annuity?","a":"You pay a lump sum and receive a guaranteed income, usually for life. The rate is locked at purchase and the capital is normally not returnable.","links":[{"label":"LIC Jeevan Akshay-VII","url":"products/lic-jeevan-akshay-vii.html"}]},
-  {"id":"immediate-vs-deferred","cat":"Insurance","q":"Immediate or deferred annuity?","a":"Immediate starts paying straight away. Deferred waits a period you choose, which suits someone still earning who wants income later.","links":[]},
-  {"id":"ulip","cat":"Insurance","q":"What is a ULIP?","a":"A unit-linked plan where part of the premium buys life cover and the rest buys units in a fund. The investment value is not guaranteed, and there is a five-year lock-in.","links":[]},
-  {"id":"uin","cat":"Insurance","q":"What is a UIN?","a":"The Unique Identification Number IRDAI gives each insurance product. It appears on the policy and identifies the exact product terms.","links":[]},
-
-  {"id":"which-regime","cat":"Tax","q":"Old or new tax regime — which is better?","a":"For most salaried people without a large HRA claim or home loan, the new regime wins. On ₹15 lakh, it saves about ₹50,000 even with ₹3.5 lakh of deductions.","links":[{"label":"Old vs new compared","url":"guides/old-vs-new-tax-regime.html"}]},
-  {"id":"what-is-80c","cat":"Tax","q":"What is Section 80C?","a":"A deduction of up to ₹1.5 lakh for specified investments and payments: PPF, ELSS, life insurance, principal on a home loan and tuition fees. It applies only under the old regime.","links":[]},
-  {"id":"ppf-tax","cat":"Tax","q":"Is PPF interest tax-free?","a":"Yes. You get a deduction on what you put in, the interest is not taxed as it builds, and the maturity amount is not taxed.","links":[]},
-  {"id":"80d","cat":"Tax","q":"What is Section 80D?","a":"A deduction for health insurance premiums, up to ₹25,000 for yourself and family, and more if you also insure parents. Old regime only.","links":[]},
-
-  {"id":"how-compare","cat":"Using the site","q":"How do I compare products?","a":"Use the compare page to put up to three side by side on return type, minimum, tenure, payout, access, risk and tax.","links":[{"label":"Compare","url":"compare.html"}]},
-  {"id":"find-products","cat":"Using the site","q":"How do I find products that fit me?","a":"The scheme finder asks five questions and narrows the catalogue to products whose terms match. It explains each match rather than recommending one.","links":[{"label":"Scheme finder","url":"calculators/scheme-finder.html"}]}
+  {
+    "id": "what-is-paisaclear",
+    "cat": "Using the site",
+    "q": "What is PaisaClear?",
+    "a": "A free reference for Indian financial products, written for people buying their first one. It holds 253 products across six categories, plus calculators and comparison guides.",
+    "links": [
+      {
+        "label": "Start here",
+        "url": "start.html"
+      }
+    ]
+  },
+  {
+    "id": "is-it-free",
+    "cat": "Using the site",
+    "q": "Is it free? Do I need an account?",
+    "a": "Free, and there is no account. No payments, no newsletter signup, no login.",
+    "links": []
+  },
+  {
+    "id": "do-you-give-advice",
+    "cat": "Using the site",
+    "q": "Do you give financial advice?",
+    "a": "No. The site explains how products work and what the terms mean. It never tells you what to buy, because that depends on your income, debts and goals, which we do not know.",
+    "links": [
+      {
+        "label": "How we work",
+        "url": "how-we-work.html"
+      }
+    ]
+  },
+  {
+    "id": "where-do-figures-come-from",
+    "cat": "Using the site",
+    "q": "Where do your figures come from?",
+    "a": "Each one carries the date it applied and a link to the official source: the National Savings Institute, the RBI, AMFI or the provider's own page.",
+    "links": []
+  },
+  {
+    "id": "why-no-rate",
+    "cat": "Using the site",
+    "q": "Why do some products show a link instead of a rate?",
+    "a": "When a rate genuinely varies by bank, tenure or plan, publishing a single number would be misleading. Those pages link to the provider's rate card instead.",
+    "links": []
+  },
+  {
+    "id": "how-often-updated",
+    "cat": "Using the site",
+    "q": "How often is the data updated?",
+    "a": "Fund NAVs refresh after they are published each evening, and RBI bond yields refresh daily. Small-savings rates change quarterly and are updated when the government notifies them.",
+    "links": [
+      {
+        "label": "Browse funds",
+        "url": "categories/mutual-funds.html"
+      }
+    ]
+  },
+  {
+    "id": "report-error",
+    "cat": "Using the site",
+    "q": "Can I report a wrong figure?",
+    "a": "Yes, through the feedback form. Every report is checked against the source before anything changes.",
+    "links": [
+      {
+        "label": "Feedback",
+        "url": "feedback.html"
+      }
+    ]
+  },
+  {
+    "id": "do-calculators-store",
+    "cat": "Using the site",
+    "q": "Do the calculators store my data?",
+    "a": "They run in your browser and send nothing to us. The spending planner saves your entries in this browser only, and clearing your browser data removes them.",
+    "links": [
+      {
+        "label": "Privacy",
+        "url": "privacy.html"
+      }
+    ]
+  },
+  {
+    "id": "three-return-types",
+    "cat": "Basics",
+    "q": "What are the three return types?",
+    "a": "Guaranteed means the figure is fixed by contract. Conditional means it pays only if conditions are met. Market-linked means there is no promised return and the value moves with a market.",
+    "links": [
+      {
+        "label": "The three types explained",
+        "url": "how-we-work.html#returns"
+      }
+    ]
+  },
+  {
+    "id": "is-mf-guaranteed",
+    "cat": "Basics",
+    "q": "Is a mutual fund return guaranteed?",
+    "a": "No. No mutual fund or ETF in India guarantees a return. Any figure you see for one is either historical or an illustration.",
+    "links": [
+      {
+        "label": "Mutual funds",
+        "url": "categories/mutual-funds.html"
+      }
+    ]
+  },
+  {
+    "id": "what-is-nav",
+    "cat": "Basics",
+    "q": "What is NAV?",
+    "a": "Net Asset Value: the value of one unit of a fund, calculated after the market closes from the closing prices of what it holds.",
+    "links": []
+  },
+  {
+    "id": "nav-computed",
+    "cat": "Basics",
+    "q": "Why do the returns say \"computed from NAV\"?",
+    "a": "Because we calculate them ourselves from the fund's own NAV history rather than quoting a factsheet. They are not a fund-house or SEBI figure, and they ignore exit loads and tax.",
+    "links": []
+  },
+  {
+    "id": "what-is-cagr",
+    "cat": "Basics",
+    "q": "What is CAGR?",
+    "a": "Compound annual growth rate: the steady yearly rate that would take the starting value to the ending value over that period. It smooths out the bumpy years.",
+    "links": []
+  },
+  {
+    "id": "what-is-inflation",
+    "cat": "Basics",
+    "q": "Why do you show a value in today's money?",
+    "a": "₹10 lakh in 15 years buys less than ₹10 lakh today. Showing the inflation-adjusted figure stops a long-term number from looking better than it is.",
+    "links": [
+      {
+        "label": "Savings calculator",
+        "url": "calculators/savings.html"
+      }
+    ]
+  },
+  {
+    "id": "ppf-rate",
+    "cat": "Small savings",
+    "q": "How much does PPF pay?",
+    "a": "7.10% a year, notified for the quarter beginning 1 October 2026. The rate is revised every quarter.",
+    "links": [
+      {
+        "label": "PPF details",
+        "url": "products/public-provident-fund.html"
+      }
+    ]
+  },
+  {
+    "id": "ppf-term",
+    "cat": "Small savings",
+    "q": "How long is PPF locked in?",
+    "a": "Fifteen years. It can be extended in five-year blocks after that. There is no early exit for the full amount.",
+    "links": []
+  },
+  {
+    "id": "ppf-withdraw",
+    "cat": "Small savings",
+    "q": "Can I withdraw from PPF early?",
+    "a": "Partial withdrawal is allowed from the sixth year, within limits, for specified purposes such as education or medical treatment. A loan against the balance is also possible from the third year.",
+    "links": []
+  },
+  {
+    "id": "ppf-limit",
+    "cat": "Small savings",
+    "q": "What is the PPF investment limit?",
+    "a": "₹500 minimum and ₹1.5 lakh maximum in a financial year. Contributions above the limit do not earn interest.",
+    "links": []
+  },
+  {
+    "id": "ppf-vs-fd",
+    "cat": "Small savings",
+    "q": "PPF or FD — which pays more after tax?",
+    "a": "At a 30% slab, an FD needs about 10.1% to match a tax-free 7.10% PPF. No bank FD pays that, so PPF wins unless you need the money before 15 years.",
+    "links": [
+      {
+        "label": "PPF vs FD vs NSC",
+        "url": "guides/ppf-vs-fd-vs-nsc.html"
+      }
+    ]
+  },
+  {
+    "id": "nsc",
+    "cat": "Small savings",
+    "q": "What is the NSC rate and term?",
+    "a": "7.70% for five years, with 80C on the amount invested. The interest is taxable at your slab.",
+    "links": [
+      {
+        "label": "NSC details",
+        "url": "products/national-savings-certificate.html"
+      }
+    ]
+  },
+  {
+    "id": "ssy",
+    "cat": "Small savings",
+    "q": "What is Sukanya Samriddhi and who can open it?",
+    "a": "8.20%, the highest small-savings rate. A parent or guardian opens it for a daughter under ten, and the account matures 21 years from opening.",
+    "links": [
+      {
+        "label": "SSY details",
+        "url": "products/sukanya-samriddhi-yojana.html"
+      }
+    ]
+  },
+  {
+    "id": "scss",
+    "cat": "Small savings",
+    "q": "Who can open a Senior Citizens' Savings Scheme?",
+    "a": "Anyone aged 60 or above, or 55 and above for certain retirees. It pays 8.20% quarterly over five years.",
+    "links": [
+      {
+        "label": "SCSS details",
+        "url": "products/senior-citizens-savings-scheme.html"
+      }
+    ]
+  },
+  {
+    "id": "kvp",
+    "cat": "Small savings",
+    "q": "What is Kisan Vikas Patra?",
+    "a": "A government certificate at 7.50% where the money doubles in about 115 months. No market risk, no early exit.",
+    "links": [
+      {
+        "label": "KVP details",
+        "url": "products/kisan-vikas-patra.html"
+      }
+    ]
+  },
+  {
+    "id": "mis",
+    "cat": "Small savings",
+    "q": "How does the Post Office Monthly Income Scheme work?",
+    "a": "You deposit a lump sum and receive the interest every month at 7.40%, for five years. The capital comes back at maturity.",
+    "links": [
+      {
+        "label": "MIS details",
+        "url": "products/post-office-monthly-income-scheme.html"
+      }
+    ]
+  },
+  {
+    "id": "small-savings-fixed",
+    "cat": "Small savings",
+    "q": "Are small-savings rates fixed for the whole term?",
+    "a": "No. They are notified quarterly. Your balance earns the rate in force at the time, so a PPF opened at 7.10% can see that rate change.",
+    "links": [
+      {
+        "label": "All schemes compared",
+        "url": "guides/small-savings-compared.html"
+      }
+    ]
+  },
+  {
+    "id": "who-backs",
+    "cat": "Small savings",
+    "q": "Who backs small-savings schemes?",
+    "a": "The Government of India. They are not bank deposits, and the DICGC insurance limit does not apply to them.",
+    "links": []
+  },
+  {
+    "id": "fd-safe",
+    "cat": "Bank deposits",
+    "q": "Are bank fixed deposits safe?",
+    "a": "The bank is contractually obliged to pay the rate, and deposits are insured up to ₹5 lakh per depositor per bank. Above that, you rely on the bank itself.",
+    "links": [
+      {
+        "label": "Bank deposits",
+        "url": "categories/bank-deposits.html"
+      }
+    ]
+  },
+  {
+    "id": "dicgc",
+    "cat": "Bank deposits",
+    "q": "What does DICGC cover?",
+    "a": "Up to ₹5 lakh per depositor per bank, covering principal and interest, across all your accounts with that bank.",
+    "links": []
+  },
+  {
+    "id": "why-no-fd-rate",
+    "cat": "Bank deposits",
+    "q": "Why don't you show FD rates?",
+    "a": "Because they differ by bank, tenure and deposit slab, and change without notice. Each bank's record links to its own rate card instead.",
+    "links": []
+  },
+  {
+    "id": "savings-rate",
+    "cat": "Bank deposits",
+    "q": "What does a savings account pay?",
+    "a": "Around 2.5–3% at most banks, and it varies by balance slab. It suits money you need to reach quickly, not money you are growing.",
+    "links": [
+      {
+        "label": "Savings accounts",
+        "url": "categories/bank-deposits.html"
+      }
+    ]
+  },
+  {
+    "id": "what-is-rd",
+    "cat": "Bank deposits",
+    "q": "What is a recurring deposit?",
+    "a": "You deposit a fixed amount every month and it earns the bank's term rate for the chosen period. The lump sum arrives at maturity.",
+    "links": []
+  },
+  {
+    "id": "fd-vs-rd",
+    "cat": "Bank deposits",
+    "q": "FD or RD — which should I choose?",
+    "a": "An FD if you already have the lump sum. An RD if the money arrives monthly and you want the discipline of a fixed commitment.",
+    "links": []
+  },
+  {
+    "id": "break-fd",
+    "cat": "Bank deposits",
+    "q": "What happens if I break an FD early?",
+    "a": "You usually get a lower rate than the one contracted, by a penalty of around 0.5–1%. Some banks also charge a fee.",
+    "links": []
+  },
+  {
+    "id": "fd-tax",
+    "cat": "Bank deposits",
+    "q": "Is FD interest taxable?",
+    "a": "Yes, at your slab, every year as it accrues. TDS applies above the threshold, and Form 15G or 15H can be filed if you qualify.",
+    "links": []
+  },
+  {
+    "id": "what-is-mf",
+    "cat": "Funds",
+    "q": "What is a mutual fund?",
+    "a": "Money pooled from many investors and managed to a stated mandate. You own units, and the value of those units moves with the underlying holdings.",
+    "links": [
+      {
+        "label": "Mutual funds",
+        "url": "categories/mutual-funds.html"
+      }
+    ]
+  },
+  {
+    "id": "direct-vs-regular",
+    "cat": "Funds",
+    "q": "Direct or regular plan?",
+    "a": "Direct plans carry no distributor commission, so their expense ratio is lower and the NAV is higher. Every fund listed here is the direct plan.",
+    "links": []
+  },
+  {
+    "id": "expense-ratio",
+    "cat": "Funds",
+    "q": "What is an expense ratio?",
+    "a": "The annual fee the fund deducts from its assets, shown as a percentage. It is taken before the NAV is published, so you never see a bill for it.",
+    "links": []
+  },
+  {
+    "id": "liquid-fund",
+    "cat": "Funds",
+    "q": "What is a liquid fund?",
+    "a": "A debt fund holding very short-term instruments. It is low risk but not risk-free, and it suits money parked for weeks or months.",
+    "links": []
+  },
+  {
+    "id": "elss",
+    "cat": "Funds",
+    "q": "What is an ELSS and what is its lock-in?",
+    "a": "An equity fund with a three-year lock-in on each contribution, and the only fund that qualifies for 80C.",
+    "links": [
+      {
+        "label": "ELSS funds",
+        "url": "categories/mutual-funds.html"
+      }
+    ]
+  },
+  {
+    "id": "index-fund",
+    "cat": "Funds",
+    "q": "What is an index fund?",
+    "a": "A fund that tracks an index rather than picking stocks. It costs less and never beats the index, by design.",
+    "links": []
+  },
+  {
+    "id": "etf-vs-index",
+    "cat": "Funds",
+    "q": "ETF or index fund?",
+    "a": "Both track an index. An ETF trades on the exchange during the day and needs a demat account; an index fund is bought from the AMC at the day's NAV.",
+    "links": [
+      {
+        "label": "ETFs",
+        "url": "categories/etfs.html"
+      }
+    ]
+  },
+  {
+    "id": "gold-etf",
+    "cat": "Funds",
+    "q": "What is a gold ETF?",
+    "a": "A fund that holds gold and tracks its price. It does not pay a coupon and can fall if gold falls.",
+    "links": []
+  },
+  {
+    "id": "exit-load",
+    "cat": "Funds",
+    "q": "What is an exit load?",
+    "a": "A fee charged if you redeem within a set period, often one year. It is deducted from your redemption, not billed separately.",
+    "links": []
+  },
+  {
+    "id": "one-year-return",
+    "cat": "Funds",
+    "q": "Should I pick a fund by its one-year return?",
+    "a": "No. One year is noise; a fund can top the table for a year and trail for the next five. Look at three and five-year figures, and at what the fund holds.",
+    "links": []
+  },
+  {
+    "id": "fund-buckets",
+    "cat": "Funds",
+    "q": "What are the fund types on this site?",
+    "a": "Tax saving, Low risk (debt), Conservative, Moderate and Aggressive. They are grouped by the fund's category, and they are not a SEBI riskometer.",
+    "links": [
+      {
+        "label": "Fund types",
+        "url": "categories/mutual-funds.html"
+      }
+    ]
+  },
+  {
+    "id": "what-is-sip",
+    "cat": "Funds",
+    "q": "What is a SIP?",
+    "a": "A standing instruction to invest a fixed amount every month. It spreads your entry price instead of committing everything on one day.",
+    "links": [
+      {
+        "label": "SIP vs lump sum",
+        "url": "guides/sip-vs-lump-sum.html"
+      }
+    ]
+  },
+  {
+    "id": "gsec",
+    "cat": "Bonds",
+    "q": "What is a government security?",
+    "a": "A bond issued by the Government of India. It pays a fixed coupon twice a year and repays the face value on maturity. The market price moves as yields change.",
+    "links": [
+      {
+        "label": "Government bonds",
+        "url": "categories/bonds.html"
+      }
+    ]
+  },
+  {
+    "id": "tbill",
+    "cat": "Bonds",
+    "q": "What is a Treasury Bill?",
+    "a": "A short-term government borrowing, issued at a discount and repaid at face value. It pays no interest along the way; the discount is your return.",
+    "links": []
+  },
+  {
+    "id": "sdl",
+    "cat": "Bonds",
+    "q": "What is an SDL?",
+    "a": "A State Development Loan: a bond issued by a state government. It carries a slightly higher yield than central government debt for that reason.",
+    "links": []
+  },
+  {
+    "id": "sgb",
+    "cat": "Bonds",
+    "q": "Is a Sovereign Gold Bond risk-free?",
+    "a": "No. The 2.5% coupon is fixed, but the redemption value follows the gold price, so the capital is not protected.",
+    "links": [
+      {
+        "label": "SGB details",
+        "url": "products/sovereign-gold-bond.html"
+      }
+    ]
+  },
+  {
+    "id": "buy-bonds",
+    "cat": "Bonds",
+    "q": "How do I buy government bonds?",
+    "a": "Through RBI Retail Direct for G-Secs, T-bills and SDLs, or on the exchange through a broker. Minimum is usually ₹10,000.",
+    "links": []
+  },
+  {
+    "id": "term-plan",
+    "cat": "Insurance",
+    "q": "What is a term insurance plan?",
+    "a": "Pure life cover: it pays your family if you die during the term and nothing if you survive it. It is the cheapest way to protect dependants.",
+    "links": [
+      {
+        "label": "LIC New Jeevan Amar",
+        "url": "products/lic-jeevan-amar.html"
+      }
+    ]
+  },
+  {
+    "id": "endowment",
+    "cat": "Insurance",
+    "q": "What is an endowment policy?",
+    "a": "Cover plus a savings component that pays a lump sum at maturity. The return is usually modest, and early surrender returns less than you paid.",
+    "links": []
+  },
+  {
+    "id": "annuity",
+    "cat": "Insurance",
+    "q": "What is an annuity?",
+    "a": "You pay a lump sum and receive a guaranteed income, usually for life. The rate is locked at purchase and the capital is normally not returnable.",
+    "links": [
+      {
+        "label": "LIC Jeevan Akshay-VII",
+        "url": "products/lic-jeevan-akshay-vii.html"
+      }
+    ]
+  },
+  {
+    "id": "immediate-vs-deferred",
+    "cat": "Insurance",
+    "q": "Immediate or deferred annuity?",
+    "a": "Immediate starts paying straight away. Deferred waits a period you choose, which suits someone still earning who wants income later.",
+    "links": []
+  },
+  {
+    "id": "ulip",
+    "cat": "Insurance",
+    "q": "What is a ULIP?",
+    "a": "A unit-linked plan where part of the premium buys life cover and the rest buys units in a fund. The investment value is not guaranteed, and there is a five-year lock-in.",
+    "links": []
+  },
+  {
+    "id": "uin",
+    "cat": "Insurance",
+    "q": "What is a UIN?",
+    "a": "The Unique Identification Number IRDAI gives each insurance product. It appears on the policy and identifies the exact product terms.",
+    "links": []
+  },
+  {
+    "id": "which-regime",
+    "cat": "Tax",
+    "q": "Old or new tax regime — which is better?",
+    "a": "For most salaried people without a large HRA claim or home loan, the new regime wins. On ₹15 lakh, it saves about ₹50,000 even with ₹3.5 lakh of deductions.",
+    "links": [
+      {
+        "label": "Old vs new compared",
+        "url": "guides/old-vs-new-tax-regime.html"
+      }
+    ]
+  },
+  {
+    "id": "what-is-80c",
+    "cat": "Tax",
+    "q": "What is Section 80C?",
+    "a": "A deduction of up to ₹1.5 lakh for specified investments and payments: PPF, ELSS, life insurance, principal on a home loan and tuition fees. It applies only under the old regime.",
+    "links": []
+  },
+  {
+    "id": "ppf-tax",
+    "cat": "Tax",
+    "q": "Is PPF interest tax-free?",
+    "a": "Yes. You get a deduction on what you put in, the interest is not taxed as it builds, and the maturity amount is not taxed.",
+    "links": []
+  },
+  {
+    "id": "80d",
+    "cat": "Tax",
+    "q": "What is Section 80D?",
+    "a": "A deduction for health insurance premiums, up to ₹25,000 for yourself and family, and more if you also insure parents. Old regime only.",
+    "links": []
+  },
+  {
+    "id": "how-compare",
+    "cat": "Using the site",
+    "q": "How do I compare products?",
+    "a": "Use the compare page to put up to three side by side on return type, minimum, tenure, payout, access, risk and tax.",
+    "links": [
+      {
+        "label": "Compare",
+        "url": "compare.html"
+      }
+    ]
+  },
+  {
+    "id": "find-products",
+    "cat": "Using the site",
+    "q": "How do I find products that fit me?",
+    "a": "The scheme finder asks five questions and narrows the catalogue to products whose terms match. It explains each match rather than recommending one.",
+    "links": [
+      {
+        "label": "PaisaDiscover",
+        "url": "paisadiscover.html"
+      }
+    ]
+  }
 ]

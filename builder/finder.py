@@ -34,9 +34,9 @@ def finder(products: list) -> str:
 <section class="page-head">
   <div class="shell">
     <nav class="crumbs" aria-label="Breadcrumb"><ol>
-      <li><a href="../index.html">Home</a></li><li aria-current="page">Scheme finder</li>
+      <li><a href="index.html">Home</a></li><li aria-current="page">Scheme finder</li>
     </ol></nav>
-    <h1>Find products that fit what you need</h1>
+    <h1>PaisaDiscover</h1>
     <p class="page-lede">
       Answer five questions and we will narrow the catalogue to products whose terms match. Each result says
       why it appeared — and none of them is a recommendation.
@@ -116,7 +116,7 @@ def finder(products: list) -> str:
         <li>""" + icon("alert", "icon icon-sm") + """<span>It does not know your income, debts, dependants or goals. It cannot tell you what to buy, and it does not try.</span></li>
         <li>""" + icon("alert", "icon icon-sm") + """<span>A product appearing here is not a suitability judgement. Read the tax, lock-in and risk sections on its page.</span></li>
       </ul>
-      <p class="muted"><a href="../browse.html">Browse everything →</a> · <a href="savings.html">Savings calculator →</a></p>
+      <p class="muted"><a href="browse.html">Browse everything →</a> · <a href="calculators/savings.html">Savings calculator →</a></p>
     </div>
   </div>
 </section>

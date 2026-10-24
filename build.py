@@ -258,8 +258,7 @@ def main() -> int:
                     + link("calculators/spending.html", "Spending planner")
                     + link("calculators/planning.html", "Emergency and retirement")
                     + link("calculators/loan.html", "Loan EMI")
-                    + link("calculators/income-tax.html", "Income tax")
-                    + link("calculators/scheme-finder.html", "Scheme finder"),
+                    + link("calculators/income-tax.html", "Income tax"),
                     ("calculators/",))
             + group("About", link("how-we-work.html", "How we work") + link("privacy.html", "Privacy")
                     + link("feedback.html", "Feedback"),
@@ -374,12 +373,11 @@ def main() -> int:
         active="method",
     ))
 
-    emit("calculators/scheme-finder.html", page(
-        title="Scheme finder — PaisaClear",
+    emit("paisadiscover.html", page(
+        title="PaisaDiscover — find products that fit what you need",
         description="Answer five questions and narrow 253 Indian financial products to those whose terms match what you need.",
         body=finder.finder(products),
-        base="../",
-        active="calculator",
+        active="discover",
         scripts=["assets/js/finder.js"],
     ))
 
@@ -433,6 +431,7 @@ def main() -> int:
         title="Answers — PaisaClear",
         description="Straight answers on PPF, FDs, mutual funds, bonds, insurance and tax, drawn from the same dated data as the catalogue.",
         body=answers.body(faq),
+        active="answers",
         scripts=["assets/js/faq.js"],
     ).replace("</head>", answers.jsonld(faq) + "</head>"))
 
