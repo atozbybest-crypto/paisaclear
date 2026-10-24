@@ -2334,6 +2334,61 @@ button, input, select { font: inherit; color: inherit; }
 .it-card:last-of-type { border-color: var(--green); box-shadow: 0 0 0 2px var(--green-soft, #E7F0E9); }
 .it-verdict { margin: 12px 0 0; font-size: .82rem; color: var(--ink-2); line-height: 1.5; }
 
+/* scheme finder */
+.finder-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+@media (min-width: 980px) {
+  .finder-layout { grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 40px; }
+  .finder-form { position: sticky; top: calc(var(--head-h, 64px) + 20px); }
+}
+.finder-form {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 22px;
+  display: grid;
+  gap: 16px;
+}
+.finder-q { display: grid; gap: 6px; }
+.finder-label { font-size: .84rem; font-weight: 600; color: var(--ink); }
+.finder-placeholder { color: var(--ink-3); font-size: .9rem; }
+
+.finder-summary { margin-bottom: 14px; font-size: .92rem; color: var(--ink-2); }
+.finder-summary strong { color: var(--green); font-size: 1.05rem; }
+
+.finder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+.finder-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.finder-card-name { font-weight: 650; font-size: .95rem; color: var(--ink); text-decoration: none; }
+.finder-card-name:hover { color: var(--green); text-decoration: underline; }
+.finder-card-provider { margin: 0; font-size: .76rem; color: var(--ink-3); }
+.finder-reasons { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.finder-reasons li {
+  font-size: .7rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--green-soft, #E7F0E9);
+  color: var(--green);
+  font-weight: 600;
+}
+.finder-card-meta { margin: 8px 0 0; font-size: .74rem; color: var(--ink-3); }
+.finder-empty { border: 1px dashed var(--line-2); border-radius: var(--radius); padding: 22px; }
+
 </style>
 </head>
 <body>

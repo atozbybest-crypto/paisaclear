@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import calculator, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
+from builder import calculator, finder, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
 CONTENT = ROOT / "content"
@@ -258,7 +258,8 @@ def main() -> int:
                     + link("calculators/spending.html", "Spending planner")
                     + link("calculators/planning.html", "Emergency and retirement")
                     + link("calculators/loan.html", "Loan EMI")
-                    + link("calculators/income-tax.html", "Income tax"),
+                    + link("calculators/income-tax.html", "Income tax")
+                    + link("calculators/scheme-finder.html", "Scheme finder"),
                     ("calculators/",))
             + group("About", link("how-we-work.html", "How we work") + link("privacy.html", "Privacy")
                     + link("feedback.html", "Feedback"),
@@ -371,6 +372,15 @@ def main() -> int:
         description="What we publish, how a product record is researched and approved, and what we deliberately do not do.",
         body=pages.method(ctx),
         active="method",
+    ))
+
+    emit("calculators/scheme-finder.html", page(
+        title="Scheme finder — PaisaClear",
+        description="Answer five questions and narrow 253 Indian financial products to those whose terms match what you need.",
+        body=finder.finder(products),
+        base="../",
+        active="calculator",
+        scripts=["assets/js/finder.js"],
     ))
 
     emit("calculators/income-tax.html", page(
