@@ -2440,3 +2440,13 @@ button, input, select { font: inherit; color: inherit; }
 .faq-links { display: flex; flex-wrap: wrap; gap: 12px; }
 .faq-links a { font-size: .82rem; font-weight: 600; }
 .faq-empty { color: var(--ink-3); font-size: .88rem; }
+
+.compare-error {
+  border: 1px dashed var(--line-2);
+  border-radius: var(--radius);
+  padding: 18px;
+  font-size: .88rem;
+  color: var(--ink-2);
+  background: var(--surface);
+}
+.compare-error code { background: var(--tint); padding: 1px 5px; border-radius: 4px; }

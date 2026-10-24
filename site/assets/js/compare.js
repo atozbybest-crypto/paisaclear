@@ -15,12 +15,22 @@
     return bySlug[value] || byLabel[value] || null;
   }
 
+  function applyPreset() {
+    var params = new URLSearchParams(window.location.search);
+    var preset = (params.get("p") || "").split(",").filter(Boolean);
+    preset.slice(0, selects.length).forEach(function (slug, index) {
+      var product = bySlug[slug];
+      if (product) selects[index].value = label(product);
+    });
+  }
+
   function boot(data) {
     catalog = data || [];
     catalog.forEach(function (product) {
       bySlug[product.slug] = product;
       byLabel[label(product)] = product;
     });
+    applyPreset();
     render();
   }
 
@@ -113,11 +123,14 @@
   }
 
   function updateAvailability() {
+    // The slots are text inputs backed by a shared <datalist>, so there are no
+    // per-slot options to disable. Kept for the old <select> markup.
     var chosen = selected();
-    selects.forEach(function (select) {
-      Array.prototype.forEach.call(select.options, function (option) {
+    selects.forEach(function (field) {
+      if (!field.options) return;
+      Array.prototype.forEach.call(field.options, function (option) {
         if (!option.value) return;
-        option.disabled = option.value !== select.value && chosen.indexOf(option.value) !== -1;
+        option.disabled = option.value !== field.value && chosen.indexOf(option.value) !== -1;
       });
     });
   }
@@ -134,17 +147,19 @@
     });
 
     if (!slugs.length) {
-      wrap.hidden = true;
-      hint.hidden = false;
-      hint.textContent = "Pick a product in any slot. You can also add a product straight from its page.";
+      if (wrap) wrap.hidden = true;
+      if (hint) {
+        hint.hidden = false;
+        hint.textContent = "Pick a product in any slot. You can also add a product straight from its page.";
+      }
       return;
     }
 
     var products = slugs.map(resolve).filter(Boolean);
 
-    wrap.hidden = false;
-    hint.hidden = false;
-    hint.textContent =
+    if (wrap) wrap.hidden = false;
+    if (hint) hint.hidden = false;
+    if (hint) hint.textContent =
       products.length === 1
         ? "Add a second product to see them side by side."
         : "Comparing " + products.length + " products. Rates are omitted by design — this compares structure, not price.";
@@ -195,14 +210,20 @@
     }
   });
 
-  var params = new URLSearchParams(window.location.search);
-  var preset = (params.get("p") || "").split(",").filter(Boolean);
-  preset.slice(0, selects.length).forEach(function (slug, index) {
-    if (bySlug[slug]) selects[index].value = label(bySlug[slug]);
-  });
-
   fetch("assets/data/catalog.json")
-    .then(function (r) { return r.json(); })
+    .then(function (r) {
+      if (!r.ok) throw new Error("catalogue " + r.status);
+      return r.json();
+    })
     .then(boot)
-    .catch(function () { render(); });
+    .catch(function (error) {
+      if (window.console && window.console.error) window.console.error("compare:", error);
+      var host = document.getElementById("compare-wrap");
+      if (host) {
+        host.innerHTML = '<p class="compare-error">The product list could not be loaded. ' +
+          "This page needs to run from a web server — open it at paisaclear.co.in, or start the local " +
+          "server with <code>python serve.py</code>.</p>";
+      }
+      document.querySelectorAll(".slot-select").forEach(function (el) { el.disabled = true; });
+    });
 })();
