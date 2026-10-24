@@ -224,7 +224,7 @@ def browse(ctx: dict) -> str:
     cats_by_id = ctx["categories_by_id"]
     rt_by_id = ctx["return_types_by_id"]
 
-    cards = "".join(product_card(p, "", rt_by_id, cats_by_id) for p in products)
+    cards = "".join(product_card(p, "", rt_by_id, cats_by_id, compact=True) for p in products)
 
     cat_options = "".join(f'<option value="{esc(c["id"])}">{esc(c["name"])}</option>' for c in cats)
     rt_chips = "".join(
@@ -699,21 +699,19 @@ CURATED_ALTERNATIVES = {
 def compare(ctx: dict, catalog_json: str) -> str:
     products = ctx["products"]
     options = "".join(
-        f'<option value="{esc(p["slug"])}">{esc(p["name"])} — {esc(p["providerShort"])}</option>'
+        f'<option value="{esc(p["name"] + " — " + p["providerShort"])}"></option>'
         for p in products
     )
 
     slots = "".join(
         f"""<div class="slot" data-slot="{i}">
   <label class="slot-label" for="slot-{i}">Product {i + 1}</label>
-  <select class="slot-select" id="slot-{i}" data-slot="{i}">
-    <option value="">Choose a product…</option>
-    {options}
-  </select>
+  <input class="slot-select" id="slot-{i}" data-slot="{i}" list="catalog-list"
+         placeholder="Type a name, provider or category" autocomplete="off">
   <button class="slot-clear" type="button" data-clear="{i}" hidden>Remove</button>
 </div>"""
         for i in range(3)
-    )
+    ) + '<datalist id="catalog-list">' + options + "</datalist>"
 
     return f"""
 <section class="page-head">
@@ -761,7 +759,6 @@ def compare(ctx: dict, catalog_json: str) -> str:
   </div>
 </section>
 
-<script type="application/json" id="catalog">{catalog_json}</script>
 <script src="assets/js/compare.js" defer></script>
 """
 

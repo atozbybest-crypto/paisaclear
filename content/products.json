@@ -3152,10 +3152,10 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 11.23,
-      "threeYear": 32.72,
-      "fiveYear": 23.87,
-      "asOf": "2026-10-19",
+      "oneYear": 14.1,
+      "threeYear": 31.4,
+      "fiveYear": 23.13,
+      "asOf": "2026-10-23",
       "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
@@ -3226,11 +3226,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -8.53,
-      "threeYear": 6.53,
-      "fiveYear": -33.11,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.76,
+      "threeYear": 6.63,
+      "fiveYear": 5.73,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -3300,11 +3300,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 14.0,
-      "threeYear": 33.91,
-      "fiveYear": 23.76,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 13.18,
+      "threeYear": 31.33,
+      "fiveYear": 23.1,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -3374,10 +3374,10 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -11.1,
-      "threeYear": 5.29,
-      "fiveYear": 4.88,
-      "asOf": "2026-10-19",
+      "oneYear": -12.66,
+      "threeYear": 5.38,
+      "fiveYear": 4.97,
+      "asOf": "2026-10-23",
       "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
@@ -3448,11 +3448,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 14.16,
-      "threeYear": 33.83,
-      "fiveYear": 23.71,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 13.32,
+      "threeYear": 31.25,
+      "fiveYear": 23.05,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -3522,11 +3522,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 13.97,
-      "threeYear": 33.67,
-      "fiveYear": 23.67,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 13.56,
+      "threeYear": 30.88,
+      "fiveYear": 22.87,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -3596,11 +3596,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 13.63,
-      "threeYear": 33.26,
-      "fiveYear": 23.28,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 13.23,
+      "threeYear": 30.48,
+      "fiveYear": 22.48,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -3670,11 +3670,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -10.0,
-      "threeYear": 6.59,
-      "fiveYear": 5.63,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.81,
+      "threeYear": 6.61,
+      "fiveYear": 5.71,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -3744,10 +3744,10 @@
     "riskBand": "very-high",
     "riskRank": 5,
     "returns": {
-      "oneYear": 2.67,
-      "threeYear": 15.12,
-      "fiveYear": 10.85,
-      "asOf": "2026-10-19",
+      "oneYear": -2.92,
+      "threeYear": 14.18,
+      "fiveYear": 10.64,
+      "asOf": "2026-10-23",
       "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
@@ -3867,7 +3867,14 @@
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
     },
     "bucket": "aggressive",
-    "bucketLabel": "Aggressive"
+    "bucketLabel": "Aggressive",
+    "returns": {
+      "oneYear": -12.65,
+      "threeYear": 5.42,
+      "fiveYear": 4.99,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
+    }
   },
   {
     "slug": "icici-prudential-gold-etf-113076",
@@ -3882,11 +3889,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 14.25,
-      "threeYear": 33.92,
-      "fiveYear": 23.83,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": null,
+      "threeYear": null,
+      "fiveYear": null,
+      "asOf": "2026-10-23",
+      "basis": "NAV series has an unexplained break; returns withheld"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -3959,8 +3966,8 @@
       "oneYear": null,
       "threeYear": null,
       "fiveYear": null,
-      "asOf": "2026-10-19",
-      "basis": "NAV series contains an unexplained break, so no return is published"
+      "asOf": "2026-10-23",
+      "basis": "NAV series has an unexplained break; returns withheld"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -4030,11 +4037,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -8.56,
-      "threeYear": 6.54,
-      "fiveYear": 5.98,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": null,
+      "threeYear": null,
+      "fiveYear": null,
+      "asOf": "2026-10-23",
+      "basis": "NAV series has an unexplained break; returns withheld"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -4104,10 +4111,10 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -10.89,
-      "threeYear": 4.8,
-      "fiveYear": 5.66,
-      "asOf": "2026-10-19",
+      "oneYear": -12.96,
+      "threeYear": 5.0,
+      "fiveYear": 6.23,
+      "asOf": "2026-10-23",
       "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
@@ -4178,11 +4185,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 15.22,
-      "threeYear": 33.54,
-      "fiveYear": 23.58,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": null,
+      "threeYear": null,
+      "fiveYear": null,
+      "asOf": "2026-10-23",
+      "basis": "NAV series has an unexplained break; returns withheld"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -4252,11 +4259,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 14.76,
-      "threeYear": 33.14,
-      "fiveYear": 23.2,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": null,
+      "threeYear": null,
+      "fiveYear": null,
+      "asOf": "2026-10-23",
+      "basis": "NAV series has an unexplained break; returns withheld"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -4326,11 +4333,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -9.67,
-      "threeYear": 5.01,
-      "fiveYear": -33.69,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.76,
+      "threeYear": 5.23,
+      "fiveYear": 4.77,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -4449,7 +4456,14 @@
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
     },
     "bucket": "conservative",
-    "bucketLabel": "Conservative"
+    "bucketLabel": "Conservative",
+    "returns": {
+      "oneYear": 13.4,
+      "threeYear": 31.32,
+      "fiveYear": 23.09,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
+    }
   },
   {
     "slug": "kotak-nifty-50-etf-112351",
@@ -4464,11 +4478,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -8.52,
-      "threeYear": 6.54,
-      "fiveYear": 5.92,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.74,
+      "threeYear": 6.64,
+      "fiveYear": 5.68,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -4538,10 +4552,10 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -10.66,
-      "threeYear": 4.99,
-      "fiveYear": 5.8,
-      "asOf": "2026-10-19",
+      "oneYear": -12.74,
+      "threeYear": 5.19,
+      "fiveYear": 6.37,
+      "asOf": "2026-10-23",
       "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
@@ -4612,10 +4626,10 @@
     "riskBand": "very-high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -3.41,
-      "threeYear": 8.9,
-      "fiveYear": 7.63,
-      "asOf": "2026-10-19",
+      "oneYear": -6.12,
+      "threeYear": 8.58,
+      "fiveYear": 6.73,
+      "asOf": "2026-10-23",
       "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
@@ -4735,7 +4749,14 @@
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
     },
     "bucket": "aggressive",
-    "bucketLabel": "Aggressive"
+    "bucketLabel": "Aggressive",
+    "returns": {
+      "oneYear": null,
+      "threeYear": null,
+      "fiveYear": null,
+      "asOf": "2026-10-23",
+      "basis": "NAV series has an unexplained break; returns withheld"
+    }
   },
   {
     "slug": "lic-mf-bse-sensex-etf-135672",
@@ -4750,11 +4771,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -11.14,
-      "threeYear": 5.22,
-      "fiveYear": 4.8,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.7,
+      "threeYear": 5.32,
+      "fiveYear": 4.9,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -4824,11 +4845,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -8.47,
-      "threeYear": 7.96,
-      "fiveYear": 5.98,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -10.7,
+      "threeYear": 7.82,
+      "fiveYear": 6.0,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -4898,11 +4919,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -10.01,
-      "threeYear": 6.56,
-      "fiveYear": 5.58,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.82,
+      "threeYear": 6.58,
+      "fiveYear": 5.66,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -4972,11 +4993,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": 0.79,
-      "threeYear": 6.46,
-      "fiveYear": 5.23,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 0.37,
+      "threeYear": 6.34,
+      "fiveYear": 5.13,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -5046,11 +5067,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": 28.06,
-      "threeYear": 30.15,
-      "fiveYear": 19.99,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 24.82,
+      "threeYear": 31.32,
+      "fiveYear": 18.85,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -5120,11 +5141,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -8.57,
-      "threeYear": 6.51,
-      "fiveYear": 5.97,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": null,
+      "threeYear": null,
+      "fiveYear": null,
+      "asOf": "2026-10-23",
+      "basis": "NAV series has an unexplained break; returns withheld"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -5194,11 +5215,11 @@
     "riskBand": "very-high",
     "riskRank": 5,
     "returns": {
-      "oneYear": 0.32,
-      "threeYear": 13.8,
-      "fiveYear": 13.31,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -5.52,
+      "threeYear": 13.43,
+      "fiveYear": 13.02,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -5268,11 +5289,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -9.57,
-      "threeYear": 5.17,
-      "fiveYear": 5.27,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.66,
+      "threeYear": 5.4,
+      "fiveYear": 4.98,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -5342,11 +5363,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -7.48,
-      "threeYear": 7.52,
-      "fiveYear": 5.97,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -10.93,
+      "threeYear": 7.56,
+      "fiveYear": 5.75,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -5416,11 +5437,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -10.89,
-      "threeYear": 4.77,
-      "fiveYear": 5.58,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.96,
+      "threeYear": 4.97,
+      "fiveYear": 6.15,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -5490,11 +5511,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 0.76,
-      "threeYear": 6.54,
-      "fiveYear": 5.28,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 0.39,
+      "threeYear": 6.38,
+      "fiveYear": 5.13,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -5564,11 +5585,11 @@
     "riskBand": "very-high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -11.04,
-      "threeYear": 9.3,
-      "fiveYear": 8.59,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -14.25,
+      "threeYear": 8.97,
+      "fiveYear": 9.33,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -5687,7 +5708,14 @@
       "note": "The fund house does not publish a stable page for this scheme. Search \"Quantum Gold ETF\" on AMFI for its official NAV history and scheme documents."
     },
     "bucket": "conservative",
-    "bucketLabel": "Conservative"
+    "bucketLabel": "Conservative",
+    "returns": {
+      "oneYear": 13.63,
+      "threeYear": 31.42,
+      "fiveYear": 23.08,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
+    }
   },
   {
     "slug": "quantum-nifty-50-etf",
@@ -5752,7 +5780,14 @@
       "note": "The fund house does not publish a stable page for this scheme. Search \"Quantum Nifty 50 ETF\" on AMFI for its official NAV history and scheme documents."
     },
     "bucket": "aggressive",
-    "bucketLabel": "Aggressive"
+    "bucketLabel": "Aggressive",
+    "returns": {
+      "oneYear": -11.8,
+      "threeYear": 6.56,
+      "fiveYear": 5.67,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
+    }
   },
   {
     "slug": "sbi-gold-etf-regular-plan-growth-111954",
@@ -5767,10 +5802,10 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 10.98,
-      "threeYear": 32.44,
-      "fiveYear": 23.71,
-      "asOf": "2026-10-19",
+      "oneYear": 13.25,
+      "threeYear": 31.18,
+      "fiveYear": 22.97,
+      "asOf": "2026-10-23",
       "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
@@ -5841,11 +5876,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -11.08,
-      "threeYear": 5.3,
-      "fiveYear": 4.86,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.64,
+      "threeYear": 5.39,
+      "fiveYear": 4.96,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -5915,11 +5950,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -9.97,
-      "threeYear": 6.6,
-      "fiveYear": -33.35,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.78,
+      "threeYear": 6.63,
+      "fiveYear": 5.71,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -7941,11 +7976,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 3.76,
-      "threeYear": 6.86,
-      "fiveYear": 6.15,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 3.41,
+      "threeYear": 6.75,
+      "fiveYear": 6.08,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Banking & PSU fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8015,11 +8050,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 3.39,
-      "threeYear": 6.87,
-      "fiveYear": 6.22,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 3.09,
+      "threeYear": 6.76,
+      "fiveYear": 6.15,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Corporate Bond fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8089,11 +8124,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -1.43,
-      "threeYear": 12.26,
-      "fiveYear": 9.08,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -4.63,
+      "threeYear": 11.89,
+      "fiveYear": 8.83,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Focused fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8164,11 +8199,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 13.69,
-      "threeYear": 13.79,
-      "fiveYear": 11.61,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 4.74,
+      "threeYear": 12.59,
+      "fiveYear": 11.26,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Small Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8238,11 +8273,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 4.18,
-      "threeYear": 6.84,
-      "fiveYear": 6.1,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 3.88,
+      "threeYear": 6.72,
+      "fiveYear": 6.03,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Banking & PSU fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8312,11 +8347,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -1.64,
-      "threeYear": 9.08,
-      "fiveYear": 9.65,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -5.45,
+      "threeYear": 9.09,
+      "fiveYear": 9.61,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "ELSS fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8388,11 +8423,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -3.85,
-      "threeYear": 10.13,
-      "fiveYear": 8.19,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -6.46,
+      "threeYear": 10.16,
+      "fiveYear": 8.42,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Flexi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8463,11 +8498,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -3.52,
-      "threeYear": 12.03,
-      "fiveYear": 9.13,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.21,
+      "threeYear": 12.07,
+      "fiveYear": 8.67,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8538,11 +8573,11 @@
     "riskBand": "low",
     "riskRank": 1,
     "returns": {
-      "oneYear": 6.47,
-      "threeYear": 6.9,
-      "fiveYear": 6.39,
-      "asOf": "2026-10-18",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 6.4,
+      "threeYear": 6.88,
+      "fiveYear": 6.38,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8613,11 +8648,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -8.68,
-      "threeYear": 6.36,
-      "fiveYear": 5.84,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.9,
+      "threeYear": 6.46,
+      "fiveYear": 5.59,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Index / Nifty 50 fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8688,11 +8723,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 5.87,
-      "threeYear": 7.08,
-      "fiveYear": 6.38,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 5.71,
+      "threeYear": 7.02,
+      "fiveYear": 6.36,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Ultra Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8762,11 +8797,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 0.69,
-      "threeYear": 8.77,
-      "fiveYear": 9.85,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -1.6,
+      "threeYear": 8.62,
+      "fiveYear": 9.6,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Balanced Advantage fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8836,11 +8871,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 2.35,
-      "threeYear": 7.3,
-      "fiveYear": 5.58,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 1.89,
+      "threeYear": 7.21,
+      "fiveYear": 5.49,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Gilt fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8910,11 +8945,11 @@
     "riskBand": "moderately-high",
     "riskRank": 4,
     "returns": {
-      "oneYear": 2.41,
-      "threeYear": 11.22,
-      "fiveYear": 8.79,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -1.52,
+      "threeYear": 10.79,
+      "fiveYear": 8.35,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Aggressive Hybrid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -8984,11 +9019,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": 0.23,
-      "threeYear": 14.99,
-      "fiveYear": 10.71,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -5.01,
+      "threeYear": 14.26,
+      "fiveYear": 10.2,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Focused fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9059,11 +9094,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 7.02,
-      "threeYear": 8.31,
-      "fiveYear": 6.39,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 7.12,
+      "threeYear": 8.41,
+      "fiveYear": 6.42,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Gilt fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9133,11 +9168,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -0.1,
-      "threeYear": 16.3,
-      "fiveYear": 14.73,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -4.88,
+      "threeYear": 15.95,
+      "fiveYear": 14.31,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large & Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9208,11 +9243,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -2.34,
+      "oneYear": -6.58,
       "threeYear": 9.92,
-      "fiveYear": 11.25,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "fiveYear": 11.4,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Value fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9283,11 +9318,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -2.55,
-      "threeYear": 13.14,
-      "fiveYear": 9.92,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -6.71,
+      "threeYear": 12.46,
+      "fiveYear": 9.85,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Multi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9358,11 +9393,11 @@
     "riskBand": "moderately-high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -1.23,
-      "threeYear": 10.25,
-      "fiveYear": 8.43,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -4.42,
+      "threeYear": 10.1,
+      "fiveYear": 8.23,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Aggressive Hybrid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9432,11 +9467,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": -6.67,
-      "threeYear": 9.43,
-      "fiveYear": 9.5,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.25,
+      "threeYear": 8.95,
+      "fiveYear": 9.44,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Sectoral / Thematic fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9506,11 +9541,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -2.93,
-      "threeYear": 10.69,
-      "fiveYear": 8.55,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -6.62,
+      "threeYear": 10.52,
+      "fiveYear": 8.28,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "ELSS fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9582,11 +9617,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -5.92,
-      "threeYear": 10.8,
-      "fiveYear": 7.92,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.13,
+      "threeYear": 10.45,
+      "fiveYear": 7.9,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Flexi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9657,11 +9692,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 1.04,
-      "threeYear": 5.9,
-      "fiveYear": 5.21,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 0.91,
+      "threeYear": 5.79,
+      "fiveYear": 5.12,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Gilt fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9780,7 +9815,14 @@
       "note": "The fund house does not publish a stable page for this scheme. Search \"Canara Robeco Large Cap Fund\" on AMFI for its official NAV history and scheme documents."
     },
     "bucket": "moderate",
-    "bucketLabel": "Moderate"
+    "bucketLabel": "Moderate",
+    "returns": {
+      "oneYear": -9.81,
+      "threeYear": 9.45,
+      "fiveYear": 7.53,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
+    }
   },
   {
     "slug": "canara-robeco-large-and-mid-cap-fund-118278",
@@ -9795,11 +9837,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -4.57,
-      "threeYear": 11.49,
-      "fiveYear": 8.65,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.73,
+      "threeYear": 11.33,
+      "fiveYear": 8.66,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large & Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9870,11 +9912,11 @@
     "riskBand": "low",
     "riskRank": 1,
     "returns": {
-      "oneYear": 6.45,
-      "threeYear": 6.93,
+      "oneYear": 6.39,
+      "threeYear": 6.9,
       "fiveYear": 6.4,
-      "asOf": "2026-10-18",
-      "basis": "CAGR computed from AMFI NAV"
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -9945,11 +9987,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 6.43,
-      "threeYear": 7.02,
-      "fiveYear": 6.34,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 6.28,
+      "threeYear": 6.97,
+      "fiveYear": 6.33,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Ultra Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10019,11 +10061,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 5.98,
-      "threeYear": 7.15,
-      "fiveYear": 6.44,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 5.8,
+      "threeYear": 7.09,
+      "fiveYear": 6.42,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Ultra Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10093,11 +10135,11 @@
     "riskBand": "moderately-high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -4.97,
-      "threeYear": 9.24,
-      "fiveYear": 7.81,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.87,
+      "threeYear": 9.34,
+      "fiveYear": 7.82,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Aggressive Hybrid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10167,11 +10209,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -4.56,
-      "threeYear": 10.03,
-      "fiveYear": 8.08,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.7,
+      "threeYear": 9.75,
+      "fiveYear": 8.09,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Flexi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10242,11 +10284,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -2.26,
-      "threeYear": 12.26,
-      "fiveYear": 9.8,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -5.07,
+      "threeYear": 11.89,
+      "fiveYear": 9.73,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Focused fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10317,11 +10359,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 17.29,
-      "threeYear": 16.01,
-      "fiveYear": 16.08,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 9.86,
+      "threeYear": 15.42,
+      "fiveYear": 15.59,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Small Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10391,11 +10433,11 @@
     "riskBand": "moderately-high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -0.87,
-      "threeYear": 12.15,
-      "fiveYear": 12.13,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -4.07,
+      "threeYear": 11.89,
+      "fiveYear": 11.93,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Aggressive Hybrid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10465,11 +10507,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 1.62,
-      "threeYear": 10.04,
-      "fiveYear": 8.54,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -1.26,
+      "threeYear": 9.79,
+      "fiveYear": 8.31,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Balanced Advantage fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10539,11 +10581,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 3.86,
-      "threeYear": 6.96,
+      "oneYear": 3.77,
+      "threeYear": 6.92,
       "fiveYear": null,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10613,11 +10655,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -0.09,
-      "threeYear": 12.65,
-      "fiveYear": 10.42,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -4.44,
+      "threeYear": 12.41,
+      "fiveYear": 10.06,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "ELSS fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10689,11 +10731,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -4.29,
-      "threeYear": 9.43,
-      "fiveYear": 8.72,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.92,
+      "threeYear": 9.33,
+      "fiveYear": 8.57,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10764,11 +10806,11 @@
     "riskBand": "moderately-high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -5.45,
-      "threeYear": 8.51,
-      "fiveYear": 8.19,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.58,
+      "threeYear": 8.29,
+      "fiveYear": 7.79,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Aggressive Hybrid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10838,11 +10880,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 5.4,
-      "threeYear": 7.88,
-      "fiveYear": 6.71,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 5.16,
+      "threeYear": 7.79,
+      "fiveYear": 6.67,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Corporate Bond fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10912,11 +10954,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -7.89,
-      "threeYear": 9.19,
-      "fiveYear": 9.47,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.15,
+      "threeYear": 9.24,
+      "fiveYear": 9.08,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "ELSS fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -10988,11 +11030,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -8.19,
-      "threeYear": 9.55,
-      "fiveYear": 9.45,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -10.53,
+      "threeYear": 9.43,
+      "fiveYear": 9.23,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Flexi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11063,11 +11105,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -7.03,
-      "threeYear": 9.8,
-      "fiveYear": 7.42,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.55,
+      "threeYear": 9.39,
+      "fiveYear": 6.96,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large & Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11138,11 +11180,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -6.04,
-      "threeYear": 8.89,
-      "fiveYear": 6.63,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -9.17,
+      "threeYear": 8.94,
+      "fiveYear": 6.24,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11213,11 +11255,11 @@
     "riskBand": "low",
     "riskRank": 1,
     "returns": {
-      "oneYear": 6.53,
-      "threeYear": 6.96,
+      "oneYear": 6.49,
+      "threeYear": 6.95,
       "fiveYear": 6.42,
-      "asOf": "2026-10-18",
-      "basis": "CAGR computed from AMFI NAV"
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11288,11 +11330,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": -3.0,
-      "threeYear": 13.53,
-      "fiveYear": 11.21,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.53,
+      "threeYear": 12.83,
+      "fiveYear": 11.0,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11362,11 +11404,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -8.7,
-      "threeYear": 6.33,
-      "fiveYear": 5.73,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.91,
+      "threeYear": 6.43,
+      "fiveYear": 5.48,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Index / Nifty 50 fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11437,11 +11479,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 2.98,
-      "threeYear": 10.44,
-      "fiveYear": 13.66,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -5.13,
+      "threeYear": 9.68,
+      "fiveYear": 13.26,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Small Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11511,11 +11553,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": -6.14,
-      "threeYear": 9.81,
-      "fiveYear": 7.48,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.22,
+      "threeYear": 10.94,
+      "fiveYear": 7.49,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Sectoral / Thematic fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11585,11 +11627,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -5.45,
-      "threeYear": 9.32,
-      "fiveYear": 7.46,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.82,
+      "threeYear": 9.26,
+      "fiveYear": 7.14,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11660,11 +11702,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -9.76,
-      "threeYear": 4.96,
-      "fiveYear": 5.04,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.85,
+      "threeYear": 5.18,
+      "fiveYear": 4.75,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Index / Nifty 50 fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11784,7 +11826,14 @@
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
     },
     "bucket": "moderate",
-    "bucketLabel": "Moderate"
+    "bucketLabel": "Moderate",
+    "returns": {
+      "oneYear": -6.03,
+      "threeYear": 10.04,
+      "fiveYear": 12.36,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
+    }
   },
   {
     "slug": "hdfc-corporate-bond-fund-118987",
@@ -11799,11 +11848,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 3.11,
-      "threeYear": 6.77,
-      "fiveYear": 6.09,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 2.67,
+      "threeYear": 6.61,
+      "fiveYear": 5.99,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Corporate Bond fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11873,11 +11922,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -8.35,
-      "threeYear": 11.98,
-      "fiveYear": 12.34,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.57,
+      "threeYear": 11.72,
+      "fiveYear": 12.3,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "ELSS fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -11949,11 +11998,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -4.5,
-      "threeYear": 14.6,
-      "fiveYear": 14.43,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -6.76,
+      "threeYear": 14.39,
+      "fiveYear": 14.29,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Flexi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12024,11 +12073,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -4.93,
-      "threeYear": 14.67,
-      "fiveYear": 15.25,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.44,
+      "threeYear": 14.23,
+      "fiveYear": 14.63,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Focused fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12099,11 +12148,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -6.61,
-      "threeYear": 7.74,
-      "fiveYear": 8.89,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -10.27,
+      "threeYear": 7.54,
+      "fiveYear": 8.42,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12174,11 +12223,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 1.15,
-      "threeYear": 15.17,
-      "fiveYear": 16.38,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -3.17,
+      "threeYear": 15.27,
+      "fiveYear": 16.5,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12298,7 +12347,14 @@
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
     },
     "bucket": "moderate",
-    "bucketLabel": "Moderate"
+    "bucketLabel": "Moderate",
+    "returns": {
+      "oneYear": -12.0,
+      "threeYear": 6.39,
+      "fiveYear": 5.48,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
+    }
   },
   {
     "slug": "hdfc-value-fund-118935",
@@ -12313,11 +12369,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": 2.5,
-      "threeYear": 14.68,
-      "fiveYear": 12.24,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -2.64,
+      "threeYear": 14.34,
+      "fiveYear": 11.65,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Value fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12388,11 +12444,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": 1.14,
-      "threeYear": 14.74,
-      "fiveYear": 11.22,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -4.01,
+      "threeYear": 13.72,
+      "fiveYear": 10.71,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Flexi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12463,11 +12519,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 0.44,
-      "threeYear": 10.34,
-      "fiveYear": 9.73,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -1.64,
+      "threeYear": 9.89,
+      "fiveYear": 9.44,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Balanced Advantage fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12537,11 +12593,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 4.4,
-      "threeYear": 7.0,
-      "fiveYear": 6.53,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 3.99,
+      "threeYear": 6.86,
+      "fiveYear": 6.44,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Banking & PSU fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12611,11 +12667,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": -3.72,
-      "threeYear": 8.71,
-      "fiveYear": 8.04,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -4.95,
+      "threeYear": 8.65,
+      "fiveYear": 7.96,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Balanced Advantage fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12685,11 +12741,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -5.71,
-      "threeYear": 13.6,
-      "fiveYear": 11.15,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.85,
+      "threeYear": 13.07,
+      "fiveYear": 10.85,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Contra fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12760,11 +12816,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -4.14,
-      "threeYear": 11.7,
-      "fiveYear": 10.17,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.58,
+      "threeYear": 11.0,
+      "fiveYear": 9.72,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Multi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12835,11 +12891,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -5.27,
-      "threeYear": 13.59,
-      "fiveYear": 12.21,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.72,
+      "threeYear": 12.92,
+      "fiveYear": 11.87,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Contra fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12910,11 +12966,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": -1.81,
-      "threeYear": 14.74,
-      "fiveYear": 14.04,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -6.13,
+      "threeYear": 13.91,
+      "fiveYear": 13.82,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -12984,11 +13040,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 4.41,
-      "threeYear": 7.22,
-      "fiveYear": 6.24,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 4.19,
+      "threeYear": 7.12,
+      "fiveYear": 6.19,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Banking & PSU fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13058,11 +13114,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -2.38,
-      "threeYear": 10.48,
-      "fiveYear": 8.8,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.35,
+      "threeYear": 10.36,
+      "fiveYear": 8.43,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large & Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13133,11 +13189,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -5.59,
-      "threeYear": 7.95,
-      "fiveYear": 6.4,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -9.45,
+      "threeYear": 7.97,
+      "fiveYear": 6.19,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13208,11 +13264,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 6.07,
-      "threeYear": 7.39,
-      "fiveYear": 6.62,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 5.86,
+      "threeYear": 7.31,
+      "fiveYear": 6.59,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Ultra Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13282,11 +13338,11 @@
     "riskBand": "moderately-high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -2.58,
-      "threeYear": 9.5,
-      "fiveYear": 9.64,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -6.2,
+      "threeYear": 9.13,
+      "fiveYear": 9.14,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Aggressive Hybrid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13356,11 +13412,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 0.38,
-      "threeYear": 9.99,
-      "fiveYear": 8.94,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -2.3,
+      "threeYear": 9.57,
+      "fiveYear": 8.64,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Balanced Advantage fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13430,11 +13486,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": -3.14,
-      "threeYear": 10.7,
-      "fiveYear": 11.35,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.43,
+      "threeYear": 9.98,
+      "fiveYear": 10.29,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Sectoral / Thematic fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13504,11 +13560,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": -9.77,
-      "threeYear": 7.84,
-      "fiveYear": 10.28,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -14.2,
+      "threeYear": 7.24,
+      "fiveYear": 10.17,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Sectoral / Thematic fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13578,11 +13634,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 4.18,
-      "threeYear": 7.37,
-      "fiveYear": 6.68,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 3.91,
+      "threeYear": 7.28,
+      "fiveYear": 6.61,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Corporate Bond fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13702,7 +13758,14 @@
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
     },
     "bucket": "tax-saving",
-    "bucketLabel": "Tax saving"
+    "bucketLabel": "Tax saving",
+    "returns": {
+      "oneYear": -6.98,
+      "threeYear": 11.08,
+      "fiveYear": 9.71,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
+    }
   },
   {
     "slug": "nippon-india-focused-fund-118692",
@@ -13717,11 +13780,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -4.05,
-      "threeYear": 8.81,
-      "fiveYear": 8.43,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.75,
+      "threeYear": 8.44,
+      "fiveYear": 7.98,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Focused fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13792,11 +13855,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 1.76,
-      "threeYear": 16.23,
+      "oneYear": -3.33,
+      "threeYear": 15.64,
       "fiveYear": 15.35,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13866,11 +13929,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -9.73,
-      "threeYear": 4.97,
-      "fiveYear": 5.07,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.81,
+      "threeYear": 5.19,
+      "fiveYear": 4.78,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Index / Nifty 50 fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -13941,11 +14004,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -8.63,
-      "threeYear": 6.38,
-      "fiveYear": 5.78,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.86,
+      "threeYear": 6.49,
+      "fiveYear": 5.54,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Index / Nifty 50 fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14016,11 +14079,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -6.63,
-      "threeYear": 10.03,
-      "fiveYear": 11.32,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -10.46,
+      "threeYear": 10.08,
+      "fiveYear": 10.95,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14141,7 +14204,14 @@
       "note": "The fund house's own page for this scheme. NAV, expense ratio, exit load and the scheme documents are all published here."
     },
     "bucket": "moderate",
-    "bucketLabel": "Moderate"
+    "bucketLabel": "Moderate",
+    "returns": {
+      "oneYear": 6.47,
+      "threeYear": 6.93,
+      "fiveYear": 6.42,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
+    }
   },
   {
     "slug": "nippon-india-multi-cap-fund-118650",
@@ -14156,11 +14226,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -5.74,
-      "threeYear": 11.72,
-      "fiveYear": 14.47,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -9.2,
+      "threeYear": 11.32,
+      "fiveYear": 14.07,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Multi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14231,11 +14301,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 5.58,
-      "threeYear": 16.36,
-      "fiveYear": 12.47,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 2.61,
+      "threeYear": 16.35,
+      "fiveYear": 12.86,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Sectoral / Thematic fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14305,11 +14375,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 6.32,
-      "threeYear": 13.53,
-      "fiveYear": 16.74,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -1.4,
+      "threeYear": 12.62,
+      "fiveYear": 16.48,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Small Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14379,11 +14449,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 6.14,
-      "threeYear": 7.4,
-      "fiveYear": 6.73,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 5.94,
+      "threeYear": 7.33,
+      "fiveYear": 6.71,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Ultra Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14453,11 +14523,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -7.45,
-      "threeYear": 11.88,
-      "fiveYear": 11.16,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.49,
+      "threeYear": 11.24,
+      "fiveYear": 10.72,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Value fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14528,11 +14598,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -4.57,
-      "threeYear": 12.95,
-      "fiveYear": 10.88,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.44,
+      "threeYear": 12.58,
+      "fiveYear": 10.56,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large & Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14603,11 +14673,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -7.66,
-      "threeYear": 9.41,
-      "fiveYear": 8.71,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.44,
+      "threeYear": 8.97,
+      "fiveYear": 8.33,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "ELSS fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14679,11 +14749,11 @@
     "riskBand": "low",
     "riskRank": 1,
     "returns": {
-      "oneYear": 5.9,
-      "threeYear": 6.49,
-      "fiveYear": 6.05,
-      "asOf": "2026-10-18",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 5.88,
+      "threeYear": 6.47,
+      "fiveYear": 6.06,
+      "asOf": "2026-10-24",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14754,11 +14824,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -7.87,
-      "threeYear": 9.3,
-      "fiveYear": 8.53,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.63,
+      "threeYear": 8.88,
+      "fiveYear": 8.14,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Value fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14829,11 +14899,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -6.12,
-      "threeYear": 9.93,
-      "fiveYear": 13.11,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -9.67,
+      "threeYear": 9.74,
+      "fiveYear": 12.97,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Contra fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14904,11 +14974,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": 6.63,
-      "threeYear": 14.62,
-      "fiveYear": 10.27,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 2.4,
+      "threeYear": 13.57,
+      "fiveYear": 9.65,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Focused fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -14979,11 +15049,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 4.12,
-      "threeYear": 6.92,
-      "fiveYear": 5.96,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 3.86,
+      "threeYear": 6.84,
+      "fiveYear": 5.92,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Banking & PSU fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15053,11 +15123,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 0.12,
-      "threeYear": 16.01,
-      "fiveYear": 14.55,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -5.76,
+      "threeYear": 15.4,
+      "fiveYear": 14.15,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15127,11 +15197,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 4.8,
-      "threeYear": 7.37,
+      "oneYear": 4.61,
+      "threeYear": 7.28,
       "fiveYear": null,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15201,11 +15271,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 10.24,
-      "threeYear": 14.72,
-      "fiveYear": 14.38,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 2.24,
+      "threeYear": 13.7,
+      "fiveYear": 13.64,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Small Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15275,11 +15345,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -9.08,
-      "threeYear": 5.77,
-      "fiveYear": 8.09,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -14.61,
+      "threeYear": 5.07,
+      "fiveYear": 7.41,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large & Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15350,11 +15420,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 0.78,
-      "threeYear": 12.54,
-      "fiveYear": 12.48,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -3.93,
+      "threeYear": 12.46,
+      "fiveYear": 12.39,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15424,11 +15494,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": -6.25,
-      "threeYear": 7.84,
-      "fiveYear": 8.03,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -10.55,
+      "threeYear": 7.75,
+      "fiveYear": 6.67,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Sectoral / Thematic fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15498,11 +15568,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -3.44,
-      "threeYear": 9.62,
-      "fiveYear": 9.41,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -9.23,
+      "threeYear": 9.46,
+      "fiveYear": 8.81,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "ELSS fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15574,11 +15644,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": 4.36,
-      "threeYear": 11.02,
-      "fiveYear": 8.79,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -0.95,
+      "threeYear": 10.34,
+      "fiveYear": 8.28,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Flexi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15649,11 +15719,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": 6.21,
-      "threeYear": 13.15,
-      "fiveYear": 9.71,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 0.55,
+      "threeYear": 12.98,
+      "fiveYear": 9.13,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15724,11 +15794,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": 4.23,
-      "threeYear": 8.81,
-      "fiveYear": 10.48,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -3.18,
+      "threeYear": 8.83,
+      "fiveYear": 9.95,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Mid Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15798,11 +15868,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -9.3,
-      "threeYear": 5.59,
-      "fiveYear": 5.12,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.5,
+      "threeYear": 5.69,
+      "fiveYear": 4.93,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Index / Nifty 50 fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15873,11 +15943,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -6.59,
-      "threeYear": 8.33,
-      "fiveYear": 10.89,
-      "asOf": "2026-10-16",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.05,
+      "threeYear": 8.41,
+      "fiveYear": 10.51,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Value fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -15948,11 +16018,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -2.51,
-      "threeYear": 10.14,
-      "fiveYear": 8.53,
-      "asOf": "2026-10-19",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -5.92,
+      "threeYear": 9.7,
+      "fiveYear": 8.24,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Flexi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -16023,11 +16093,11 @@
     "riskBand": "very-high",
     "riskRank": 6,
     "returns": {
-      "oneYear": -1.28,
-      "threeYear": 4.32,
-      "fiveYear": 6.39,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -4.12,
+      "threeYear": 3.56,
+      "fiveYear": 5.92,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Small Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -16097,11 +16167,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -7.85,
-      "threeYear": 8.75,
-      "fiveYear": 2.42,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.56,
+      "threeYear": 8.46,
+      "fiveYear": 2.26,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Focused fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -16172,11 +16242,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -8.85,
-      "threeYear": 10.53,
-      "fiveYear": 10.1,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -10.87,
+      "threeYear": 9.71,
+      "fiveYear": 9.61,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Focused fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -16247,11 +16317,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -2.68,
-      "threeYear": 13.1,
-      "fiveYear": 12.18,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -5.02,
+      "threeYear": 12.24,
+      "fiveYear": 11.66,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Multi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -16322,11 +16392,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -0.34,
-      "threeYear": 9.41,
-      "fiveYear": 9.55,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -2.67,
+      "threeYear": 8.61,
+      "fiveYear": 9.07,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Multi Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -16397,11 +16467,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -12.21,
-      "threeYear": 5.44,
-      "fiveYear": -33.76,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.61,
+      "threeYear": 5.38,
+      "fiveYear": 4.96,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -16471,11 +16541,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -11.27,
-      "threeYear": 6.71,
-      "fiveYear": 5.76,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.83,
+      "threeYear": 6.57,
+      "fiveYear": 5.68,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -16545,11 +16615,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -12.5,
-      "threeYear": 5.1,
-      "fiveYear": 4.65,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -12.91,
+      "threeYear": 5.04,
+      "fiveYear": 4.62,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -16619,11 +16689,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -11.23,
-      "threeYear": 6.77,
-      "fiveYear": 5.8,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -11.79,
+      "threeYear": 6.63,
+      "fiveYear": 5.72,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -16693,11 +16763,11 @@
     "riskBand": "very-high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -2.21,
-      "threeYear": 16.32,
-      "fiveYear": 10.46,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -4.4,
+      "threeYear": 15.43,
+      "fiveYear": 9.95,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -16770,8 +16840,8 @@
       "oneYear": 0.0,
       "threeYear": 0.0,
       "fiveYear": 0.0,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -16841,11 +16911,11 @@
     "riskBand": "very-high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -4.96,
-      "threeYear": 8.98,
-      "fiveYear": 7.0,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -6.16,
+      "threeYear": 8.54,
+      "fiveYear": 6.74,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -16915,11 +16985,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 11.44,
-      "threeYear": 31.66,
-      "fiveYear": 23.21,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 13.1,
+      "threeYear": 31.08,
+      "fiveYear": 22.89,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -16989,11 +17059,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 5.28,
-      "threeYear": 20.36,
-      "fiveYear": 24.53,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 2.7,
+      "threeYear": 19.43,
+      "fiveYear": 23.94,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -17063,11 +17133,11 @@
     "riskBand": "high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -12.33,
-      "threeYear": 0.52,
-      "fiveYear": 0.02,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -13.32,
+      "threeYear": 0.59,
+      "fiveYear": 0.06,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Exchange-traded fund. Figures shown are computed from its own NAV history; the traded price can differ from NAV.",
@@ -17137,11 +17207,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 3.7,
-      "threeYear": 6.18,
-      "fiveYear": 5.24,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 3.59,
+      "threeYear": 6.15,
+      "fiveYear": 5.22,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Gilt fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17211,11 +17281,11 @@
     "riskBand": "moderate",
     "riskRank": 3,
     "returns": {
-      "oneYear": 1.5,
-      "threeYear": 6.24,
-      "fiveYear": 5.43,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 1.66,
+      "threeYear": 6.19,
+      "fiveYear": 5.4,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Gilt fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17285,11 +17355,11 @@
     "riskBand": "low",
     "riskRank": 1,
     "returns": {
-      "oneYear": 6.36,
-      "threeYear": 6.89,
-      "fiveYear": 6.4,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 6.35,
+      "threeYear": 6.88,
+      "fiveYear": 6.39,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17360,11 +17430,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 5.71,
-      "threeYear": 7.26,
-      "fiveYear": 6.69,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 5.67,
+      "threeYear": 7.24,
+      "fiveYear": 6.68,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Ultra Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17434,11 +17504,11 @@
     "riskBand": "moderately-high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -6.6,
-      "threeYear": 7.48,
-      "fiveYear": 7.01,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.6,
+      "threeYear": 7.15,
+      "fiveYear": 6.81,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Aggressive Hybrid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17508,11 +17578,11 @@
     "riskBand": "moderately-high",
     "riskRank": 4,
     "returns": {
-      "oneYear": -9.04,
-      "threeYear": 6.03,
-      "fiveYear": 6.85,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -9.8,
+      "threeYear": 5.77,
+      "fiveYear": 6.69,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Aggressive Hybrid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17582,11 +17652,11 @@
     "riskBand": "low",
     "riskRank": 1,
     "returns": {
-      "oneYear": 6.43,
+      "oneYear": 6.42,
       "threeYear": 6.88,
       "fiveYear": 6.37,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17657,11 +17727,11 @@
     "riskBand": "low",
     "riskRank": 1,
     "returns": {
-      "oneYear": 6.48,
-      "threeYear": 6.94,
+      "oneYear": 6.47,
+      "threeYear": 6.93,
       "fiveYear": 6.41,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17732,11 +17802,11 @@
     "riskBand": "low",
     "riskRank": 1,
     "returns": {
-      "oneYear": 6.48,
+      "oneYear": 6.46,
       "threeYear": 6.94,
-      "fiveYear": 6.32,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "fiveYear": 6.31,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Liquid fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17807,11 +17877,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -7.64,
-      "threeYear": 9.87,
-      "fiveYear": 7.82,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -8.76,
+      "threeYear": 9.59,
+      "fiveYear": 7.65,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Large Cap fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17882,11 +17952,11 @@
     "riskBand": "low-to-moderate",
     "riskRank": 2,
     "returns": {
-      "oneYear": 6.41,
-      "threeYear": 7.26,
-      "fiveYear": 6.67,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": 6.4,
+      "threeYear": 7.25,
+      "fiveYear": 6.66,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Ultra Short Duration fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",
@@ -17956,11 +18026,11 @@
     "riskBand": "high",
     "riskRank": 5,
     "returns": {
-      "oneYear": -6.28,
-      "threeYear": 11.81,
-      "fiveYear": 11.31,
-      "asOf": "2026-10-22",
-      "basis": "CAGR computed from AMFI NAV"
+      "oneYear": -7.91,
+      "threeYear": 11.19,
+      "fiveYear": 10.94,
+      "asOf": "2026-10-23",
+      "basis": "CAGR from AMFI NAV, adjusted for unit splits"
     },
     "demo": false,
     "oneLiner": "Value fund, direct plan. The figures shown are computed from its own NAV history, not quoted from a factsheet.",

@@ -1,21 +1,28 @@
 /* Comparison table on compare.html.
-   The catalogue is embedded as JSON in the page, so no network request is made. */
+   The catalogue is fetched once from assets/data/catalog.json (cached by the
+   browser), which keeps the page itself small. */
 
 (function () {
   "use strict";
 
-  var dataEl = document.getElementById("catalog");
-  if (!dataEl) return;
+  var catalog = [];
+  var bySlug = {};
+  var byLabel = {};
 
-  var catalog;
-  try {
-    catalog = JSON.parse(dataEl.textContent);
-  } catch (error) {
-    return;
+  function label(p) { return p.name + " — " + p.providerShort; }
+
+  function resolve(value) {
+    return bySlug[value] || byLabel[value] || null;
   }
 
-  var bySlug = {};
-  catalog.forEach(function (product) { bySlug[product.slug] = product; });
+  function boot(data) {
+    catalog = data || [];
+    catalog.forEach(function (product) {
+      bySlug[product.slug] = product;
+      byLabel[label(product)] = product;
+    });
+    render();
+  }
 
   var selects = Array.prototype.slice.call(document.querySelectorAll(".slot-select"));
   var slots = Array.prototype.slice.call(document.querySelectorAll(".slot"));
@@ -102,7 +109,7 @@
   ];
 
   function selected() {
-    return selects.map(function (select) { return select.value; }).filter(Boolean);
+    return selects.map(function (input) { return input.value; }).filter(Boolean);
   }
 
   function updateAvailability() {
@@ -120,7 +127,7 @@
     updateAvailability();
 
     slots.forEach(function (slot, index) {
-      var filled = Boolean(selects[index].value);
+      var filled = Boolean(resolve(selects[index].value));
       slot.classList.toggle("is-filled", filled);
       var clear = slot.querySelector(".slot-clear");
       if (clear) clear.hidden = !filled;
@@ -133,7 +140,7 @@
       return;
     }
 
-    var products = slugs.map(function (slug) { return bySlug[slug]; }).filter(Boolean);
+    var products = slugs.map(resolve).filter(Boolean);
 
     wrap.hidden = false;
     hint.hidden = false;
@@ -191,8 +198,11 @@
   var params = new URLSearchParams(window.location.search);
   var preset = (params.get("p") || "").split(",").filter(Boolean);
   preset.slice(0, selects.length).forEach(function (slug, index) {
-    if (bySlug[slug]) selects[index].value = slug;
+    if (bySlug[slug]) selects[index].value = label(bySlug[slug]);
   });
 
-  render();
+  fetch("assets/data/catalog.json")
+    .then(function (r) { return r.json(); })
+    .then(boot)
+    .catch(function () { render(); });
 })();

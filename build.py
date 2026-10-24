@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import answers, calculator, finder, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
+from builder import answers, calculator, extra_guides, finder, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
 CONTENT = ROOT / "content"
@@ -247,10 +247,15 @@ def main() -> int:
                     ("browse.html", "compare.html", "products/"))
             + group("Categories", cat_links, ("categories/", "products/"))
             + group("Guides",
-                    link("guides/ppf-vs-fd-vs-nsc.html", "PPF vs FD vs NSC")
+                    link("rates.html", "Today's rates")
+                    + link("guides/ppf-vs-fd-vs-nsc.html", "PPF vs FD vs NSC")
                     + link("guides/sip-vs-lump-sum.html", "SIP vs lump sum")
                     + link("guides/old-vs-new-tax-regime.html", "Old vs new tax regime")
-                    + link("guides/small-savings-compared.html", "Small savings compared"),
+                    + link("guides/small-savings-compared.html", "Small savings compared")
+                    + link("guides/ssy-vs-ppf.html", "SSY vs PPF")
+                    + link("guides/scss-vs-fd.html", "SCSS vs FD")
+                    + link("guides/sip-vs-fd.html", "SIP vs FD")
+                    + link("guides/nps-vs-ppf.html", "NPS vs PPF"),
                     ("guides/",))
             + group("Calculators",
                     link("calculators/salary.html", "Salary and take-home")
@@ -359,6 +364,8 @@ def main() -> int:
         scripts=["assets/js/browse.js"],
     ))
 
+    write(SITE / "assets/data/catalog.json", catalog_json(products))
+
     emit("compare.html", page(
         title="Compare products — PaisaClear",
         description="Put up to three financial products side by side: return type, minimum investment, tenure, payout, access, risk and tax.",
@@ -466,12 +473,31 @@ def main() -> int:
         ("guides/old-vs-new-tax-regime.html", "Old vs new tax regime, compared",
          "The two slab tables side by side, a worked example at 15 lakh, and what the old regime still allows.",
          guides.old_vs_new_regime(ctx, guide_rates, tax_rules)),
+        ("guides/ssy-vs-ppf.html", "SSY vs PPF — who each one is for",
+         "Sukanya Samriddhi and PPF compared on rate, term, limits and access.",
+         extra_guides.ssy_vs_ppf(guide_rates)),
+        ("guides/scss-vs-fd.html", "SCSS vs bank FD — the rate and the safety",
+         "A quarterly-paying government scheme for over-60s against a flexible bank deposit.",
+         extra_guides.scss_vs_fd(guide_rates)),
+        ("guides/sip-vs-fd.html", "SIP vs FD — promise versus possibility",
+         "A fixed deposit and a monthly equity investment compared on risk, tax and time horizon.",
+         extra_guides.sip_vs_fd(guide_rates)),
+        ("guides/nps-vs-ppf.html", "NPS vs PPF — pension against provident fund",
+         "Market-linked pension with a lock-in to 60, against a guaranteed tax-free account.",
+         extra_guides.nps_vs_ppf(guide_rates)),
         ("guides/small-savings-compared.html", "Small savings schemes compared",
          "PPF, SSY, SCSS, NSC, KVP, MIS and post office deposits in one table: rate, term, limits, tax and access.",
          guides.small_savings_compared(ctx, guide_rates)),
     ):
         emit(rel, page(title=title + " — PaisaClear", description=desc, body=body,
                        base="../", active="browse"))
+
+    emit("rates.html", page(
+        title="Today's rates — PaisaClear",
+        description="Every small-savings rate and government bond yield this site tracks, with the date each applied.",
+        body=extra_guides.rates_hub(guide_rates),
+        active="browse",
+    ))
     emit("calculators/salary.html", page(
         title="Salary & take-home calculator — PaisaClear",
         description="Work out your take-home pay from CTC under both the new and old tax regimes, with HRA, 80C, 80D and home-loan interest.",

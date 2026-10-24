@@ -190,7 +190,7 @@ def returns_line(product: dict) -> str:
     )
 
 
-def product_card(product: dict, base: str, return_types: dict, categories: dict) -> str:
+def product_card(product: dict, base: str, return_types: dict, categories: dict, compact: bool = False) -> str:
     cat = categories[product["category"]]
     if product.get("rate"):
         figure = rate_line(product["rate"])
@@ -218,14 +218,14 @@ def product_card(product: dict, base: str, return_types: dict, categories: dict)
     </div>
     <h3 class="pcard-name">{esc(product['name'])}</h3>
     <p class="pcard-provider">{esc(product['provider'])}</p>
-    <p class="pcard-line">{esc(product.get('oneLiner', ''))}</p>
-    {figure}
-    {returns_line(product)}
-    <dl class="pcard-facts">
+    {"" if compact else f'<p class="pcard-line">{esc(product.get("oneLiner", ""))}</p>'}
+    {"" if compact else figure}
+    {"" if compact else returns_line(product)}
+    {"" if compact else f"""<dl class="pcard-facts">
       <div><dt>Minimum</dt><dd>{money(product.get('minInvestment')) if isinstance(product.get('minInvestment'), int) else ('Varies' if product.get('minInvestment') is None else esc(product.get('minInvestment')))}</dd></div>
       <div><dt>Tenure</dt><dd>{esc(product.get('tenure') or '—')}</dd></div>
       <div><dt>Payout</dt><dd>{esc(product.get('payout') or '—')}</dd></div>
-    </dl>
+    </dl>"""}
     <span class="pcard-cta">Read the detail {icon("arrow", "icon icon-sm")}</span>
   </a>
 </article>"""
