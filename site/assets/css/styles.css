@@ -2378,3 +2378,65 @@ button, input, select { font: inherit; color: inherit; }
 }
 .finder-card-meta { margin: 8px 0 0; font-size: .74rem; color: var(--ink-3); }
 .finder-empty { border: 1px dashed var(--line-2); border-radius: var(--radius); padding: 22px; }
+
+/* answers page */
+.faq-shell { max-width: 860px; }
+.faq-tools { display: grid; gap: 12px; margin-bottom: 18px; }
+.faq-search { max-width: 420px; }
+.faq-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.faq-chip {
+  border: 1px solid var(--line-2);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font: inherit;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.faq-chip:hover { border-color: var(--green); color: var(--green); }
+.faq-chip.is-on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.faq-count { font-size: .76rem; color: var(--ink-3); margin: 0 0 14px; }
+.faq-group { margin-bottom: 26px; }
+.faq-group-title {
+  font-size: .68rem;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  margin-bottom: 8px;
+  padding: 0 16px;
+}
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 14px 0;
+  font-size: .92rem;
+  font-weight: 600;
+  color: var(--ink);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  color: var(--ink-3);
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.faq-item[open] summary::after { content: "−"; }
+.faq-answer { padding: 0 0 14px; }
+.faq-answer p { margin: 0 0 8px; font-size: .88rem; line-height: 1.65; color: var(--ink-2); }
+.faq-links { display: flex; flex-wrap: wrap; gap: 12px; }
+.faq-links a { font-size: .82rem; font-weight: 600; }
+.faq-empty { color: var(--ink-3); font-size: .88rem; }

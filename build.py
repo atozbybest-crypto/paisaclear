@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import calculator, finder, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
+from builder import answers, calculator, finder, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
 CONTENT = ROOT / "content"
@@ -427,6 +427,14 @@ def main() -> int:
         active="calculator",
         scripts=["assets/js/money.js"],
     ))
+
+    faq = load_json(CONTENT / "faq.json")
+    emit("answers.html", page(
+        title="Answers — PaisaClear",
+        description="Straight answers on PPF, FDs, mutual funds, bonds, insurance and tax, drawn from the same dated data as the catalogue.",
+        body=answers.body(faq),
+        scripts=["assets/js/faq.js"],
+    ).replace("</head>", answers.jsonld(faq) + "</head>"))
 
     emit("privacy.html", page(
         title="Privacy — PaisaClear",

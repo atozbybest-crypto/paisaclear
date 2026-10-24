@@ -381,6 +381,7 @@ def page(
         <li><a href="{base}calculators/income-tax.html">Income tax</a></li>
         <li><a href="{base}calculators/scheme-finder.html">Scheme finder</a></li>
         <li><a href="{base}guides/ppf-vs-fd-vs-nsc.html">Guides</a></li>
+        <li><a href="{base}answers.html">Answers</a></li>
         <li><a href="{base}privacy.html">Privacy</a></li>
         <li><a href="{base}feedback.html">Feedback</a></li>
         <li><a href="{base}how-we-work.html">How we work</a></li>
