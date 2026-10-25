@@ -2450,3 +2450,18 @@ button, input, select { font: inherit; color: inherit; }
   background: var(--surface);
 }
 .compare-error code { background: var(--tint); padding: 1px 5px; border-radius: 4px; }
+
+/* new-category badge */
+.badge-new {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--green);
+  color: var(--paper);
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}

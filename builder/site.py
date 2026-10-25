@@ -233,8 +233,20 @@ def product_card(product: dict, base: str, return_types: dict, categories: dict,
 </article>"""
 
 
+def _is_new(category: dict) -> bool:
+    until = category.get("isNewUntil")
+    if not until:
+        return False
+    from datetime import date
+    try:
+        return date.fromisoformat(until) >= date.today()
+    except ValueError:
+        return False
+
+
 def category_card(category: dict, count: int, base: str) -> str:
     accent = CATEGORY_ACCENT.get(category["id"], "green")
+    new_badge = '<span class="badge-new">New</span>' if _is_new(category) else ""
     is_guide = category.get("status") == "guide"
     if is_guide:
         foot = '<span class="cat-count cat-guide">Verify at source</span>'
@@ -242,7 +254,7 @@ def category_card(category: dict, count: int, base: str) -> str:
         foot = f'<span class="cat-count">{count} product{"s" if count != 1 else ""}</span>'
     return f"""<a class="cat-card cat-{accent}" href="{base}categories/{esc(category['slug'])}.html">
   <span class="cat-icon">{icon(category['icon'])}</span>
-  <span class="cat-name">{esc(category['name'])}</span>
+  <span class="cat-name">{esc(category['name'])}{new_badge}</span>
   <span class="cat-tagline">{esc(category['tagline'])}</span>
   <span class="cat-foot">
     {foot}

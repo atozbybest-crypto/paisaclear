@@ -697,7 +697,8 @@ CURATED_ALTERNATIVES = {
 # ------------------------------------------------------------------ compare
 
 def compare(ctx: dict, catalog_json: str) -> str:
-    products = ctx["products"]
+    excluded = {c["id"] for c in ctx["categories"] if c.get("excludeFromCompare")}
+    products = [p for p in ctx["products"] if p["category"] not in excluded]
     options = "".join(
         f'<option value="{esc(p["name"] + " — " + p["providerShort"])}"></option>'
         for p in products

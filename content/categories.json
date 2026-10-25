@@ -1,5 +1,23 @@
 [
   {
+    "id": "dividend-champions",
+    "slug": "dividend-champions",
+    "name": "Dividend Champions",
+    "short": "Dividend Champions",
+    "tagline": "Companies that have paid dividends for 22 years or more.",
+    "blurb": "Listed companies with a long record of paying dividends. Payment history is dated; a streak is history, not a promise.",
+    "icon": "chart",
+    "accent": "amber",
+    "status": "live",
+    "excludeFromCompare": true,
+    "isNewUntil": "2026-11-01",
+    "whatToCheck": [
+      "Whether the dividend is covered by free cash flow, not borrowed money",
+      "The payout ratio against earnings",
+      "Whether the price fall risk outweighs the dividend yield"
+    ]
+  },
+  {
     "id": "lic-life-insurance",
     "slug": "lic-life-insurance",
     "name": "LIC & Life Insurance Policies",

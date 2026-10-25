@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import answers, calculator, extra_guides, finder, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
+from builder import answers, calculator, dividends, extra_guides, finder, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -372,7 +372,9 @@ def main() -> int:
         scripts=["assets/js/browse.js"],
     ))
 
-    write(SITE / "assets/data/catalog.json", catalog_json(products))
+    _excluded = {c["id"] for c in ctx["categories"] if c.get("excludeFromCompare")}
+    write(SITE / "assets/data/catalog.json",
+          catalog_json([p for p in products if p["category"] not in _excluded]))
 
     emit("compare.html", page(
         title="Compare products — PaisaClear",
@@ -534,10 +536,14 @@ def main() -> int:
         ))
 
     for product in products:
+        if product["category"] == "dividend-champions":
+            body = dividends.page(ctx, product)
+        else:
+            body = pages.product_page(ctx, product)
         emit(f"products/{product['slug']}.html", page(
             title=f"{product['name']} — PaisaClear",
             description=product["oneLiner"],
-            body=pages.product_page(ctx, product),
+            body=body,
             base="../",
             active="browse",
         ))
