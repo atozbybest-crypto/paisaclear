@@ -12,7 +12,13 @@ param(
 $ErrorActionPreference = "Stop"
 
 $src = "C:\Users\Gowtham_Sravya\Documents\deepseek-harness\default-workspace\paisaclear"
-$dst = Join-Path ([Environment]::GetFolderPath('MyDocuments')) "paisaclear-git\paisaclear"
+# Repository location: prefer the copy outside OneDrive (no file locks).
+$candidates = @(
+    "C:\dev\paisaclear-git\paisaclear",
+    (Join-Path ([Environment]::GetFolderPath('MyDocuments')) "paisaclear-git\paisaclear")
+)
+$dst = $candidates | Where-Object { Test-Path (Join-Path $_ ".git") } | Select-Object -First 1
+if (-not $dst) { $dst = $candidates[0] }
 $python = "C:\Users\Gowtham_Sravya\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe"
 $git = (Get-ChildItem "$env:LOCALAPPDATA\GitHubDesktop\app-*\resources\app\git\cmd\git.exe" |
         Select-Object -First 1).FullName

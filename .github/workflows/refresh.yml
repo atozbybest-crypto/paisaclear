@@ -5,12 +5,10 @@ name: Refresh rates and redeploy
 
 on:
   schedule:
-    # GitHub's free scheduler queues runs and fires them late — on 23-24 Oct 2026
-    # three runs were 3-5 hours behind. A single nightly job therefore cannot be
-    # trusted to finish by 07:00 IST, so we retry often and never let the data
-    # go more than a couple of hours stale.
-    - cron: "20 */2 * * *"          # every two hours, all day
-    - cron: "50 17-23,0-1 * * *"    # extra attempts through the overnight window
+    # One run a day at 09:00 IST (03:30 UTC). Each run can trigger a Netlify
+    # deploy, so this is deliberately a single daily job: it picks up the
+    # previous evening's NAVs, the current RBI yields and rebuilds once.
+    - cron: "30 3 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
