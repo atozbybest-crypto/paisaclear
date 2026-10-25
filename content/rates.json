@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-25T00:27:48Z",
+  "generatedAt": "2026-10-25T00:41:11Z",
   "note": "Machine-refreshable rates. `rbi` values are pulled by refresh_rbi.py; the small-savings values are entered by hand each quarter because the National Savings Institute site is not machine-readable from here.",
   "feeds": {
     "rbi": {
       "label": "Reserve Bank of India",
       "url": "https://www.rbi.org.in/",
-      "fetchedAt": "2026-10-25T00:23:14Z",
+      "fetchedAt": "2026-10-25T00:34:18Z",
       "refreshable": true
     },
     "small-savings": {
@@ -276,9 +276,9 @@
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "nav-103734": {
-      "value": "₹37.95",
+      "value": "₹37.96",
       "label": "NAV, direct plan",
-      "asOf": "2026-10-24",
+      "asOf": "2026-10-25",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
