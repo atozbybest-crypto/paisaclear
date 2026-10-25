@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from builder import answers, calculator, extra_guides, finder, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
+import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
 CONTENT = ROOT / "content"
@@ -213,6 +214,13 @@ def main() -> int:
         target.mkdir(parents=True, exist_ok=True)
 
     written: list[str] = []
+
+    # Hash the CSS/JS once per build so their URLs can be cached forever.
+    import hashlib
+    _digest = hashlib.sha1()
+    for _asset in sorted((SITE / 'assets/css').glob('*.css')) + sorted((SITE / 'assets/js').glob('*.js')):
+        _digest.update(_asset.read_bytes())
+    site_mod.ASSET_VERSION = _digest.hexdigest()[:8]
 
     def sidebar_for(rel: str) -> str:
         base = "../" if "/" in rel else ""

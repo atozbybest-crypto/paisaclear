@@ -12,6 +12,8 @@ TONES = {
     "market-linked": "violet",
 }
 
+ASSET_VERSION = ""
+
 CATEGORY_ACCENT = {
     "government-schemes": "green",
     "bank-deposits": "blue",
@@ -261,6 +263,9 @@ def breadcrumb(items: list[tuple[str, str]]) -> str:
     return "".join(parts)
 
 
+ASSET_VERSION = globals().get("ASSET_VERSION", "")
+
+
 def page(
     *,
     title: str,
@@ -275,8 +280,9 @@ def page(
         current = ' aria-current="page"' if key == active else ""
         return f'<a class="nav-link" href="{base}{href}"{current}>{label}</a>'
 
+    vq = f"?v={ASSET_VERSION}" if ASSET_VERSION else ""
     extra_scripts = "".join(
-        f'<script src="{base}{esc(path)}" defer></script>\n' for path in (scripts or [])
+        f'<script src="{base}{esc(path)}{vq}" defer></script>\n' for path in (scripts or [])
     )
 
     return f"""<!DOCTYPE html>
@@ -305,8 +311,8 @@ def page(
 <link rel="icon" href="{base}assets/img/favicon-96.png" sizes="96x96" type="image/png">
 <link rel="icon" href="{base}assets/img/favicon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="{base}assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="{base}assets/css/styles.css">
-<script src="{base}assets/js/site.js" defer></script>
+<link rel="stylesheet" href="{base}assets/css/styles.css{vq}">
+<script src="{base}assets/js/site.js{vq}" defer></script>
 </head>
 <body class="{esc(body_class)}">
 <a class="skip-link" href="#main">Skip to content</a>

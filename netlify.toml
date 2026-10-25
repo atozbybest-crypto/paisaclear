@@ -14,9 +14,17 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
-# Assets keep their filenames across deploys, so a long cache silently serves
-# stale CSS/JS after a release. Revalidate instead: cheap for a site this size.
+# Asset URLs carry a content hash (?v=…), so they can be cached for a year and
+# never go stale — a release changes the hash and therefore the URL.
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/css/*"
   [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
