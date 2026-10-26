@@ -14,6 +14,7 @@ import argparse
 import json
 import ssl
 import sys
+import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -24,10 +25,18 @@ RATES = ROOT / "content" / "rates.json"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 
-def http_json(url: str):
-    request = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(request, timeout=30, context=ssl.create_default_context()) as response:
-        return json.loads(response.read())
+def http_json(url: str, attempts: int = 4):
+    """AMFI's mirror rate-limits bursts, so back off and retry."""
+    last = None
+    for attempt in range(attempts):
+        try:
+            request = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(request, timeout=30, context=ssl.create_default_context()) as response:
+                return json.loads(response.read())
+        except Exception as error:
+            last = error
+            time.sleep(1.5 * (attempt + 1))
+    raise last
 
 
 def money(value: float) -> str:
@@ -60,7 +69,7 @@ def main() -> int:
 
     updated, unchanged, failed = [], 0, []
 
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=4) as pool:
         for key, nav, date_text in pool.map(refresh, keys):
             if nav is None:
                 failed.append((key, date_text))
