@@ -1,0 +1,44 @@
+name: Daily audit
+
+# Checks the built site, the live deployment and the data every morning.
+# Creates no commits, so it never triggers a Netlify deploy or costs credits.
+
+on:
+  schedule:
+    - cron: "30 2 * * *"   # 08:00 IST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run the audit
+        id: audit
+        continue-on-error: true
+        run: |
+          python tools/audit_site.py | tee audit-report.txt
+          echo "exit=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Open an issue when something needs action
+        if: steps.audit.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "Audit needs attention — $(date -u +'%Y-%m-%d')" \
+            --body-file audit-report.txt \
+            --label "audit" || true
+
+      - name: Fail the run so GitHub sends the email
+        if: steps.audit.outcome == 'failure'
+        run: exit 1
