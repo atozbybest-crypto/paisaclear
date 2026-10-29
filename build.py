@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import answers, calculator, checker, dividends, extra_guides, finder, guides, income_tax, loan, news, pages, plans, plan, planner, privacy, ssy, start  # noqa: E402
+from builder import answers, bbbp, calculator, checker, dividends, extra_guides, finder, guides, income_tax, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -268,7 +268,13 @@ def main() -> int:
                     ("guides/",))
             + group("Plans",
                     link("plans.html", "All plans")
-                    + link("plans/sukanya-samriddhi.html", "Sukanya Samriddhi"),
+                    + link("plans/sukanya-samriddhi.html", "Sukanya Samriddhi")
+                    + link("plans/beti-bachao-beti-padhao.html", "Beti Bachao Beti Padhao")
+                    + link("plans/public-provident-fund.html", "Public Provident Fund")
+                    + link("plans/national-savings-certificate.html", "National Savings Certificate")
+                    + link("plans/senior-citizens-savings-scheme.html", "Senior Citizens' Savings")
+                    + link("plans/kisan-vikas-patra.html", "Kisan Vikas Patra")
+                    + link("plans/post-office-monthly-income-scheme.html", "Post Office MIS"),
                     ("plans/", "plans.html"))
             + group("Calculators",
                     link("calculators/salary.html", "Salary and take-home")
@@ -492,6 +498,9 @@ def main() -> int:
         ("guides/old-vs-new-tax-regime.html", "Old vs new tax regime, compared",
          "The two slab tables side by side, a worked example at 15 lakh, and what the old regime still allows.",
          guides.old_vs_new_regime(ctx, guide_rates, tax_rules)),
+        ("plans/beti-bachao-beti-padhao.html", "Beti Bachao Beti Padhao — what it is and what it is not",
+         "The girl-child campaign explained: objectives, what it does not pay, and the savings scheme to use instead.",
+         bbbp.page(guide_rates.get("ssy", {}).get("value", ""), guide_rates.get("ssy", {}).get("asOf", ""))),
         ("plans/sukanya-samriddhi.html", "Sukanya Samriddhi Yojana — the full guide",
          "Who can open an SSY account, the deposit rules, partial withdrawal, tax treatment and a 21-year calculator.",
          ssy.page(tax_rules, guide_rates)),
@@ -518,7 +527,25 @@ def main() -> int:
         {"slug": "sukanya-samriddhi", "tag": "Government scheme", "name": "Sukanya Samriddhi Yojana",
          "line": "The highest small-savings rate, entirely tax-free, for a daughter under ten.",
          "meta": f"{guide_rates.get('ssy', {}).get('value', '')} · 21 years · calculator included"},
+        {"slug": "beti-bachao-beti-padhao", "tag": "Campaign", "name": "Beti Bachao Beti Padhao",
+         "line": "The national girl-child campaign — awareness and delivery, not a money product.",
+         "meta": "No deposit · no interest · no calculator"},
     ]
+
+    for scheme in plan_schemes.SCHEMES:
+        emit(f"plans/{scheme['slug']}.html", page(
+            title=f"{scheme['name']} — rate, rules and calculator",
+            description=scheme["intro"][:155],
+            body=plan_schemes.page(scheme, guide_rates),
+            base="../",
+            active="plans",
+        ))
+        rate = (guide_rates.get(scheme["rate_key"]) or {}).get("value", "")
+        plan_registry.append({
+            "slug": scheme["slug"], "tag": scheme["tag"], "name": scheme["name"],
+            "line": scheme["intro"], "meta": f"{rate} · {scheme['term']} · calculator included",
+        })
+
     emit("plans.html", page(
         title="Plans, explained in full — PaisaClear",
         description="One page per scheme: eligibility, deposit rules, withdrawal rules, tax treatment and a working calculator.",

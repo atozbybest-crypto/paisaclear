@@ -996,7 +996,7 @@ def feedback(ctx: dict) -> str:
       </label>
 
       <div class="fb-actions">
-        <button class="btn btn-primary" type="submit">Send feedback</button>
+        <button class="btn btn-primary" type="submit">Send message</button>
       </div>
 
       <p class="fb-note">

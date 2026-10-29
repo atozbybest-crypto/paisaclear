@@ -13,7 +13,7 @@ import re
 import ssl
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
@@ -32,6 +32,7 @@ FEEDS = [
 
 MAX_PER_FEED = 8
 SUMMARY_CHARS = 180
+FRESH_HOURS = 48
 
 
 def clean(text: str) -> str:
@@ -100,6 +101,20 @@ def main() -> int:
         except Exception as error:
             failures.append(f"{source} ({section}): {type(error).__name__}")
 
+    # Drop anything older than the freshness window: a reader arriving today
+    # should see today's news, not an article from April.
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=FRESH_HOURS)
+    fresh = []
+    for item in collected:
+        try:
+            when = datetime.fromisoformat(item["published"])
+        except (TypeError, ValueError):
+            continue
+        if when >= cutoff:
+            fresh.append(item)
+    dropped = len(collected) - len(fresh)
+    collected = fresh
+
     collected.sort(key=lambda i: i["published"], reverse=True)
 
     payload = {
@@ -108,7 +123,8 @@ def main() -> int:
     }
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    print(f"news: {len(collected)} headlines from {len(FEEDS) - len(failures)}/{len(FEEDS)} feeds")
+    print(f"news: {len(collected)} headlines (last {FRESH_HOURS}h) from {len(FEEDS) - len(failures)}/{len(FEEDS)} feeds")
+    print(f"  dropped as older than {FRESH_HOURS}h: {dropped}")
     for failure in failures:
         print("  failed:", failure)
     if collected:
