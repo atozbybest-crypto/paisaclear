@@ -13001,6 +13001,746 @@
     }
   },
   {
+    "slug": "aditya-birla-activ-one-max",
+    "name": "Aditya Birla Health Insurance — Activ One MAX",
+    "provider": "Aditya Birla Health Insurance",
+    "providerShort": "Aditya Birla Health Insurance",
+    "providerType": "Insurer",
+    "category": "health-insurance",
+    "returnType": "conditional",
+    "demo": false,
+    "oneLiner": "A plan built around chronic condition management, health returns and wide cover brackets.",
+    "plan": "Activ One MAX",
+    "minInvestment": null,
+    "minInvestmentNote": "Premium is set by the insurer by age, city and cover",
+    "tenure": "One year, renewable",
+    "tenureMonths": 12,
+    "payout": "Claim settlement, not a payout",
+    "payoutFrequency": "claim",
+    "liquidity": "No cash value. Premiums are not returned if you do not claim.",
+    "lockIn": null,
+    "eligibility": "Resident individuals; entry age limits vary by plan and are checked at quote",
+    "tax": "Premiums may qualify under Section 80D, subject to limits. Check the current rules.",
+    "protection": "Cover against hospitalisation costs, subject to the policy's terms and sub-limits.",
+    "riskLevel": "low",
+    "risks": [
+      "Pre-existing conditions have waiting periods, usually 2-4 years",
+      "Room rent limits and co-payment can leave a large share with you",
+      "Renewal is not guaranteed at the same premium as you age"
+    ],
+    "commonUses": [
+      "Protecting savings from a hospital bill",
+      "Family floater cover for a household"
+    ],
+    "check": [
+      "The waiting period for pre-existing conditions",
+      "Room rent limits and any co-payment clause",
+      "Whether your hospital is in the cashless network",
+      "What is excluded, in the policy wording not the brochure"
+    ],
+    "highlights": [
+      "Chronic condition management",
+      "Health returns on staying active",
+      "Wide sum insured brackets"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "rateRef": {
+      "label": "Premium set by the insurer",
+      "url": "https://www.adityabirlacapital.com",
+      "note": "Premium depends on age, city, cover and add-ons."
+    },
+    "source": {
+      "label": "Aditya Birla Health Insurance — health insurance",
+      "url": "https://www.adityabirlacapital.com",
+      "note": "Plan features as described on this page; not independently verified."
+    },
+    "sources": [
+      {
+        "label": "Aditya Birla Health Insurance — health insurance",
+        "url": "https://www.adityabirlacapital.com"
+      },
+      {
+        "label": "IRDAI",
+        "url": "https://www.irdai.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-29",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 29 Oct 2026",
+      "approvedAt": "2026-10-29",
+      "notes": "Features reproduced from the insurer's own description. No premium, UIN or claim data published."
+    }
+  },
+  {
+    "slug": "care-health-care-supreme",
+    "name": "Care Health Insurance — Care Supreme",
+    "provider": "Care Health Insurance",
+    "providerShort": "Care Health Insurance",
+    "providerType": "Insurer",
+    "category": "health-insurance",
+    "returnType": "conditional",
+    "demo": false,
+    "oneLiner": "A customisable health plan with automatic recharge of the sum insured and wellness benefits.",
+    "plan": "Care Supreme",
+    "minInvestment": null,
+    "minInvestmentNote": "Premium is set by the insurer by age, city and cover",
+    "tenure": "One year, renewable",
+    "tenureMonths": 12,
+    "payout": "Claim settlement, not a payout",
+    "payoutFrequency": "claim",
+    "liquidity": "No cash value. Premiums are not returned if you do not claim.",
+    "lockIn": null,
+    "eligibility": "Resident individuals; entry age limits vary by plan and are checked at quote",
+    "tax": "Premiums may qualify under Section 80D, subject to limits. Check the current rules.",
+    "protection": "Cover against hospitalisation costs, subject to the policy's terms and sub-limits.",
+    "riskLevel": "low",
+    "risks": [
+      "Pre-existing conditions have waiting periods, usually 2-4 years",
+      "Room rent limits and co-payment can leave a large share with you",
+      "Renewal is not guaranteed at the same premium as you age"
+    ],
+    "commonUses": [
+      "Protecting savings from a hospital bill",
+      "Family floater cover for a household"
+    ],
+    "check": [
+      "The waiting period for pre-existing conditions",
+      "Room rent limits and any co-payment clause",
+      "Whether your hospital is in the cashless network",
+      "What is excluded, in the policy wording not the brochure"
+    ],
+    "highlights": [
+      "Customisable cover and add-ons",
+      "Unlimited automatic recharge of the sum insured",
+      "Wellness benefits"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "rateRef": {
+      "label": "Premium set by the insurer",
+      "url": "https://www.careinsurance.com",
+      "note": "Premium depends on age, city, cover and add-ons."
+    },
+    "source": {
+      "label": "Care Health Insurance — health insurance",
+      "url": "https://www.careinsurance.com",
+      "note": "Plan features as described on this page; not independently verified."
+    },
+    "sources": [
+      {
+        "label": "Care Health Insurance — health insurance",
+        "url": "https://www.careinsurance.com"
+      },
+      {
+        "label": "IRDAI",
+        "url": "https://www.irdai.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-29",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 29 Oct 2026",
+      "approvedAt": "2026-10-29",
+      "notes": "Features reproduced from the insurer's own description. No premium, UIN or claim data published."
+    }
+  },
+  {
+    "slug": "hdfc-ergo-optima-secure-plus",
+    "name": "HDFC ERGO — Optima Secure+",
+    "provider": "HDFC ERGO",
+    "providerShort": "HDFC ERGO",
+    "providerType": "Insurer",
+    "category": "health-insurance",
+    "returnType": "conditional",
+    "demo": false,
+    "oneLiner": "Health cover with a 2x cover benefit and no deduction on claims, according to the insurer.",
+    "plan": "Optima Secure+",
+    "minInvestment": null,
+    "minInvestmentNote": "Premium is set by the insurer by age, city and cover",
+    "tenure": "One year, renewable",
+    "tenureMonths": 12,
+    "payout": "Claim settlement, not a payout",
+    "payoutFrequency": "claim",
+    "liquidity": "No cash value. Premiums are not returned if you do not claim.",
+    "lockIn": null,
+    "eligibility": "Resident individuals; entry age limits vary by plan and are checked at quote",
+    "tax": "Premiums may qualify under Section 80D, subject to limits. Check the current rules.",
+    "protection": "Cover against hospitalisation costs, subject to the policy's terms and sub-limits.",
+    "riskLevel": "low",
+    "risks": [
+      "Pre-existing conditions have waiting periods, usually 2-4 years",
+      "Room rent limits and co-payment can leave a large share with you",
+      "Renewal is not guaranteed at the same premium as you age"
+    ],
+    "commonUses": [
+      "Protecting savings from a hospital bill",
+      "Family floater cover for a household"
+    ],
+    "check": [
+      "The waiting period for pre-existing conditions",
+      "Room rent limits and any co-payment clause",
+      "Whether your hospital is in the cashless network",
+      "What is excluded, in the policy wording not the brochure"
+    ],
+    "highlights": [
+      "2x cover benefit on the sum insured",
+      "Zero deduction on claims",
+      "16,000+ cashless hospitals in the network"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "rateRef": {
+      "label": "Premium set by the insurer",
+      "url": "https://www.hdfcergo.com/health-insurance",
+      "note": "Premium depends on age, city, cover and add-ons."
+    },
+    "source": {
+      "label": "HDFC ERGO — health insurance",
+      "url": "https://www.hdfcergo.com/health-insurance",
+      "note": "Plan features as described on this page; not independently verified."
+    },
+    "sources": [
+      {
+        "label": "HDFC ERGO — health insurance",
+        "url": "https://www.hdfcergo.com/health-insurance"
+      },
+      {
+        "label": "IRDAI",
+        "url": "https://www.irdai.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-29",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 29 Oct 2026",
+      "approvedAt": "2026-10-29",
+      "notes": "Features reproduced from the insurer's own description. No premium, UIN or claim data published."
+    }
+  },
+  {
+    "slug": "icici-lombard-elevate",
+    "name": "ICICI Lombard — Elevate",
+    "provider": "ICICI Lombard",
+    "providerShort": "ICICI Lombard",
+    "providerType": "Insurer",
+    "category": "health-insurance",
+    "returnType": "conditional",
+    "demo": false,
+    "oneLiner": "Health cover with flexible room category choices and cover for modern treatments.",
+    "plan": "Elevate",
+    "minInvestment": null,
+    "minInvestmentNote": "Premium is set by the insurer by age, city and cover",
+    "tenure": "One year, renewable",
+    "tenureMonths": 12,
+    "payout": "Claim settlement, not a payout",
+    "payoutFrequency": "claim",
+    "liquidity": "No cash value. Premiums are not returned if you do not claim.",
+    "lockIn": null,
+    "eligibility": "Resident individuals; entry age limits vary by plan and are checked at quote",
+    "tax": "Premiums may qualify under Section 80D, subject to limits. Check the current rules.",
+    "protection": "Cover against hospitalisation costs, subject to the policy's terms and sub-limits.",
+    "riskLevel": "low",
+    "risks": [
+      "Pre-existing conditions have waiting periods, usually 2-4 years",
+      "Room rent limits and co-payment can leave a large share with you",
+      "Renewal is not guaranteed at the same premium as you age"
+    ],
+    "commonUses": [
+      "Protecting savings from a hospital bill",
+      "Family floater cover for a household"
+    ],
+    "check": [
+      "The waiting period for pre-existing conditions",
+      "Room rent limits and any co-payment clause",
+      "Whether your hospital is in the cashless network",
+      "What is excluded, in the policy wording not the brochure"
+    ],
+    "highlights": [
+      "Flexible room category options",
+      "Modern treatment coverage",
+      "Individual and family floater"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "rateRef": {
+      "label": "Premium set by the insurer",
+      "url": "https://www.icicilombard.com",
+      "note": "Premium depends on age, city, cover and add-ons."
+    },
+    "source": {
+      "label": "ICICI Lombard — health insurance",
+      "url": "https://www.icicilombard.com",
+      "note": "Plan features as described on this page; not independently verified."
+    },
+    "sources": [
+      {
+        "label": "ICICI Lombard — health insurance",
+        "url": "https://www.icicilombard.com"
+      },
+      {
+        "label": "IRDAI",
+        "url": "https://www.irdai.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-29",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 29 Oct 2026",
+      "approvedAt": "2026-10-29",
+      "notes": "Features reproduced from the insurer's own description. No premium, UIN or claim data published."
+    }
+  },
+  {
+    "slug": "manipalcigna-prohealth",
+    "name": "ManipalCigna — ProHealth",
+    "provider": "ManipalCigna",
+    "providerShort": "ManipalCigna",
+    "providerType": "Insurer",
+    "category": "health-insurance",
+    "returnType": "conditional",
+    "demo": false,
+    "oneLiner": "High-cover plan with extensive day-care and outpatient options, per the insurer.",
+    "plan": "ProHealth",
+    "minInvestment": null,
+    "minInvestmentNote": "Premium is set by the insurer by age, city and cover",
+    "tenure": "One year, renewable",
+    "tenureMonths": 12,
+    "payout": "Claim settlement, not a payout",
+    "payoutFrequency": "claim",
+    "liquidity": "No cash value. Premiums are not returned if you do not claim.",
+    "lockIn": null,
+    "eligibility": "Resident individuals; entry age limits vary by plan and are checked at quote",
+    "tax": "Premiums may qualify under Section 80D, subject to limits. Check the current rules.",
+    "protection": "Cover against hospitalisation costs, subject to the policy's terms and sub-limits.",
+    "riskLevel": "low",
+    "risks": [
+      "Pre-existing conditions have waiting periods, usually 2-4 years",
+      "Room rent limits and co-payment can leave a large share with you",
+      "Renewal is not guaranteed at the same premium as you age"
+    ],
+    "commonUses": [
+      "Protecting savings from a hospital bill",
+      "Family floater cover for a household"
+    ],
+    "check": [
+      "The waiting period for pre-existing conditions",
+      "Room rent limits and any co-payment clause",
+      "Whether your hospital is in the cashless network",
+      "What is excluded, in the policy wording not the brochure"
+    ],
+    "highlights": [
+      "High sum insured options",
+      "Extensive day-care procedures",
+      "OPD options"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "rateRef": {
+      "label": "Premium set by the insurer",
+      "url": "https://www.manipalcigna.com",
+      "note": "Premium depends on age, city, cover and add-ons."
+    },
+    "source": {
+      "label": "ManipalCigna — health insurance",
+      "url": "https://www.manipalcigna.com",
+      "note": "Plan features as described on this page; not independently verified."
+    },
+    "sources": [
+      {
+        "label": "ManipalCigna — health insurance",
+        "url": "https://www.manipalcigna.com"
+      },
+      {
+        "label": "IRDAI",
+        "url": "https://www.irdai.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-29",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 29 Oct 2026",
+      "approvedAt": "2026-10-29",
+      "notes": "Features reproduced from the insurer's own description. No premium, UIN or claim data published."
+    }
+  },
+  {
+    "slug": "niva-bupa-reassure-3-0",
+    "name": "Niva Bupa — ReAssure 3.0",
+    "provider": "Niva Bupa",
+    "providerShort": "Niva Bupa",
+    "providerType": "Insurer",
+    "category": "health-insurance",
+    "returnType": "conditional",
+    "demo": false,
+    "oneLiner": "Health cover with unlimited recharges and broad hospitalisation cover, per the insurer.",
+    "plan": "ReAssure 3.0",
+    "minInvestment": null,
+    "minInvestmentNote": "Premium is set by the insurer by age, city and cover",
+    "tenure": "One year, renewable",
+    "tenureMonths": 12,
+    "payout": "Claim settlement, not a payout",
+    "payoutFrequency": "claim",
+    "liquidity": "No cash value. Premiums are not returned if you do not claim.",
+    "lockIn": null,
+    "eligibility": "Resident individuals; entry age limits vary by plan and are checked at quote",
+    "tax": "Premiums may qualify under Section 80D, subject to limits. Check the current rules.",
+    "protection": "Cover against hospitalisation costs, subject to the policy's terms and sub-limits.",
+    "riskLevel": "low",
+    "risks": [
+      "Pre-existing conditions have waiting periods, usually 2-4 years",
+      "Room rent limits and co-payment can leave a large share with you",
+      "Renewal is not guaranteed at the same premium as you age"
+    ],
+    "commonUses": [
+      "Protecting savings from a hospital bill",
+      "Family floater cover for a household"
+    ],
+    "check": [
+      "The waiting period for pre-existing conditions",
+      "Room rent limits and any co-payment clause",
+      "Whether your hospital is in the cashless network",
+      "What is excluded, in the policy wording not the brochure"
+    ],
+    "highlights": [
+      "Unlimited recharges",
+      "Extensive hospitalisation coverage",
+      "Family floater options"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "rateRef": {
+      "label": "Premium set by the insurer",
+      "url": "https://www.nivabupa.com/health-insurance.html",
+      "note": "Premium depends on age, city, cover and add-ons."
+    },
+    "source": {
+      "label": "Niva Bupa — health insurance",
+      "url": "https://www.nivabupa.com/health-insurance.html",
+      "note": "Plan features as described on this page; not independently verified."
+    },
+    "sources": [
+      {
+        "label": "Niva Bupa — health insurance",
+        "url": "https://www.nivabupa.com/health-insurance.html"
+      },
+      {
+        "label": "IRDAI",
+        "url": "https://www.irdai.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-29",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 29 Oct 2026",
+      "approvedAt": "2026-10-29",
+      "notes": "Features reproduced from the insurer's own description. No premium, UIN or claim data published."
+    }
+  },
+  {
+    "slug": "reliance-general-health",
+    "name": "Reliance General Insurance — Retail and family floater plans",
+    "provider": "Reliance General Insurance",
+    "providerShort": "Reliance General Insurance",
+    "providerType": "Insurer",
+    "category": "health-insurance",
+    "returnType": "conditional",
+    "demo": false,
+    "oneLiner": "Retail and family floater health cover with a broad hospital network.",
+    "plan": "Retail and family floater plans",
+    "minInvestment": null,
+    "minInvestmentNote": "Premium is set by the insurer by age, city and cover",
+    "tenure": "One year, renewable",
+    "tenureMonths": 12,
+    "payout": "Claim settlement, not a payout",
+    "payoutFrequency": "claim",
+    "liquidity": "No cash value. Premiums are not returned if you do not claim.",
+    "lockIn": null,
+    "eligibility": "Resident individuals; entry age limits vary by plan and are checked at quote",
+    "tax": "Premiums may qualify under Section 80D, subject to limits. Check the current rules.",
+    "protection": "Cover against hospitalisation costs, subject to the policy's terms and sub-limits.",
+    "riskLevel": "low",
+    "risks": [
+      "Pre-existing conditions have waiting periods, usually 2-4 years",
+      "Room rent limits and co-payment can leave a large share with you",
+      "Renewal is not guaranteed at the same premium as you age"
+    ],
+    "commonUses": [
+      "Protecting savings from a hospital bill",
+      "Family floater cover for a household"
+    ],
+    "check": [
+      "The waiting period for pre-existing conditions",
+      "Room rent limits and any co-payment clause",
+      "Whether your hospital is in the cashless network",
+      "What is excluded, in the policy wording not the brochure"
+    ],
+    "highlights": [
+      "Individual and family floater cover",
+      "Broad hospital network",
+      "Renewal benefits"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "rateRef": {
+      "label": "Premium set by the insurer",
+      "url": "https://www.reliancegeneral.co.in/health-insurance",
+      "note": "Premium depends on age, city, cover and add-ons."
+    },
+    "source": {
+      "label": "Reliance General Insurance — health insurance",
+      "url": "https://www.reliancegeneral.co.in/health-insurance",
+      "note": "Plan features as described on this page; not independently verified."
+    },
+    "sources": [
+      {
+        "label": "Reliance General Insurance — health insurance",
+        "url": "https://www.reliancegeneral.co.in/health-insurance"
+      },
+      {
+        "label": "IRDAI",
+        "url": "https://www.irdai.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-29",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 29 Oct 2026",
+      "approvedAt": "2026-10-29",
+      "notes": "Features reproduced from the insurer's own description. No premium, UIN or claim data published."
+    }
+  },
+  {
+    "slug": "sbi-general-arogya-supreme",
+    "name": "SBI General Insurance — Arogya Supreme",
+    "provider": "SBI General Insurance",
+    "providerShort": "SBI General Insurance",
+    "providerType": "Insurer",
+    "category": "health-insurance",
+    "returnType": "conditional",
+    "demo": false,
+    "oneLiner": "A value-oriented health policy with wide hospitalisation benefits.",
+    "plan": "Arogya Supreme",
+    "minInvestment": null,
+    "minInvestmentNote": "Premium is set by the insurer by age, city and cover",
+    "tenure": "One year, renewable",
+    "tenureMonths": 12,
+    "payout": "Claim settlement, not a payout",
+    "payoutFrequency": "claim",
+    "liquidity": "No cash value. Premiums are not returned if you do not claim.",
+    "lockIn": null,
+    "eligibility": "Resident individuals; entry age limits vary by plan and are checked at quote",
+    "tax": "Premiums may qualify under Section 80D, subject to limits. Check the current rules.",
+    "protection": "Cover against hospitalisation costs, subject to the policy's terms and sub-limits.",
+    "riskLevel": "low",
+    "risks": [
+      "Pre-existing conditions have waiting periods, usually 2-4 years",
+      "Room rent limits and co-payment can leave a large share with you",
+      "Renewal is not guaranteed at the same premium as you age"
+    ],
+    "commonUses": [
+      "Protecting savings from a hospital bill",
+      "Family floater cover for a household"
+    ],
+    "check": [
+      "The waiting period for pre-existing conditions",
+      "Room rent limits and any co-payment clause",
+      "Whether your hospital is in the cashless network",
+      "What is excluded, in the policy wording not the brochure"
+    ],
+    "highlights": [
+      "Wide hospitalisation benefits",
+      "Family floater options",
+      "Restoration of sum insured"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "rateRef": {
+      "label": "Premium set by the insurer",
+      "url": "https://www.sbigeneral.in/health-insurance",
+      "note": "Premium depends on age, city, cover and add-ons."
+    },
+    "source": {
+      "label": "SBI General Insurance — health insurance",
+      "url": "https://www.sbigeneral.in/health-insurance",
+      "note": "Plan features as described on this page; not independently verified."
+    },
+    "sources": [
+      {
+        "label": "SBI General Insurance — health insurance",
+        "url": "https://www.sbigeneral.in/health-insurance"
+      },
+      {
+        "label": "IRDAI",
+        "url": "https://www.irdai.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-29",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 29 Oct 2026",
+      "approvedAt": "2026-10-29",
+      "notes": "Features reproduced from the insurer's own description. No premium, UIN or claim data published."
+    }
+  },
+  {
+    "slug": "star-health-specialised-plans",
+    "name": "Star Health — Star Cardiac, Diabetes Safe, Senior Citizens Red Carpet",
+    "provider": "Star Health",
+    "providerShort": "Star Health",
+    "providerType": "Insurer",
+    "category": "health-insurance",
+    "returnType": "conditional",
+    "demo": false,
+    "oneLiner": "An insurer known for condition-specific plans rather than a single flagship product.",
+    "plan": "Star Cardiac, Diabetes Safe, Senior Citizens Red Carpet",
+    "minInvestment": null,
+    "minInvestmentNote": "Premium is set by the insurer by age, city and cover",
+    "tenure": "One year, renewable",
+    "tenureMonths": 12,
+    "payout": "Claim settlement, not a payout",
+    "payoutFrequency": "claim",
+    "liquidity": "No cash value. Premiums are not returned if you do not claim.",
+    "lockIn": null,
+    "eligibility": "Resident individuals; entry age limits vary by plan and are checked at quote",
+    "tax": "Premiums may qualify under Section 80D, subject to limits. Check the current rules.",
+    "protection": "Cover against hospitalisation costs, subject to the policy's terms and sub-limits.",
+    "riskLevel": "low",
+    "risks": [
+      "Pre-existing conditions have waiting periods, usually 2-4 years",
+      "Room rent limits and co-payment can leave a large share with you",
+      "Renewal is not guaranteed at the same premium as you age"
+    ],
+    "commonUses": [
+      "Protecting savings from a hospital bill",
+      "Family floater cover for a household"
+    ],
+    "check": [
+      "The waiting period for pre-existing conditions",
+      "Room rent limits and any co-payment clause",
+      "Whether your hospital is in the cashless network",
+      "What is excluded, in the policy wording not the brochure"
+    ],
+    "highlights": [
+      "Cardiac-specific cover",
+      "Diabetes-focused plan",
+      "Senior citizen plan with age-specific design"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "rateRef": {
+      "label": "Premium set by the insurer",
+      "url": "https://www.starhealth.in",
+      "note": "Premium depends on age, city, cover and add-ons."
+    },
+    "source": {
+      "label": "Star Health — health insurance",
+      "url": "https://www.starhealth.in",
+      "note": "Plan features as described on this page; not independently verified."
+    },
+    "sources": [
+      {
+        "label": "Star Health — health insurance",
+        "url": "https://www.starhealth.in"
+      },
+      {
+        "label": "IRDAI",
+        "url": "https://www.irdai.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-29",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 29 Oct 2026",
+      "approvedAt": "2026-10-29",
+      "notes": "Features reproduced from the insurer's own description. No premium, UIN or claim data published."
+    }
+  },
+  {
+    "slug": "tata-aig-medicare",
+    "name": "Tata AIG — MediCare",
+    "provider": "Tata AIG",
+    "providerShort": "Tata AIG",
+    "providerType": "Insurer",
+    "category": "health-insurance",
+    "returnType": "conditional",
+    "demo": false,
+    "oneLiner": "Comprehensive health cover with a zero-deductible option and global cover choices.",
+    "plan": "MediCare",
+    "minInvestment": null,
+    "minInvestmentNote": "Premium is set by the insurer by age, city and cover",
+    "tenure": "One year, renewable",
+    "tenureMonths": 12,
+    "payout": "Claim settlement, not a payout",
+    "payoutFrequency": "claim",
+    "liquidity": "No cash value. Premiums are not returned if you do not claim.",
+    "lockIn": null,
+    "eligibility": "Resident individuals; entry age limits vary by plan and are checked at quote",
+    "tax": "Premiums may qualify under Section 80D, subject to limits. Check the current rules.",
+    "protection": "Cover against hospitalisation costs, subject to the policy's terms and sub-limits.",
+    "riskLevel": "low",
+    "risks": [
+      "Pre-existing conditions have waiting periods, usually 2-4 years",
+      "Room rent limits and co-payment can leave a large share with you",
+      "Renewal is not guaranteed at the same premium as you age"
+    ],
+    "commonUses": [
+      "Protecting savings from a hospital bill",
+      "Family floater cover for a household"
+    ],
+    "check": [
+      "The waiting period for pre-existing conditions",
+      "Room rent limits and any co-payment clause",
+      "Whether your hospital is in the cashless network",
+      "What is excluded, in the policy wording not the brochure"
+    ],
+    "highlights": [
+      "Zero-deductible option",
+      "Global coverage options",
+      "Individual and family floater"
+    ],
+    "collections": [
+      "understand-before-you-invest"
+    ],
+    "rateRef": {
+      "label": "Premium set by the insurer",
+      "url": "https://www.tataaig.com/health-insurance",
+      "note": "Premium depends on age, city, cover and add-ons."
+    },
+    "source": {
+      "label": "Tata AIG — health insurance",
+      "url": "https://www.tataaig.com/health-insurance",
+      "note": "Plan features as described on this page; not independently verified."
+    },
+    "sources": [
+      {
+        "label": "Tata AIG — health insurance",
+        "url": "https://www.tataaig.com/health-insurance"
+      },
+      {
+        "label": "IRDAI",
+        "url": "https://www.irdai.gov.in"
+      }
+    ],
+    "lastVerified": "2026-10-29",
+    "review": {
+      "status": "approved",
+      "reviewer": "Editorial review, 29 Oct 2026",
+      "approvedAt": "2026-10-29",
+      "notes": "Features reproduced from the insurer's own description. No premium, UIN or claim data published."
+    }
+  },
+  {
     "slug": "lic-bima-jyoti",
     "name": "LIC's BIMA JYOTI",
     "provider": "Life Insurance Corporation of India",

@@ -2566,3 +2566,18 @@ button, input, select { font: inherit; color: inherit; }
   margin: 0 0 22px;
 }
 .notice-strip strong { color: var(--ink); }
+
+/* health insurance */
+.chip-risk-low { background: var(--green-soft, #E7F0E9); color: var(--green); }
+
+/* blinking new badge */
+@keyframes badge-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .3; }
+}
+.badge-new { animation: badge-blink 1.3s ease-in-out infinite; }
+.side-summary .badge-new { font-size: .5rem; padding: 1px 5px; margin-left: 6px; }
+.nav-link .badge-new { font-size: .5rem; padding: 1px 5px; margin-left: 4px; vertical-align: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  .badge-new { animation: none; }
+}

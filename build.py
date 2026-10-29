@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import answers, bbbp, calculator, checker, dividends, extra_guides, finder, guides, income_tax, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start  # noqa: E402
+from builder import answers, bbbp, calculator, checker, dividends, extra_guides, health, finder, guides, income_tax, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -266,7 +266,7 @@ def main() -> int:
                     + link("guides/sip-vs-fd.html", "SIP vs FD")
                     + link("guides/nps-vs-ppf.html", "NPS vs PPF"),
                     ("guides/",))
-            + group("Plans",
+            + group("Plans <span class=\"badge-new\">New</span>",
                     link("plans.html", "All plans")
                     + link("plans/sukanya-samriddhi.html", "Sukanya Samriddhi")
                     + link("plans/beti-bachao-beti-padhao.html", "Beti Bachao Beti Padhao")
@@ -284,7 +284,7 @@ def main() -> int:
                     + link("calculators/loan.html", "Loan EMI")
                     + link("calculators/income-tax.html", "Income tax"),
                     ("calculators/",))
-            + group("Money news",
+            + group("Money news <span class=\"badge-new\">New</span>",
                     link("news.html", "Today's headlines")
                     + link("check.html", "Scam checker"),
                     ("news.html", "check.html"))
@@ -604,6 +604,8 @@ def main() -> int:
     for product in products:
         if product["category"] == "dividend-champions":
             body = dividends.page(ctx, product)
+        elif product["category"] == "health-insurance":
+            body = health.page(ctx, product)
         else:
             body = pages.product_page(ctx, product)
         emit(f"products/{product['slug']}.html", page(

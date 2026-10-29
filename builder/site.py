@@ -290,7 +290,8 @@ def page(
 ) -> str:
     def nav_link(href: str, label: str, key: str) -> str:
         current = ' aria-current="page"' if key == active else ""
-        return f'<a class="nav-link" href="{base}{href}"{current}>{label}</a>'
+        link_badge = ' <span class="badge-new">New</span>' if key == "plans" else ""
+        return f'<a class="nav-link" href="{base}{href}"{current}>{label}{link_badge}</a>'
 
     vq = f"?v={ASSET_VERSION}" if ASSET_VERSION else ""
     extra_scripts = "".join(

@@ -10,11 +10,30 @@
     "accent": "amber",
     "status": "live",
     "excludeFromCompare": true,
-    "isNewUntil": "2026-11-01",
+    "isNewUntil": "2026-11-13",
     "whatToCheck": [
       "Whether the dividend is covered by free cash flow, not borrowed money",
       "The payout ratio against earnings",
       "Whether the price fall risk outweighs the dividend yield"
+    ]
+  },
+  {
+    "id": "health-insurance",
+    "slug": "health-insurance",
+    "name": "Private Health Insurance",
+    "short": "Health insurance",
+    "tagline": "Hospital cover from private insurers.",
+    "blurb": "Health policies from private insurers. Features are as the insurer describes them; waiting periods and sub-limits decide the claim.",
+    "icon": "shield",
+    "accent": "blue",
+    "status": "live",
+    "excludeFromCompare": true,
+    "isNewUntil": "2026-11-13",
+    "whatToCheck": [
+      "Waiting periods for pre-existing conditions",
+      "Room rent limits and co-payment",
+      "Whether your hospital is in the network",
+      "The exclusions in the policy wording"
     ]
   },
   {
