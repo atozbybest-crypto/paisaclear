@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from urllib.parse import quote
+
 from .site import (
     CATEGORY_ACCENT,
     RISK_BAND_LABEL,
@@ -534,6 +536,11 @@ def product_page(ctx: dict, product: dict) -> str:
         ][:3]
     related_cards = "".join(product_card(p, "../", rt_by_id, cats_by_id) for p in related)
 
+    wa_text = quote(
+        f"{product['name']} — {product.get('providerShort', '')}: "
+        f"https://paisaclear.co.in/products/{product['slug']}"
+    )
+
     sources = "".join(
         f'<li><a href="{esc(s["url"])}" rel="noopener noreferrer" target="_blank">{esc(s["label"])}'
         f'<span class="ext" aria-hidden="true">↗</span></a></li>'
@@ -652,6 +659,9 @@ def product_page(ctx: dict, product: dict) -> str:
           <div class="fact-table fact-table-tight">{glance}</div>
           <a class="btn btn-primary btn-block" href="../compare.html?p={esc(product['slug'])}">
             Compare this product {icon("scale", "icon icon-sm")}
+          </a>
+          <a class="share-link" href="https://wa.me/?text={wa_text}" target="_blank" rel="noopener noreferrer">
+            Share on WhatsApp
           </a>
         </div>
 
@@ -928,9 +938,9 @@ def feedback(ctx: dict) -> str:
 <section class="page-head">
   <div class="shell">
     <nav class="crumbs" aria-label="Breadcrumb"><ol>
-      <li><a href="index.html">Home</a></li><li aria-current="page">Feedback</li>
+      <li><a href="index.html">Home</a></li><li aria-current="page">Contact us</li>
     </ol></nav>
-    <h1>Tell us what's wrong</h1>
+    <h1>Contact us</h1>
     <p class="page-lede">
       Wrong rate, a product we've missed, a page that doesn't work — this is the fastest way to get it fixed.
       Corrections are checked against the source before anything changes.

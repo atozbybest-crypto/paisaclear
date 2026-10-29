@@ -47,6 +47,12 @@ jobs:
           PYTHONIOENCODING: utf-8
         run: python tools/refresh_nav.py
 
+      - name: Pull the day's money headlines
+        if: success()
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python tools/fetch_news.py
+
       - name: Rebuild the site
         if: success()
         env:
@@ -73,6 +79,14 @@ jobs:
             git commit -m "chore(rates): refresh $(date -u +'%Y-%m-%d')"
             git push
           fi
+
+      - name: Tell search engines about the sitemap
+        if: success()
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          sleep 120
+          python tools/indexnow.py || echo "IndexNow ping skipped"
 
       - name: Summary
         if: always()

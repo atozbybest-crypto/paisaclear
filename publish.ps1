@@ -66,6 +66,6 @@ Pop-Location
 Write-Host ""
 Write-Host "Done. Last three commits:" -ForegroundColor Green
 Push-Location $dst
-& $git log --oneline -3
-& $git status -sb | Select-Object -First 1
+& $git --no-pager log --oneline -3
+& $git --no-pager status -sb | Select-Object -First 1
 Pop-Location

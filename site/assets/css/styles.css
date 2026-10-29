@@ -2465,3 +2465,91 @@ button, input, select { font: inherit; color: inherit; }
   text-transform: uppercase;
   vertical-align: middle;
 }
+
+/* share link under the compare button */
+.share-link {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--green);
+  text-decoration: none;
+  padding: 9px 10px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  transition: background .15s ease, border-color .15s ease;
+}
+.share-link:hover { background: var(--green-soft, #E7F0E9); border-color: var(--green); }
+
+/* money news + scam checker */
+.news-grid { display: grid; gap: 0; }
+.news-item {
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+}
+.news-item:first-child { padding-top: 4px; }
+.news-item:hover .news-title { color: var(--green); }
+.news-meta { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 4px; font-size: .7rem; color: var(--ink-3); }
+.news-source { font-weight: 700; color: var(--ink-2); text-transform: uppercase; letter-spacing: .06em; }
+.news-title { margin: 0 0 4px; font-size: 1rem; font-weight: 600; line-height: 1.4; color: var(--ink); }
+.news-summary { margin: 0; font-size: .84rem; color: var(--ink-3); line-height: 1.5; }
+.news-item[hidden] { display: none; }
+
+.checker-layout { display: grid; grid-template-columns: 1fr; gap: 24px; }
+@media (min-width: 900px) { .checker-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.checker-form { display: grid; gap: 12px; }
+.checker-input { min-height: 150px; resize: vertical; line-height: 1.6; }
+.checker-verdict { border-radius: var(--radius); padding: 16px 18px; margin-bottom: 14px; font-size: .9rem; line-height: 1.6; }
+.checker-verdict p { margin: 6px 0 0; font-size: .86rem; }
+.checker-verdict.is-flagged { background: #FDECEA; border: 1px solid #F3C6C0; color: #7A2318; }
+.checker-verdict.is-clear { background: var(--green-soft, #E7F0E9); border: 1px solid var(--line-2); color: var(--ink); }
+.checker-list { list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 10px; }
+.checker-list li { border-left: 3px solid #C0392B; padding-left: 12px; }
+.checker-list strong { display: block; font-size: .88rem; }
+.checker-list span { font-size: .8rem; color: var(--ink-3); }
+
+/* sukanya samriddhi fact strip */
+.ssy-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+.ssy-fact {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ssy-fact span { font-size: .64rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; }
+.ssy-fact strong { font-size: 1.05rem; color: var(--ink); }
+.ssy-fact em { font-style: normal; font-size: .74rem; color: var(--ink-3); }
+
+/* plans hub */
+.plan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.plan-card:hover { border-color: var(--green); box-shadow: 0 10px 30px rgba(16,40,32,.08); transform: translateY(-2px); }
+.plan-tag { font-size: .62rem; letter-spacing: .11em; text-transform: uppercase; font-weight: 700; color: var(--green); }
+.plan-name { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--ink); }
+.plan-line { font-size: .87rem; color: var(--ink-2); line-height: 1.55; }
+.plan-meta { font-size: .76rem; color: var(--ink-3); }
+.plan-cta { margin-top: 8px; font-size: .82rem; font-weight: 650; color: var(--green); }
+.plan-soon { margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--line); }

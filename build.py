@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import answers, calculator, dividends, extra_guides, finder, guides, income_tax, loan, pages, plan, planner, privacy, start  # noqa: E402
+from builder import answers, calculator, checker, dividends, extra_guides, finder, guides, income_tax, loan, news, pages, plans, plan, planner, privacy, ssy, start  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -260,11 +260,16 @@ def main() -> int:
                     + link("guides/sip-vs-lump-sum.html", "SIP vs lump sum")
                     + link("guides/old-vs-new-tax-regime.html", "Old vs new tax regime")
                     + link("guides/small-savings-compared.html", "Small savings compared")
+                    + link("plans.html", "All plans")
                     + link("guides/ssy-vs-ppf.html", "SSY vs PPF")
                     + link("guides/scss-vs-fd.html", "SCSS vs FD")
                     + link("guides/sip-vs-fd.html", "SIP vs FD")
                     + link("guides/nps-vs-ppf.html", "NPS vs PPF"),
                     ("guides/",))
+            + group("Plans",
+                    link("plans.html", "All plans")
+                    + link("plans/sukanya-samriddhi.html", "Sukanya Samriddhi"),
+                    ("plans/", "plans.html"))
             + group("Calculators",
                     link("calculators/salary.html", "Salary and take-home")
                     + link("calculators/savings.html", "Savings and SIP")
@@ -273,8 +278,12 @@ def main() -> int:
                     + link("calculators/loan.html", "Loan EMI")
                     + link("calculators/income-tax.html", "Income tax"),
                     ("calculators/",))
+            + group("Money news",
+                    link("news.html", "Today's headlines")
+                    + link("check.html", "Scam checker"),
+                    ("news.html", "check.html"))
             + group("About", link("how-we-work.html", "How we work") + link("privacy.html", "Privacy")
-                    + link("feedback.html", "Feedback"),
+                    + link("feedback.html", "Contact us"),
                     ("how-we-work.html", "privacy.html", "feedback.html"))
         )
         return (
@@ -460,7 +469,7 @@ def main() -> int:
     ))
 
     emit("feedback.html", page(
-        title="Feedback — PaisaClear",
+        title="Contact us — PaisaClear",
         description="Report a wrong figure, a missing product or a broken page. Corrections are checked against the source before anything changes.",
         body=pages.feedback(ctx),
     ))
@@ -483,6 +492,9 @@ def main() -> int:
         ("guides/old-vs-new-tax-regime.html", "Old vs new tax regime, compared",
          "The two slab tables side by side, a worked example at 15 lakh, and what the old regime still allows.",
          guides.old_vs_new_regime(ctx, guide_rates, tax_rules)),
+        ("plans/sukanya-samriddhi.html", "Sukanya Samriddhi Yojana — the full guide",
+         "Who can open an SSY account, the deposit rules, partial withdrawal, tax treatment and a 21-year calculator.",
+         ssy.page(tax_rules, guide_rates)),
         ("guides/ssy-vs-ppf.html", "SSY vs PPF — who each one is for",
          "Sukanya Samriddhi and PPF compared on rate, term, limits and access.",
          extra_guides.ssy_vs_ppf(guide_rates)),
@@ -501,6 +513,33 @@ def main() -> int:
     ):
         emit(rel, page(title=title + " — PaisaClear", description=desc, body=body,
                        base="../", active="browse"))
+
+    plan_registry = [
+        {"slug": "sukanya-samriddhi", "tag": "Government scheme", "name": "Sukanya Samriddhi Yojana",
+         "line": "The highest small-savings rate, entirely tax-free, for a daughter under ten.",
+         "meta": f"{guide_rates.get('ssy', {}).get('value', '')} · 21 years · calculator included"},
+    ]
+    emit("plans.html", page(
+        title="Plans, explained in full — PaisaClear",
+        description="One page per scheme: eligibility, deposit rules, withdrawal rules, tax treatment and a working calculator.",
+        body=plans.page(plan_registry),
+        active="plans",
+    ))
+
+    emit("news.html", page(
+        title="Money news — markets, policy and personal finance",
+        description="Daily headlines from Indian finance publishers: markets, RBI policy and personal money, each linked to the original report.",
+        body=news.page(load_json(CONTENT / "news.json") if (CONTENT / "news.json").exists() else {"items": []}),
+        active="news",
+        scripts=["assets/js/news.js"],
+    ))
+
+    emit("check.html", page(
+        title="Scam checker — PaisaClear",
+        description="Paste a message, number or link and see which patterns commonly used in financial scams it contains.",
+        body=checker.page(),
+        active="",
+    ))
 
     emit("rates.html", page(
         title="Today's rates — PaisaClear",
