@@ -356,6 +356,10 @@ def page(
   </div>
 </header>
 
+<button class="rail-handle" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Open the menu">
+  <span class="rail-handle-text">Menu</span>
+</button>
+
 <div class="layout">
 <!--SIDEBAR-->
 <main id="main">

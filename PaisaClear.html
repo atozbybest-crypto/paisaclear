@@ -2596,6 +2596,80 @@ button, input, select { font: inherit; color: inherit; }
 .masthead-inner { justify-content: space-between; }
 .primary-nav { margin-left: auto; }
 
+/* ---------------------------------------------- peeking rail (desktop)
+   The sidebar leaves the layout flow: the page uses the full width, and the
+   rail slides in when the pointer approaches the left edge or a link inside
+   it receives focus. */
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .layout main { min-width: 0; }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    max-height: none;
+    padding: 88px 18px 40px 24px;
+    background: var(--paper);
+    border-right: 1px solid var(--line);
+    box-shadow: 0 24px 60px rgba(10, 20, 15, .18);
+    transform: translateX(-100%);
+    transition: transform .22s ease;
+    z-index: 95;
+    overflow-y: auto;
+  }
+  body.rail-open .sidebar { transform: translateX(0); }
+
+  .rail-handle {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 96;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 96px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+    background: var(--surface);
+    color: var(--ink-3);
+    cursor: pointer;
+  }
+  .rail-handle-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: .62rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .rail-handle:hover { color: var(--green); border-color: var(--green); }
+  body.rail-open .rail-handle { opacity: 0; pointer-events: none; }
+
+  /* an invisible strip that catches the pointer on its way to the edge */
+  .rail-hotzone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 100vh;
+    z-index: 94;
+  }
+}
+@media (max-width: 1023px) {
+  .rail-handle, .rail-hotzone { display: none; }
+}
+
 </style>
 </head>
 <body>
