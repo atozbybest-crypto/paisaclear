@@ -350,16 +350,9 @@ def page(
       {nav_link("browse.html", "All products", "browse")}
       {nav_link("compare.html", "Compare", "compare")}
       {nav_link("paisadiscover.html", "PaisaDiscover", "discover")}
-      {nav_link("plans.html", "Plans", "plans")}
       {nav_link("answers.html", "Answers", "answers")}
       {nav_link("how-we-work.html", "How we work", "method")}
     </nav>
-
-    <form class="head-search" action="{base}browse.html" method="get" role="search">
-      <label class="sr-only" for="head-q">Search products</label>
-      <input id="head-q" type="search" name="q" placeholder="Search products" autocomplete="off">
-      <button type="submit" aria-label="Search">{icon("arrow", "icon icon-sm")}</button>
-    </form>
   </div>
 </header>
 

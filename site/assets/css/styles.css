@@ -2581,3 +2581,7 @@ button, input, select { font: inherit; color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .badge-new { animation: none; }
 }
+
+/* masthead without the header search */
+.masthead-inner { justify-content: space-between; }
+.primary-nav { margin-left: auto; }
