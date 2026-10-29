@@ -2670,6 +2670,31 @@ button, input, select { font: inherit; color: inherit; }
   .rail-handle, .rail-hotzone { display: none; }
 }
 
+/* checker severity */
+.checker-verdict.is-danger { background: #FDECEA; border: 1px solid #E7A79E; color: #7A2318; }
+.checker-list li.is-critical { border-left-color: #B42318; }
+.checker-list li.is-high { border-left-color: #D97706; }
+.checker-list li.is-medium { border-left-color: #9CA3AF; }
+.checker-todo {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  padding: 14px 16px;
+  margin: 0 0 12px;
+}
+.checker-todo-title {
+  margin: 0 0 6px;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink-3);
+}
+.checker-todo ol { margin: 0; padding-left: 18px; }
+.checker-todo li { font-size: .84rem; color: var(--ink-2); line-height: 1.6; }
+
+.checker-verdict.is-nonum { background: var(--surface); border: 1px solid var(--line-2); color: var(--ink); }
+
 </style>
 </head>
 <body>
