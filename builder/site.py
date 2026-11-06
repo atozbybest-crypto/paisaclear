@@ -400,6 +400,8 @@ def page(
         <li><a href="{base}calculators/income-tax.html">Income tax</a></li>
         <li><a href="{base}guides/ppf-vs-fd-vs-nsc.html">Guides</a></li>
         <li><a href="{base}privacy.html">Privacy</a></li>
+        <li><a href="{base}terms.html">Terms</a></li>
+        <li><a href="{base}disclaimer.html">Disclaimer</a></li>
         <li><a href="{base}feedback.html">Contact us</a></li>
         <li><a href="{base}how-we-work.html">How we work</a></li>
         <li><a href="{base}how-we-work.html#approval">Editorial approval</a></li>

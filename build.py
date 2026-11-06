@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import answers, bbbp, calculator, checker, dividends, extra_guides, health, finder, guides, income_tax, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start  # noqa: E402
+from builder import answers, bbbp, calculator, checker, dividends, extra_guides, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -289,7 +289,9 @@ def main() -> int:
                     + link("check.html", "Scam checker"),
                     ("news.html", "check.html"))
             + group("About", link("how-we-work.html", "How we work") + link("privacy.html", "Privacy")
-                    + link("feedback.html", "Contact us"),
+                    + link("feedback.html", "Contact us")
+                    + link("terms.html", "Terms of use")
+                    + link("disclaimer.html", "Disclaimer"),
                     ("how-we-work.html", "privacy.html", "feedback.html"))
         )
         return (
@@ -466,6 +468,20 @@ def main() -> int:
         active="answers",
         scripts=["assets/js/faq.js"],
     ).replace("</head>", answers.jsonld(faq) + "</head>"))
+
+    emit("terms.html", page(
+        title="Terms of use — PaisaClear",
+        description="The rules for using PaisaClear: what the site is, how it is accurate, its limits and your rights.",
+        body=legal.terms(),
+        active="",
+    ))
+
+    emit("disclaimer.html", page(
+        title="Disclaimer — PaisaClear",
+        description="PaisaClear is general information, not investment advice. How the figures, calculators and third-party data should be read.",
+        body=legal.disclaimer(),
+        active="",
+    ))
 
     emit("privacy.html", page(
         title="Privacy — PaisaClear",

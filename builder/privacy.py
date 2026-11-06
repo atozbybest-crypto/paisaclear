@@ -91,11 +91,26 @@ def privacy(ctx: dict) -> str:
         performance, not a record of individual visitors.
       </p>
 
-      <h2>Cookies</h2>
+      <h2>Cookies and advertising</h2>
       <p>
-        We set no cookies of our own. The Google tag described above may set cookies used to measure
-        advertising; those are Google's, not ours, and are covered by their policy. If we add anything else,
-        this page changes first.
+        We set no cookies of our own. Cookies on this site come from Google, in two roles: measuring visits,
+        and — when advertising is running — serving and measuring ads.
+      </p>
+      <p>
+        <strong>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits
+        to this website or other websites.</strong> Google's use of advertising cookies enables it and its
+        partners to serve ads to you based on your visit to this site and/or other sites on the internet. You
+        may opt out of personalised advertising by visiting
+        <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>.
+        You can also opt out of a third-party vendor's use of cookies for personalised advertising at
+        <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">aboutads.info</a>.
+      </p>
+      <p>
+        If you are in the European Economic Area, the United Kingdom or Switzerland, Google requires your
+        consent before personalised advertising cookies are set, and a consent prompt is shown for those
+        visitors. Visitors elsewhere, including in India, see ads served under Google's standard settings. We
+        never receive your name, contact details or browsing history from Google — only aggregate numbers such
+        as how many times an ad was shown.
       </p>
 
       <h2>Your choices</h2>
@@ -113,7 +128,7 @@ def privacy(ctx: dict) -> str:
       <h2>What this site does not do</h2>
       <ul class="check-list">
         <li><span>No selling or renting of personal data.</span></li>
-        <li><span>No advertising profiles built by us. The Google tag measures ad performance; we never see who you are.</span></li>
+        <li><span>No advertising profiles built by us. Google may personalise ads for you; that happens inside Google's systems, not ours.</span></li>
         <li><span>No tracking pixels embedded by third parties.</span></li>
         <li><span>No payments, so no card or bank details are ever collected.</span></li>
         <li><span>No accounts, so there are no passwords for us to hold.</span></li>
