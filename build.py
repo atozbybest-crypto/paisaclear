@@ -333,8 +333,14 @@ def main() -> int:
         if google_token else ""
     )
 
-    head_snippet = analytics_snippet if provider in ("ga4", "googleads") else ""
-    body_snippet = "" if head_snippet else analytics_snippet
+    adsense_client = (site_cfg.get("adsense") or {}).get("client", "")
+    adsense_snippet = (
+        '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='
+        + adsense_client + '" crossorigin="anonymous"></script>'
+    ) if adsense_client else ""
+
+    head_snippet = (analytics_snippet if provider in ("ga4", "googleads") else "") + adsense_snippet
+    body_snippet = "" if provider in ("ga4", "googleads") else analytics_snippet
 
     def emit(rel: str, markup: str) -> None:
         url = "https://paisaclear.co.in/" + rel.replace("index.html", "").replace(".html", "")

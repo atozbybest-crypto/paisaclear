@@ -8,5 +8,9 @@
   "verification": {
     "google": "",
     "_comment": "Paste the content= value from Google Search Console's HTML tag method"
+  },
+  "adsense": {
+    "client": "ca-pub-5410211984862594",
+    "_comment": "Google AdSense client id; the loader is injected into <head>."
   }
 }
