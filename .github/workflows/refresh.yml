@@ -5,10 +5,19 @@ name: Refresh rates and redeploy
 
 on:
   schedule:
-    # One run a day at 06:00 IST (00:30 UTC). Earlier than strictly needed so a
-    # 3-5 hour scheduler delay still lands it before 09:00 IST. Each run can
-    # trigger a Netlify deploy, so there is exactly one automatic run a day.
+    # GitHub's free scheduler fires hours late — measured 3 to 7 hours on this
+    # repo. One cron therefore lands at an unpredictable time. These four are
+    # attempts, not four jobs: the first to run refreshes and the rest exit
+    # immediately, so there is still exactly one commit and one deploy a day.
+    #   00:30 UTC = 06:00 IST   (the intended slot)
+    #   02:30 UTC = 08:00 IST   (if the first was skipped or late)
+    #   04:30 UTC = 10:00 IST   (fallback)
+    #   06:30 UTC = 12:00 IST   (last chance)
+    # The guard reads today's own commit history, so a late run costs seconds.
     - cron: "30 0 * * *"
+    - cron: "30 2 * * *"
+    - cron: "30 4 * * *"
+    - cron: "30 6 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -30,31 +39,46 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Skip if today's refresh already ran
+        id: guard
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          if git log --since="${TODAY}T00:00:00Z" --grep="chore(rates)" --oneline | grep -q .; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Already refreshed today — nothing to do."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - uses: actions/setup-python@v5
+        if: steps.guard.outputs.skip != 'true'
         with:
           python-version: "3.12"
 
       - name: Pull RBI rates
         id: refresh
+        if: steps.guard.outputs.skip != 'true'
         env:
           PYTHONIOENCODING: utf-8
         run: python refresh_rbi.py
 
       - name: Refresh fund and ETF NAVs
-        if: success()
+        if: success() && steps.guard.outputs.skip != 'true'
         env:
           PYTHONIOENCODING: utf-8
         run: python tools/refresh_nav.py
 
       - name: Pull the day's money headlines
-        if: success()
+        if: success() && steps.guard.outputs.skip != 'true'
         env:
           PYTHONIOENCODING: utf-8
         run: python tools/fetch_news.py
 
       - name: Rebuild the site
-        if: success()
+        if: success() && steps.guard.outputs.skip != 'true'
         env:
           PYTHONIOENCODING: utf-8
         run: |
@@ -62,13 +86,13 @@ jobs:
           python bundle.py
 
       - name: Check no published rate has gone stale
-        if: success()
+        if: success() && steps.guard.outputs.skip != 'true'
         env:
           PYTHONIOENCODING: utf-8
         run: python tools/check_freshness.py
 
       - name: Commit and push
-        if: success() && inputs.dry_run != true
+        if: success() && inputs.dry_run != true && steps.guard.outputs.skip != 'true'
         run: |
           git config user.name "paisaclear-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -81,7 +105,7 @@ jobs:
           fi
 
       - name: Tell search engines about the sitemap
-        if: success()
+        if: success() && steps.guard.outputs.skip != 'true'
         env:
           PYTHONIOENCODING: utf-8
         run: |

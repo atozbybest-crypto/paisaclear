@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-11T06:52:43Z",
+  "generatedAt": "2026-11-10T07:34:55Z",
   "note": "Machine-refreshable rates. `rbi` values are pulled by refresh_rbi.py; the small-savings values are entered by hand each quarter because the National Savings Institute site is not machine-readable from here.",
   "feeds": {
     "rbi": {
       "label": "Reserve Bank of India",
       "url": "https://www.rbi.org.in/",
-      "fetchedAt": "2026-11-11T06:51:40Z",
+      "fetchedAt": "2026-11-10T07:33:56Z",
       "refreshable": true
     },
     "small-savings": {
@@ -124,9 +124,9 @@
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "nav-118701": {
-      "value": "₹7,023.98",
+      "value": "₹7,022.71",
       "label": "NAV, direct plan",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-09",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
@@ -190,7 +190,7 @@
     "tbill-91": {
       "value": "5.8970%",
       "label": "Cut-off yield",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-08",
       "cadence": "Set at each auction; moves weekly",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -210,7 +210,7 @@
     "tbill-364": {
       "value": "6.6485%",
       "label": "Cut-off yield",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-08",
       "cadence": "Set at each auction; moves weekly",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -218,9 +218,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "gs-2029": {
-      "value": "6.8519%",
+      "value": "6.8812%",
       "label": "Market yield",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-08",
       "cadence": "Moves continuously with the market",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -228,9 +228,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "gs-2031": {
-      "value": "6.9658%",
+      "value": "6.9753%",
       "label": "Market yield",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-08",
       "cadence": "Moves continuously with the market",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -238,9 +238,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "gs-2036": {
-      "value": "7.1671%",
+      "value": "7.1930%",
       "label": "Market yield",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-08",
       "cadence": "Moves continuously with the market",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -248,9 +248,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "gs-2041": {
-      "value": "7.3432%",
+      "value": "7.3759%",
       "label": "Market yield",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-08",
       "cadence": "Moves continuously with the market",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -258,9 +258,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "gs-2056": {
-      "value": "7.7103%",
+      "value": "7.6764%",
       "label": "Market yield",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-08",
       "cadence": "Moves continuously with the market",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -340,9 +340,9 @@
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "nav-118305": {
-      "value": "₹3,437.23",
+      "value": "₹3,436.61",
       "label": "NAV, direct plan",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-09",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
@@ -356,9 +356,9 @@
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "nav-118364": {
-      "value": "₹3,462.75",
+      "value": "₹3,462.15",
       "label": "NAV, direct plan",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-09",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
@@ -508,9 +508,9 @@
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "nav-118577": {
-      "value": "₹4,314.17",
+      "value": "₹4,313.38",
       "label": "NAV, direct plan",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-09",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
@@ -948,9 +948,9 @@
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "nav-114984": {
-      "value": "₹256.11",
+      "value": "₹247.64",
       "label": "NAV per unit",
-      "asOf": "2026-11-09",
+      "asOf": "2026-11-06",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
@@ -1446,7 +1446,7 @@
     "nav-140086": {
       "value": "₹1,000.00",
       "label": "NAV per unit",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-09",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
@@ -1500,9 +1500,9 @@
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "nav-118859": {
-      "value": "₹3,027.63",
+      "value": "₹3,027.08",
       "label": "NAV, direct plan",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-09",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
@@ -1532,25 +1532,25 @@
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "nav-119091": {
-      "value": "₹5,631.50",
+      "value": "₹5,630.51",
       "label": "NAV, direct plan",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-09",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "nav-119125": {
-      "value": "₹4,103.12",
+      "value": "₹4,102.39",
       "label": "NAV, direct plan",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-09",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "nav-119135": {
-      "value": "₹2,781.32",
+      "value": "₹2,780.81",
       "label": "NAV, direct plan",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-09",
       "cadence": "Published daily by AMFI",
       "sourceUrl": "https://www.amfiindia.com/mutual-fund",
       "sourceLabel": "AMFI — mutual fund NAV data"
