@@ -126,10 +126,10 @@ def audit_local() -> None:
 
     refresh = (ROOT / ".github/workflows/refresh.yml").read_text(encoding="utf-8")
     crons = re.findall(r'cron:\s*"([^"]+)"', refresh)
-    if len(crons) != 1:
-        fail(f"refresh.yml should have exactly one schedule, found {len(crons)}")
+    if not 1 <= len(crons) <= 4:
+        fail(f"refresh.yml should have 1-4 attempts, found {len(crons)}")
     else:
-        note(f"daily refresh cron: {crons[0]}")
+        note(f"refresh attempts: {len(crons)} (guard prevents duplicate deploys)")
 
 
 def audit_live() -> None:
