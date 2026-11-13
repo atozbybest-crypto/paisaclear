@@ -18,6 +18,10 @@ on:
     - cron: "30 2 * * *"
     - cron: "30 4 * * *"
     - cron: "30 6 * * *"
+    #  16:00 UTC = 21:30 IST  (after the evening NAV publish, the real fix)
+    #  17:30 UTC = 23:00 IST  (evening fallback)
+    - cron: "0 16 * * *"
+    - cron: "30 17 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -42,13 +46,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Skip if today's refresh already ran
+      - name: Skip if a refresh ran in the last few hours
         id: guard
         run: |
-          TODAY=$(date -u +%Y-%m-%d)
-          if git log --since="${TODAY}T00:00:00Z" --grep="chore(rates)" --oneline | grep -q .; then
+          # Two refresh windows a day: 09:00 IST (yesterday's close) and 21:30 IST
+          # (tonight's NAVs). The window below stops the backup crons from firing
+          # again straight after a successful refresh, without blocking the
+          # evening run twelve hours later.
+          LAST=$(git log -1 --format=%ct --grep="chore(rates)" || true)
+          NOW=$(date +%s)
+          if [ -n "$LAST" ] && [ $((NOW - LAST)) -lt 18000 ]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "Already refreshed today — nothing to do."
+            echo "Refreshed $(( (NOW - LAST) / 3600 ))h ago — skipping."
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
