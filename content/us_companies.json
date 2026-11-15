@@ -1,0 +1,3174 @@
+[
+  {
+    "ticker": "AAPL",
+    "name": "Apple Inc.",
+    "cik": 320193,
+    "sic": "Electronic Computers",
+    "fiscalYearEnd": "0926",
+    "revenue": [
+      {
+        "fy": 2026,
+        "end": "2026-09-26",
+        "value": 478834000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-09-27",
+        "value": 416161000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-28",
+        "value": 391035000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-30",
+        "value": 383285000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2026,
+        "end": "2026-09-26",
+        "value": 132175000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-09-27",
+        "value": 112010000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-28",
+        "value": 93736000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-30",
+        "value": 96995000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2026,
+        "end": "2026-09-26",
+        "value": 8.98,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-09-27",
+        "value": 7.46,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-28",
+        "value": 6.08,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-30",
+        "value": 6.13,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-09",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126042798/ef20085077_8k.htm"
+      },
+      {
+        "form": "10-K",
+        "date": "2026-11-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-11-02",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "MSFT",
+    "name": "MICROSOFT CORP",
+    "cik": 789019,
+    "sic": "Services-Prepackaged Software",
+    "fiscalYearEnd": "0630",
+    "revenue": [
+      {
+        "fy": 2026,
+        "end": "2026-06-30",
+        "value": 331839000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-06-30",
+        "value": 281724000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-06-30",
+        "value": 245122000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-06-30",
+        "value": 211915000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2026,
+        "end": "2026-06-30",
+        "value": 133749000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-06-30",
+        "value": 101832000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-06-30",
+        "value": 88136000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-06-30",
+        "value": 72361000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2026,
+        "end": "2026-06-30",
+        "value": 17.95,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-06-30",
+        "value": 13.64,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-06-30",
+        "value": 11.8,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-06-30",
+        "value": 9.68,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-11-04",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526447173/d178557d8k.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-10-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc.",
+    "cik": 1652044,
+    "sic": "Services-Computer Programming, Data Processing, Etc.",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 350018000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 307394000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 282836000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2019,
+        "end": "2019-12-31",
+        "value": 161857000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 132170000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 100118000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 73795000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 59972000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 10.81,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 8.04,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 5.8,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 4.56,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-10-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "AMZN",
+    "name": "AMAZON COM INC",
+    "cik": 1018724,
+    "sic": "Retail-Catalog & Mail-Order Houses",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 716924000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 637959000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 574785000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 513983000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 77670000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 59248000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 30425000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": -2722000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 7.17,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 5.53,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 2.9,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": -0.27,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-10-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20261029.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-14",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-09",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA CORP",
+    "cik": 1045810,
+    "sic": "Semiconductors & Related Devices",
+    "fiscalYearEnd": "0131",
+    "revenue": [
+      {
+        "fy": 2022,
+        "end": "2022-01-30",
+        "value": 26914000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2021,
+        "end": "2021-01-31",
+        "value": 16675000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2020,
+        "end": "2020-01-26",
+        "value": 10918000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2019,
+        "end": "2019-01-27",
+        "value": 11716000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2026,
+        "end": "2026-01-25",
+        "value": 120067000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-01-26",
+        "value": 72880000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-01-28",
+        "value": 29760000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-01-29",
+        "value": 4368000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2026,
+        "end": "2026-01-25",
+        "value": 4.9,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-01-26",
+        "value": 2.94,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-01-28",
+        "value": 11.93,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-01-29",
+        "value": 1.74,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-12",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-08-26",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-26",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/nvda-20260826.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-17",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000060/nvda-20260628.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "META",
+    "name": "Meta Platforms, Inc.",
+    "cik": 1326801,
+    "sic": "Services-Computer Programming, Data Processing, Etc.",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 200966000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 164501000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 134902000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 116609000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 60458000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 62360000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 39098000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 23200000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 23.49,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 23.86,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 14.87,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 8.59,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-12",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-10-22",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-21",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "TSLA",
+    "name": "Tesla, Inc.",
+    "cik": 1318605,
+    "sic": "Motor Vehicles & Passenger Car Bodies",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 94827000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 97690000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 96773000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2018,
+        "end": "2018-12-31",
+        "value": 21461268000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 3794000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 7091000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 14997000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 12556000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 1.08,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 2.04,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 4.3,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 3.62,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-10-22",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-21",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/tsla-20261021.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-07-23",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-22",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-09"
+  },
+  {
+    "ticker": "JPM",
+    "name": "JPMORGAN CHASE & CO",
+    "cik": 19617,
+    "sic": "National Commercial Banks",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 182447000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 177556000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 158104000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 128695000000,
+        "key": "Revenues"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 57048000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 58471000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 49552000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 37676000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 20.02,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 19.75,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 16.23,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 12.09,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [],
+    "fetchedAt": "2026-11-13"
+  },
+  {
+    "ticker": "V",
+    "name": "VISA INC.",
+    "cik": 1403161,
+    "sic": "Services-Business Services, NEC",
+    "fiscalYearEnd": "0930",
+    "revenue": [
+      {
+        "fy": 2026,
+        "end": "2026-09-30",
+        "value": 45903000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-09-30",
+        "value": 40000000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-30",
+        "value": 35926000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-30",
+        "value": 32653000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2026,
+        "end": "2026-09-30",
+        "value": 23504000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-09-30",
+        "value": 20058000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-30",
+        "value": 19743000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-30",
+        "value": 17273000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [],
+    "filings": [
+      {
+        "form": "10-K",
+        "date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000134/v-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000126/v-20261027.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-23",
+        "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000121/v-20260918.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-07-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000104/v-20260630.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000103/v-20260728.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-15",
+        "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000096/v-20260714.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "JNJ",
+    "name": "JOHNSON & JOHNSON",
+    "cik": 200406,
+    "sic": "Pharmaceutical Preparations",
+    "fiscalYearEnd": "0103",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-28",
+        "value": 94193000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-29",
+        "value": 88821000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 85159000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2022,
+        "end": "2023-01-01",
+        "value": 94943000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-28",
+        "value": 26804000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-29",
+        "value": 14066000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 35153000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2023-01-01",
+        "value": 17941000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-28",
+        "value": 11.03,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-29",
+        "value": 5.79,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 13.72,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2023-01-01",
+        "value": 6.73,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-10-21",
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000197/jnj-20260927.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000189/jnj-20261013.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-04",
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000167/jnj-20260804.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000163/jnj-20260729.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000155/jnj-20260727.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-07-23",
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-13"
+  },
+  {
+    "ticker": "WMT",
+    "name": "Walmart Inc.",
+    "cik": 104169,
+    "sic": "Retail-Variety Stores",
+    "fiscalYearEnd": "0131",
+    "revenue": [
+      {
+        "fy": 2026,
+        "end": "2026-01-31",
+        "value": 706413000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-01-31",
+        "value": 674538000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-01-31",
+        "value": 642637000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-01-31",
+        "value": 605881000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2026,
+        "end": "2026-01-31",
+        "value": 21893000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-01-31",
+        "value": 19436000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-01-31",
+        "value": 15511000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-01-31",
+        "value": 11680000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2026,
+        "end": "2026-01-31",
+        "value": 2.73,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-01-31",
+        "value": 2.41,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-01-31",
+        "value": 1.91,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-01-31",
+        "value": 4.27,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-10-23",
+        "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312526429539/d184548d8k.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-06"
+  },
+  {
+    "ticker": "PG",
+    "name": "PROCTER & GAMBLE Co",
+    "cik": 80424,
+    "sic": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
+    "fiscalYearEnd": "0630",
+    "revenue": [
+      {
+        "fy": 2026,
+        "end": "2026-06-30",
+        "value": 87032000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-06-30",
+        "value": 84284000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-06-30",
+        "value": 84039000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-06-30",
+        "value": 82006000000,
+        "key": "Revenues"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2026,
+        "end": "2026-06-30",
+        "value": 16046000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-06-30",
+        "value": 15974000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-06-30",
+        "value": 14879000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-06-30",
+        "value": 14653000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2026,
+        "end": "2026-06-30",
+        "value": 6.62,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-06-30",
+        "value": 6.51,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-06-30",
+        "value": 6.02,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-06-30",
+        "value": 5.9,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026069608/pg-20261103.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-11-02",
+        "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026068909/pg-20261102.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026068591/pg-20261030.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-10-22",
+        "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000256/pg-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-22",
+        "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000252/pg-20261022.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-22",
+        "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000250/pg-20261022.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "XOM",
+    "name": "ExxonMobil Holdings Corp",
+    "cik": 2115436,
+    "sic": "Petroleum Refining",
+    "fiscalYearEnd": "1231",
+    "revenue": [],
+    "income": [],
+    "eps": [],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-11-02",
+        "url": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000020/xom-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000018/xom-20261030.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-16",
+        "url": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000013/xom-20261016.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-25",
+        "url": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526402986/d15072d8k.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526373026/d82162d8k.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-08-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/2115436/000003408826000093/xom-20260630.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "UNH",
+    "name": "UNITEDHEALTH GROUP INC",
+    "cik": 731766,
+    "sic": "Hospital & Medical Service Plans",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 447567000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 400278000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 371622000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 324162000000,
+        "key": "Revenues"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 12056000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 14405000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 22381000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 20120000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 13.23,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 15.51,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 23.86,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 21.18,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-09",
+        "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000274/unh-20261103.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-11-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000266/unh-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000255/unh-20261013.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-08",
+        "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000205/unh-20260908.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-08-10",
+        "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000197/unh-20260630.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-13"
+  },
+  {
+    "ticker": "HD",
+    "name": "HOME DEPOT, INC.",
+    "cik": 354950,
+    "sic": "Retail-Lumber & Other Building Materials Dealers",
+    "fiscalYearEnd": "0131",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2026-02-01",
+        "value": 164683000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2025-02-02",
+        "value": 159514000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2024-01-28",
+        "value": 152669000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2022,
+        "end": "2023-01-29",
+        "value": 157403000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2026-02-01",
+        "value": 14156000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2025-02-02",
+        "value": 14806000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2024-01-28",
+        "value": 15143000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2023-01-29",
+        "value": 17105000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2026-02-01",
+        "value": 14.23,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2025-02-02",
+        "value": 14.91,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2024-01-28",
+        "value": 15.11,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2023-01-29",
+        "value": 16.69,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-08-25",
+        "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026058715/hd-20260802.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-21",
+        "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000148/hd-20260820.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-18",
+        "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000145/hd-20260818.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-12",
+        "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000141/hd-20260811.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-05-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026038247/hd-20260503.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-05-26",
+        "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000105/hd-20260521.htm"
+      }
+    ],
+    "fetchedAt": "2026-09-22"
+  },
+  {
+    "ticker": "MA",
+    "name": "Mastercard Inc",
+    "cik": 1141391,
+    "sic": "Services-Business Services, NEC",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2021,
+        "end": "2021-12-31",
+        "value": 29845000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2020,
+        "end": "2020-12-31",
+        "value": 23616000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2019,
+        "end": "2019-12-31",
+        "value": 24980000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2013,
+        "end": "2013-12-31",
+        "value": 3116000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2012,
+        "end": "2012-12-31",
+        "value": 2759000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2011,
+        "end": "2011-12-31",
+        "value": 1906000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2010,
+        "end": "2010-12-31",
+        "value": 1846000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 16.52,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 13.89,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 11.83,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 10.22,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-10-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000124/ma-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000122/ma-20261029.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-03"
+  },
+  {
+    "ticker": "BAC",
+    "name": "BANK OF AMERICA CORP /DE/",
+    "cik": 70858,
+    "sic": "National Commercial Banks",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 113097000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 101887000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 98581000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 94950000000,
+        "key": "Revenues"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 30509000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 27132000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 26515000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 27528000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 3.81,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 3.21,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 3.08,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 3.19,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [],
+    "fetchedAt": "2026-11-13"
+  },
+  {
+    "ticker": "KO",
+    "name": "COCA COLA CO",
+    "cik": 21344,
+    "sic": "Beverages",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 47941000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 47061000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 45754000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 43004000000,
+        "key": "Revenues"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 13107000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 10631000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 10714000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 9542000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 3.04,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 2.46,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 2.47,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 2.19,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-10-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026067844/ko-20261002.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026067403/ko-20261027.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-07-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026050503/ko-20260703.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026049922/ko-20260728.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-16",
+        "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026048466/ko-20260716.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-06-25",
+        "url": "https://www.sec.gov/Archives/edgar/data/21344/000155278126000366/e26287_ko-8k.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-13"
+  },
+  {
+    "ticker": "PEP",
+    "name": "PEPSICO INC",
+    "cik": 77476,
+    "sic": "Beverages",
+    "fiscalYearEnd": "1226",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-27",
+        "value": 93925000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-28",
+        "value": 91854000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-30",
+        "value": 91471000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 86392000000,
+        "key": "Revenues"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-27",
+        "value": 8240000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-28",
+        "value": 9578000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-30",
+        "value": 9074000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 8910000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-27",
+        "value": 6,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-28",
+        "value": 6.95,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-30",
+        "value": 6.56,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 6.42,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-10-16",
+        "url": "https://www.sec.gov/Archives/edgar/data/77476/000110465926116626/tm2627433d2_8k.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-08",
+        "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000050/pep-20261008.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-10-08",
+        "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000048/pep-20260905.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-17",
+        "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000042/pep-20260917.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-09",
+        "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000037/pep-20260709.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-07-09",
+        "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000035/pep-20260613.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "COST",
+    "name": "COSTCO WHOLESALE CORP /NEW",
+    "cik": 909832,
+    "sic": "Retail-Variety Stores",
+    "fiscalYearEnd": "0830",
+    "revenue": [
+      {
+        "fy": 2026,
+        "end": "2026-08-30",
+        "value": 303154000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-08-31",
+        "value": 275235000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-01",
+        "value": 254453000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-03",
+        "value": 242290000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2026,
+        "end": "2026-08-30",
+        "value": 9226000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-08-31",
+        "value": 8099000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-01",
+        "value": 7367000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-03",
+        "value": 6292000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2026,
+        "end": "2026-08-30",
+        "value": 20.76,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-08-31",
+        "value": 18.21,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-01",
+        "value": 16.56,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-03",
+        "value": 14.16,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-10",
+        "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000134/cost-20261107.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-16",
+        "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000100/cost-20261013.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-14",
+        "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000096/cost-20261014.htm"
+      },
+      {
+        "form": "10-K",
+        "date": "2026-10-07",
+        "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-24",
+        "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000084/cost-20260924.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-13"
+  },
+  {
+    "ticker": "DIS",
+    "name": "Walt Disney Co",
+    "cik": 1744489,
+    "sic": "Services-Miscellaneous Amusement & Recreation",
+    "fiscalYearEnd": "1003",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-09-27",
+        "value": 94425000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-28",
+        "value": 91361000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-30",
+        "value": 88898000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-10-01",
+        "value": 82722000000,
+        "key": "Revenues"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-09-27",
+        "value": 12404000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-28",
+        "value": 4972000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-30",
+        "value": 2354000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-10-01",
+        "value": 3145000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-09-27",
+        "value": 6.85,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-09-28",
+        "value": 2.72,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-09-30",
+        "value": 1.29,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-10-01",
+        "value": 1.72,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-08-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000056/dis-20260805.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-06"
+  },
+  {
+    "ticker": "CSCO",
+    "name": "CISCO SYSTEMS, INC.",
+    "cik": 858877,
+    "sic": "Computer Communications Equipment",
+    "fiscalYearEnd": "0731",
+    "revenue": [
+      {
+        "fy": 2026,
+        "end": "2026-07-25",
+        "value": 63325000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-07-26",
+        "value": 56654000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-07-27",
+        "value": 53803000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-07-29",
+        "value": 56998000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2026,
+        "end": "2026-07-25",
+        "value": 13267000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-07-26",
+        "value": 10180000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-07-27",
+        "value": 10320000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-07-29",
+        "value": 12613000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2026,
+        "end": "2026-07-25",
+        "value": 3.33,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-07-26",
+        "value": 2.55,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-07-27",
+        "value": 2.54,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-07-29",
+        "value": 3.07,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-12",
+        "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000170/csco-20261112.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-09",
+        "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000156/csco-20261007.htm"
+      },
+      {
+        "form": "10-K",
+        "date": "2026-09-02",
+        "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "INTC",
+    "name": "INTEL CORP",
+    "cik": 50863,
+    "sic": "Semiconductors & Related Devices",
+    "fiscalYearEnd": "1226",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-27",
+        "value": 52853000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-28",
+        "value": 53101000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-30",
+        "value": 54228000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 63054000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-27",
+        "value": -267000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-28",
+        "value": -18756000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-30",
+        "value": 1689000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 8014000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-27",
+        "value": -0.06,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-28",
+        "value": -4.38,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-30",
+        "value": 0.4,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 1.94,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-10-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/intc-20261029.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-12",
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000119312526346806/d117670d8k.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-07-24",
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-23",
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000155/intc-20260723.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-04"
+  },
+  {
+    "ticker": "AMD",
+    "name": "ADVANCED MICRO DEVICES INC",
+    "cik": 2488,
+    "sic": "Semiconductors & Related Devices",
+    "fiscalYearEnd": "1226",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-27",
+        "value": 34639000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-28",
+        "value": 25785000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-30",
+        "value": 22680000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 23601000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-27",
+        "value": 4335000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-28",
+        "value": 1641000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-30",
+        "value": 854000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 1320000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-27",
+        "value": 2.65,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-28",
+        "value": 1,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-30",
+        "value": 0.53,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 0.84,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-11-04",
+        "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-11-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/amd-20261103.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000182/amd-20260926.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-19",
+        "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000163/amd-20260817.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-17",
+        "url": "https://www.sec.gov/Archives/edgar/data/2488/000119312526354029/d142696d8k.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-13"
+  },
+  {
+    "ticker": "NFLX",
+    "name": "NETFLIX INC",
+    "cik": 1065280,
+    "sic": "Services-Video Tape Rental",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 45183036000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 39000966000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 33723297000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 31615550000,
+        "key": "Revenues"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 10981201000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 8711631000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 5407990000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 4491924000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 2.53,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 19.83,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 12.03,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 9.95,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-10-21",
+        "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-20",
+        "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/nflx-20261020.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-10"
+  },
+  {
+    "ticker": "ADBE",
+    "name": "ADOBE INC.",
+    "cik": 796343,
+    "sic": "Services-Prepackaged Software",
+    "fiscalYearEnd": "1127",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-11-28",
+        "value": 23769000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-11-29",
+        "value": 21505000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-01",
+        "value": 19409000000,
+        "key": "Revenues"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-02",
+        "value": 17606000000,
+        "key": "Revenues"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-11-28",
+        "value": 7130000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-11-29",
+        "value": 5560000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-01",
+        "value": 5428000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-02",
+        "value": 4756000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-11-28",
+        "value": 16.7,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-11-29",
+        "value": 12.36,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-01",
+        "value": 11.82,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-02",
+        "value": 10.1,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "10-Q",
+        "date": "2026-09-22",
+        "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000156/adbe-20260828.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-10",
+        "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbe-20260910.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-08",
+        "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000144/adbe-20260902.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-07-17",
+        "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000120/adbe-20260714.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-06-15",
+        "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000112/adbe-20260529.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-06-11",
+        "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000109/adbe-20260608.htm"
+      }
+    ],
+    "fetchedAt": "2026-10-19"
+  },
+  {
+    "ticker": "CRM",
+    "name": "Salesforce, Inc.",
+    "cik": 1108524,
+    "sic": "Services-Prepackaged Software",
+    "fiscalYearEnd": "0131",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2026-01-31",
+        "value": 41525000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-01-31",
+        "value": 34857000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-01-31",
+        "value": 31352000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-01-31",
+        "value": 26492000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2026-01-31",
+        "value": 7457000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-01-31",
+        "value": 4136000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-01-31",
+        "value": 208000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-01-31",
+        "value": 1444000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2026-01-31",
+        "value": 7.8,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-01-31",
+        "value": 4.2,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-01-31",
+        "value": 0.21,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-01-31",
+        "value": 1.48,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-10-20",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312526425881/d516983d8k.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-17",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000210/crm-20260916.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-04",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000197/crm-20260902.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-08-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-26",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000187/crm-20260826.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000160/crm-20260805.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
+    "ticker": "ORCL",
+    "name": "ORACLE CORP",
+    "cik": 1341439,
+    "sic": "Services-Prepackaged Software",
+    "fiscalYearEnd": "0531",
+    "revenue": [
+      {
+        "fy": 2026,
+        "end": "2026-05-31",
+        "value": 67357000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-05-31",
+        "value": 57399000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-05-31",
+        "value": 52961000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-05-31",
+        "value": 49954000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2026,
+        "end": "2026-05-31",
+        "value": 17087000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-05-31",
+        "value": 12443000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-05-31",
+        "value": 10467000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-05-31",
+        "value": 8503000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2026,
+        "end": "2026-05-31",
+        "value": 5.83,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2025,
+        "end": "2025-05-31",
+        "value": 4.34,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-05-31",
+        "value": 3.71,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-05-31",
+        "value": 3.07,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-04",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526447507/d131790d8k.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-28",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526435853/d75538d8k.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-09-14",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389753/d20034d8k.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-04"
+  },
+  {
+    "ticker": "PFE",
+    "name": "PFIZER INC",
+    "cik": 78003,
+    "sic": "Pharmaceutical Preparations",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 50914000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2021,
+        "end": "2021-12-31",
+        "value": 81288000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2020,
+        "end": "2020-12-31",
+        "value": 41908000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2019,
+        "end": "2019-12-31",
+        "value": 51750000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 7771000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 8031000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 2119000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 31372000000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 1.36,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 1.41,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 0.37,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 5.47,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-11-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000132/pfe-20261030.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-11-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000127/pfe-20260927.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-11-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000125/pfe-20261103.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-08-04",
+        "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000095/pfe-20260628.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-08-04",
+        "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000094/pfe-20260804.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-06-18",
+        "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000087/pfe-20260618.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-12"
+  },
+  {
+    "ticker": "TMO",
+    "name": "THERMO FISHER SCIENTIFIC INC.",
+    "cik": 97745,
+    "sic": "Measuring & Controlling Devices, NEC",
+    "fiscalYearEnd": "1231",
+    "revenue": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 44556000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 42879000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 42857000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 44915000000,
+        "key": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+    ],
+    "income": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 6704000000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2013,
+        "end": "2013-12-31",
+        "value": 1273300000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2012,
+        "end": "2012-12-31",
+        "value": 1177900000,
+        "key": "NetIncomeLoss"
+      },
+      {
+        "fy": 2011,
+        "end": "2011-12-31",
+        "value": 1329900000,
+        "key": "NetIncomeLoss"
+      }
+    ],
+    "eps": [
+      {
+        "fy": 2025,
+        "end": "2025-12-31",
+        "value": 17.74,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2024,
+        "end": "2024-12-31",
+        "value": 16.53,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2023,
+        "end": "2023-12-31",
+        "value": 15.45,
+        "key": "EarningsPerShareDiluted"
+      },
+      {
+        "fy": 2022,
+        "end": "2022-12-31",
+        "value": 17.63,
+        "key": "EarningsPerShareDiluted"
+      }
+    ],
+    "filings": [
+      {
+        "form": "8-K",
+        "date": "2026-10-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000181/tmo-20261027.htm"
+      },
+      {
+        "form": "10-Q",
+        "date": "2026-10-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000179/tmo-20260926.htm"
+      },
+      {
+        "form": "8-K",
+        "date": "2026-10-21",
+        "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/tmo-20261021.htm"
+      }
+    ],
+    "fetchedAt": "2026-11-13"
+  }
+]

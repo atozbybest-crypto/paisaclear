@@ -2684,3 +2684,78 @@ button, input, select { font: inherit; color: inherit; }
 .checker-todo li { font-size: .84rem; color: var(--ink-2); line-height: 1.6; }
 
 .checker-verdict.is-nonum { background: var(--surface); border: 1px solid var(--line-2); color: var(--ink); }
+
+/* ---------------------------------------------- market game */
+.mg-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 14px; }
+.mg-stat { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; }
+.mg-stat span { font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; }
+.mg-stat strong { font-size: 1.1rem; color: var(--ink); font-family: var(--font-display); }
+.mg-stat-value.is-up { color: #0F5132; }
+.mg-stat-value.is-down { color: #B42318; }
+
+.mg-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+.mg-qty-label { font-size: .74rem; color: var(--ink-3); font-weight: 600; }
+.mg-qty { width: 90px; padding: 8px 10px; border: 1px solid var(--line-2); border-radius: var(--radius-sm); font: inherit; }
+.mg-bar-actions { margin-left: auto; display: flex; gap: 8px; }
+
+.mg-grid { display: grid; grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr); gap: 16px; margin-bottom: 16px; }
+@media (max-width: 900px) { .mg-grid { grid-template-columns: 1fr; } }
+.mg-panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+.mg-side { display: grid; gap: 16px; align-content: start; }
+.mg-table-wrap { overflow-x: auto; }
+.mg-table { width: 100%; border-collapse: collapse; font-size: .84rem; }
+.mg-table th { text-align: left; font-size: .62rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-3); padding: 6px 8px; border-bottom: 1px solid var(--line); }
+.mg-table td { padding: 9px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.mg-table.mg-small td, .mg-table.mg-small th { padding: 7px 6px; font-size: .78rem; }
+.mg-num { text-align: right; font-variant-numeric: tabular-nums; }
+.mg-num.small { font-size: .72rem; color: var(--ink-3); }
+.mg-co { display: block; font-weight: 650; color: var(--ink); }
+.mg-sector { display: block; font-size: .66rem; color: var(--ink-3); }
+.mg-spark { width: 120px; height: 34px; display: block; }
+.mg-actions { white-space: nowrap; }
+.mg-btn { border: 1px solid var(--line-2); background: var(--paper); border-radius: 999px; padding: 5px 12px; font-size: .72rem; font-weight: 700; cursor: pointer; margin-right: 6px; }
+.mg-btn:hover:not(:disabled) { border-color: var(--green); color: var(--green); }
+.mg-btn:disabled { opacity: .35; cursor: not-allowed; }
+.mg-buy { border-color: #9CC5A9; color: #0F5132; }
+.mg-sell { border-color: #E3B4AE; color: #B42318; }
+.mg-empty { color: var(--ink-3); text-align: center; padding: 18px 0; }
+.mg-badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.mg-badge { font-size: .66rem; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-3); }
+.mg-badge.is-on { background: #E7F0E9; border-color: #9CC5A9; color: #0F5132; font-weight: 700; }
+.mg-news { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.mg-news li { font-size: .82rem; line-height: 1.45; padding-left: 10px; border-left: 3px solid var(--line-2); color: var(--ink-2); }
+.mg-news li.is-good { border-left-color: #0F5132; }
+.mg-news li.is-bad { border-left-color: #B42318; }
+.mg-log { display: grid; gap: 8px; }
+.mg-log-line { margin: 0; font-size: .82rem; line-height: 1.5; padding: 10px 12px; border-radius: var(--radius-sm); background: var(--paper); border: 1px solid var(--line); }
+.mg-log-line.is-good { border-color: #9CC5A9; background: #F1F7F2; }
+.mg-log-line.is-bad { border-color: #E3B4AE; background: #FDF2F1; }
+.mg-log-line.is-warn { border-color: #E6C77A; background: #FDF8EA; }
+
+/* game additions: streak, goal, leaderboard */
+.mg-topline { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.mg-streak { background: #FDF3E3; border: 1px solid #E6C77A; color: #8A5B00; font-weight: 700; font-size: .78rem; padding: 6px 14px; border-radius: 999px; }
+.mg-goal { display: flex; gap: 14px; font-size: .76rem; color: var(--ink-3); background: var(--surface); border: 1px solid var(--line); padding: 6px 14px; border-radius: 999px; }
+.mg-goal strong { color: var(--ink); }
+.mg-board-panel { margin-top: 16px; }
+.mg-board-note { font-size: .74rem; color: var(--ink-3); margin: 10px 0 0; }
+.mg-news li.is-story { border-left-color: #B7791F; background: #FDF8EA; font-weight: 600; }
+.mg-btn.mg-buy { background: #F1F7F2; }
+.mg-btn.mg-sell { background: #FDF2F1; }
+.mg-stat strong { letter-spacing: -.01em; }
+.mg-panel { box-shadow: 0 1px 0 rgba(20,35,28,.03); }
+.mg-table tbody tr:hover { background: #FBFAF5; }
+
+/* country switch + US cards */
+.country-switch { display: inline-flex; gap: 6px; padding: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; margin-bottom: 14px; }
+.cs-chip { display: inline-block; padding: 7px 18px; border-radius: 999px; font-size: .78rem; font-weight: 700; text-decoration: none; color: var(--ink-3); }
+.cs-chip:hover { color: var(--green); }
+.cs-chip.is-on { background: var(--green); color: var(--paper); }
+.us-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.us-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; }
+.us-name { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; }
+.us-value { font-family: var(--font-display); font-size: 1.6rem; color: var(--ink); }
+.us-meta { font-size: .78rem; color: var(--ink-2); }
+.us-date { font-size: .68rem; color: var(--ink-3); }
+.is-up { color: #0F5132; }
+.is-down { color: #B42318; }

@@ -21,7 +21,8 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import answers, articles, bbbp, calculator, checker, dividends, editorial, extra_guides, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start  # noqa: E402
+from builder import (answers, articles, articles2, articles_extra1, articles_extra2, articles_extra3, articles_extra4,
+                     articles_long1, bbbp, calculator, calc_notes, checker, dividends, editorial, extra_guides, game, guide_notes, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start, us_companies, us_market, articles_us)  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -201,6 +202,31 @@ def write(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8", newline="\n")
 
 
+def _product_description(product: dict, ctx: dict) -> str:
+    """Unique, specific description — never the same sentence twice."""
+    cat = next((c for c in ctx["categories"] if c["id"] == product["category"]), None)
+    cat_name = cat["name"] if cat else "financial product"
+    bits = [f"{product['name']} from {product.get('provider', 'the provider')}.",
+            product.get("oneLiner", "").rstrip(".") + "."]
+    returns = (product.get("returns") or {}).get("threeYear")
+    if returns is not None:
+        bits.append(f"Three-year return {returns}% from NAV history.")
+    if product.get("minInvestment"):
+        bits.append(f"Minimum {product['minInvestment']}.")
+    if product.get("lockIn"):
+        bits.append(f"Lock-in {product['lockIn']}.")
+    bits.append(f"Listed under {cat_name}; every figure carries the date it applied.")
+    return " ".join(b for b in bits if b)[:300]
+
+
+def _article_body(html: str, extra: str) -> str:
+    """Append the long-form sections just before the closing source note."""
+    if not extra:
+        return html
+    anchor = '    <p class="guide-src">'
+    return html.replace(anchor, extra + anchor, 1)
+
+
 def main() -> int:
     ctx = build_context()
     products = ctx["products"]
@@ -284,14 +310,19 @@ def main() -> int:
                     + link("calculators/loan.html", "Loan EMI")
                     + link("calculators/income-tax.html", "Income tax"),
                     ("calculators/",))
+            + group("Markets",
+                    link("us-market.html", "US markets")
+                    + link("us-companies.html", "US companies"),
+                    ("us-market.html",))
             + group("Money news <span class=\"badge-new\">New</span>",
                     link("news.html", "Today's headlines")
-                    + link("check.html", "Scam checker"),
-                    ("news.html", "check.html"))
+                    + link("check.html", "Scam checker")
+                    + link("market-game.html", "Market game"),
+                    ("news.html", "check.html", "market-game.html"))
             + group("About", link("how-we-work.html", "How we work") + link("privacy.html", "Privacy")
                     + link("feedback.html", "Contact us")
                     + link("about-editor.html", "About the editor")
-                    + link("articles.html", "Articles")
+                    + link("articles.html", "All articles")
                     + link("terms.html", "Terms of use")
                     + link("disclaimer.html", "Disclaimer"),
                     ("how-we-work.html", "privacy.html", "feedback.html"))
@@ -346,16 +377,18 @@ def main() -> int:
 
     # Pages Google should not index: aggregated news, and the two sections
     # that are templated per record. They stay live for readers.
-    NOINDEX_CATEGORIES = {"dividend-champions", "health-insurance"}
     noindex_pages: set[str] = set()
 
     def _is_noindex(rel_page: str) -> bool:
-        if rel_page == "news.html":
+        # The product catalogue is templated per record: 310 pages sharing 83% of
+        # their text. They stay live for readers and for comparison, but only the
+        # category hubs, plans, guides and articles are offered for indexing.
+        if rel_page in ("news.html", "404.html", "feedback-thanks.html"):
             return True
         if rel_page.startswith("products/"):
-            slug = rel_page[len("products/"):-5]
-            prod = next((x for x in products if x["slug"] == slug), None)
-            return bool(prod and prod["category"] in NOINDEX_CATEGORIES)
+            return True
+        if rel_page.startswith("us-companies/"):
+            return True
         return False
 
     def emit(rel: str, markup: str) -> None:
@@ -446,7 +479,7 @@ def main() -> int:
     emit("calculators/income-tax.html", page(
         title="Income tax calculator — PaisaClear",
         description="Calculate income tax for 2026-27 for individuals, HUF, firms, companies and local authorities, with rebate, surcharge and cess.",
-        body=income_tax.income_tax(load_json(CONTENT / "tax-rules.json")),
+        body=income_tax.income_tax(load_json(CONTENT / "tax-rules.json")) + calc_notes.NOTES["calculators/income-tax.html"],
         base="../",
         active="calculator",
         scripts=["assets/js/income-tax.js"],
@@ -455,7 +488,7 @@ def main() -> int:
     emit("calculators/loan.html", page(
         title="Loan EMI calculator — PaisaClear",
         description="Work out the EMI on a loan, the total interest, and the year-by-year repayment schedule, including the effect of an extra monthly payment.",
-        body=loan.loan_page(),
+        body=loan.loan_page() + calc_notes.NOTES["calculators/loan.html"],
         base="../",
         active="calculator",
         scripts=["assets/js/loan.js"],
@@ -464,7 +497,7 @@ def main() -> int:
     emit("calculators/planning.html", page(
         title="Emergency fund and retirement planners — PaisaClear",
         description="Work out an emergency fund target and a retirement corpus from your own figures, and see which products your amounts can reach.",
-        body=plan.plan_page(products),
+        body=plan.plan_page(products) + calc_notes.NOTES["calculators/planning.html"],
         base="../",
         active="calculator",
         scripts=["assets/js/plan.js"],
@@ -473,7 +506,7 @@ def main() -> int:
     emit("calculators/spending.html", page(
         title="Spending planner — PaisaClear",
         description="Log what you spend, see which categories take the most, and find products your balance can already start. Stored in your browser only.",
-        body=planner.planner_page(products),
+        body=planner.planner_page(products) + calc_notes.NOTES["calculators/spending.html"],
         base="../",
         active="calculator",
         scripts=["assets/js/planner.js"],
@@ -482,7 +515,7 @@ def main() -> int:
     emit("calculators/savings.html", page(
         title="Savings, SIP and deposit calculator — PaisaClear",
         description="Work out what a monthly SIP, a one-time investment or a fixed deposit could grow to, including the value in today's money.",
-        body=calculator.money_calculator(),
+        body=calculator.money_calculator() + calc_notes.NOTES["calculators/savings.html"],
         base="../",
         active="calculator",
         scripts=["assets/js/money.js"],
@@ -505,6 +538,79 @@ def main() -> int:
         active="",
     ))
 
+    _LONG = {
+        "dividend-streak.html": (articles_long1.DIVIDEND,
+                                 articles_extra1.EXTRAS["dividend"] + articles_extra3.EXTRAS["dividend"]
+                                 + articles_extra4.EXTRAS["dividend"]),
+        "scss-vs-fd.html": (articles_long1.SCSS,
+                            articles_extra1.EXTRAS["scss"] + articles_extra3.EXTRAS["scss"]
+                                 + articles_extra4.EXTRAS["scss"]),
+        "health-insurance-after-60.html": (articles2.PARENTS,
+                                           articles_extra2.EXTRAS["parents"] + articles_extra3.EXTRAS["parents"]
+                                 + articles_extra4.EXTRAS["parents"]),
+        "small-savings-rates.html": (articles2.RATES,
+                                     articles_extra2.EXTRAS["rates"] + articles_extra3.EXTRAS["rates"]
+                                 + articles_extra4.EXTRAS["rates"]),
+        "emergency-fund.html": (articles2.EMERGENCY,
+                                articles_extra2.EXTRAS["emergency"] + articles_extra3.EXTRAS["emergency"]
+                                 + articles_extra4.EXTRAS["emergency"]),
+    }
+
+    for _slug, _file, _name, _line, _when, _html in articles2.EXTRA:
+        _base, _extra = _LONG.get(_file, (_html, ""))
+        _html = _article_body(_base, _extra)
+        articles.ARTICLES.append((_file, _name, _line, _when))
+        emit(_file, page(
+            title=_name + " — PaisaClear",
+            description=_line,
+            body=_html,
+            active="",
+        ))
+
+    _us = load_json(CONTENT / "us_market.json") if (CONTENT / "us_market.json").exists() else {}
+    emit("us-market.html", page(
+        title="US markets — indices, Treasury yields, ETFs and deposit rates",
+        description="US market data for Indian readers: S&P 500, Nasdaq, Treasury yields, the largest ETFs and index funds, with the date each figure was observed.",
+        body=us_market.page(_us),
+        active="us",
+    ))
+
+    _us_companies = load_json(CONTENT / "us_companies.json") if (CONTENT / "us_companies.json").exists() else []
+    if _us_companies:
+        emit("us-companies.html", page(
+            title="US companies — revenue and filings from SEC EDGAR",
+            description="Revenue, net income and recent SEC filings for the largest listed US companies, taken from their own 10-K and 10-Q filings.",
+            body=us_companies.hub(_us_companies),
+            active="us",
+        ))
+        for _c in _us_companies:
+            emit(f"us-companies/{_c['ticker'].lower()}.html", page(
+                title=f"{_c['name']} ({_c['ticker']}) — SEC filings and financials",
+                description=f"Revenue, net income and recent SEC filings for {_c['name']}, as reported in its own 10-K.",
+                body=us_companies.detail(_c),
+                base="../",
+                active="us",
+            ))
+
+    emit("market-game.html", page(
+        title="The Market Game — PaisaClear",
+        description="A simulated stock market with fake money. Trade, lose, and learn why buying after a rally or selling into a fall is a bad habit.",
+        body=game.page(),
+        active="game",
+        scripts=["assets/js/market-game.js"],
+    ))
+
+    articles.ARTICLES.append(("us-investing-from-india.html",
+        "Buying US stocks from India: rules, taxes and the estate-tax trap",
+        "Remittance limits, TCS, dividend withholding and a US estate-tax exposure most investors never hear about.",
+        "15 November 2026"))
+    emit("us-investing-from-india.html", page(
+        title="Buying US stocks from India: rules, taxes and the estate-tax trap",
+        description="How an Indian resident buys US shares: LRS limits, TCS, dividend withholding, capital gains and the US estate-tax exposure.",
+        body=articles_us.ARTICLE,
+        active="",
+    ))
+
     emit("articles.html", page(
         title="Articles — PaisaClear",
         description="Long-form pieces on the parts of Indian financial products that decide whether they work for you.",
@@ -515,14 +621,18 @@ def main() -> int:
     emit("health-insurance-policy-clauses.html", page(
         title="How to read a health insurance policy — PaisaClear",
         description="The five clauses that decide a health insurance claim: waiting periods, room rent limits, sub-limits, co-payment and restoration.",
-        body=articles.HEALTH,
+        body=_article_body(articles_long1.HEALTH_POLICY,
+                                  articles_extra1.EXTRAS["health-policy"] + articles_extra3.EXTRAS["health-policy"]
+                                  + articles_extra4.EXTRAS["health-policy"]),
         active="",
     ))
 
     emit("ppf-vs-fd-vs-nsc-tax.html", page(
         title="PPF vs FD vs NSC: the tax arithmetic — PaisaClear",
         description="After-tax returns for PPF, fixed deposits and NSC, with a worked fifteen-year example at three tax slabs.",
-        body=articles.TAX,
+        body=_article_body(articles_long1.TAX,
+                                  articles_extra1.EXTRAS["tax"] + articles_extra3.EXTRAS["tax"]
+                                  + articles_extra4.EXTRAS["tax"]),
         active="",
     ))
 
@@ -593,6 +703,7 @@ def main() -> int:
          "PPF, SSY, SCSS, NSC, KVP, MIS and post office deposits in one table: rate, term, limits, tax and access.",
          guides.small_savings_compared(ctx, guide_rates)),
     ):
+        body = body + guide_notes.NOTES.get(rel, "")
         emit(rel, page(title=title + " — PaisaClear", description=desc, body=body,
                        base="../", active="browse"))
 
@@ -650,7 +761,7 @@ def main() -> int:
     emit("calculators/salary.html", page(
         title="Salary & take-home calculator — PaisaClear",
         description="Work out your take-home pay from CTC under both the new and old tax regimes, with HRA, 80C, 80D and home-loan interest.",
-        body=calculator.salary_calculator(tax_rules),
+        body=calculator.salary_calculator(tax_rules) + calc_notes.NOTES["calculators/salary.html"],
         base="../",
         active="calculator",
         scripts=["assets/js/salary.js"],
@@ -683,7 +794,7 @@ def main() -> int:
             body = pages.product_page(ctx, product)
         emit(f"products/{product['slug']}.html", page(
             title=f"{product['name']} — PaisaClear",
-            description=product["oneLiner"],
+            description=_product_description(product, ctx),
             body=body,
             base="../",
             active="browse",

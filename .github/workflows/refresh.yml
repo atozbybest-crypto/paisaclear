@@ -86,6 +86,12 @@ jobs:
           PYTHONIOENCODING: utf-8
         run: python tools/fetch_news.py
 
+      - name: Fetch US market data
+        if: success() && steps.guard.outputs.skip != 'true'
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python tools/fetch_us_market.py || echo "US market fetch skipped"
+
       - name: Rebuild the site
         if: success() && steps.guard.outputs.skip != 'true'
         env:
@@ -105,7 +111,7 @@ jobs:
         run: |
           git config user.name "paisaclear-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add content/rates.json site
+          git add content/rates.json content/us_market.json site
           if git diff --cached --quiet; then
             echo "No rate changes today."
           else
