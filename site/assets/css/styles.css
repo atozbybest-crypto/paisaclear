@@ -2759,3 +2759,11 @@ button, input, select { font: inherit; color: inherit; }
 .us-date { font-size: .68rem; color: var(--ink-3); }
 .is-up { color: #0F5132; }
 .is-down { color: #B42318; }
+
+/* visible market switch */
+.market-switch { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 22px; }
+.market-switch-inline { margin-top: 14px; }
+.ms-label { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; margin-right: 4px; }
+.ms-chip { display: inline-block; padding: 8px 18px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); font-size: .82rem; font-weight: 700; color: var(--ink-2); text-decoration: none; }
+.ms-chip:hover { border-color: var(--green); color: var(--green); }
+.ms-chip.is-on { background: var(--green); border-color: var(--green); color: var(--paper); }

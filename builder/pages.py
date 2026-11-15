@@ -180,6 +180,12 @@ def home(ctx: dict) -> str:
              placeholder="Try “monthly income”, “tax saving”, “government”">
       <button class="btn btn-primary" type="submit">Search products</button>
     </form>
+
+    <nav class="market-switch" aria-label="Choose a market">
+      <span class="ms-label">Where are you investing?</span>
+      <span class="ms-chip is-on" aria-current="page">India</span>
+      <a class="ms-chip" href="us-market.html">United States</a>
+    </nav>
   </div>
 </section>
 
@@ -244,6 +250,10 @@ def browse(ctx: dict) -> str:
       figure is either dated and sourced or replaced with a link to the provider's own page where it genuinely
       varies — a bank's deposit rate being the clearest case.
     </p>
+    <nav class="market-switch market-switch-inline" aria-label="Choose a market">
+      <span class="ms-chip is-on" aria-current="page">India</span>
+      <a class="ms-chip" href="us-market.html">United States</a>
+    </nav>
   </div>
 </section>
 
