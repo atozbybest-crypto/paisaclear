@@ -12,5 +12,11 @@
   "adsense": {
     "client": "ca-pub-5410211984862594",
     "_comment": "Google AdSense client id; the loader is injected into <head>."
+  },
+  "editor": {
+    "name": "Gowtham",
+    "location": "India",
+    "since": "2026",
+    "why": "India has more ways to save than almost anywhere else — small savings schemes, bank deposits, mutual funds, bonds, insurance — and very little plain information about where to start. PaisaClear exists to help you find the products that fit the money you actually have and the features you actually need, with every figure dated and sourced."
   }
 }

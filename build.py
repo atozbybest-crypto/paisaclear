@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from builder import answers, bbbp, calculator, checker, dividends, extra_guides, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start  # noqa: E402
+from builder import answers, articles, bbbp, calculator, checker, dividends, editorial, extra_guides, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -290,6 +290,8 @@ def main() -> int:
                     ("news.html", "check.html"))
             + group("About", link("how-we-work.html", "How we work") + link("privacy.html", "Privacy")
                     + link("feedback.html", "Contact us")
+                    + link("about-editor.html", "About the editor")
+                    + link("articles.html", "Articles")
                     + link("terms.html", "Terms of use")
                     + link("disclaimer.html", "Disclaimer"),
                     ("how-we-work.html", "privacy.html", "feedback.html"))
@@ -342,6 +344,20 @@ def main() -> int:
     head_snippet = (analytics_snippet if provider in ("ga4", "googleads") else "") + adsense_snippet
     body_snippet = "" if provider in ("ga4", "googleads") else analytics_snippet
 
+    # Pages Google should not index: aggregated news, and the two sections
+    # that are templated per record. They stay live for readers.
+    NOINDEX_CATEGORIES = {"dividend-champions", "health-insurance"}
+    noindex_pages: set[str] = set()
+
+    def _is_noindex(rel_page: str) -> bool:
+        if rel_page == "news.html":
+            return True
+        if rel_page.startswith("products/"):
+            slug = rel_page[len("products/"):-5]
+            prod = next((x for x in products if x["slug"] == slug), None)
+            return bool(prod and prod["category"] in NOINDEX_CATEGORIES)
+        return False
+
     def emit(rel: str, markup: str) -> None:
         url = "https://paisaclear.co.in/" + rel.replace("index.html", "").replace(".html", "")
         canonical = (
@@ -362,6 +378,12 @@ def main() -> int:
         markup = markup.replace("<!--CANONICAL-->", canonical)
         if "<!--SIDEBAR-->" in markup:
             markup = markup.replace("<!--SIDEBAR-->", sidebar_for(rel))
+        if _is_noindex(rel):
+            noindex_pages.add(rel)
+            markup = markup.replace(
+                "</head>",
+                '<meta name="robots" content="noindex,follow">\n</head>', 1,
+            )
         markup = markup.replace("<!--ANALYTICS-->", body_snippet)
         if head_snippet:
             markup = markup.replace("</head>", head_snippet + "\n</head>", 1)
@@ -474,6 +496,35 @@ def main() -> int:
         active="answers",
         scripts=["assets/js/faq.js"],
     ).replace("</head>", answers.jsonld(faq) + "</head>"))
+
+    editor_cfg = site_cfg.get("editor") or {}
+    emit("about-editor.html", page(
+        title="About the editor — PaisaClear",
+        description="Who writes PaisaClear, how the figures are checked, and how to hold the site to its standard.",
+        body=editorial.page(editor_cfg, "15 November 2026"),
+        active="",
+    ))
+
+    emit("articles.html", page(
+        title="Articles — PaisaClear",
+        description="Long-form pieces on the parts of Indian financial products that decide whether they work for you.",
+        body=articles.index(),
+        active="",
+    ))
+
+    emit("health-insurance-policy-clauses.html", page(
+        title="How to read a health insurance policy — PaisaClear",
+        description="The five clauses that decide a health insurance claim: waiting periods, room rent limits, sub-limits, co-payment and restoration.",
+        body=articles.HEALTH,
+        active="",
+    ))
+
+    emit("ppf-vs-fd-vs-nsc-tax.html", page(
+        title="PPF vs FD vs NSC: the tax arithmetic — PaisaClear",
+        description="After-tax returns for PPF, fixed deposits and NSC, with a worked fifteen-year example at three tax slabs.",
+        body=articles.TAX,
+        active="",
+    ))
 
     emit("terms.html", page(
         title="Terms of use — PaisaClear",
@@ -643,7 +694,7 @@ def main() -> int:
     skip = {"404.html", "feedback-thanks.html"}
     urls = []
     for rel in sorted(written):
-        if not rel.endswith(".html") or rel in skip:
+        if not rel.endswith(".html") or rel in skip or rel in noindex_pages:
             continue
         loc = base_url + "/" + rel.replace("index.html", "").replace(".html", "")
         loc = loc.rstrip("/") if loc != base_url + "/" else loc
@@ -673,6 +724,7 @@ def main() -> int:
             print(f"  {status:<17} : {status_counts[status]:>3}  (excluded)")
     print(f"  categories        : {len(ctx['categories']):>3}")
     print(f"  pages written     : {len(written):>3}")
+    print(f"  noindexed         : {len(noindex_pages):>3}  (kept live, out of sitemap)")
     print(f"  output            : {SITE}")
     print("-" * 46)
 

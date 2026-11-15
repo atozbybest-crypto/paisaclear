@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://paisaclear.co.in/about-editor</loc></url>
   <url><loc>https://paisaclear.co.in/answers</loc></url>
+  <url><loc>https://paisaclear.co.in/articles</loc></url>
   <url><loc>https://paisaclear.co.in/browse</loc></url>
   <url><loc>https://paisaclear.co.in/calculators/income-tax</loc></url>
   <url><loc>https://paisaclear.co.in/calculators/loan</loc></url>
@@ -28,9 +30,9 @@
   <url><loc>https://paisaclear.co.in/guides/sip-vs-lump-sum</loc></url>
   <url><loc>https://paisaclear.co.in/guides/small-savings-compared</loc></url>
   <url><loc>https://paisaclear.co.in/guides/ssy-vs-ppf</loc></url>
+  <url><loc>https://paisaclear.co.in/health-insurance-policy-clauses</loc></url>
   <url><loc>https://paisaclear.co.in/how-we-work</loc></url>
   <url><loc>https://paisaclear.co.in/</loc></url>
-  <url><loc>https://paisaclear.co.in/news</loc></url>
   <url><loc>https://paisaclear.co.in/paisadiscover</loc></url>
   <url><loc>https://paisaclear.co.in/plans</loc></url>
   <url><loc>https://paisaclear.co.in/plans/beti-bachao-beti-padhao</loc></url>
@@ -40,8 +42,8 @@
   <url><loc>https://paisaclear.co.in/plans/public-provident-fund</loc></url>
   <url><loc>https://paisaclear.co.in/plans/senior-citizens-savings-scheme</loc></url>
   <url><loc>https://paisaclear.co.in/plans/sukanya-samriddhi</loc></url>
+  <url><loc>https://paisaclear.co.in/ppf-vs-fd-vs-nsc-tax</loc></url>
   <url><loc>https://paisaclear.co.in/privacy</loc></url>
-  <url><loc>https://paisaclear.co.in/products/aditya-birla-activ-one-max</loc></url>
   <url><loc>https://paisaclear.co.in/products/aditya-birla-sun-life-banking-psu-debt-fund-119550</loc></url>
   <url><loc>https://paisaclear.co.in/products/aditya-birla-sun-life-bse-sensex-etf-139581</loc></url>
   <url><loc>https://paisaclear.co.in/products/aditya-birla-sun-life-corporate-bond-fund-119533</loc></url>
@@ -88,59 +90,10 @@
   <url><loc>https://paisaclear.co.in/products/canara-robeco-liquid-fund-118305</loc></url>
   <url><loc>https://paisaclear.co.in/products/canara-robeco-ultra-short-term-fund-118317</loc></url>
   <url><loc>https://paisaclear.co.in/products/canara-robeco-ultra-short-to-short-term-fund-118291</loc></url>
-  <url><loc>https://paisaclear.co.in/products/care-health-care-supreme</loc></url>
   <url><loc>https://paisaclear.co.in/products/central-bank-of-india-fixed-deposit</loc></url>
   <url><loc>https://paisaclear.co.in/products/city-union-bank-fixed-deposit</loc></url>
   <url><loc>https://paisaclear.co.in/products/dbs-bank-india-fixed-deposit</loc></url>
   <url><loc>https://paisaclear.co.in/products/dcb-bank-fixed-deposit</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-abrel</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-adanient</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-ambujacem</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-asianpaint</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-banarisug</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-basf</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-bbtc</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-bel</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-bharatforg</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-bsoft</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-chamblfert</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-cub</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-cumminsind</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-dabur</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-dcmshriram</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-divislab</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-drreddy</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-elcidin</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-empind</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-enginersin</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-everestind</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-ghcl</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-gichsgfin</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-gmdcltd</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-grasim</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-greenply</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-grpltd</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-gsfc</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-indianhume</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-ioc</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-kpil</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-lindeindia</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-nava</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-ncc</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-nmdc</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-ntpc</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-pghh</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-polyplex</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-ramcoind</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-rubymills</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-saksoft</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-shrjagp</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-subros</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-sudarschem</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-texinfra</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-upl</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-visakaind</loc></url>
-  <url><loc>https://paisaclear.co.in/products/dividend-zyduslife</loc></url>
   <url><loc>https://paisaclear.co.in/products/dsp-aggressive-hybrid-fund-119019</loc></url>
   <url><loc>https://paisaclear.co.in/products/dsp-flexi-cap-fund-119076</loc></url>
   <url><loc>https://paisaclear.co.in/products/dsp-focused-fund-119096</loc></url>
@@ -181,7 +134,6 @@
   <url><loc>https://paisaclear.co.in/products/hdfc-bse-sensex-index-fund-119065</loc></url>
   <url><loc>https://paisaclear.co.in/products/hdfc-corporate-bond-fund-118987</loc></url>
   <url><loc>https://paisaclear.co.in/products/hdfc-elss-tax-saver-fund-119060</loc></url>
-  <url><loc>https://paisaclear.co.in/products/hdfc-ergo-optima-secure-plus</loc></url>
   <url><loc>https://paisaclear.co.in/products/hdfc-flexi-cap-fund-118955</loc></url>
   <url><loc>https://paisaclear.co.in/products/hdfc-focused-fund-118950</loc></url>
   <url><loc>https://paisaclear.co.in/products/hdfc-gold-etf-fund-of-fund-direct-plan-growth-option-119132</loc></url>
@@ -196,7 +148,6 @@
   <url><loc>https://paisaclear.co.in/products/hdfc-value-fund-118935</loc></url>
   <url><loc>https://paisaclear.co.in/products/hsbc-flexi-cap-fund-120046</loc></url>
   <url><loc>https://paisaclear.co.in/products/icici-bank-fixed-deposit</loc></url>
-  <url><loc>https://paisaclear.co.in/products/icici-lombard-elevate</loc></url>
   <url><loc>https://paisaclear.co.in/products/icici-prudential-balanced-advantage-fund-120377</loc></url>
   <url><loc>https://paisaclear.co.in/products/icici-prudential-banking-and-psu-debt-fund-120256</loc></url>
   <url><loc>https://paisaclear.co.in/products/icici-prudential-bse-midcap-select-etf-139519</loc></url>
@@ -249,7 +200,6 @@
   <url><loc>https://paisaclear.co.in/products/lic-saral-pension</loc></url>
   <url><loc>https://paisaclear.co.in/products/lic-siip</loc></url>
   <url><loc>https://paisaclear.co.in/products/lic-smart-pension</loc></url>
-  <url><loc>https://paisaclear.co.in/products/manipalcigna-prohealth</loc></url>
   <url><loc>https://paisaclear.co.in/products/mirae-asset-large-cap-fund-118825</loc></url>
   <url><loc>https://paisaclear.co.in/products/mirae-asset-large-midcap-fund-118834</loc></url>
   <url><loc>https://paisaclear.co.in/products/mirae-asset-liquid-fund-118859</loc></url>
@@ -290,7 +240,6 @@
   <url><loc>https://paisaclear.co.in/products/nippon-india-ultra-short-to-short-term-fund-118709</loc></url>
   <url><loc>https://paisaclear.co.in/products/nippon-india-value-fund-118784</loc></url>
   <url><loc>https://paisaclear.co.in/products/nippon-india-vision-large-mid-cap-fund-118678</loc></url>
-  <url><loc>https://paisaclear.co.in/products/niva-bupa-reassure-3-0</loc></url>
   <url><loc>https://paisaclear.co.in/products/post-office-monthly-income-scheme</loc></url>
   <url><loc>https://paisaclear.co.in/products/post-office-recurring-deposit</loc></url>
   <url><loc>https://paisaclear.co.in/products/post-office-savings-account</loc></url>
@@ -312,16 +261,13 @@
   <url><loc>https://paisaclear.co.in/products/quantum-nifty-50-etf</loc></url>
   <url><loc>https://paisaclear.co.in/products/quantum-value-fund-103490</loc></url>
   <url><loc>https://paisaclear.co.in/products/rbl-bank-fixed-deposit</loc></url>
-  <url><loc>https://paisaclear.co.in/products/reliance-general-health</loc></url>
   <url><loc>https://paisaclear.co.in/products/sbi-contra-fund-119835</loc></url>
   <url><loc>https://paisaclear.co.in/products/sbi-fixed-deposit</loc></url>
   <url><loc>https://paisaclear.co.in/products/sbi-focused-fund-119727</loc></url>
-  <url><loc>https://paisaclear.co.in/products/sbi-general-arogya-supreme</loc></url>
   <url><loc>https://paisaclear.co.in/products/sbi-gold-etf-regular-plan-growth-111954</loc></url>
   <url><loc>https://paisaclear.co.in/products/senior-citizens-savings-scheme</loc></url>
   <url><loc>https://paisaclear.co.in/products/south-indian-bank-fixed-deposit</loc></url>
   <url><loc>https://paisaclear.co.in/products/sovereign-gold-bond</loc></url>
-  <url><loc>https://paisaclear.co.in/products/star-health-specialised-plans</loc></url>
   <url><loc>https://paisaclear.co.in/products/state-development-loan</loc></url>
   <url><loc>https://paisaclear.co.in/products/sukanya-samriddhi-yojana</loc></url>
   <url><loc>https://paisaclear.co.in/products/sundaram-banking-and-psu-debt-fund-formerly-known-as-sunda-119625</loc></url>
@@ -330,7 +276,6 @@
   <url><loc>https://paisaclear.co.in/products/sundaram-small-cap-fund-119589</loc></url>
   <url><loc>https://paisaclear.co.in/products/suryoday-small-finance-bank-fixed-deposit</loc></url>
   <url><loc>https://paisaclear.co.in/products/tata-aggressive-hybrid-fund-119053</loc></url>
-  <url><loc>https://paisaclear.co.in/products/tata-aig-medicare</loc></url>
   <url><loc>https://paisaclear.co.in/products/tata-large-cap-fund-119160</loc></url>
   <url><loc>https://paisaclear.co.in/products/tata-large-mid-cap-fund-119202</loc></url>
   <url><loc>https://paisaclear.co.in/products/tata-mid-cap-fund-119178</loc></url>

@@ -75,7 +75,11 @@ def audit_local() -> None:
 
     sitemap = (SITE / "sitemap.xml").read_text(encoding="utf-8")
     urls = re.findall(r"<loc>([^<]+)</loc>", sitemap)
-    expected = len([p for p in pages if not p.endswith(("404.html", "feedback-thanks.html"))])
+    noindexed = [p for p in pages if 'name="robots" content="noindex' in pages[p].read_text(encoding="utf-8")]
+    expected = len([p for p in pages
+                    if not p.endswith(("404.html", "feedback-thanks.html")) and p not in noindexed])
+    if noindexed:
+        note(f"noindexed: {len(noindexed)} pages kept live but out of the sitemap")
     if abs(len(urls) - expected) > 2:
         fail(f"sitemap has {len(urls)} URLs but there are {expected} indexable pages")
     else:
