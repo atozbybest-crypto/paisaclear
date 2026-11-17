@@ -4,24 +4,14 @@ name: Refresh rates and redeploy
 # Cloudflare Pages / Netlify redeploy automatically when this pushes a commit.
 
 on:
-  schedule:
-    # GitHub's free scheduler fires hours late — measured 3 to 7 hours on this
-    # repo. One cron therefore lands at an unpredictable time. These four are
-    # attempts, not four jobs: the first to run refreshes and the rest exit
-    # immediately, so there is still exactly one commit and one deploy a day.
-    #   00:30 UTC = 06:00 IST   (the intended slot)
-    #   02:30 UTC = 08:00 IST   (if the first was skipped or late)
-    #   04:30 UTC = 10:00 IST   (fallback)
-    #   06:30 UTC = 12:00 IST   (last chance)
-    # The guard reads today's own commit history, so a late run costs seconds.
-    - cron: "30 0 * * *"
-    - cron: "30 2 * * *"
-    - cron: "30 4 * * *"
-    - cron: "30 6 * * *"
-    #  16:00 UTC = 21:30 IST  (after the evening NAV publish, the real fix)
-    #  17:30 UTC = 23:00 IST  (evening fallback)
-    - cron: "0 16 * * *"
-    - cron: "30 17 * * *"
+  # No schedules. This workflow is triggered only from outside — cron-job.org
+  # calls the dispatch API at 09:00 and 21:30 IST, which is punctual in a way
+  # GitHub's scheduler is not.
+  #
+  # The GitHub crons were removed on 17 November 2026 because they kept firing
+  # at unpredictable hours (measured 3-7 hours late) and one landed shortly
+  # before the 09:00 trigger, so the freshness guard treated the day as already
+  # refreshed and the morning run did nothing. Exactly two runs a day now.
   workflow_dispatch:
     inputs:
       dry_run:

@@ -130,10 +130,13 @@ def audit_local() -> None:
 
     refresh = (ROOT / ".github/workflows/refresh.yml").read_text(encoding="utf-8")
     crons = re.findall(r'cron:\s*"([^"]+)"', refresh)
-    if not 1 <= len(crons) <= 8:
-        fail(f"refresh.yml should have 1-8 attempts, found {len(crons)}")
-    else:
+    dispatched = "workflow_dispatch:" in refresh
+    if len(crons) == 0 and dispatched:
+        note("refresh trigger: external only (cron-job.org dispatch, no GitHub cron)")
+    elif 1 <= len(crons) <= 8:
         note(f"refresh attempts: {len(crons)} (guard prevents duplicate deploys)")
+    else:
+        fail(f"refresh.yml has no usable trigger: {len(crons)} crons, dispatch={dispatched}")
 
 
 def audit_live() -> None:
