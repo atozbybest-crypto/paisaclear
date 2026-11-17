@@ -1,180 +1,180 @@
 {
-  "fetchedAt": "2026-11-16T23:54+00:00",
+  "fetchedAt": "2026-11-17T16:02+00:00",
   "indices": [
     {
       "ticker": "GSPC",
       "label": "S&P 500",
-      "price": 7416.59,
-      "asOf": "2026-11-16",
-      "day": -1.92,
-      "month": -3.17,
-      "year": 10.13
+      "price": 7342.87,
+      "asOf": "2026-11-17",
+      "day": -0.99,
+      "month": -4.52,
+      "year": 10.05
     },
     {
       "ticker": "IXIC",
       "label": "Nasdaq Composite",
-      "price": 24509.76,
-      "asOf": "2026-11-16",
-      "day": -2.49,
-      "month": -6.24,
-      "year": 7.03
+      "price": 24257.75,
+      "asOf": "2026-11-17",
+      "day": -1.03,
+      "month": -8.22,
+      "year": 6.82
     },
     {
       "ticker": "DJI",
       "label": "Dow Jones Industrial Average",
-      "price": 51608.17,
-      "asOf": "2026-11-16",
-      "day": -1.41,
-      "month": -0.76,
-      "year": 9.46
+      "price": 50894.92,
+      "asOf": "2026-11-17",
+      "day": -1.38,
+      "month": -2.06,
+      "year": 9.24
     }
   ],
   "etfs": [
     {
       "ticker": "SPY",
       "label": "SPDR S&P 500 ETF",
-      "price": 739.95,
-      "asOf": "2026-11-16",
-      "day": -1.91,
-      "month": -3.05,
-      "year": 10.12
+      "price": 732.59,
+      "asOf": "2026-11-17",
+      "day": -0.99,
+      "month": -4.42,
+      "year": 10.05
     },
     {
       "ticker": "QQQ",
       "label": "Invesco QQQ Trust",
-      "price": 661.75,
-      "asOf": "2026-11-16",
-      "day": -2.67,
-      "month": -6.77,
-      "year": 8.69
+      "price": 655.08,
+      "asOf": "2026-11-17",
+      "day": -1.01,
+      "month": -8.81,
+      "year": 8.52
     },
     {
       "ticker": "VOO",
       "label": "Vanguard S&P 500 ETF",
-      "price": 680.26,
-      "asOf": "2026-11-16",
-      "day": -1.89,
-      "month": -3.04,
-      "year": 10.1
+      "price": 673.45,
+      "asOf": "2026-11-17",
+      "day": -1.0,
+      "month": -4.42,
+      "year": 10.03
     },
     {
       "ticker": "IVV",
       "label": "iShares Core S&P 500 ETF",
-      "price": 743.33,
-      "asOf": "2026-11-16",
-      "day": -1.89,
-      "month": -3.04,
-      "year": 10.07
+      "price": 735.7,
+      "asOf": "2026-11-17",
+      "day": -1.03,
+      "month": -4.46,
+      "year": 9.97
     },
     {
       "ticker": "VTI",
       "label": "Vanguard Total Stock Market ETF",
-      "price": 364.3,
-      "asOf": "2026-11-16",
-      "day": -1.84,
-      "month": -2.61,
-      "year": 10.44
+      "price": 360.38,
+      "asOf": "2026-11-17",
+      "day": -1.08,
+      "month": -4.04,
+      "year": 10.4
     },
     {
       "ticker": "IWM",
       "label": "iShares Russell 2000 ETF",
-      "price": 272.94,
-      "asOf": "2026-11-16",
-      "day": -1.66,
-      "month": 0.92,
-      "year": 14.93
+      "price": 269.54,
+      "asOf": "2026-11-17",
+      "day": -1.25,
+      "month": -0.64,
+      "year": 15.8
     },
     {
       "ticker": "GLD",
       "label": "SPDR Gold Shares",
-      "price": 352.93,
-      "asOf": "2026-11-16",
-      "day": -0.71,
-      "month": -7.61,
-      "year": -6.13
+      "price": 354.95,
+      "asOf": "2026-11-17",
+      "day": 0.57,
+      "month": -6.52,
+      "year": -4.49
     },
     {
       "ticker": "TLT",
       "label": "iShares 20+ Year Treasury Bond ETF",
-      "price": 79.38,
-      "asOf": "2026-11-16",
-      "day": 0.0,
-      "month": -0.84,
-      "year": -10.68
+      "price": 79.46,
+      "asOf": "2026-11-17",
+      "day": 0.09,
+      "month": -0.01,
+      "year": -10.81
     },
     {
       "ticker": "BND",
       "label": "Vanguard Total Bond Market ETF",
-      "price": 70.62,
-      "asOf": "2026-11-16",
-      "day": 0.09,
-      "month": -0.28,
-      "year": -4.77
+      "price": 70.68,
+      "asOf": "2026-11-17",
+      "day": 0.08,
+      "month": 0.11,
+      "year": -4.75
     },
     {
       "ticker": "VEA",
       "label": "Vanguard FTSE Developed Markets ETF",
-      "price": 68.22,
-      "asOf": "2026-11-16",
-      "day": -1.76,
-      "month": -1.83,
-      "year": 11.25
+      "price": 67.43,
+      "asOf": "2026-11-17",
+      "day": -1.16,
+      "month": -2.78,
+      "year": 11.4
     },
     {
       "ticker": "VWO",
       "label": "Vanguard FTSE Emerging Markets ETF",
-      "price": 54.86,
-      "asOf": "2026-11-16",
-      "day": -2.7,
-      "month": -5.46,
-      "year": 0.02
+      "price": 54.29,
+      "asOf": "2026-11-17",
+      "day": -1.04,
+      "month": -6.44,
+      "year": 0.13
     },
     {
       "ticker": "SCHD",
       "label": "Schwab US Dividend Equity ETF",
-      "price": 35.86,
-      "asOf": "2026-11-16",
-      "day": -0.72,
-      "month": 4.4,
-      "year": 31.64
+      "price": 35.49,
+      "asOf": "2026-11-17",
+      "day": -1.02,
+      "month": 3.67,
+      "year": 31.46
     }
   ],
   "funds": [
     {
       "ticker": "VFIAX",
       "label": "Vanguard 500 Index Fund Admiral",
-      "price": 698.48,
-      "asOf": "2026-11-16",
-      "day": -0.39,
-      "month": -2.3,
-      "year": 12.21
+      "price": 685.18,
+      "asOf": "2026-11-17",
+      "day": -1.9,
+      "month": -3.1,
+      "year": 10.11
     },
     {
       "ticker": "VTSAX",
       "label": "Vanguard Total Stock Market Index Fund",
-      "price": 180.64,
-      "asOf": "2026-11-16",
-      "day": -0.38,
-      "month": -1.95,
-      "year": 12.48
+      "price": 177.23,
+      "asOf": "2026-11-17",
+      "day": -1.89,
+      "month": -2.67,
+      "year": 10.4
     },
     {
       "ticker": "FXAIX",
       "label": "Fidelity 500 Index Fund",
-      "price": 262.98,
-      "asOf": "2026-11-16",
-      "day": -0.39,
-      "month": -2.29,
-      "year": 12.27
+      "price": 257.97,
+      "asOf": "2026-11-17",
+      "day": -1.91,
+      "month": -3.1,
+      "year": 10.16
     },
     {
       "ticker": "VBTLX",
       "label": "Vanguard Total Bond Market Index Fund",
-      "price": 9.28,
-      "asOf": "2026-11-16",
-      "day": -0.22,
-      "month": -0.43,
-      "year": -5.11
+      "price": 9.29,
+      "asOf": "2026-11-17",
+      "day": 0.11,
+      "month": -0.32,
+      "year": -4.82
     }
   ],
   "treasuries": [
