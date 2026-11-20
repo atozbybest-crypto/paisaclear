@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from builder import (answers, articles, articles2, articles_extra1, articles_extra2, articles_extra3, articles_extra4,
-                     articles_long1, bbbp, calculator, calc_notes, checker, dividend_history, dividends, editorial, extra_guides, game, guide_notes, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start, us_funds, us_market, articles_us)  # noqa: E402
+                     articles_dividends, articles_long1, bbbp, calculator, calc_notes, checker, dividend_history, dividends, editorial, extra_guides, game, guide_notes, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start, us_funds, us_market, articles_us)  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -656,6 +656,21 @@ def main() -> int:
         body=dividend_history.page(_div_records),
         active="",
     ))
+
+    _div_by_symbol = {p["symbol"]: p for p in products
+                      if p["category"] == "dividend-champions"}
+    for _sym, _slug in articles_dividends.SLUGS.items():
+        _rec = _div_by_symbol.get(_sym)
+        if not _rec:
+            continue
+        articles.ARTICLES.append((_slug + ".html", articles_dividends.TITLES[_sym],
+                                  articles_dividends.LEDES[_sym], "15 November 2026"))
+        emit(_slug + ".html", page(
+            title=articles_dividends.TITLES[_sym] + " — PaisaClear",
+            description=articles_dividends.LEDES[_sym][:300],
+            body=articles_dividends.article(_rec),
+            active="",
+        ))
 
     emit("articles.html", page(
         title="Articles — PaisaClear",

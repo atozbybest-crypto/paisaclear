@@ -19,6 +19,12 @@ def _when(iso: str) -> str:
         return iso or "—"
 
 
+ARTICLE_SLUGS = {
+    "ADANIENT": "dividend-adani-enterprises", "AMBUJACEM": "dividend-ambuja-cements",
+    "ASIANPAINT": "dividend-asian-paints", "IOC": "dividend-indian-oil", "NTPC": "dividend-ntpc",
+}
+
+
 def page(records: list[dict]) -> str:
     records = sorted(records, key=lambda r: -r.get("streakYears", 0))
     total_payments = sum(len(r.get("dividends", [])) for r in records)
@@ -37,7 +43,10 @@ def page(records: list[dict]) -> str:
             cells += "<td class='mg-num muted'>—</td>"
         rows.append(
             f"<tr id='{esc(r['symbol'].lower())}'>"
-            f"<td><span class='mg-co'>{esc(r['name'])}</span>"
+            f"<td><span class='mg-co'>"
+            + (f"<a href='{ARTICLE_SLUGS[r['symbol']]}.html'>{esc(r['name'])}</a>"
+               if r["symbol"] in ARTICLE_SLUGS else esc(r["name"]))
+            + "</span>"
             f"<span class='mg-sector'>{esc(r['symbol'])} · {esc(r.get('sector') or 'Listed company')}</span></td>"
             f"<td class='mg-num'>{r.get('streakYears', 0)}</td>"
             f"{cells}"
