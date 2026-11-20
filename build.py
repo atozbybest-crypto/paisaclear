@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from builder import (answers, articles, articles2, articles_extra1, articles_extra2, articles_extra3, articles_extra4,
-                     articles_long1, bbbp, calculator, calc_notes, checker, dividends, editorial, extra_guides, game, guide_notes, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start, us_funds, us_market, articles_us)  # noqa: E402
+                     articles_long1, bbbp, calculator, calc_notes, checker, dividend_history, dividends, editorial, extra_guides, game, guide_notes, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start, us_funds, us_market, articles_us)  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -649,6 +649,14 @@ def main() -> int:
         active="",
     ))
 
+    _div_records = [p for p in products if p["category"] == "dividend-champions"]
+    emit("dividend-history.html", page(
+        title="Dividend history of 78 Indian companies — streaks and payments",
+        description="Dividend history for 78 Indian companies: Adani Enterprises, Ambuja Cements, Asian Paints, Indian Oil, NTPC and more, with payment dates, amounts and streak length.",
+        body=dividend_history.page(_div_records),
+        active="",
+    ))
+
     emit("articles.html", page(
         title="Articles — PaisaClear",
         description="Long-form pieces on the parts of Indian financial products that decide whether they work for you.",
@@ -754,10 +762,32 @@ def main() -> int:
          "meta": "No deposit · no interest · no calculator"},
     ]
 
+    TITLE_OVERRIDES = {
+        "post-office-monthly-income-scheme": (
+            "Post Office Monthly Income Scheme (POMIS) — rate, rules and calculator",
+            "Post Office Monthly Income Scheme (POMIS): current rate, monthly payout on your deposit, "
+            "the ₹9 lakh limit, tax treatment and a calculator.",
+        ),
+        "senior-citizens-savings-scheme": (
+            "Senior Citizens' Savings Scheme (SCSS) — rate, rules and calculator",
+            "SCSS: 8.20% paid quarterly for those over 60, the ₹30 lakh limit, premature closure rules "
+            "and a payout calculator.",
+        ),
+        "public-provident-fund": (
+            "Public Provident Fund (PPF) — rate, rules and 15-year calculator",
+            "PPF: current rate, the ₹1.5 lakh annual limit, withdrawal rules, tax treatment and a "
+            "15-year maturity calculator.",
+        ),
+    }
+
     for scheme in plan_schemes.SCHEMES:
+        _title, _desc = TITLE_OVERRIDES.get(
+            scheme["slug"],
+            (f"{scheme['name']} — rate, rules and calculator", scheme["intro"][:155]),
+        )
         emit(f"plans/{scheme['slug']}.html", page(
-            title=f"{scheme['name']} — rate, rules and calculator",
-            description=scheme["intro"][:155],
+            title=_title,
+            description=_desc,
             body=plan_schemes.page(scheme, guide_rates),
             base="../",
             active="plans",
@@ -791,8 +821,8 @@ def main() -> int:
     ))
 
     emit("rates.html", page(
-        title="Today's rates — PaisaClear",
-        description="Every small-savings rate and government bond yield this site tracks, with the date each applied.",
+        title="Today's rates: PPF, SSY, SCSS, NSC, post office term deposit and G-Sec yields",
+        description="Current small-savings rates, post office term deposit rates and government securities (G-Sec) yields, each with the date it applied and a link to the source.",
         body=extra_guides.rates_hub(guide_rates),
         active="browse",
     ))
