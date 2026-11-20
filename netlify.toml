@@ -4,7 +4,9 @@
   # The rebuild workflow commits "chore(build): regenerate site [skip ci]" after
   # every content push. Without this, each push deploys twice — once for your
   # commit and again for the bot's. Exit 0 means "skip this build".
-  ignore = "git log -1 --pretty=%B | grep -q '\[skip ci\]'"
+  # Single-quoted (TOML literal string) so the backslashes reach grep intact:
+  # in a double-quoted string "\[" is an invalid escape and breaks parsing.
+  ignore = 'git log -1 --pretty=%B | grep -q "\[skip ci\]"'
 
 [build.environment]
   PYTHON_VERSION = "3.12"

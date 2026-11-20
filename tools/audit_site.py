@@ -120,6 +120,15 @@ def audit_local() -> None:
     if dupes:
         fail(f"duplicate product names: {dupes[:3]}")
 
+    # A broken netlify.toml fails the deploy on the host, where this audit cannot
+    # see it — so parse it here, with the same rules Netlify uses.
+    try:
+        import tomllib
+        tomllib.loads((ROOT / "netlify.toml").read_text(encoding="utf-8"))
+        note("netlify.toml parses")
+    except Exception as error:
+        fail(f"netlify.toml does not parse: {error}")
+
     for asset in ("assets/css/styles.css", "assets/js/site.js", "assets/data/catalog.json"):
         if not (SITE / asset).exists():
             fail(f"missing asset: {asset}")
