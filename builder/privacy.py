@@ -75,6 +75,18 @@ def privacy(ctx: dict) -> str:
         sends Google your IP address, the page you are on, the referring site and identifiers stored in
         cookies, and Google may link that to your Google account if you are signed in.
       </p>
+      <h3>Analytics (Google Analytics 4)</h3>
+      <p>
+        We also use <strong>Google Analytics 4</strong> (measurement ID G-4MM1NBFKCT) to see which pages are
+        read, how long people stay and which country they arrive from. It reports totals, not individuals: we
+        never see your name, email or account. The same Google tag loads both, so a single page view records
+        one analytics hit and one advertising measurement.
+      </p>
+      <p>
+        Google Analytics sets cookies unless you block them. If you would rather not be counted, your browser's
+        tracking protection or an extension such as uBlock Origin will stop the tag entirely, and the site works
+        normally without it.
+      </p>
       <p>
         We see aggregate results — clicks, impressions, cost — not your identity. Google's handling of that
         data is governed by

@@ -361,6 +361,24 @@ def main() -> int:
             "gtag('js',new Date());gtag('config','" + token + "');</script>"
         )
 
+    # GA4 sits alongside the Ads tag: one gtag.js load, two config calls.
+    ga4_id = ((site_cfg.get("ga4") or {}).get("measurementId") or "").strip()
+    if ga4_id:
+        if "gtag('config','" + token + "')" in analytics_snippet:
+            # Append inside the same inline script, after the existing config call,
+            # so the GA4 config runs once gtag() has been defined.
+            analytics_snippet = analytics_snippet.replace(
+                "gtag('config','" + token + "');",
+                "gtag('config','" + token + "');gtag('config','" + ga4_id + "');",
+                1,
+            )
+        else:
+            analytics_snippet = (
+                '<script async src="https://www.googletagmanager.com/gtag/js?id=' + ga4_id + '"></script>'
+                "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+                "gtag('js',new Date());gtag('config','" + ga4_id + "');</script>"
+            ) + analytics_snippet
+
     google_token = ((site_cfg.get("verification") or {}).get("google") or "").strip()
     verify_tag = (
         '<meta name="google-site-verification" content="' + google_token + '">'
