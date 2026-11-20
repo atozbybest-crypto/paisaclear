@@ -389,9 +389,11 @@ def main() -> int:
             return True
         if rel_page.startswith("products/"):
             return True
-        if rel_page.startswith("us-funds/") and rel_page.count("/") == 1:
-            slug = rel_page.split("/")[1][:-5]
-            return slug in _us_fund_tickers  # ticker pages, not category pages
+        if rel_page.startswith("us-funds/"):
+            # Both the ticker pages and the category listings are card grids with
+            # little prose. The hub (/us-funds) and the comparison table carry the
+            # substance and stay indexable.
+            return True
         return False
 
     def emit(rel: str, markup: str) -> None:

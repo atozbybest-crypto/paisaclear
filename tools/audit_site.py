@@ -73,6 +73,25 @@ def audit_local() -> None:
     else:
         note("metadata: canonical, og:image and h1 on every page")
 
+    # An indexed page with almost no prose is the fastest route to a "low value
+    # content" rejection, so treat it as a build failure.
+    thin_pages = []
+    for rel, path in pages.items():
+        if rel in ("404.html", "feedback-thanks.html"):
+            continue
+        html = path.read_text(encoding="utf-8")
+        if 'name="robots" content="noindex' in html:
+            continue
+        body = html.split("<main", 1)[-1].split("</main>", 1)[0] if "<main" in html else html
+        words = len(re.findall(r"\b[A-Za-z][A-Za-z'-]+\b",
+                               re.sub(r"<[^>]+>", " ", re.sub(r"<script.*?</script>", " ", body, flags=re.S))))
+        if words < 150:
+            thin_pages.append(f"{rel} ({words} words)")
+    if thin_pages:
+        fail(f"{len(thin_pages)} indexed page(s) under 150 words: {thin_pages[:3]}")
+    else:
+        note("no indexed page under 150 words")
+
     sitemap = (SITE / "sitemap.xml").read_text(encoding="utf-8")
     urls = re.findall(r"<loc>([^<]+)</loc>", sitemap)
     noindexed = [p for p in pages if 'name="robots" content="noindex' in pages[p].read_text(encoding="utf-8")]
