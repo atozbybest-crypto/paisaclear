@@ -52,7 +52,7 @@ def page(ctx: dict, product: dict) -> str:
     </div>
     <h1>{esc(product["name"])}</h1>
     <p class="page-lede">{esc(product.get("oneLiner", ""))}</p>
-    <p class="page-meta">Dividend payments as recorded · last verified {esc(product["lastVerified"])}</p>
+    <p class="page-meta">Dividend payments as recorded</p>
   </div>
 </section>
 

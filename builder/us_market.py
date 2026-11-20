@@ -100,6 +100,13 @@ def page(data: dict) -> str:
         </table></div>
         <p class="guide-src">Source: US Department of the Treasury daily yield curve.</p>
 
+        <h2 class="guide-h2">Browse by category</h2>
+        <p class="guide-p">
+          The <a href="us-funds.html">US funds section</a> groups 62 mutual funds and ETFs into ten categories —
+          index, bonds, money market, dividend, sector, target date and more — each with its own return history.
+          <a href="us-compare.html">Compare them side by side</a>.
+        </p>
+
         <h2 class="guide-h2">Largest ETFs</h2>
         <div class="cmp-wrap"><table class="cmp-table">
           <thead><tr><th scope="col">Fund</th><th scope="col">Price</th><th scope="col">Day</th><th scope="col">Month</th><th scope="col">1 year</th><th scope="col">As of</th></tr></thead>

@@ -568,10 +568,7 @@ def product_page(ctx: dict, product: dict) -> str:
         fact_row("Payout", esc(product["payout"])),
         fact_row("Lock-in", esc(product.get("lockIn") or "None")),
         fact_row("Risk", risk_chip(product)),
-        fact_row("Last verified", esc(product["lastVerified"])),
     ])
-
-    review = product.get("review", {})
 
     return f"""
 <section class="product-head">
@@ -583,7 +580,6 @@ def product_page(ctx: dict, product: dict) -> str:
         <div class="badge-row">
           {return_chip(product, rt_by_id)}
           {risk_chip(product)}
-          <span class="chip chip-neutral">Verified record</span>
         </div>
         <h1>{esc(product["name"])}</h1>
         <p class="product-provider">{esc(product["provider"])} · {esc(category["name"])}</p>
@@ -676,13 +672,10 @@ def product_page(ctx: dict, product: dict) -> str:
         </div>
 
         <div class="aside-card">
-          <h2>Verification</h2>
+          <h2>Data as of</h2>
           <p class="aside-note">
-            Data as of <strong>{esc(data_as_of)}</strong> · reviewed <strong>{esc(product["lastVerified"])}</strong>.
-            Approved for publication by {esc(review.get("reviewer") or "an editor")}.
-          </p>
-          <p class="aside-note">
-            Status: <span class="status status-approved">Approved</span>
+            <strong>{esc(data_as_of)}</strong> — the date of the figures shown. This page is rebuilt every
+            morning and evening, so the date you see is the last refresh.
           </p>
         </div>
       </aside>

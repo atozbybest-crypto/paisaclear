@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from builder import (answers, articles, articles2, articles_extra1, articles_extra2, articles_extra3, articles_extra4,
-                     articles_long1, bbbp, calculator, calc_notes, checker, dividends, editorial, extra_guides, game, guide_notes, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start, us_companies, us_market, articles_us)  # noqa: E402
+                     articles_long1, bbbp, calculator, calc_notes, checker, dividends, editorial, extra_guides, game, guide_notes, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start, us_funds, us_market, articles_us)  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -312,7 +312,8 @@ def main() -> int:
                     ("calculators/",))
             + group("Markets",
                     link("us-market.html", "US markets")
-                    + link("us-companies.html", "US companies"),
+                    + link("us-funds.html", "US funds")
+                    + link("us-compare.html", "Compare US funds"),
                     ("us-market.html",))
             + group("Money news <span class=\"badge-new\">New</span>",
                     link("news.html", "Today's headlines")
@@ -378,6 +379,7 @@ def main() -> int:
     # Pages Google should not index: aggregated news, and the two sections
     # that are templated per record. They stay live for readers.
     noindex_pages: set[str] = set()
+    _us_fund_tickers: set[str] = set()
 
     def _is_noindex(rel_page: str) -> bool:
         # The product catalogue is templated per record: 310 pages sharing 83% of
@@ -387,8 +389,9 @@ def main() -> int:
             return True
         if rel_page.startswith("products/"):
             return True
-        if rel_page.startswith("us-companies/"):
-            return True
+        if rel_page.startswith("us-funds/") and rel_page.count("/") == 1:
+            slug = rel_page.split("/")[1][:-5]
+            return slug in _us_fund_tickers  # ticker pages, not category pages
         return False
 
     def emit(rel: str, markup: str) -> None:
@@ -575,22 +578,37 @@ def main() -> int:
         active="us",
     ))
 
-    _us_companies = load_json(CONTENT / "us_companies.json") if (CONTENT / "us_companies.json").exists() else []
-    if _us_companies:
-        emit("us-companies.html", page(
-            title="US companies — revenue and filings from SEC EDGAR",
-            description="Revenue, net income and recent SEC filings for the largest listed US companies, taken from their own 10-K and 10-Q filings.",
-            body=us_companies.hub(_us_companies),
+    _us_funds = load_json(CONTENT / "us_funds.json") if (CONTENT / "us_funds.json").exists() else {}
+    if _us_funds.get("records"):
+        _us_fund_tickers.update(r["ticker"].lower() for r in _us_funds["records"])
+        emit("us-funds.html", page(
+            title="US funds and ETFs — categories, returns and comparison",
+            description="US-listed mutual funds and ETFs with price history, returns and distribution yield, grouped by category and dated.",
+            body=us_funds.hub(_us_funds),
             active="us",
         ))
-        for _c in _us_companies:
-            emit(f"us-companies/{_c['ticker'].lower()}.html", page(
-                title=f"{_c['name']} ({_c['ticker']}) — SEC filings and financials",
-                description=f"Revenue, net income and recent SEC filings for {_c['name']}, as reported in its own 10-K.",
-                body=us_companies.detail(_c),
+        for _cat in _us_funds["categories"]:
+            emit(f"us-funds/{us_funds.slugify(_cat)}.html", page(
+                title=f"{_cat} funds — US market",
+                description=f"US {_cat.lower()} mutual funds and ETFs with returns and the date each price was observed.",
+                body=us_funds.category_page(_us_funds, _cat),
                 base="../",
                 active="us",
             ))
+        for _r in _us_funds["records"]:
+            emit(f"us-funds/{_r['ticker'].lower()}.html", page(
+                title=f"{_r['name']} ({_r['ticker']}) — returns and price history",
+                description=f"{_r['name']}: {_r['kind']} in the {_r['category']} category, with one, three and five-year returns and the price as of {_r['asOf']}.",
+                body=us_funds.product_page(_r),
+                base="../",
+                active="us",
+            ))
+        emit("us-compare.html", page(
+            title="Compare US funds — returns and yield side by side",
+            description="All US funds and ETFs on this site in one table: price, one, three and five-year returns and distribution yield.",
+            body=us_funds.compare_page(_us_funds),
+            active="us",
+        ))
 
     emit("market-game.html", page(
         title="The Market Game — PaisaClear",

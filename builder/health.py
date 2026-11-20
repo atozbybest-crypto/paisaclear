@@ -43,7 +43,7 @@ def page(ctx: dict, product: dict) -> str:
     </div>
     <h1>{esc(product["name"])}</h1>
     <p class="page-lede">{esc(product.get("oneLiner", ""))}</p>
-    <p class="page-meta">Plan features as described by the insurer · last checked {esc(product["lastVerified"])}</p>
+    <p class="page-meta">Plan features as described by the insurer</p>
   </div>
 </section>
 

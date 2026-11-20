@@ -417,5 +417,26 @@ def page(
     <p class="footer-meta">Rates dated and sourced · Product records reviewed by hand</p>
   </div>
 </footer>
+<div class="askpaisa" id="askpaisa" data-base="{base}">
+  <button class="ap-launch" id="ap-launch" type="button" aria-controls="ap-panel" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+      <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.9 8.9 0 0 1-3.8-.8L3 21l1.9-5a8.2 8.2 0 0 1-.9-3.8 8.4 8.4 0 0 1 8.4-9A8.4 8.4 0 0 1 21 11.5Z"/>
+    </svg>
+    AskPaisa
+  </button>
+  <section class="ap-panel" id="ap-panel" aria-hidden="true" aria-label="AskPaisa, answers from this site">
+    <header class="ap-head">
+      <p class="ap-title">AskPaisa<span>Answers only from this site</span></p>
+      <button class="ap-close" id="ap-close" type="button" aria-label="Close">×</button>
+    </header>
+    <div class="ap-log" id="ap-log" aria-live="polite"></div>
+    <form class="ap-form" id="ap-form">
+      <label class="sr-only" for="ap-input">Ask about a product, scheme or page</label>
+      <input class="ap-input" id="ap-input" type="text" autocomplete="off" placeholder="Try: sukanya samriddhi rules">
+      <button class="ap-send" type="submit">Ask</button>
+    </form>
+  </section>
+</div>
+<script src="{base}assets/js/askpaisa.js" defer></script>
 {extra_scripts}<!--ANALYTICS--></body>
 </html>"""

@@ -103,8 +103,9 @@ ARTICLE = _shell(
     <h2 class="guide-h2">Where to look at the US side here</h2>
     <p class="guide-p">
       The <a href="us-market.html">US market page</a> carries indices, Treasury yields and the largest ETFs with
-      the date each figure was observed. The <a href="us-companies.html">US companies page</a> shows revenue and
-      filings straight from SEC EDGAR, so the numbers come from the company rather than a summary of it.
+      the date each figure was observed. The <a href="us-funds.html">US funds section</a> groups 62 mutual funds
+      and ETFs by category, each with its own return history, and the
+      <a href="us-compare.html">comparison table</a> puts them side by side.
     </p>
     <p class="guide-p">
       Neither page recommends anything. What they do is let you look at a US business with the same discipline
