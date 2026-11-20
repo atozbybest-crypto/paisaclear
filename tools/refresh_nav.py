@@ -44,6 +44,31 @@ def money(value: float) -> str:
     return "₹" + text
 
 
+
+AMFI_URL = "https://www.amfiindia.com/spages/NAVAll.txt"
+
+
+def fetch_amfi_bulk() -> dict:
+    """One request, every scheme. Returns {scheme code: (nav, iso date)}."""
+    request = urllib.request.Request(AMFI_URL, headers={"User-Agent": UA})
+    with urllib.request.urlopen(request, timeout=90, context=ssl.create_default_context()) as response:
+        text = response.read().decode("utf-8", "replace")
+
+    out = {}
+    for line in text.splitlines():
+        parts = line.split(";")
+        if len(parts) < 8:
+            continue
+        code, nav, date_text = parts[0].strip(), parts[6].strip(), parts[7].strip()
+        if not code.isdigit() or not nav:
+            continue
+        try:
+            as_of = datetime.strptime(date_text, "%d-%b-%Y").strftime("%Y-%m-%d")
+            out[code] = (nav, as_of)
+        except ValueError:
+            continue
+    return out
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
@@ -58,8 +83,18 @@ def main() -> int:
 
     latest_dates = {}
 
+    bulk = {}
+    try:
+        bulk = fetch_amfi_bulk()
+        print(f"  AMFI bulk feed: {len(bulk)} schemes")
+    except Exception as error:
+        print(f"  AMFI bulk feed unavailable ({type(error).__name__}) — using per-scheme API")
+
     def refresh(key: str):
         code = key.split("-", 1)[1]
+        if code in bulk:
+            nav, as_of = bulk[code]
+            return key, nav, as_of
         try:
             payload = http_json(f"https://api.mfapi.in/mf/{code}")
             row = payload["data"][0]
@@ -75,7 +110,8 @@ def main() -> int:
                 failed.append((key, date_text))
                 continue
             try:
-                as_of = datetime.strptime(date_text, "%d-%m-%Y").strftime("%Y-%m-%d")
+                as_of = (date_text if len(date_text) == 10 and date_text[4] == "-"
+                         else datetime.strptime(date_text, "%d-%m-%Y").strftime("%Y-%m-%d"))
             except ValueError:
                 failed.append((key, "bad date"))
                 continue
@@ -102,6 +138,19 @@ def main() -> int:
     print(f"  failed    : {len(failed)}")
     if latest_dates:
         print(f"  newest NAV date: {newest}")
+
+    # Fail loudly rather than committing a half-stale file: a run that cannot
+    # reach the source should turn the workflow red, not quietly publish old NAVs.
+    if failed and len(failed) > max(5, len(keys) // 10):
+        print(f"  ERROR: {len(failed)} of {len(keys)} schemes could not be fetched", file=sys.stderr)
+        return 1
+    try:
+        age = (datetime.now() - datetime.strptime(newest, "%Y-%m-%d")).days
+        if age > 3:
+            print(f"  ERROR: newest NAV is {age} days old", file=sys.stderr)
+            return 1
+    except (ValueError, TypeError):
+        pass
     for key, error in failed[:5]:
         print(f"    ! {key}: {error}")
     print("-" * 54)

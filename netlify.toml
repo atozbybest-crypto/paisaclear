@@ -1,6 +1,10 @@
 [build]
   # The site is prebuilt and committed, so there is nothing to compile.
   publish = "site"
+  # The rebuild workflow commits "chore(build): regenerate site [skip ci]" after
+  # every content push. Without this, each push deploys twice — once for your
+  # commit and again for the bot's. Exit 0 means "skip this build".
+  ignore = "git log -1 --pretty=%B | grep -q '\[skip ci\]'"
 
 [build.environment]
   PYTHON_VERSION = "3.12"
