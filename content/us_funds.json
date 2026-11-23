@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-22T16:01+00:00",
+  "fetchedAt": "2026-11-23T03:31+00:00",
   "records": [
     {
       "ticker": "SPY",
@@ -423,12 +423,12 @@
       "category": "Money market",
       "kind": "Mutual fund",
       "price": 1.0,
-      "asOf": "2026-11-21",
+      "asOf": "2026-11-01",
       "c1": 0.0,
       "c3": 0.0,
       "c5": null,
       "yield": 0.0,
-      "points": 41
+      "points": 40
     },
     {
       "ticker": "VUSXX",
@@ -436,12 +436,12 @@
       "category": "Money market",
       "kind": "Mutual fund",
       "price": 1.0,
-      "asOf": "2026-11-21",
+      "asOf": "2026-11-01",
       "c1": 0.0,
       "c3": 0.0,
       "c5": null,
       "yield": 0.0,
-      "points": 41
+      "points": 40
     },
     {
       "ticker": "SCHD",
