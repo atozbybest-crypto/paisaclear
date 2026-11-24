@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from builder import (answers, articles, articles2, articles_extra1, articles_extra2, articles_extra3, articles_extra4,
-                     articles_dividends, articles_long1, bbbp, calculator, calc_notes, checker, dividend_history, dividends, editorial, extra_guides, game, guide_notes, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start, us_funds, us_market, articles_us)  # noqa: E402
+                     articles_dividends, articles_long1, bbbp, calculator, calc_notes, checker, dividend_history, dividends, editorial, extra_guides, game, gold, guide_notes, health, finder, guides, income_tax, legal, loan, news, pages, plan_schemes, plans, plan, planner, privacy, ssy, start, us_funds, us_market, articles_us)  # noqa: E402
 import builder.site as site_mod  # noqa: E402
 from builder.site import ICONS, page  # noqa: E402
 
@@ -311,7 +311,8 @@ def main() -> int:
                     + link("calculators/income-tax.html", "Income tax"),
                     ("calculators/",))
             + group("Markets",
-                    link("us-market.html", "US markets")
+                    link("gold-price.html", "Gold price")
+                    + link("us-market.html", "US markets")
                     + link("us-funds.html", "US funds")
                     + link("us-compare.html", "Compare US funds"),
                     ("us-market.html",))
@@ -629,6 +630,14 @@ def main() -> int:
             body=us_funds.compare_page(_us_funds),
             active="us",
         ))
+
+    _gold = load_json(CONTENT / "gold.json") if (CONTENT / "gold.json").exists() else {}
+    emit("gold-price.html", page(
+        title="Gold price in India today, and the price history",
+        description="Gold price per 10 grams in rupees, the international dollar price and the NSE gold ETF, with monthly history and a chart. Every figure dated.",
+        body=gold.page(_gold),
+        active="",
+    ))
 
     emit("market-game.html", page(
         title="The Market Game — PaisaClear",

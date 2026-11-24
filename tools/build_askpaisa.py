@@ -101,6 +101,7 @@ def main() -> int:
         ("plans.html", "Plans", "Government scheme guides."),
         ("us-funds.html", "US funds and ETFs", "Sixty-two US funds across ten categories."),
         ("us-compare.html", "Compare US funds", "All US funds in one table."),
+        ("gold-price.html", "Gold price", "Gold per 10 grams, the dollar price and the NSE gold ETF, with history."),
         ("us-market.html", "US market", "Indices, Treasury yields and deposit rates."),
         ("news.html", "Money news", "Headlines from Indian finance publishers."),
         ("about-editor.html", "About the editor", "Who writes PaisaClear."),

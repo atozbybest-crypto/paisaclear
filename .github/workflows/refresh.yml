@@ -94,6 +94,12 @@ jobs:
           PYTHONIOENCODING: utf-8
         run: python tools/build_askpaisa.py
 
+      - name: Refresh gold price
+        if: success() && steps.guard.outputs.skip != 'true'
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python tools/fetch_gold.py || echo "Gold fetch skipped"
+
       - name: Rebuild the site
         if: success() && steps.guard.outputs.skip != 'true'
         env:
@@ -113,7 +119,7 @@ jobs:
         run: |
           git config user.name "paisaclear-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add content/rates.json content/us_market.json content/us_funds.json site
+          git add content/rates.json content/us_market.json content/us_funds.json content/gold.json site
           if git diff --cached --quiet; then
             echo "No rate changes today."
           else
