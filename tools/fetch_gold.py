@@ -1,14 +1,9 @@
 #!/usr/bin/env python3
-"""Fetch gold prices and history, in dollars and in rupees.
+"""Fetch gold prices with monthly OHLC, in dollars and in rupees.
 
-Three independent figures, each with its own date:
-  * international gold futures, USD per troy ounce
-  * USD/INR
-  * the NSE gold ETF (GOLDBEES), rupees per unit
-
-The rupee-per-10-gram figure is computed from the first two. It is a reference
-conversion, not the landed Indian price — import duty and dealer premium are not
-in it, and the page says so.
+Yahoo's monthly series carries open/high/low/close, so the page can draw
+candlesticks instead of a line. The rupee candle is the dollar candle converted
+at that month's USD/INR rate.
 
     python tools/fetch_gold.py
 """
@@ -37,73 +32,90 @@ def chart(symbol: str, period: str, interval: str) -> dict | None:
             payload = json.loads(response.read())
         result = payload["chart"]["result"][0]
         stamps = result.get("timestamp", [])
-        closes = result["indicators"]["quote"][0]["close"]
-        points = [
-            {"d": datetime.fromtimestamp(s, tz=timezone.utc).date().isoformat(), "v": round(c, 2)}
-            for s, c in zip(stamps, closes) if c is not None
-        ]
-        if not points:
-            return None
-        return {"points": points, "last": points[-1]}
+        quote = result["indicators"]["quote"][0]
+
+        points = []
+        for i, stamp in enumerate(stamps):
+            row = {k: quote.get(k, [None] * len(stamps))[i] for k in ("open", "high", "low", "close")}
+            if row["close"] is None or row["open"] is None:
+                continue
+            points.append({
+                "d": datetime.fromtimestamp(stamp, tz=timezone.utc).date().isoformat(),
+                "o": round(row["open"], 2),
+                "h": round(row["high"] or row["close"], 2),
+                "l": round(row["low"] or row["close"], 2),
+                "c": round(row["close"], 2),
+            })
+        return {"points": points} if points else None
     except Exception:
         return None
-
-
-def pct_change(points: list[dict], days_back: int) -> float | None:
-    if len(points) <= days_back:
-        return None
-    old = points[-1 - days_back]["v"]
-    if not old:
-        return None
-    return round((points[-1]["v"] / old - 1) * 100, 2)
 
 
 def per_10g(usd_oz: float, usdinr: float) -> float:
     return round(usd_oz * usdinr / OUNCE_IN_GRAMS * 10, 0)
 
 
-def main() -> int:
-    daily = chart("GC=F", "6y", "1d")
-    monthly = chart("GC=F", "6y", "1mo")
-    fx_daily = chart("USDINR=X", "6y", "1d")
-    fx_monthly = chart("USDINR=X", "6y", "1mo")
-    etf_monthly = chart("GOLDBEES.NS", "6y", "1mo")
+def pct_change(points: list[dict], back: int) -> float | None:
+    if len(points) <= back:
+        return None
+    old = points[-1 - back]["c"]
+    return round((points[-1]["c"] / old - 1) * 100, 2) if old else None
 
-    if not (daily and fx_daily):
-        print("gold fetch failed")
+
+def main() -> int:
+    gold_daily = chart("GC=F", "3y", "1d")
+    gold_monthly = chart("GC=F", "7y", "1mo")
+    fx_daily = chart("USDINR=X", "3y", "1d")
+    fx_monthly = chart("USDINR=X", "7y", "1mo")
+
+    if not (gold_daily and gold_monthly and fx_daily and fx_monthly):
+        print("gold fetch incomplete")
         return 1
 
-    usd_oz = daily["last"]["v"]
-    usdinr = fx_daily["last"]["v"]
+    # month -> rupee rate, so every gold month can be converted even if the two
+    # series do not line up exactly on the same day
+    fx_by_month = {p["d"][:7]: p["c"] for p in fx_monthly["points"]}
 
-    # monthly history in rupees per 10 g, built by pairing the two series by date
-    fx_by_month = {p["d"][:7]: p["v"] for p in (fx_monthly or {}).get("points", [])}
-    history = []
-    for point in (monthly or {}).get("points", []):
+    months = []
+    for point in gold_monthly["points"]:
         key = point["d"][:7]
         rate = fx_by_month.get(key)
-        if rate:
-            history.append({"m": key, "usd": point["v"], "inr": round(rate, 2),
-                            "per10g": per_10g(point["v"], rate)})
+        if rate is None:
+            # fall back to the most recent earlier month
+            earlier = [k for k in fx_by_month if k <= key]
+            if not earlier:
+                continue
+            rate = fx_by_month[max(earlier)]
+        months.append({
+            "m": key,
+            "usd": {"o": point["o"], "h": point["h"], "l": point["l"], "c": point["c"]},
+            "fx": round(rate, 2),
+            "inr": {
+                "o": per_10g(point["o"], rate), "h": per_10g(point["h"], rate),
+                "l": per_10g(point["l"], rate), "c": per_10g(point["c"], rate),
+            },
+        })
+
+    months.sort(key=lambda r: r["m"])
+
+    usd_now = gold_daily["points"][-1]
+    fx_now = fx_daily["points"][-1]
 
     payload = {
         "fetchedAt": datetime.now(timezone.utc).isoformat(timespec="minutes"),
-        "usdPerOunce": {"value": usd_oz, "asOf": daily["last"]["d"],
-                        "day": pct_change(daily["points"], 1),
-                        "month": pct_change(daily["points"], 21),
-                        "year": pct_change(daily["points"], 252)},
-        "usdinr": {"value": usdinr, "asOf": fx_daily["last"]["d"]},
-        "per10g": {"value": per_10g(usd_oz, usdinr), "asOf": daily["last"]["d"]},
-        "etf": ({"value": etf_monthly["points"][-1]["v"], "asOf": etf_monthly["points"][-1]["d"]}
-                if etf_monthly else None),
-        "history": history[-72:],
-        "etfHistory": ([{"m": p["d"][:7], "v": p["v"]} for p in etf_monthly["points"]][-72:]
-                       if etf_monthly else []),
+        "usdPerOunce": {"value": usd_now["c"], "asOf": usd_now["d"],
+                        "month": pct_change(gold_daily["points"], 21),
+                        "year": pct_change(gold_daily["points"], 252)},
+        "usdinr": {"value": fx_now["c"], "asOf": fx_now["d"]},
+        "per10g": {"value": per_10g(usd_now["c"], fx_now["c"]), "asOf": usd_now["d"]},
+        "months": months[-84:],
     }
 
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"gold: ${usd_oz:,.2f}/oz · ₹{usdinr:.2f}/$ · ₹{payload['per10g']['value']:,.0f} per 10 g "
-          f"({len(history)} months of history)")
+    last = months[-1]
+    print(f"gold: ₹{last['inr']['c']:,.0f}/10g · ${last['usd']['c']:,.0f}/oz · months: {len(months)}")
+    print(f"  latest month {last['m']}: open ₹{last['inr']['o']:,.0f} high ₹{last['inr']['h']:,.0f} "
+          f"low ₹{last['inr']['l']:,.0f} close ₹{last['inr']['c']:,.0f}")
     return 0
 
 
