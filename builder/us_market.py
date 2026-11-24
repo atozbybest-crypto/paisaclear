@@ -1,8 +1,4 @@
-"""US market page — indices, Treasury yields, ETFs, funds and deposit rates.
-
-Aimed at an Indian reader looking at US markets, so every table carries its
-observation date and a link to the source.
-"""
+"""US market overview — indices, Treasury yields and the largest US funds."""
 
 from __future__ import annotations
 
@@ -10,57 +6,55 @@ from .site import esc, icon
 
 
 def _when(iso: str) -> str:
+    from datetime import date
     try:
-        from datetime import date
-        d = date.fromisoformat(iso)
+        d = date.fromisoformat(str(iso)[:10])
         return f"{d.day} {d.strftime('%b %Y')}"
     except (TypeError, ValueError):
-        return iso or "—"
+        return str(iso or "—")
 
 
 def _change(v) -> str:
     if v is None:
-        return "—"
+        return '<span class="muted">—</span>'
     cls = "is-up" if v >= 0 else "is-down"
     return f'<span class="{cls}">{v:+.2f}%</span>'
 
 
 def page(data: dict) -> str:
-    fetched = _when((data.get("fetchedAt") or "")[:10])
     indices = data.get("indices", [])
-    etfs = data.get("etfs", [])
-    funds = data.get("funds", [])
+    etfs = sorted(data.get("etfs", []), key=lambda x: x["label"])
+    funds = sorted(data.get("funds", []), key=lambda x: x["label"])
     treasuries = data.get("treasuries", [])
-    deposits = data.get("deposits", [])
+    fetched = _when(data.get("fetchedAt", ""))
 
-    index_cards = "".join(
+    cards = "".join(
         f"""<div class="us-card">
   <span class="us-name">{esc(i['label'])}</span>
   <strong class="us-value">{i['price']:,.2f}</strong>
-  <span class="us-meta">day {_change(i.get('day'))} · 1y {_change(i.get('year'))}</span>
+  <span class="us-meta">day {_change(i.get('day'))} · 1 year {_change(i.get('year'))}</span>
   <span class="us-date">as of {esc(_when(i.get('asOf', '')))}</span>
 </div>""" for i in indices
     )
 
     treasury_rows = "".join(
-        f"<tr><td>{esc(t['label'])}</td><td class='mg-num'>{t['value']:.2f}%</td>"
-        f"<td class='mg-num small'>{esc(t.get('asOf', ''))}</td></tr>" for t in treasuries
-    ) or "<tr><td colspan='3' class='mg-empty'>Treasury feed unavailable — the last published curve is on treasury.gov.</td></tr>"
+        f"<tr><td>{esc(t['label'].replace('Yr', 'year'))}</td>"
+        f"<td class='mg-num'>{t['value']:.2f}%</td>"
+        f"<td class='mg-num small'>{esc(t.get('asOf', ''))}</td></tr>"
+        for t in treasuries
+    ) or "<tr><td colspan='3' class='mg-empty'>Treasury feed unavailable.</td></tr>"
 
-    def rows(items, show_year=True):
+    def fund_rows(items: list[dict]) -> str:
         return "".join(
-            f"<tr><td><span class='mg-co'>{esc(x['label'])}</span><span class='mg-sector'>{esc(x['ticker'])}</span></td>"
+            f"<tr>"
+            f"<td><span class='mg-co'>{esc(x['label'])}</span><span class='mg-sector'>{esc(x['ticker'])}</span></td>"
             f"<td class='mg-num'>{x['price']:,.2f}</td>"
             f"<td class='mg-num'>{_change(x.get('day'))}</td>"
             f"<td class='mg-num'>{_change(x.get('month'))}</td>"
-            f"{f'<td class=mg-num>{_change(x.get(chr(121)+chr(101)+chr(97)+chr(114)))}</td>' if show_year else ''}"
-            f"<td class='mg-num small'>{esc(_when(x.get('asOf', '')))}</td></tr>"
-            for x in items
-        )
-
-    deposit_rows = "".join(
-        f"<tr><td>{esc(d['label'])}</td><td class='mg-num'>{d['value']:.2f}%</td></tr>" for d in deposits
-    ) or "<tr><td colspan='2' class='mg-empty'>Deposit rate feed unavailable.</td></tr>"
+            f"<td class='mg-num'>{_change(x.get('year'))}</td>"
+            f"<td class='mg-num small'>{esc(_when(x.get('asOf', '')))}</td>"
+            f"</tr>" for x in items
+        ) or "<tr><td colspan='6' class='mg-empty'>No data.</td></tr>"
 
     return f"""
 <section class="page-head">
@@ -76,90 +70,87 @@ def page(data: dict) -> str:
 
     <h1>US markets</h1>
     <p class="page-lede">
-      The US side of the site: indices, Treasury yields, the largest ETFs and index funds, and average deposit
-      rates. Every figure carries the date it was observed and a link to the source.
+      The three main indices, the Treasury yield curve, and the largest US-listed funds — with the date every
+      figure was observed. Prices in dollars; nothing here is a recommendation.
     </p>
-    <p class="page-meta">Fetched {esc(fetched)} · prices are market data, not recommendations</p>
+    <p class="page-meta">Fetched {esc(fetched)} · refreshed at 09:00 and 21:30 IST</p>
   </div>
 </section>
 
 <section class="section">
   <div class="shell">
-    <div class="us-grid">{index_cards}</div>
+    <div class="us-grid">{cards}</div>
   </div>
 </section>
 
 <section class="section section-tint">
   <div class="shell">
-    <div class="split">
-      <div class="split-main">
-        <h2 class="subhead">Treasury yields</h2>
-        <div class="cmp-wrap"><table class="cmp-table">
-          <thead><tr><th scope="col">Maturity</th><th scope="col">Yield</th><th scope="col">Curve date</th></tr></thead>
-          <tbody>{treasury_rows}</tbody>
-        </table></div>
-        <p class="guide-src">Source: US Department of the Treasury daily yield curve.</p>
+    <h2 class="subhead">Treasury yield curve</h2>
+    <div class="cmp-wrap"><table class="cmp-table">
+      <thead><tr>
+        <th scope="col">Maturity</th><th scope="col">Yield</th><th scope="col">Curve date</th>
+      </tr></thead>
+      <tbody>{treasury_rows}</tbody>
+    </table></div>
+    <p class="guide-src">
+      Published by the US Department of the Treasury. A curve where the 2-year yields more than the 30-year is
+      inverted, which historically precedes slower growth — this one is not.
+    </p>
+  </div>
+</section>
 
-        <h2 class="guide-h2">Browse by category</h2>
-        <p class="guide-p">
-          The <a href="us-funds.html">US funds section</a> groups 62 mutual funds and ETFs into ten categories —
-          index, bonds, money market, dividend, sector, target date and more — each with its own return history.
-          <a href="us-compare.html">Compare them side by side</a>.
-        </p>
+<section class="section">
+  <div class="shell">
+    <h2 class="subhead">Largest US ETFs</h2>
+    <div class="cmp-wrap"><table class="cmp-table">
+      <thead><tr>
+        <th scope="col">Fund</th><th scope="col">Price</th><th scope="col">Day</th>
+        <th scope="col">Month</th><th scope="col">1 year</th><th scope="col">As of</th>
+      </tr></thead>
+      <tbody>{fund_rows(etfs)}</tbody>
+    </table></div>
 
-        <h2 class="guide-h2">Largest ETFs</h2>
-        <div class="cmp-wrap"><table class="cmp-table">
-          <thead><tr><th scope="col">Fund</th><th scope="col">Price</th><th scope="col">Day</th><th scope="col">Month</th><th scope="col">1 year</th><th scope="col">As of</th></tr></thead>
-          <tbody>{rows(etfs)}</tbody>
-        </table></div>
+    <h2 class="guide-h2">Index mutual funds</h2>
+    <div class="cmp-wrap"><table class="cmp-table">
+      <thead><tr>
+        <th scope="col">Fund</th><th scope="col">NAV</th><th scope="col">Day</th>
+        <th scope="col">Month</th><th scope="col">1 year</th><th scope="col">As of</th>
+      </tr></thead>
+      <tbody>{fund_rows(funds)}</tbody>
+    </table></div>
+    <p class="guide-src">
+      Prices and NAV history from Yahoo Finance. Mutual fund NAVs are struck once a day after the US close;
+      ETF prices move through the session.
+    </p>
 
-        <h2 class="guide-h2">Index mutual funds</h2>
-        <div class="cmp-wrap"><table class="cmp-table">
-          <thead><tr><th scope="col">Fund</th><th scope="col">NAV</th><th scope="col">Day</th><th scope="col">Month</th><th scope="col">1 year</th><th scope="col">As of</th></tr></thead>
-          <tbody>{rows(funds)}</tbody>
-        </table></div>
-        <p class="guide-src">Prices and NAV history from Yahoo Finance. Mutual fund NAVs are struck once a day, after the US close.</p>
-      </div>
+    <h2 class="guide-h2">The full list, by category</h2>
+    <p class="guide-p">
+      These are the largest funds only. The <a href="us-funds.html">US funds section</a> groups 62 mutual funds
+      and ETFs into ten categories — index, bonds, money market, dividend, sector, target date, balanced and
+      more — each with its own return history and the date attached.
+      <a href="us-compare.html">Compare all of them in one table</a>.
+    </p>
 
-      <aside class="split-aside">
-        <div class="aside-card">
-          <h2>Average deposit rates</h2>
-          <table class="mg-table mg-small">
-            <thead><tr><th>Product</th><th class="mg-num">Rate</th></tr></thead>
-            <tbody>{deposit_rows}</tbody>
-          </table>
-          <p class="aside-note">Source: FDIC national rates. US deposit rates are set by each bank, not by the regulator — these are averages.</p>
-        </div>
-
-        <div class="aside-card">
-          <h2>Before you invest from India</h2>
-          <ul class="check-list">
-            <li>{icon("alert", "icon icon-sm")}<span>Remitting money abroad falls under the RBI's liberalised remittance scheme, with a TCS threshold you should check for the current year.</span></li>
-            <li>{icon("alert", "icon icon-sm")}<span>US dividends are taxed at source, and India gives a foreign tax credit — the paperwork matters.</span></li>
-            <li>{icon("alert", "icon icon-sm")}<span><strong>Estate tax.</strong> US-situated shares held by a non-resident can be exposed to US estate tax above a low threshold. This catches Indian investors by surprise.</span></li>
-            <li>{icon("alert", "icon icon-sm")}<span>Currency moves can wipe out a gain that looks good in dollars.</span></li>
-          </ul>
-        </div>
-      </aside>
-    </div>
+    <h2 class="guide-h2">Average US deposit rates</h2>
+    <p class="guide-p">
+      Deposit rates are set by each bank, not by a regulator, so there is no single national rate to publish.
+      The FDIC publishes a weekly national average across insured institutions:
+      <a href="https://www.fdic.gov/national-rates-and-rate-caps" target="_blank" rel="noopener noreferrer">
+      FDIC national rates and rate caps ↗</a>.
+    </p>
   </div>
 </section>
 
 <section class="section">
   <div class="shell shell-narrow">
     <div class="calc-notes">
-      <h2>What this page is not</h2>
+      <h2>Before investing from India</h2>
       <ul class="check-list">
-        <li>{icon("alert", "icon icon-sm")}<span>Not a recommendation, and not a comparison of expense ratios, tracking error or liquidity.</span></li>
-        <li>{icon("alert", "icon icon-sm")}<span>Not tax advice. Cross-border treatment depends on your residency and on rules that change.</span></li>
-        <li>{icon("check", "icon icon-sm")}<span>Every figure carries its date. Prices move continuously; a page is a snapshot.</span></li>
+        <li>{icon("alert", "icon icon-sm")}<span>Remittances fall under the RBI's liberalised remittance scheme, with a TCS threshold that changes — check the current rule.</span></li>
+        <li>{icon("alert", "icon icon-sm")}<span>US dividends are withheld at source; India gives a foreign tax credit, and the paperwork decides whether you actually get it.</span></li>
+        <li>{icon("alert", "icon icon-sm")}<span><strong>Estate tax.</strong> US-situated shares held by a non-resident can be exposed above a low threshold. The <a href="us-investing-from-india.html">cross-border guide</a> explains it.</span></li>
+        <li>{icon("alert", "icon icon-sm")}<span>Returns here are in dollars. Your return in rupees includes the exchange rate.</span></li>
       </ul>
-      <p class="muted">
-        Sources: <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve" target="_blank" rel="noopener noreferrer">US Treasury</a> ·
-        <a href="https://www.fdic.gov/national-rates-and-rate-caps" target="_blank" rel="noopener noreferrer">FDIC</a> ·
-        <a href="https://finance.yahoo.com" target="_blank" rel="noopener noreferrer">Yahoo Finance</a> ·
-        <a href="https://www.sec.gov/edgar" target="_blank" rel="noopener noreferrer">SEC EDGAR</a>
-      </p>
     </div>
   </div>
 </section>

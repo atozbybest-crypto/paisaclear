@@ -2845,6 +2845,17 @@ button, input, select { font: inherit; color: inherit; }
 .gold-chart svg { width: 100%; height: auto; display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
 .gold-chart figcaption { margin-top: 10px; font-size: .76rem; color: var(--ink-3); line-height: 1.5; }
 
+/* ruled data tables, with headers aligned to their numbers */
+.table-note { font-size: .8rem; color: var(--ink-3); margin: 0 0 10px; line-height: 1.5; }
+.table-grid { border-collapse: collapse; }
+.table-grid th, .table-grid td { border: 1px solid var(--line); padding: 9px 12px; }
+.table-grid thead th { background: #F2EEE3; vertical-align: bottom; }
+.table-grid tbody tr:nth-child(even) { background: #FBFAF5; }
+.table-grid th.mg-num { text-align: right; }
+.th-unit { display: block; font-weight: 500; font-size: .58rem; letter-spacing: .04em; color: var(--ink-3); text-transform: none; }
+.gold-chart svg g:hover rect { opacity: .85; }
+.gold-chart svg g { cursor: crosshair; }
+
 </style>
 </head>
 <body>

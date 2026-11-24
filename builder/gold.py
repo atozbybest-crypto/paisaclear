@@ -75,12 +75,19 @@ def _candles(months: list[dict], count: int = 36) -> str:
         colour = "#0F5132" if up else "#B42318"
         y_open, y_close, y_high, y_low = y_of(o), y_of(c), y_of(hi), y_of(lo)
 
-        parts.append(f"<line x1='{cx:.1f}' y1='{y_high:.1f}' x2='{cx:.1f}' y2='{y_low:.1f}' "
-                     f"stroke='{colour}' stroke-width='1.4'/>")
         body_top = min(y_open, y_close)
         body_h = max(2.0, abs(y_close - y_open))
-        parts.append(f"<rect x='{cx - body_w / 2:.1f}' y='{body_top:.1f}' width='{body_w:.1f}' "
-                     f"height='{body_h:.1f}' fill='{colour}' rx='1'/>")
+        tip = (f"{_month(m['m'])} · open {_inr(o)} · high {_inr(hi)} · low {_inr(lo)} · "
+               f"close {_inr(c)} · ${m['usd']['c']:,.0f}/oz @ {m['fx']:.2f}")
+        parts.append(
+            f"<g><title>{tip}</title>"
+            f"<line x1='{cx:.1f}' y1='{y_high:.1f}' x2='{cx:.1f}' y2='{y_low:.1f}' "
+            f"stroke='{colour}' stroke-width='1.4'/>"
+            f"<rect x='{cx - body_w / 2:.1f}' y='{body_top:.1f}' width='{body_w:.1f}' "
+            f"height='{body_h:.1f}' fill='{colour}' rx='1'/>"
+            f"<rect x='{cx - slot / 2:.1f}' y='{pad_t}' width='{slot:.1f}' height='{plot_h}' "
+            f"fill='transparent'/></g>"
+        )
 
     # x labels every 6th month
     for i, m in enumerate(data):
@@ -192,15 +199,19 @@ def page(data: dict) -> str:
 <section class="section">
   <div class="shell">
     <h2 class="subhead">Month by month, last 24 months</h2>
-    <div class="cmp-wrap"><table class="cmp-table">
+    <p class="table-note">
+      The four price columns are <strong>rupees per 10 grams</strong>. The last two show the source figures used
+      for the conversion: the dollar price of an ounce, and the dollar–rupee rate.
+    </p>
+    <div class="cmp-wrap"><table class="cmp-table table-grid">
       <thead><tr>
         <th scope="col">Month</th>
-        <th scope="col">Open</th>
-        <th scope="col">High</th>
-        <th scope="col">Low</th>
-        <th scope="col">Close</th>
-        <th scope="col">USD/oz</th>
-        <th scope="col">USD/INR</th>
+        <th scope="col" class="mg-num">Open<br><span class="th-unit">₹ per 10 g</span></th>
+        <th scope="col" class="mg-num">High<br><span class="th-unit">₹ per 10 g</span></th>
+        <th scope="col" class="mg-num">Low<br><span class="th-unit">₹ per 10 g</span></th>
+        <th scope="col" class="mg-num">Close<br><span class="th-unit">₹ per 10 g</span></th>
+        <th scope="col" class="mg-num">USD/oz</th>
+        <th scope="col" class="mg-num">USD/INR</th>
       </tr></thead>
       <tbody>{monthly_rows}</tbody>
     </table></div>
@@ -210,13 +221,13 @@ def page(data: dict) -> str:
     </p>
 
     <h2 class="guide-h2">Year by year</h2>
-    <div class="cmp-wrap"><table class="cmp-table">
+    <div class="cmp-wrap"><table class="cmp-table table-grid">
       <thead><tr>
         <th scope="col">Year</th>
-        <th scope="col">Average of monthly closes</th>
-        <th scope="col">Lowest monthly close</th>
-        <th scope="col">Highest monthly close</th>
-        <th scope="col">Months</th>
+        <th scope="col" class="mg-num">Average close<br><span class="th-unit">₹ per 10 g</span></th>
+        <th scope="col" class="mg-num">Lowest close<br><span class="th-unit">₹ per 10 g</span></th>
+        <th scope="col" class="mg-num">Highest close<br><span class="th-unit">₹ per 10 g</span></th>
+        <th scope="col" class="mg-num">Months</th>
       </tr></thead>
       <tbody>{year_rows}</tbody>
     </table></div>

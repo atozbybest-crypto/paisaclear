@@ -119,7 +119,7 @@ jobs:
         run: |
           git config user.name "paisaclear-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add content/rates.json content/us_market.json content/us_funds.json content/gold.json site
+          git add content site
           if git diff --cached --quiet; then
             echo "No rate changes today."
           else

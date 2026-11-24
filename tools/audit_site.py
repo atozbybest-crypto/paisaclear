@@ -126,6 +126,25 @@ def audit_local() -> None:
     else:
         note(f"rates: {len(rates)} entries, all within window")
 
+    # Fetched feeds must actually advance. A masked failure in the workflow
+    # leaves the file untouched, which is invisible without this check.
+    from datetime import datetime as _dt
+    for name in ("us_market.json", "us_funds.json", "gold.json", "news.json"):
+        path = ROOT / "content" / name
+        if not path.exists():
+            continue
+        data = json.loads(path.read_text(encoding="utf-8"))
+        stamp = data.get("fetchedAt") or data.get("updatedAt") or ""
+        try:
+            age = (date.today() - _dt.fromisoformat(stamp[:10]).date()).days
+        except (ValueError, TypeError):
+            fail(f"{name} has no usable fetch date")
+            continue
+        if age > 4:
+            fail(f"{name} last fetched {age} days ago — the refresh step is failing")
+        else:
+            note(f"{name} fetched {age} day(s) ago")
+
     products = json.loads((ROOT / "content/products.json").read_text(encoding="utf-8"))
     counts = Counter(p["category"] for p in products)
     note("products: " + ", ".join(f"{k} {v}" for k, v in sorted(counts.items())))

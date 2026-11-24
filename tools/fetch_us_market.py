@@ -10,6 +10,7 @@ the page can link to them.
 from __future__ import annotations
 
 import csv
+import time
 import io
 import json
 import ssl
@@ -36,10 +37,19 @@ FUNDS = [
 ]
 
 
-def get(url: str, accept: str = "application/json") -> bytes:
-    request = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept})
-    with urllib.request.urlopen(request, timeout=30, context=CTX) as response:
-        return response.read()
+def get(url: str, accept: str = "application/json", attempts: int = 3) -> bytes:
+    last = None
+    for attempt in range(attempts):
+        for host in ("query1", "query2"):
+            try:
+                fixed = url.replace("query1.finance.yahoo.com", f"{host}.finance.yahoo.com")
+                request = urllib.request.Request(fixed, headers={"User-Agent": UA, "Accept": accept})
+                with urllib.request.urlopen(request, timeout=30, context=CTX) as response:
+                    return response.read()
+            except Exception as error:
+                last = error
+        time.sleep(2 * (attempt + 1))
+    raise last
 
 
 def quote(ticker: str) -> dict | None:
@@ -92,27 +102,11 @@ def treasury_yields() -> list[dict]:
         return []
 
 
-def fdic_rates() -> list[dict]:
-    try:
-        html = get("https://www.fdic.gov/national-rates-and-rate-caps", "text/html").decode("utf-8", "replace")
-        import re
-        rows = re.findall(r"<td[^>]*>\s*([A-Za-z0-9 .%\-]{3,40})\s*</td>\s*<td[^>]*>\s*([0-9.]+)\s*</td>", html)
-        out = []
-        for label, value in rows[:6]:
-            try:
-                out.append({"label": label.strip(), "value": float(value)})
-            except ValueError:
-                continue
-        return out
-    except Exception:
-        return []
-
-
 def main() -> int:
     today = date.today().isoformat()
     payload = {
         "fetchedAt": datetime.now(timezone.utc).isoformat(timespec="minutes"),
-        "indices": [], "etfs": [], "funds": [], "treasuries": treasury_yields(), "deposits": fdic_rates(),
+        "indices": [], "etfs": [], "funds": [], "treasuries": treasury_yields(),
     }
 
     for ticker, label in INDICES:
@@ -132,8 +126,7 @@ def main() -> int:
 
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"US market: {len(payload['indices'])} indices, {len(payload['etfs'])} ETFs, "
-          f"{len(payload['funds'])} funds, {len(payload['treasuries'])} yields, "
-          f"{len(payload['deposits'])} deposit lines")
+          f"{len(payload['funds'])} funds, {len(payload['treasuries'])} yields")
     if payload["indices"]:
         top = payload["indices"][0]
         print(f"  {top['label']}: {top['price']} as of {top['asOf']}")
