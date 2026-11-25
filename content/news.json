@@ -1,173 +1,309 @@
 {
-  "updatedAt": "2026-11-25T03:30+00:00",
+  "updatedAt": "2026-11-25T16:00+00:00",
   "items": [
     {
-      "title": "RBI retains SBI, HDFC Bank, ICICI Bank as Systemically Important Banks: What's definition, why it matters for your money",
-      "link": "https://www.livemint.com/money/personal-finance/rbi-retains-sbi-hdfc-bank-icici-bank-as-systemically-important-banks-whats-definition-why-it-matters-for-your-money-11795570676444.html",
-      "summary": "The RBI has retained SBI, HDFC Bank and ICICI Bank as systemically important banks in 2026. Understand what this classification means, why these banks must maintain additional capi",
-      "source": "Livemint",
-      "section": "Money",
-      "published": "2026-11-25T03:04+00:00"
+      "title": "RBI to conduct Overnight Variable Rate Repo (VRR) auction under LAF on November 26, 2026",
+      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64043",
+      "summary": "On a review of current and evolving liquidity conditions in the near term, it has been decided to conduct a Variable Rate Repo (VRR) auction on Thursday, November 26, 2026, as unde",
+      "source": "RBI",
+      "section": "Policy",
+      "published": "2026-11-25T19:20+00:00"
     },
     {
-      "title": "India's pension funds pivot to govt bonds as equity exposure nears cap",
-      "link": "https://www.business-standard.com/markets/news/india-s-pension-funds-pivot-to-govt-bonds-as-equity-exposure-nears-cap-126112500091_1.html",
-      "summary": "UTI Pension Fund is directing half of its incremental investments into government bonds, compared with none last year",
+      "title": "47th Half-Yearly Report on Management of Foreign Exchange Reserves: April – September 2026",
+      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64042",
+      "summary": "It may be recalled that in February 2004 , the Reserve Bank initiated the practice of compiling half-yearly reports on the management of foreign exchange reserves and making them p",
+      "source": "RBI",
+      "section": "Policy",
+      "published": "2026-11-25T18:05+00:00"
+    },
+    {
+      "title": "RBI Bulletin – November 2026",
+      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64041",
+      "summary": "Today, the Reserve Bank released the November 2026 issue of its monthly Bulletin. The Bulletin includes six speeches, four articles and current statistics. The four articles are: I",
+      "source": "RBI",
+      "section": "Policy",
+      "published": "2026-11-25T17:55+00:00"
+    },
+    {
+      "title": "Treasury Bills: Full Auction Result",
+      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64040",
+      "summary": "(Amount in ₹ crore) Auction Results 91-Day 182-Day 364-Day I. Notified Amount 8,000 8,000 7,000 II. Competitive Bids Received (i) Number 93 87 135 (ii) Amount 17,354.750 23,728.750",
+      "source": "RBI",
+      "section": "Policy",
+      "published": "2026-11-25T15:50+00:00"
+    },
+    {
+      "title": "Net FDI turns negative at USD 4.95 billion in Sep on flow moderation, higher outflows: RBI",
+      "link": "https://economictimes.indiatimes.com/news/economy/finance/net-fdi-turns-negative-at-usd-4-95-bn-in-sep-on-flow-moderation-higher-outflows-rbi/articleshow/136166680.cms",
+      "summary": "The month of September 2026 marked a decline in net foreign direct investment in India, reaching negative USD 4.95 billion, primarily due to decreasing gross inflows and more subst",
+      "source": "Economic Times",
+      "section": "Economy",
+      "published": "2026-11-25T15:37+00:00"
+    },
+    {
+      "title": "Sensex, Nifty surge nearly 2% to post their best session since November 6",
+      "link": "https://www.business-standard.com/markets/news/sensex-nifty-surge-nearly-2-to-post-their-best-session-since-november-6-126112501149_1.html",
+      "summary": "Falling oil, stronger rupee lift banks and FMCG; HUL posts best gains since Jun 2024",
       "source": "Business Standard",
       "section": "Markets",
-      "published": "2026-11-25T03:02+00:00"
+      "published": "2026-11-25T15:22+00:00"
     },
     {
-      "title": "Gold Silver Rates Live Updates: Gold falls over 2% as rate hike bets rise; silver edges lower",
-      "link": "https://economictimes.indiatimes.com/markets/stocks/live-blog/live-updates-gold-rate-today-25th-november-24k-22k-20k-18-carat-mcx-gold-silver-price-in-delhi-hyderabad-chennai-bengaluru-citywise/liveblog/136146334.cms",
+      "title": "What changes for your money in December 2026? SBI card fees, Aadhaar updates, and other rules consumers should know",
+      "link": "https://www.livemint.com/money/personal-finance/what-changes-for-your-money-in-december-2026-sbi-card-fees-aadhaar-updates-and-other-rules-consumers-should-know-11795619346153.html",
+      "summary": "December brings revised SBI credit card charges, new SEBI commodity trading margins and easier digital KYC for eligible overseas investors. Aadhaar email updates remain free until ",
+      "source": "Livemint",
+      "section": "Money",
+      "published": "2026-11-25T15:15+00:00"
+    },
+    {
+      "title": "Carlyle pares 7.4% stake in Piramal Pharma for over Rs 2,211 crore",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/carlyle-pares-7-4-stake-in-piramal-pharma-for-over-rs-2211-crore/articleshow/136165837.cms",
+      "summary": "The Carlyle Group has divested 7.4 percent of its stake in Piramal Pharma through an open market deal, selling approximately 9.86 crore shares at an average rate of Rs 224.17 each.",
+      "source": "Economic Times",
+      "section": "Markets",
+      "published": "2026-11-25T15:02+00:00"
+    },
+    {
+      "title": "RBI raises share of domestically held gold reserves, data shows",
+      "link": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-raises-share-of-domestically-held-gold-reserves-data-shows/articleshow/136165807.cms",
+      "summary": "As of September, the Reserve Bank of India has expanded its domestic gold reserves to 880.52 metric tonnes. This figure comprises 740.13 metric tonnes held in the country and 140.3",
+      "source": "Economic Times",
+      "section": "Markets",
+      "published": "2026-11-25T15:00+00:00"
+    },
+    {
+      "title": "Jeevan Pramaan Nov 30 deadline: Are you eligible to submit life certificate online? Who must visit pension office?",
+      "link": "https://www.livemint.com/money/jeevan-pramaan-nov-30-deadline-are-you-eligible-to-submit-life-certificate-digitally-who-must-visit-pension-office-11795616051132.html",
+      "summary": "Jeevan Pramaan's November 30 deadline is approaching. Find out why remarried and re-employed pensioners cannot submit a Digital Life Certificate and what alternatives are available",
+      "source": "Livemint",
+      "section": "Money",
+      "published": "2026-11-25T15:00+00:00"
+    },
+    {
+      "title": "91-Day, 182-Day and 364-Day T-Bill Auction Result: Cut-off",
+      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64039",
+      "summary": "T-Bill 91-Day 182-Day 364-Day I. Total Face Value Notified ₹8,000 Crore ₹8,000 Crore ₹7,000 Crore II. Cut-off Price (₹) and Implicit Yield at Cut-Off Price 98.5541 (YTM: 5.8846%) 9",
+      "source": "RBI",
+      "section": "Policy",
+      "published": "2026-11-25T15:00+00:00"
+    },
+    {
+      "title": "The three-account strategy: How a 23-year-old woman builds wealth and funds her father’s international trip",
+      "link": "https://www.livemint.com/money/personal-finance/the-three-account-strategy-how-a-23-year-old-woman-builds-wealth-and-sponsors-her-father-s-international-trip-11795611060848.html",
+      "summary": "The woman reveals that she has been financially independent since age 19 and has not asked her parents for money since then.",
+      "source": "Livemint",
+      "section": "Money",
+      "published": "2026-11-25T14:26+00:00"
+    },
+    {
+      "title": "FM Nirmala Sitharaman chairs 12th pre-Budget consultation with education, skilling and sports stakeholders",
+      "link": "https://economictimes.indiatimes.com/news/economy/policy/fm-nirmala-sitharaman-chairs-12th-pre-budget-consultation-with-education-skilling-and-sports-stakeholders/articleshow/136164397.cms",
+      "summary": "Finance Minister Nirmala Sitharaman on Wednesday held the 12th pre-Budget consultation with stakeholders from schooling, vocational education, skilling and sports sectors ahead of ",
+      "source": "Economic Times",
+      "section": "Economy",
+      "published": "2026-11-25T14:11+00:00"
+    },
+    {
+      "title": "Missing name in Army records no bar to family pension: How 68-year-old disabled son won case in AFT",
+      "link": "https://www.livemint.com/money/missing-name-in-army-records-no-bar-to-pension-how-68-year-old-disabled-son-won-case-in-aft-11795613583161.html",
+      "summary": "The Armed Forces Tribunal has granted a lifelong family pension to a 68-year-old disabled man, ruling that the absence of his name from his father's Army service records does not d",
+      "source": "Livemint",
+      "section": "Money",
+      "published": "2026-11-25T14:09+00:00"
+    },
+    {
+      "title": "Gold rate outlook for November 26: MCX gold drops 1.29%; will prices fall further or recover on Thursday?",
+      "link": "https://www.livemint.com/money/personal-finance/gold-rate-outlook-for-november-26-mcx-gold-drops-1-29-will-prices-fall-further-or-recover-on-thursday-11795614975515.html",
+      "summary": "MCX gold futures fell 1.29% to ₹1,20,750 per 10 grams on November 25. For November 26, Univest sees support at ₹1,20,003 and ₹1,19,255, while resistance stands at ₹1,21,809 and ₹1,",
+      "source": "Livemint",
+      "section": "Money",
+      "published": "2026-11-25T14:01+00:00"
+    },
+    {
+      "title": "Two in five Indian family offices, UHNIs have engaged with crypto amid regulatory caution",
+      "link": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/two-in-five-indian-family-offices-uhnis-have-engaged-with-crypto-amid-regulatory-caution/articleshow/136163899.cms",
+      "summary": "Around 41 percent of high-net-worth investors in India are delving into the world of cryptocurrencies and virtual digital assets, despite many only possessing a fundamental compreh",
+      "source": "Economic Times",
+      "section": "Markets",
+      "published": "2026-11-25T13:49+00:00"
+    },
+    {
+      "title": "LG Electronics India promoter may offload 2% stake for ₹2,320.5 crore",
+      "link": "https://www.business-standard.com/companies/news/lg-electronics-india-promoter-may-offload-2-stake-for-2-320-5-crore-126112501137_1.html",
+      "summary": "LG Electronics Inc plans to sell up to 13.58 million shares at a floor price of ₹1,709.3 apiece, with its stake in the Indian arm set to fall from 85 per cent to 83 per cent",
+      "source": "Business Standard",
+      "section": "Markets",
+      "published": "2026-11-25T13:45+00:00"
+    },
+    {
+      "title": "RBI net buyer of dollars for fourth straight month in September, data shows",
+      "link": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-net-buyer-of-dollars-for-fourth-straight-month-in-september-data-shows/articleshow/136163192.cms",
+      "summary": "The Reserve Bank of India recorded net purchases of $6.94 billion in the foreign exchange market during September. It bought a total of $82.18 billion while selling $75.25 billion ",
+      "source": "Economic Times",
+      "section": "Markets",
+      "published": "2026-11-25T13:19+00:00"
+    },
+    {
+      "title": "Can a will be executed during hospitalization?",
+      "link": "https://www.livemint.com/money/personal-finance/can-a-will-be-executed-during-hospitalization-11795500729684.html",
+      "summary": "Hospitalization does not invalidate a will, but mental capacity, independent judgment and proper witnessing are crucial to ensuring it stands up to a legal challenge.",
+      "source": "Livemint",
+      "section": "Money",
+      "published": "2026-11-25T13:19+00:00"
+    },
+    {
+      "title": "US Stock Market Live Updates: Dow Jones plunges 800 pts, Nasdaq over 3% as AI rout intensifies",
+      "link": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-nvidia-alphabet-amazon-anthropic-dell-inflation-fed-rate-hike-gold-treasury-yield-news-25th-november-2026/liveblog/136163404.cms",
       "summary": "",
       "source": "Economic Times",
       "section": "Markets",
-      "published": "2026-11-25T02:49+00:00"
+      "published": "2026-11-25T13:12+00:00"
     },
     {
-      "title": "India pension funds pivot to bonds as equity exposure nears cap",
-      "link": "https://economictimes.indiatimes.com/markets/bonds/india-pension-funds-pivot-to-bonds-as-equity-exposure-nears-cap/articleshow/136146220.cms",
-      "summary": "As India’s largest pension funds edge closer to the equity caps, a strategic pivot towards government bonds has been observed. UTI Pension Fund is channeling 50% of its new investm",
+      "title": "SEBI eases KYC norms, centralises supplementary client data to simplify onboarding",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-eases-kyc-norms-centralises-supplementary-client-data-to-simplify-onboarding/articleshow/136162936.cms",
+      "summary": "SEBI has revealed new measures aimed at simplifying the client onboarding process for investors. By centralising supplementary KYC details with KYC Registration Agencies, investors",
       "source": "Economic Times",
       "section": "Markets",
-      "published": "2026-11-25T02:42+00:00"
+      "published": "2026-11-25T13:11+00:00"
     },
     {
-      "title": "Oil prices fall as supply glut concerns offset West Asia disruption fears",
-      "link": "https://www.business-standard.com/markets/commodities/oil-prices-fall-as-supply-glut-concerns-offset-west-asia-disruption-fears-126112500071_1.html",
-      "summary": "Brent ​crude futures fell 43 cents, or 0.5%, to $90.97 a barrel by 0137 GMT while US ‌West Texas Intermediate crude futures slipped 47 cents, or 0.6%, to $81.58 a barrel",
-      "source": "Business Standard",
-      "section": "Markets",
-      "published": "2026-11-25T02:38+00:00"
-    },
-    {
-      "title": "Stocks to watch: Tata Motors PV, Hyundai Motor, Lenskart, Gland Pharma",
-      "link": "https://www.business-standard.com/markets/news/stocks-to-watch-tata-motors-pv-hyundai-motor-lenskart-gland-pharma-126112500074_1.html",
-      "summary": "Tata Motors PV and Hyundai Motor India will be in focus on plans to raise vehicle prices due to higher input cost.",
-      "source": "Business Standard",
-      "section": "Markets",
-      "published": "2026-11-25T02:26+00:00"
-    },
-    {
-      "title": "Stock Market LIVE: GIFT Nifty jumps 200 pts; Kospi down 5% as AI-trade unwind",
-      "link": "https://www.business-standard.com/markets/news/stock-market-live-november-25-gift-nifty-bse-sensex-today-nifty50-crude-oil-prices-ipo-today-126112500069_1.html",
-      "summary": "Sensex Today | Stock Market LIVE Updates Wednesday: The GIFT Nifty indicated a gap-up open for the Nifty50 index. Asian markets reversed gains amid a sell-off in technology stocks",
-      "source": "Business Standard",
-      "section": "Markets",
-      "published": "2026-11-25T02:17+00:00"
-    },
-    {
-      "title": "Nifty eyes gap-up open; here's why 25,700 is the key level to watch out for",
-      "link": "https://www.business-standard.com/markets/news/nifty-eyes-gap-up-open-here-s-why-25-700-is-the-key-level-to-watch-out-for-126112500073_1.html",
-      "summary": "Monday's session formed a textbook reversal day for Nifty, with the midpoint around 25,700, now becoming the immediate resistance, explains Dharmesh Bhatt of Systematix Institution",
-      "source": "Business Standard",
-      "section": "Markets",
-      "published": "2026-11-25T02:17+00:00"
-    },
-    {
-      "title": "Oil correction gone too far; sharp rebound likely: Mirae Asset Sharekhan",
-      "link": "https://www.business-standard.com/markets/news/oil-correction-gone-too-far-sharp-rebound-likely-mirae-asset-sharekhan-126112500068_1.html",
-      "summary": "With West Asia shipments still vulnerable, Asian buying responding to lower prices, and Russian outages restricting product supply, the physical market looks tighter than the futur",
-      "source": "Business Standard",
-      "section": "Markets",
-      "published": "2026-11-25T02:08+00:00"
-    },
-    {
-      "title": "Dollar takes breather ahead of US data on Fed path; Aussie jumps on CPI",
-      "link": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-takes-breather-ahead-of-us-data-on-fed-path-aussie-jumps-on-cpi/articleshow/136145689.cms",
-      "summary": "The US dollar remained steady as traders awaited important inflation and growth data prior to December. Economists expect the Federal Reserve to increase interest rates, which is c",
+      "title": "Sebi mulls early payout of up to 80% of sale proceeds to FPOs in commodity derivatives market",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-mulls-early-payout-of-up-to-80-of-sale-proceeds-to-fpos-in-commodity-derivatives-market/articleshow/136162861.cms",
+      "summary": "Sebi introduced a proposal for an early pay-out framework designed to assist Farmer Producer Organisations. This framework would allow FPOs to access up to 80 percent of sale proce",
       "source": "Economic Times",
       "section": "Markets",
-      "published": "2026-11-25T01:58+00:00"
+      "published": "2026-11-25T13:09+00:00"
     },
     {
-      "title": "Gold ticks lower ahead of US inflation data",
-      "link": "https://economictimes.indiatimes.com/markets/commodities/news/gold-ticks-lower-ahead-of-us-inflation-data/articleshow/136145643.cms",
-      "summary": "Gold prices dipped slightly following a notable drop, primarily influenced by the Federal Reserve's aggressive stance on interest rates. Investors are on high alert as US inflation",
+      "title": "AI stocks slide as investors weigh rising costs of infrastructure buildout",
+      "link": "https://www.business-standard.com/markets/news/ai-stocks-slide-as-investors-weigh-rising-costs-of-infrastructure-buildout-126112501061_1.html",
+      "summary": "AI-linked stocks fell as investors reassessed the rising cost of infrastructure spending, with chipmakers, server manufacturers and data centre operators facing pressure over uncer",
+      "source": "Business Standard",
+      "section": "Markets",
+      "published": "2026-11-25T13:07+00:00"
+    },
+    {
+      "title": "RBI may opt for 25 bps rate hike as oil eases, inflation risks persist: Baroda BNP Paribas MF CIO",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/rbi-may-opt-for-25-bps-rate-hike-as-oil-eases-inflation-risks-persist-baroda-bnp-paribas-mf-cio/articleshow/136162711.cms",
+      "summary": "The Reserve Bank of India is projected to implement a 0.25 percent interest rate hike in December. While decreasing crude oil prices could alleviate some inflation worries, many se",
       "source": "Economic Times",
       "section": "Markets",
-      "published": "2026-11-25T01:56+00:00"
+      "published": "2026-11-25T13:06+00:00"
     },
     {
-      "title": "Sensex Today | Nifty 50 | Stock Market Live Updates: GIFT Nifty signals a positive start; Asian shares trade lower",
-      "link": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-tata-steel-hindalco-share-price-25-november-2026/liveblog/136145716.cms",
-      "summary": "",
-      "source": "Economic Times",
-      "section": "Markets",
-      "published": "2026-11-25T01:41+00:00"
-    },
-    {
-      "title": "Market timers get schooled as S&P 500 swings rip up playbooks",
-      "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/market-timers-get-schooled-with-swings/articleshow/136145370.cms",
-      "summary": "Investors face turmoil when navigating the stock market's unpredictable waves, especially after dramatic declines like last week's Nasdaq drop. Rapid recoveries can follow, but tho",
-      "source": "Economic Times",
-      "section": "Markets",
-      "published": "2026-11-25T01:33+00:00"
-    },
-    {
-      "title": "RBI proposes digital payment safeguards: Explained – How customers can control UPI, switch off cards, set payment limits",
-      "link": "https://www.livemint.com/money/personal-finance/rbi-proposes-digital-payment-safeguards-explained-how-customers-can-control-upi-switch-off-cards-set-payment-limits-11795565937515.html",
-      "summary": "The RBI has proposed new digital payment safeguards, allowing you to disable UPI and other payment channels, set transaction and daily limits, and switch debit and credit cards on ",
+      "title": "Government employee dies or goes missing: How can the family claim pension, PF, gratuity and other financial benefits?",
+      "link": "https://www.livemint.com/money/personal-finance/government-employee-dies-or-goes-missing-how-can-the-family-claim-pension-pf-gratuity-and-other-financial-benefits-11795608736075.html",
+      "summary": "Families of deceased or missing central government employees may be eligible for family pension, gratuity, PF, leave encashment and insurance benefits. Know the rules, eligibility ",
       "source": "Livemint",
       "section": "Money",
-      "published": "2026-11-25T01:29+00:00"
+      "published": "2026-11-25T12:58+00:00"
     },
     {
-      "title": "Goldman Sachs, SocGen buy Rs 920 crore stake in Lenskart",
-      "link": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-socgen-buy-rs-920-crore-stake-in-lenskart/articleshow/136145273.cms",
-      "summary": "Goldman Sachs and Societe Generale have jointly invested ₹920 crore to purchase a 1% stake in Lenskart Solutions, acquiring 65.21 lakh and 61.76 lakh shares priced at ₹725 each. St",
-      "source": "Economic Times",
-      "section": "Markets",
-      "published": "2026-11-25T01:26+00:00"
+      "title": "ICICI Life Insurance unveils guaranteed indexed pension plan with inflation protection: Key features explained",
+      "link": "https://www.livemint.com/money/personal-finance/icici-life-insurance-unveils-guaranteed-indexed-pension-plan-with-inflation-protection-key-features-explained-11795605531641.html",
+      "summary": "ICICI Life’s&nbsp;pension plan aims to offer financial stability during retirement through a guaranteed income component while helping policyholders protect their purchasing power ",
+      "source": "Livemint",
+      "section": "Money",
+      "published": "2026-11-25T12:54+00:00"
     },
     {
-      "title": "Global Market Today: Asian stocks fall as AI trade doubts resurface",
-      "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-fall-as-ai-trade-doubts-resurface/articleshow/136145030.cms",
-      "summary": "The MSCI Asia Pacific Index slipped 0.6%, losing ground after posting its biggest rally since July on Tuesday. The losses were led by South Korea’s Kospi index, which declined 3.7%",
-      "source": "Economic Times",
-      "section": "Markets",
-      "published": "2026-11-25T00:57+00:00"
+      "title": "Result of the Second Overnight Variable Rate Repo (VRR) auction held on November 25, 2026",
+      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64038",
+      "summary": "Tenor 1-day Notified Amount (in ₹ crore) 50,000 Total amount of bids received (in ₹ crore) 75,246 Amount allotted (in ₹ crore) 50,007 Cut off Rate (%) 5.68 Weighted Average Rate (%",
+      "source": "RBI",
+      "section": "Policy",
+      "published": "2026-11-25T12:50+00:00"
     },
     {
-      "title": "IIFCL IPO: Govt to part sale stake, company to issue fresh shares",
-      "link": "https://www.business-standard.com/markets/ipo/iifcl-ipo-govt-to-part-sale-stake-company-to-issue-fresh-shares-126112400446_1.html",
-      "summary": "The government is looking to part sale its equity shareholding in IIFCL along with a fresh issue of shares by the company in the initial public offering (IPO), which is likely by t",
+      "title": "Sebi to ease KYC norms, centralise client details at registration agencies",
+      "link": "https://www.business-standard.com/markets/news/sebi-to-ease-kyc-norms-centralise-client-details-at-registration-agencies-126112500950_1.html",
+      "summary": "The revised norms, effective December 24, will simplify client onboarding by eliminating repeated submission of supplementary KYC details and enabling portability of records",
       "source": "Business Standard",
       "section": "Markets",
-      "published": "2026-11-24T17:18+00:00"
+      "published": "2026-11-25T12:19+00:00"
     },
     {
-      "title": "Can a husband gift cash to his wife without triggering a tax demand? ITAT examines ₹58 lakh bank deposits",
-      "link": "https://www.livemint.com/money/personal-finance/can-a-husband-gift-cash-to-his-wife-without-triggering-a-tax-demand-itat-examines-58-lakh-bank-deposits-11795540367914.html",
-      "summary": "The Delhi tribunal has directed the income-tax department to re-examine whether ₹58.07 lakh deposited by a woman came from cash withdrawn by her husband after the sale of agricultu",
-      "source": "Livemint",
-      "section": "Money",
-      "published": "2026-11-24T17:16+00:00"
+      "title": "India's sugar output seen falling to decade low, says industry body",
+      "link": "https://economictimes.indiatimes.com/news/economy/agriculture/indias-sugar-output-seen-falling-to-decade-low-says-industry-body/articleshow/136159995.cms",
+      "summary": "India's sugar production is expected to fall to a decade low of 26.52 million metric tons in the 2026/27 season, down from 27.97 million tons a year earlier, as lower rainfall is l",
+      "source": "Economic Times",
+      "section": "Economy",
+      "published": "2026-11-25T11:41+00:00"
     },
     {
-      "title": "US markets slide, Asian markets rebound as Nvidia rally fizzles out",
-      "link": "https://www.business-standard.com/markets/news/us-markets-slide-asian-markets-rebound-as-nvidia-rally-fizzles-out-126112401181_1.html",
-      "summary": "Nasdaq 100 falls 1.5% as Nvidia drops 4.7%, while South Korea's Kospi surges 6.3%",
+      "title": "RBI to conduct Second Overnight Variable Rate Repo (VRR) auction under LAF on November 25, 2026",
+      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64037",
+      "summary": "On a review of current and evolving liquidity conditions in the near term, it has been decided to conduct a second Variable Rate Repo (VRR) auction on Wednesday, November 25, 2026,",
+      "source": "RBI",
+      "section": "Policy",
+      "published": "2026-11-25T11:30+00:00"
+    },
+    {
+      "title": "Individual investor count hits two-year high, but trading share declines",
+      "link": "https://www.business-standard.com/markets/news/individual-investor-count-hits-two-year-high-but-trading-share-declines-126112500745_1.html",
+      "summary": "The number of individual investors trading in the cash segment rose to nearly 14.3 million in October, while their share in cash market turnover fell to a seven-month low",
       "source": "Business Standard",
       "section": "Markets",
-      "published": "2026-11-24T16:58+00:00"
+      "published": "2026-11-25T10:44+00:00"
     },
     {
-      "title": "Can the income-tax department tax your GST refund? ITAT rules in favour of taxpayer, explains when it is not taxable",
-      "link": "https://www.livemint.com/money/personal-finance/can-the-income-tax-department-tax-your-gst-refund-itat-rules-in-favour-of-taxpayer-explains-when-it-is-not-taxable-11795533638753.html",
-      "summary": "A Delhi ITAT ruling has held that a GST refund cannot automatically be treated as taxable income merely because it appears in the tax audit report. The decision offers relief to bu",
-      "source": "Livemint",
-      "section": "Money",
-      "published": "2026-11-24T16:05+00:00"
+      "title": "Money Market Operations as on November 24, 2026",
+      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64036",
+      "summary": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS @ --> Money Markets @ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 0.00 - - I. Call Money 0.0",
+      "source": "RBI",
+      "section": "Policy",
+      "published": "2026-11-25T10:40+00:00"
     },
     {
-      "title": "ESIC rules eased: No separate claims needed for sickness, maternity benefits; check payout deadlines",
-      "link": "https://www.livemint.com/money/personal-finance/esic-rules-eased-no-separate-claims-needed-for-sickness-maternity-benefits-check-payout-deadlines-11795530243559.html",
-      "summary": "The Employees' State Insurance (General) Regulations, 2026 came into force on November 21, replacing rules introduced in 1950; eligible insured employees can receive benefits throu",
-      "source": "Livemint",
-      "section": "Money",
-      "published": "2026-11-24T15:42+00:00"
+      "title": "PhonePe prepares to restart IPO process amid improving market conditions",
+      "link": "https://www.business-standard.com/markets/ipo/phonepe-prepares-to-restart-ipo-process-amid-improving-market-conditions-126112500725_1.html",
+      "summary": "The Walmart-owned fintech firm is expected to seek a listing valuation of ₹1.2 trillion to ₹1.5 trillion, with the timing of the IPO dependent on prevailing market conditions",
+      "source": "Business Standard",
+      "section": "Markets",
+      "published": "2026-11-25T10:31+00:00"
+    },
+    {
+      "title": "RBI hunts for possible '$2 million loophole' in importers' forex transactions",
+      "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/rbi-hunts-for-possible-2-million-loophole-in-importers-forex-transactions-reserve-bank-of-india-importers-foreign-exchange-deals-split-for-benefits-scams/articleshow/136156504.cms",
+      "summary": "The Reserve Bank of India (RBI) has stepped up scrutiny of importers' forex transactions amid concerns that companies may be splitting deals below the $2 million threshold to avoid",
+      "source": "Economic Times",
+      "section": "Economy",
+      "published": "2026-11-25T10:12+00:00"
+    },
+    {
+      "title": "Nifty FMCG index soars 3%; Dabur, Godrej Consumer, HUL rally up to 8%",
+      "link": "https://www.business-standard.com/markets/news/nifty-fmcg-index-soars-3-dabur-godrej-consumer-hul-rally-up-to-8-126112500621_1.html",
+      "summary": "The Nifty FMCG index was the top gainer among sectoral indices up 3.18%, compared to a 1.66% rise in the Nifty 50 on Wednesday.",
+      "source": "Business Standard",
+      "section": "Markets",
+      "published": "2026-11-25T09:45+00:00"
+    },
+    {
+      "title": "NSE jumps 5% to new high on ICICI Sec's 'buy' call; target signals 20% rise",
+      "link": "https://www.business-standard.com/markets/news/nse-jumps-5-to-new-high-on-icici-sec-s-buy-call-target-signals-20-rise-126112500598_1.html",
+      "summary": "ICICI Securities said that India's capital market is a multi-decade growth story, and NSE could be one of its biggest beneficiaries. The brokerage has set the NSE share price targe",
+      "source": "Business Standard",
+      "section": "Markets",
+      "published": "2026-11-25T09:33+00:00"
+    },
+    {
+      "title": "Poultry body seeks stock limits on maize, soyabean; warns of Rs 40-50/kg rise in chicken price",
+      "link": "https://economictimes.indiatimes.com/news/economy/agriculture/poultry-body-seeks-stock-limits-on-maize-soyabean-warns-of-rs-40-50/kg-rise-in-chicken-price/articleshow/136155176.cms",
+      "summary": "The All India Poultry Breeders Association is urging the government to impose stock limits on maize and soyabean. Rising feed prices have caused significant distress for poultry fa",
+      "source": "Economic Times",
+      "section": "Economy",
+      "published": "2026-11-25T09:19+00:00"
+    },
+    {
+      "title": "India allocates 8,606 tonnes of raw cane sugar for export to US under Tariff Rate Quota scheme",
+      "link": "https://economictimes.indiatimes.com/news/economy/agriculture/india-allocates-8606-tonnes-of-raw-cane-sugar-for-export-to-us-under-tariff-rate-quota-scheme/articleshow/136152733.cms",
+      "summary": "India has allocated 8,606 metric tonnes of raw cane sugar for export to the US under the Tariff Rate Quota (TRQ) scheme for the 2027 US fiscal year, running from October 1, 2026, t",
+      "source": "Economic Times",
+      "section": "Economy",
+      "published": "2026-11-25T07:44+00:00"
     },
     {
       "title": "India and Netherlands looking at boosting cooperation in clean energy, shipbuilding: MEA",
@@ -178,148 +314,12 @@
       "published": "2026-11-24T15:06+00:00"
     },
     {
-      "title": "8th Pay Commission: BPMS demands 6% annual increment, five career upgrades and higher insurance cover for employees",
-      "link": "https://www.livemint.com/money/personal-finance/8th-pay-commission-bpms-demands-6-annual-increment-five-career-upgrades-and-higher-insurance-cover-for-employees-11795531431830.html",
-      "summary": "Central government employees have submitted 73 demands to the 8th Pay Commission, including a 6% annual increment, restoration of OPS, 45-day paternity leave, five financial upgrad",
-      "source": "Livemint",
-      "section": "Money",
-      "published": "2026-11-24T14:54+00:00"
-    },
-    {
-      "title": "Uttarakhand's Baini-Bhuli Yojana: 5.23 lakh women to get ₹20,000 aid in 2 instalments—check who will benefit",
-      "link": "https://www.livemint.com/money/personal-finance/uttarakhands-baini-bhuli-yojana-5-23-lakh-women-to-get-rs-20-000-aid-in-2-instalments-check-who-will-benefit-11795522896531.html",
-      "summary": "The state government has allocated ₹523 crore for the initiative. The first instalment of ₹10,000 to be transferred directly into beneficiaries' bank accounts in December.&nbsp;",
-      "source": "Livemint",
-      "section": "Money",
-      "published": "2026-11-24T13:44+00:00"
-    },
-    {
-      "title": "Can a bank demand home loan EMIs if your builder fails to deliver possession? Supreme Court ruling explained",
-      "link": "https://www.livemint.com/money/personal-finance/can-a-bank-demand-home-loan-emis-if-your-builder-fails-to-deliver-possession-supreme-court-ruling-explained-11795523197934.html",
-      "summary": "The Supreme Court has directed courts to examine whether banks followed construction-linked loan disbursement terms before pursuing recovery from homebuyers stuck with unfinished f",
-      "source": "Livemint",
-      "section": "Money",
-      "published": "2026-11-24T12:49+00:00"
-    },
-    {
       "title": "India's economic activity growth hits four-year high of 9% in October: Jefferies",
       "link": "https://economictimes.indiatimes.com/news/economy/indicators/indias-economic-activity-growth-hits-four-year-high-of-9-in-october-jefferies/articleshow/136129512.cms",
       "summary": "India's economic activity growth hit a four-year high of 9% year-on-year in October. The increase was largely attributed to strong industrial activity and a delayed festive season.",
       "source": "Economic Times",
       "section": "Economy",
       "published": "2026-11-24T11:50+00:00"
-    },
-    {
-      "title": "India, Canada 'very close' to conclude trade pact negotiations: Official",
-      "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-canada-very-close-to-conclude-trade-pact-negotiations-official/articleshow/136123468.cms",
-      "summary": "Negotiators from India and Canada are engaging daily to finalize the Comprehensive Economic Partnership Agreement negotiations. A sixth round of discussions took place recently, fo",
-      "source": "Economic Times",
-      "section": "Economy",
-      "published": "2026-11-24T07:51+00:00"
-    },
-    {
-      "title": "India-EU free trade pact to open new opportunities for trade, investment: German state leader",
-      "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-eu-free-trade-pact-to-open-new-opportunities-for-trade-investment-german-state-leader/articleshow/136121903.cms",
-      "summary": "India and the European Union concluded negotiations on a Free Trade Agreement that is set to be finalized soon. Minister-President Olaf Lies of Lower Saxony emphasized the potentia",
-      "source": "Economic Times",
-      "section": "Economy",
-      "published": "2026-11-24T06:42+00:00"
-    },
-    {
-      "title": "RBI to conduct Overnight Variable Rate Repo (VRR) auction under LAF on November 25, 2026",
-      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64033",
-      "summary": "On a review of current and evolving liquidity conditions in the near term, it has been decided to conduct a Variable Rate Repo (VRR) auction on Wednesday, November 25, 2026, as und",
-      "source": "RBI",
-      "section": "Policy",
-      "published": "2026-11-23T19:25+00:00"
-    },
-    {
-      "title": "Governor, Reserve Bank of India meets Managing Directors & Chief Executive Officers of select NBFCs, HFCs and Industry Representatives in Mumbai on November 23, 2026",
-      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64032",
-      "summary": "As part of the Reserve Bank’s ongoing engagement with regulated entities, the Governor, Reserve Bank of India, today met in Mumbai with the Managing Directors and Chief Executive O",
-      "source": "RBI",
-      "section": "Policy",
-      "published": "2026-11-23T19:20+00:00"
-    },
-    {
-      "title": "Governor, Reserve Bank of India meets Chairpersons and Managing Directors & Chief Executive Officers of select UCBs and Industry Representatives in Mumbai on November 23, 2026",
-      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64031",
-      "summary": "As part of the Reserve Bank of India's continued engagement with regulated entities, the Governor today met in Mumbai with the Chairpersons and Managing Directors & Chief Executive",
-      "source": "RBI",
-      "section": "Policy",
-      "published": "2026-11-23T19:15+00:00"
-    },
-    {
-      "title": "Premature redemption under Sovereign Gold Bond (SGB) Scheme - Redemption Price for premature redemption of SGB 2021-22 Series I due on November 25, 2026",
-      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64030",
-      "summary": "In terms of GOI notification F. No. 4(5)-B(W&M)/2021 dated May 12, 2021 (SGB 2021-22 Series I - Issue date May 25, 2021) on Sovereign Gold Bond Scheme, premature redemption of Gold",
-      "source": "RBI",
-      "section": "Policy",
-      "published": "2026-11-23T18:10+00:00"
-    },
-    {
-      "title": "Auction of Government of India Dated Securities",
-      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64029",
-      "summary": "Government of India (GoI) has announced the sale (re-issue) of four dated securities for a notified amount of ₹33,000 crore as per the following details: Sr No Security Date of Rep",
-      "source": "RBI",
-      "section": "Policy",
-      "published": "2026-11-23T17:45+00:00"
-    },
-    {
-      "title": "Reserve Bank (Securitisation Transactions) Amendment Directions, 2026",
-      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64028",
-      "summary": "The Reserve Bank of India had, on July 27, 2026 , issued the Draft (Securitisation Transactions) Amendment Directions for stakeholder feedback. 2. Feedback received on the draft Di",
-      "source": "RBI",
-      "section": "Policy",
-      "published": "2026-11-23T17:00+00:00"
-    },
-    {
-      "title": "India, UK working to resolve technical glitch over Scotch whisky duty concessions under trade pact",
-      "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-uk-working-to-resolve-technical-glitch-over-scotch-whisky-duty-concessions-under-trade-pact/articleshow/136109640.cms",
-      "summary": "The Commerce Ministry is working with the Finance Ministry, importers and UK authorities to resolve a customs classification issue affecting duty concessions on Scotch whisky impor",
-      "source": "Economic Times",
-      "section": "Economy",
-      "published": "2026-11-23T16:56+00:00"
-    },
-    {
-      "title": "RBI Governor asks NBFCs, housing finance firms to bolster cyber defences",
-      "link": "https://economictimes.indiatimes.com/news/economy/policy/rbi-governor-asks-nbfcs-housing-finance-firms-to-bolster-cyber-defences/articleshow/136109553.cms",
-      "summary": "RBI Governor Sanjay Malhotra called on non-banking finance companies and housing finance companies to bolster cybersecurity measures. He emphasized the importance of a comprehensiv",
-      "source": "Economic Times",
-      "section": "Economy",
-      "published": "2026-11-23T16:52+00:00"
-    },
-    {
-      "title": "State Government Securities - Full Auction Result",
-      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64027",
-      "summary": "The result of the auction of State Government Securities held on November 23, 2026 is as under: (Amount in ₹ Crore) ASSAM SGS 2036 BIHAR SGS 2035* BIHAR SGS 2041 CHHATTISGARH SGS 2",
-      "source": "RBI",
-      "section": "Policy",
-      "published": "2026-11-23T16:50+00:00"
-    },
-    {
-      "title": "RBI issues Draft Amendment Directions for ‘Preventive Safeguards for Electronic Banking Transactions (EBTs)’",
-      "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64026",
-      "summary": "The Reserve Bank had issued the Amendment Directions dated June 24, 2026 on ‘ Customer Protection in Fraudulent Electronic Banking Transactions ’ which, inter alia, strengthened th",
-      "source": "RBI",
-      "section": "Policy",
-      "published": "2026-11-23T16:35+00:00"
-    },
-    {
-      "title": "Deepak Parekh flags missing housing starts data in India's economic indicators",
-      "link": "https://economictimes.indiatimes.com/news/economy/indicators/deepak-parekh-flags-missing-housing-starts-data-in-indias-economic-indicators/articleshow/136108206.cms",
-      "summary": "Deepak Parekh addressed the Data Users Conference highlighting the lack of official housing start data in India. He emphasized that this data is crucial due to strong linkages with",
-      "source": "Economic Times",
-      "section": "Economy",
-      "published": "2026-11-23T15:52+00:00"
-    },
-    {
-      "title": "India weighs 20% export duty on select rice varieties to boost domestic supply",
-      "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-weighs-20-export-duty-on-select-rice-varieties-to-boost-domestic-supply/articleshow/136106203.cms",
-      "summary": "India is contemplating the imposition of export duties on specific rice varieties to improve domestic supplies. This measure aims to mitigate rising prices faced by consumers and i",
-      "source": "Economic Times",
-      "section": "Economy",
-      "published": "2026-11-23T14:30+00:00"
     }
   ]
 }

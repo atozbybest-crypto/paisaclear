@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-25T03:30:38Z",
+  "generatedAt": "2026-11-25T16:00:42Z",
   "note": "Machine-refreshable rates. `rbi` values are pulled by refresh_rbi.py; the small-savings values are entered by hand each quarter because the National Savings Institute site is not machine-readable from here.",
   "feeds": {
     "rbi": {
       "label": "Reserve Bank of India",
       "url": "https://www.rbi.org.in/",
-      "fetchedAt": "2026-11-25T03:30:38Z",
+      "fetchedAt": "2026-11-25T16:00:42Z",
       "refreshable": true
     },
     "small-savings": {
@@ -188,9 +188,9 @@
       "sourceLabel": "AMFI — mutual fund NAV data"
     },
     "tbill-91": {
-      "value": "5.8602%",
+      "value": "5.8846%",
       "label": "Cut-off yield",
-      "asOf": "2026-11-22",
+      "asOf": "2026-11-24",
       "cadence": "Set at each auction; moves weekly",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -198,9 +198,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "tbill-182": {
-      "value": "6.5300%",
+      "value": "6.5288%",
       "label": "Cut-off yield",
-      "asOf": "2026-11-22",
+      "asOf": "2026-11-24",
       "cadence": "Set at each auction; moves weekly",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -208,9 +208,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "tbill-364": {
-      "value": "6.6300%",
+      "value": "6.6387%",
       "label": "Cut-off yield",
-      "asOf": "2026-11-22",
+      "asOf": "2026-11-24",
       "cadence": "Set at each auction; moves weekly",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -218,9 +218,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "gs-2029": {
-      "value": "6.9010%",
+      "value": "6.8508%",
       "label": "Market yield",
-      "asOf": "2026-11-22",
+      "asOf": "2026-11-24",
       "cadence": "Moves continuously with the market",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -228,9 +228,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "gs-2031": {
-      "value": "7.1269%",
+      "value": "7.0924%",
       "label": "Market yield",
-      "asOf": "2026-11-22",
+      "asOf": "2026-11-24",
       "cadence": "Moves continuously with the market",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -238,9 +238,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "gs-2036": {
-      "value": "7.2629%",
+      "value": "7.2105%",
       "label": "Market yield",
-      "asOf": "2026-11-22",
+      "asOf": "2026-11-24",
       "cadence": "Moves continuously with the market",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -248,9 +248,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "gs-2041": {
-      "value": "7.4387%",
+      "value": "7.4020%",
       "label": "Market yield",
-      "asOf": "2026-11-22",
+      "asOf": "2026-11-24",
       "cadence": "Moves continuously with the market",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
@@ -258,9 +258,9 @@
       "confirmedViaUrl": "https://www.rbi.org.in/"
     },
     "gs-2056": {
-      "value": "7.7409%",
+      "value": "7.6974%",
       "label": "Market yield",
-      "asOf": "2026-11-22",
+      "asOf": "2026-11-24",
       "cadence": "Moves continuously with the market",
       "sourceUrl": "https://www.rbi.org.in/",
       "sourceLabel": "Reserve Bank of India — current rates",
