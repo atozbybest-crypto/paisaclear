@@ -186,6 +186,20 @@ def home(ctx: dict) -> str:
       <span class="ms-chip is-on" aria-current="page">India</span>
       <a class="ms-chip" href="us-market.html">United States</a>
     </nav>
+
+    <a class="crosslink" href="https://stockanalyzer.co.in/?utm_source=paisaclear&amp;utm_medium=home-tile&amp;utm_campaign=stock-analyzer"
+       target="_blank" rel="noopener">
+      <span class="crosslink-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 17.5 9 11l4 4 8-8"/><path d="M15 7h6v6"/>
+        </svg>
+      </span>
+      <span class="crosslink-body">
+        <span class="crosslink-title">Analyse a stock</span>
+        <span class="crosslink-line">Live analysis for 497 NSE stocks — price, trend, momentum and what to check. On our sister site, Stock Analyzer.</span>
+      </span>
+      <span class="crosslink-cta">Open Stock Analyzer →</span>
+    </a>
   </div>
 </section>
 

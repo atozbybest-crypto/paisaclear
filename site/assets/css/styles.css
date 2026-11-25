@@ -2845,3 +2845,26 @@ button, input, select { font: inherit; color: inherit; }
 .th-unit { display: block; font-weight: 500; font-size: .58rem; letter-spacing: .04em; color: var(--ink-3); text-transform: none; }
 .gold-chart svg g:hover rect { opacity: .85; }
 .gold-chart svg g { cursor: crosshair; }
+
+/* cross-link tile on the home page */
+.crosslink {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  margin-top: 20px; padding: 16px 20px;
+  border: 1px solid var(--line-2); border-radius: var(--radius);
+  background: var(--surface); text-decoration: none; color: inherit;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.crosslink:hover { border-color: var(--green); box-shadow: 0 12px 30px rgba(16,40,32,.08); transform: translateY(-2px); }
+.crosslink-icon {
+  display: grid; place-items: center; width: 44px; height: 44px; flex: 0 0 44px;
+  border-radius: 12px; background: #E7F0E9; color: var(--green);
+}
+.crosslink-icon svg { width: 22px; height: 22px; }
+.crosslink-body { flex: 1 1 260px; display: flex; flex-direction: column; gap: 2px; }
+.crosslink-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--ink); }
+.crosslink-line { font-size: .82rem; color: var(--ink-3); line-height: 1.5; }
+.crosslink-cta { font-size: .82rem; font-weight: 700; color: var(--green); white-space: nowrap; }
+@media (max-width: 560px) {
+  .crosslink { align-items: flex-start; }
+  .crosslink-cta { margin-left: 60px; }
+}
